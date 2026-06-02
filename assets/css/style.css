@@ -235,6 +235,11 @@ img { max-width: 100%; height: auto; display: block; }
 .product-badge-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gray); font-weight: 600; }
 .product-badge-logo { display: block; height: 2.4rem; width: auto; border-radius: 6px; }
 
+/* Media showcase — framed feature image inside a service section */
+.media-showcase { max-width: 960px; margin: 0 auto; }
+.media-showcase img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.media-showcase figcaption { margin-top: 14px; text-align: center; color: var(--gray); font-size: 0.85rem; letter-spacing: 0.02em; }
+
 /* ========== SERVICES GRID / CARDS ========== */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
 .service-card { background: var(--black-light); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 40px 32px; transition: var(--transition-med); display: flex; flex-direction: column; }

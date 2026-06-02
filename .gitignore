@@ -9,6 +9,8 @@
 !assets/img/xpel-fusion-plus.png
 !assets/img/xpel-prime-xr-plus.png
 !assets/img/xpel-windshield-film.png
+# Exception: Colored PPF sample fan photo (served JPG; webp/avif variants TBD via build)
+!assets/img/colored-ppf-samples.jpg
 _build/source_images/
 
 # Backups & briefs (not part of the deployed site)

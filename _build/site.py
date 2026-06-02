@@ -151,6 +151,12 @@ def product_badge(prefix, b):
     return (f'<div class="product-badge"><span class="product-badge-label">Genuine XPEL product</span>'
             f'<img class="product-badge-logo" src="{prefix}assets/img/{b["img"]}" alt="{b["alt"]}"></div>')
 
+def media_showcase(prefix, s):
+    cap = f'<figcaption>{s["caption"]}</figcaption>' if s.get("caption") else ""
+    return (f'<section class="section"><div class="container"><figure class="media-showcase">'
+            f'<img src="{prefix}assets/img/{s["img"]}" alt="{s["alt"]}" width="{s["w"]}" height="{s["h"]}" loading="lazy" decoding="async">'
+            f'{cap}</figure></div></section>')
+
 def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
     return (f'<section class="page-hero"><div class="page-hero-bg" style="{bg_style(prefix, img)}"></div>'
             f'<div class="container">{crumbs_html}<div class="page-hero-content">'
@@ -468,6 +474,8 @@ SERVICES = {
   "colored-ppf": {
     "name": "Colored PPF", "img": "tesla-cybertruck-red-and-black",
     "badge": {"img": "xpel-logo-solid.png", "alt": "Genuine XPEL film"},
+    "showcase": {"img": "colored-ppf-samples.jpg", "w": 1600, "h": 1067,
+                 "alt": "XPEL colored PPF color and finish samples", "caption": "Real XPEL color &amp; finish samples"},
     "h1": 'Tesla <span class="highlight">Colored PPF</span>',
     "lead": "Change your Tesla's color and protect it at the same time. Colored PPF gives you gloss, satin or stealth finishes with full impact protection, and it is fully reversible.",
     "sections": [
@@ -622,6 +630,7 @@ def build_service(slug, d):
     if d.get("options"):
         tag, title, cards = d["options"]
         opts = packages_block(tag, title, "Every build is tailored, final pricing is confirmed on a quick call or visit.", cards)
+    showcase = media_showcase(prefix, d["showcase"]) if d.get("showcase") else ""
     bymodel = ('<section class="section section-alt"><div class="container">'
                '<div class="section-header left"><span class="section-tag">By Tesla model</span>'
                '<h2 class="section-title">Pick your Tesla</h2></div><div class="link-cloud">'
@@ -629,7 +638,7 @@ def build_service(slug, d):
                + "</div></div></section>")
     fq = faq_block(d["faqs"])
     cta = cta_block(f"Ready for {d['name']}?", "Tell us your Tesla and what you are after, and we will give you a clear quote and timeline.")
-    body = hero + secs + opts + bymodel + fq + cta
+    body = hero + secs + showcase + opts + bymodel + fq + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
         "name": f"Tesla {d['name']}", "serviceType": d["name"], "brand": {"@type": "Brand", "name": "XPEL"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162",

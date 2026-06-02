@@ -342,6 +342,8 @@ SERVICES_ES = {
            "El frontal completo cubre las zonas que reciben cerca del 90% de los impactos y es lo más popular. El de cuerpo completo cubre cada panel pintado para máxima protección.")]),
   "colored-ppf": dict(name="PPF de Color", img="tesla-cybertruck-red-and-black",
     badge=dict(img="xpel-logo-solid.png", alt="Film XPEL original"),
+    showcase=dict(img="colored-ppf-samples.jpg", w=1600, h=1067,
+                  alt="Muestras de color y acabado de PPF XPEL", caption="Muestras reales de color y acabado XPEL"),
     h1='Tesla <span class="highlight">PPF de Color</span>',
     lead="Cambia el color de tu Tesla y protégelo a la vez. El PPF de color te da acabados brillante, satinado o stealth con protección total contra impactos, y es totalmente reversible.",
     sections=[
@@ -467,6 +469,12 @@ def product_badge_es(rootp, b):
     return ('<div class="product-badge"><span class="product-badge-label">Producto XPEL original</span>'
             '<img class="product-badge-logo" src="%sassets/img/%s" alt="%s"></div>' % (rootp, b["img"], b["alt"]))
 
+def media_showcase_es(rootp, s):
+    cap = '<figcaption>%s</figcaption>' % s["caption"] if s.get("caption") else ""
+    return ('<section class="section"><div class="container"><figure class="media-showcase">'
+            '<img src="%sassets/img/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async">%s</figure></div></section>' % (
+            rootp, s["img"], s["alt"], s["w"], s["h"], cap))
+
 def build_service_es(slug, d):
     path = "services/%s.html" % slug
     esp, rootp = esp_root(path); name = d["name"]
@@ -490,7 +498,8 @@ def build_service_es(slug, d):
                "".join(chip(esp+"models/%s.html" % s, l) for s, l in MODELS_NAV))
     fq = faq_es(d["faqs"])
     cta = cta_es("¿Listo para %s?" % name, "Dinos tu Tesla y qué buscas, y te damos una cotización y tiempos claros.")
-    body = hero + secs + opts + bymodel + fq + cta
+    showcase = media_showcase_es(rootp, d["showcase"]) if d.get("showcase") else ""
+    body = hero + secs + showcase + opts + bymodel + fq + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service", "name": "Tesla %s" % name,
         "serviceType": name, "brand": {"@type": "Brand", "name": "XPEL"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162", "url": DOMAIN+"/es/",
