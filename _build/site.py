@@ -138,6 +138,46 @@ def related_block(tag, chips):
             f'<h2 class="section-title">Keep exploring</h2></div>'
             f'<div class="link-cloud">{"".join(chips)}</div></div></section>')
 
+def location_block(prefix="", lang="en"):
+    L = {
+        "en": dict(tag="Find us", title="Doral, Miami",
+                   desc="Our installation shop, on the map and in your hands.",
+                   addr="Address", coord="Coordinates", copy="Copy", done="Copied",
+                   dirs="Get directions",
+                   alt="Map of Tesla Boutique Miami at 1835 NW 79th Ave, Doral, FL"),
+        "es": dict(tag="Encuéntranos", title="Doral, Miami",
+                   desc="Nuestro taller, en el mapa y en tus manos.",
+                   addr="Dirección", coord="Coordenadas", copy="Copiar", done="Copiado",
+                   dirs="Cómo llegar",
+                   alt="Mapa de Tesla Boutique Miami en 1835 NW 79th Ave, Doral, FL"),
+    }[lang]
+    pin = ('<svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12z" '
+           'fill="#2B3990" stroke="#fff" stroke-width="1.4"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg>')
+    ic_pin = svg('<path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="11" r="3" stroke-width="2"/>', cls="ic")
+    ic_coord = svg('<circle cx="12" cy="12" r="9" stroke-width="2"/><path stroke-width="2" stroke-linecap="round" d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>', cls="ic")
+    compass = svg('<path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 11l19-9-9 19-2-8-8-2z"/>')
+    map_src = "https://staticmap.openstreetmap.de/staticmap.php?center=25.791474,-80.323911&zoom=15&size=760x420&maptype=mapnik"
+    dirs_url = "https://www.google.com/maps/dir/?api=1&destination=25.791474,-80.323911"
+    return (
+        f'<section class="location" id="location"><div class="container">'
+        f'<div class="section-header"><span class="section-tag">{L["tag"]}</span>'
+        f'<h2 class="section-title">{L["title"]}</h2><p class="section-desc">{L["desc"]}</p></div>'
+        f'<div class="map-card"><div class="map-stage">'
+        f'<img class="map-img" loading="lazy" decoding="async" alt="{L["alt"]}" src="{map_src}">'
+        f'<div class="map-tint"></div><div class="map-veil"></div><div class="map-pulse"></div>'
+        f'<div class="map-pin">{pin}</div>'
+        f'<div class="map-attr">&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></div>'
+        f'</div><div class="map-info">'
+        f'<div class="map-row">{ic_pin}<div class="txt"><div class="lbl">{L["addr"]}</div>'
+        f'<div class="val">1835 NW 79th Ave, Doral, FL 33126</div></div>'
+        f'<button class="map-copy" data-copy="1835 NW 79th Ave, Doral, FL 33126" data-done="{L["done"]}">{L["copy"]}</button></div>'
+        f'<div class="map-row">{ic_coord}<div class="txt"><div class="lbl">{L["coord"]}</div>'
+        f'<div class="val">25.791474, -80.323911</div></div>'
+        f'<button class="map-copy" data-copy="25.791474, -80.323911" data-done="{L["done"]}">{L["copy"]}</button></div>'
+        f'<button class="btn btn-primary" data-directions="{dirs_url}">{compass} {L["dirs"]}</button>'
+        f'</div></div></div></section>'
+    )
+
 def breadcrumbs_html(prefix, items):
     lis = []
     for label, href in items:
@@ -858,7 +898,8 @@ def build_home():
                f'<div class="cta-contact-item">{pin_svg}<span>1835 NW 79th Ave, Doral, FL 33126</span></div>'
                f'<div class="cta-contact-item">{clock_svg}<span>Mon to Fri: 9AM to 5:30PM</span></div>'
                f'</div></div></div></section>')
-    body = hero + banner + models_sec + services_sec + why + work + areas + contact
+    location = location_block(prefix="", lang="en")
+    body = hero + banner + models_sec + services_sec + why + work + areas + location + contact
     local_ld = json.dumps({"@context": "https://schema.org", "@type": "AutoBodyShop",
         "@id": DOMAIN + "/#business", "name": "Tesla Boutique Miami",
         "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "XPEL Tesla Doral"],
@@ -888,10 +929,10 @@ def main():
     pages = {}
     pages["index.html"] = build_home()
     for slug, d in MODELS.items():
-        pages[f"models/{slug}.html"] = build_model(slug, d)
+        pages["models/%s.html" % slug] = build_model(slug, d)
     pages["models/tesla-model-y-ppf-miami.html"] = build_combo()
     for slug, d in SERVICES.items():
-        pages[f"services/{slug}.html"] = build_service(slug, d)
+        pages["services/%s.html" % slug] = build_service(slug, d)
     pages["projects/index.html"] = build_projects_index()
     pages["projects/sample-tesla-model-y-full-front-ppf.html"] = build_project_sample()
     pages["news/index.html"] = build_news()
