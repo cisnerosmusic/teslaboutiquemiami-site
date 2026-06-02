@@ -230,6 +230,11 @@ img { max-width: 100%; height: auto; display: block; }
 .prose a:not(.btn) { color: var(--accent); }
 .prose a:not(.btn):hover { color: var(--white); }
 
+/* XPEL product badge — shows the genuine product used, inside its service section */
+.product-badge { display: inline-flex; flex-direction: column; gap: 12px; align-items: flex-start; margin: 0 0 28px; padding: 18px 22px; background: var(--black-light); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; }
+.product-badge-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gray); font-weight: 600; }
+.product-badge-logo { display: block; height: 2.4rem; width: auto; border-radius: 6px; }
+
 /* ========== SERVICES GRID / CARDS ========== */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
 .service-card { background: var(--black-light); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 40px 32px; transition: var(--transition-med); display: flex; flex-direction: column; }

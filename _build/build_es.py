@@ -311,6 +311,7 @@ MODELS_ES = {
 # ---------- ES services content ----------
 SERVICES_ES = {
   "paint-protection-film": dict(name="Protección de Pintura", img="tesla-model-3-ppf-doral",
+    badge=dict(img="xpel-ultimate-plus.png", alt="Film de protección XPEL Ultimate Plus"),
     h1='Tesla <span class="highlight">Protección de Pintura</span>',
     lead="Film XPEL invisible y autorreparable que recibe las picaduras y rayones para que la pintura de tu Tesla no lo haga. Lo mejor que puedes hacer para mantener un Tesla como nuevo en Miami.",
     sections=[
@@ -340,6 +341,7 @@ SERVICES_ES = {
           ("¿Frontal completo o cuerpo completo?",
            "El frontal completo cubre las zonas que reciben cerca del 90% de los impactos y es lo más popular. El de cuerpo completo cubre cada panel pintado para máxima protección.")]),
   "colored-ppf": dict(name="PPF de Color", img="tesla-cybertruck-red-and-black",
+    badge=dict(img="xpel-logo-solid.png", alt="Film XPEL original"),
     h1='Tesla <span class="highlight">PPF de Color</span>',
     lead="Cambia el color de tu Tesla y protégelo a la vez. El PPF de color te da acabados brillante, satinado o stealth con protección total contra impactos, y es totalmente reversible.",
     sections=[
@@ -361,6 +363,7 @@ SERVICES_ES = {
           ("¿Pueden cambiar el color de un Cybertruck?",
            "Sí. El PPF de color es la forma ideal de añadir color brillante, satinado o stealth al inoxidable del Cybertruck mientras lo protege.")]),
   "ceramic-coating": dict(name="Recubrimiento Cerámico", img="tesla-model-s-ceramic-coating",
+    badge=dict(img="xpel-fusion-plus.png", alt="Recubrimiento cerámico XPEL Fusion Plus"),
     h1='Tesla <span class="highlight">Recubrimiento Cerámico</span>',
     lead="Una capa cerámica hidrofóbica XPEL Fusion Plus que profundiza el brillo, repele agua y suciedad, y hace tu Tesla mucho más fácil de mantener limpio.",
     sections=[
@@ -378,6 +381,7 @@ SERVICES_ES = {
           ("¿Debo corregir la pintura primero?",
            "Normalmente sí. El cerámico fija lo que haya debajo, así que quitar los remolinos con corrección de pintura primero da el mejor y más profundo resultado.")]),
   "window-tint": dict(name="Polarizado", img="tesla-model-y-window-tinting",
+    badge=dict(img="xpel-prime-xr-plus.png", alt="Polarizado cerámico XPEL Prime XR Plus"),
     h1='Tesla <span class="highlight">Polarizado</span>',
     lead="El polarizado cerámico XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo y bloquea el UV, manteniendo la cabina de tu Tesla fresca y cómoda bajo el sol de Miami, sin cambiar su aspecto.",
     sections=[
@@ -395,6 +399,7 @@ SERVICES_ES = {
           ("¿El polarizado afecta las señales o cámaras de mi Tesla?",
            "No. El film cerámico no es metálico, así que no interfiere con GPS, celular ni las cámaras y sensores de Tesla.")]),
   "windshield-protection": dict(name="Protección de Parabrisas", img="model-s",
+    badge=dict(img="xpel-windshield-film.png", alt="Film de protección de parabrisas XPEL"),
     h1='Tesla <span class="highlight">Protección de Parabrisas</span>',
     lead="Un film protector ópticamente claro que ayuda a proteger el costoso parabrisas de tu Tesla de impactos de piedra, grietas y picaduras, un seguro inteligente y de bajo costo.",
     sections=[
@@ -458,6 +463,10 @@ def build_model_es(slug, d):
     desc = "Protege tu Tesla %s en Miami y Doral: protección de pintura XPEL, recubrimiento cerámico y polarizado cerámico. Paquetes, proyectos y preguntas frecuentes. Llama al (786) 505-6162." % name
     return doc_es(path, title, desc, body, active="models", preload=d["img"], extra_ld=ld)
 
+def product_badge_es(rootp, b):
+    return ('<div class="product-badge"><span class="product-badge-label">Producto XPEL original</span>'
+            '<img class="product-badge-logo" src="%sassets/img/%s" alt="%s"></div>' % (rootp, b["img"], b["alt"]))
+
 def build_service_es(slug, d):
     path = "services/%s.html" % slug
     esp, rootp = esp_root(path); name = d["name"]
@@ -466,9 +475,11 @@ def build_service_es(slug, d):
     ctas = '<div class="hero-ctas"><a href="tel:%s" class="btn btn-primary btn-lg">Pedir cotización</a>%s</div>' % (PHONE_TEL, extra)
     hero = S.page_hero(rootp, d["img"], d["h1"], d["lead"], ctas, crumbs)
     secs = ""
-    for h2, paras in d["sections"]:
+    nsec = len(d["sections"])
+    for i, (h2, paras) in enumerate(d["sections"]):
         inner = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
-        secs += '<section class="section"><div class="container"><div class="prose"><h2>%s</h2>%s</div></div></section>' % (h2, inner)
+        badge = product_badge_es(rootp, d["badge"]) if (d.get("badge") and i == nsec - 1) else ""
+        secs += '<section class="section"><div class="container"><div class="prose"><h2>%s</h2>%s%s</div></div></section>' % (h2, badge, inner)
     opts = ""
     if d.get("options"):
         tag, title, cards = d["options"]

@@ -5,6 +5,10 @@
 # Exception: the XPEL logos are small transparent served assets (no webp/avif variant)
 !assets/img/xpel-logo.png
 !assets/img/xpel-logo-solid.png
+!assets/img/xpel-ultimate-plus.png
+!assets/img/xpel-fusion-plus.png
+!assets/img/xpel-prime-xr-plus.png
+!assets/img/xpel-windshield-film.png
 _build/source_images/
 
 # Backups & briefs (not part of the deployed site)

@@ -147,6 +147,10 @@ def breadcrumbs_html(prefix, items):
             lis.append(f'<li aria-current="page">{label}</li>')
     return (f'<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{"".join(lis)}</ol></nav>')
 
+def product_badge(prefix, b):
+    return (f'<div class="product-badge"><span class="product-badge-label">Genuine XPEL product</span>'
+            f'<img class="product-badge-logo" src="{prefix}assets/img/{b["img"]}" alt="{b["alt"]}"></div>')
+
 def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
     return (f'<section class="page-hero"><div class="page-hero-bg" style="{bg_style(prefix, img)}"></div>'
             f'<div class="container">{crumbs_html}<div class="page-hero-content">'
@@ -431,6 +435,7 @@ MODELS = {
 SERVICES = {
   "paint-protection-film": {
     "name": "Paint Protection Film", "img": "tesla-model-3-ppf-doral",
+    "badge": {"img": "xpel-ultimate-plus.png", "alt": "XPEL Ultimate Plus paint protection film"},
     "h1": 'Tesla <span class="highlight">Paint Protection Film</span>',
     "lead": "Invisible, self-healing XPEL film that takes the rock chips and scratches so your Tesla's paint does not. The single best thing you can do to keep a Tesla looking new in Miami.",
     "sections": [
@@ -462,6 +467,7 @@ SERVICES = {
   },
   "colored-ppf": {
     "name": "Colored PPF", "img": "tesla-cybertruck-red-and-black",
+    "badge": {"img": "xpel-logo-solid.png", "alt": "Genuine XPEL film"},
     "h1": 'Tesla <span class="highlight">Colored PPF</span>',
     "lead": "Change your Tesla's color and protect it at the same time. Colored PPF gives you gloss, satin or stealth finishes with full impact protection, and it is fully reversible.",
     "sections": [
@@ -485,6 +491,7 @@ SERVICES = {
   },
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
+    "badge": {"img": "xpel-fusion-plus.png", "alt": "XPEL Fusion Plus ceramic coating"},
     "h1": 'Tesla <span class="highlight">Ceramic Coating</span>',
     "lead": "A hydrophobic XPEL Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
     "sections": [
@@ -504,6 +511,7 @@ SERVICES = {
   },
   "window-tint": {
     "name": "Window Tint", "img": "tesla-model-y-window-tinting",
+    "badge": {"img": "xpel-prime-xr-plus.png", "alt": "XPEL Prime XR Plus window film"},
     "h1": 'Tesla <span class="highlight">Window Tint</span>',
     "lead": "XPEL Prime XR Plus ceramic tint rejects up to 98% of infrared heat and blocks UV, keeping your Tesla's cabin cool and comfortable in the Miami sun, without changing the look.",
     "sections": [
@@ -523,6 +531,7 @@ SERVICES = {
   },
   "windshield-protection": {
     "name": "Windshield Protection", "img": "model-s",
+    "badge": {"img": "xpel-windshield-film.png", "alt": "XPEL windshield protection film"},
     "h1": 'Tesla <span class="highlight">Windshield Protection</span>',
     "lead": "An optically clear protective film that helps shield your Tesla's expensive windshield from rock strikes, cracks and pitting, a smart, low-cost insurance policy.",
     "sections": [
@@ -604,9 +613,11 @@ def build_service(slug, d):
            (f'<div class="hero-ctas"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">Get a quote</a></div>')
     hero = page_hero(prefix, d["img"], d["h1"], d["lead"], ctas, crumbs)
     secs = ""
-    for h2, paras in d["sections"]:
+    nsec = len(d["sections"])
+    for i, (h2, paras) in enumerate(d["sections"]):
         body_inner = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
-        secs += f'<section class="section"><div class="container"><div class="prose"><h2>{h2}</h2>{body_inner}</div></div></section>'
+        badge = product_badge(prefix, d["badge"]) if (d.get("badge") and i == nsec - 1) else ""
+        secs += f'<section class="section"><div class="container"><div class="prose"><h2>{h2}</h2>{badge}{body_inner}</div></div></section>'
     opts = ""
     if d.get("options"):
         tag, title, cards = d["options"]
