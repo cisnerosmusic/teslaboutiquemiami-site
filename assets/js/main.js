@@ -65,29 +65,3 @@
     }
   }
 })();
-
-/* Location map: copy buttons, directions zoom effect, tile fallback */
-(function () {
-  document.querySelectorAll('.map-copy').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var v = b.getAttribute('data-copy');
-      if (!navigator.clipboard) return;
-      navigator.clipboard.writeText(v).then(function () {
-        var o = b.textContent;
-        b.textContent = b.getAttribute('data-done') || 'Copied';
-        b.classList.add('done');
-        setTimeout(function () { b.textContent = o; b.classList.remove('done'); }, 1400);
-      });
-    });
-  });
-  var dir = document.querySelector('[data-directions]');
-  if (dir) {
-    dir.addEventListener('click', function () {
-      var s = document.querySelector('.map-stage');
-      if (s) { s.classList.add('zoom'); setTimeout(function () { s.classList.remove('zoom'); }, 1300); }
-      window.open(dir.getAttribute('data-directions'), '_blank', 'noopener');
-    });
-  }
-  var mi = document.querySelector('.map-img');
-  if (mi) { mi.addEventListener('error', function () { mi.classList.add('failed'); }); }
-})();
