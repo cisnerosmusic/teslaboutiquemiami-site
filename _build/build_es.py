@@ -46,7 +46,7 @@ def esp_root(path):
 
 LOGO_ES = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
            '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>'
-           '<span class="logo-sub">Impulsado por <strong>UnlimitedWraps</strong></span>'
+           '<span class="logo-sub">Impulsado por <a href="https://unlimitedwraps.com" class="logo-uw" target="_blank" rel="noopener"><strong>UnlimitedWraps</strong></a></span>'
            '<span class="logo-sub logo-xpel">Distribuidor Exclusivo XPEL</span>')
 
 def header_es(esp, rootp, en_path, active=""):
@@ -54,7 +54,7 @@ def header_es(esp, rootp, en_path, active=""):
     sd = "".join('<li><a href="%sservices/%s.html">%s</a></li>' % (esp, s, l) for s, l in SERVICES_NAV_ES)
     cur = lambda k: ' aria-current="page"' if active == k else ""
     return ('<header class="header" id="header"><div class="container"><div class="header-inner">'
-        '<a href="%sindex.html" class="logo" aria-label="Tesla Boutique Miami inicio">%s</a>'
+        '<div class="logo"><a href="%sindex.html" class="logo-home-link" aria-label="Tesla Boutique Miami inicio"></a>%s</div>'
         '<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">%s</button>'
         '<nav class="main-nav" id="primary-nav" aria-label="Principal"><ul class="main-nav-links">'
         '<li class="has-dropdown"><a href="%sindex.html#models"%s>Modelos Tesla</a><ul class="dropdown">%s</ul></li>'

@@ -156,7 +156,7 @@ def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
 # ---------------------------------------------------------------- chrome
 LOGO = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
         '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>'
-        '<span class="logo-sub">Powered by <strong>UnlimitedWraps</strong></span>'
+        '<span class="logo-sub">Powered by <a href="https://unlimitedwraps.com" class="logo-uw" target="_blank" rel="noopener"><strong>UnlimitedWraps</strong></a></span>'
         '<span class="logo-sub logo-xpel">XPEL Exclusive Dealer</span>')
 
 def header(prefix, active=""):
@@ -168,7 +168,7 @@ def header(prefix, active=""):
         return ' aria-current="page"' if active == key else ""
     return f'''<header class="header" id="header">
   <div class="container"><div class="header-inner">
-    <a href="{prefix}index.html" class="logo" aria-label="Tesla Boutique Miami home">{LOGO}</a>
+    <div class="logo"><a href="{prefix}index.html" class="logo-home-link" aria-label="Tesla Boutique Miami home"></a>{LOGO}</div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
       {svg('<path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>')}
     </button>
