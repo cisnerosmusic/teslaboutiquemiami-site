@@ -157,7 +157,7 @@ def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
 LOGO = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
         '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>'
         '<span class="logo-sub">Powered by <strong>UnlimitedWraps</strong></span>'
-        '<span class="logo-sub logo-xpel">XPEL Exclusive Dealer</span>')
+        '<span class="logo-sub logo-xpel">Xpel Exclusive Dealer</span>')
 
 def header(prefix, active=""):
     models_dd = "".join(
@@ -204,7 +204,7 @@ def footer(prefix):
   <div class="footer-main">
     <div class="footer-brand">
       <div class="footer-logo"><span class="logo-tesla">Tesla</span> <span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></div>
-      <p>Tesla only paint protection, ceramic coating and window tint in Doral and Miami. XPEL exclusive dealer.</p>
+      <p>Tesla only paint protection, ceramic coating and window tint in Doral and Miami. Xpel exclusive dealer.</p>
       <div class="footer-powered"><span>A service powered by </span><a href="https://www.unlimitedwraps.com" target="_blank" rel="noopener">Unlimited Wraps</a></div>
     </div>
     <div class="footer-links"><h4>Tesla Models</h4><ul>{models_li}</ul></div>
@@ -270,13 +270,13 @@ def doc(path, title, desc, body, active="", preload=None, extra_ld=None, depth=N
 # ---------------------------------------------------------------- service cards (reused on models + home)
 SERVICE_CARDS = {
     "paint-protection-film": {"icon": IC["ppf"], "title": "Paint Protection Film",
-        "blurb": "Invisible self-healing XPEL film against rock chips, scratches and road debris. Full-front, track and full-body coverage.", "cta": "Explore PPF"},
+        "blurb": "Invisible self-healing Xpel film against rock chips, scratches and road debris. Full-front, track and full-body coverage.", "cta": "Explore PPF"},
     "colored-ppf": {"icon": IC["color"], "title": "Colored PPF",
         "blurb": "Change your Tesla's color and protect the paint underneath, in gloss, satin and stealth finishes. Fully reversible.", "cta": "Explore Colored PPF"},
     "ceramic-coating": {"icon": IC["ceramic"], "title": "Ceramic Coating",
-        "blurb": "XPEL Fusion Plus hydrophobic ceramic that deepens gloss and makes your Tesla far easier to keep clean.", "cta": "Explore Ceramic"},
+        "blurb": "Xpel Fusion Plus hydrophobic ceramic that deepens gloss and makes your Tesla far easier to keep clean.", "cta": "Explore Ceramic"},
     "window-tint": {"icon": IC["tint"], "title": "Window Tint",
-        "blurb": "XPEL Prime XR Plus ceramic tint, up to 98% infrared heat rejection without changing your Tesla's look.", "cta": "Explore Tint"},
+        "blurb": "Xpel Prime XR Plus ceramic tint, up to 98% infrared heat rejection without changing your Tesla's look.", "cta": "Explore Tint"},
     "windshield-protection": {"icon": IC["windshield"], "title": "Windshield Protection",
         "blurb": "An optically clear film that helps shield Tesla's costly windshield from cracks and pitting.", "cta": "Explore Windshield"},
     "paint-correction": {"icon": IC["correction"], "title": "Paint Correction",
@@ -292,11 +292,11 @@ MODELS = {
     "name": "Model 3", "img": "tesla-model-3-ppf-doral",
     "lead": "The Model 3 is the Tesla that lives on the highway, which is exactly why its front end takes the most punishment. Here is how we keep a daily-driven Model 3 looking new in Miami.",
     "intro": ["As the most-driven Tesla on South Florida roads, the Model 3 racks up highway miles fast, and with them come rock chips on the hood and bumper plus a hot cabin under the Miami sun. The fix is targeted: paint protection film where impacts happen, ceramic window tint for heat, and an optional ceramic coating for gloss and easy washing.",
-              "We use model-specific XPEL patterns cut for the Model 3, so coverage is precise with no lifted edges, and every install is registered to your VIN."],
+              "We use model-specific Xpel patterns cut for the Model 3, so coverage is precise with no lifted edges, and every install is registered to your VIN."],
     "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
     "packages": [
       PKG("Essential", "Front Protection", "Full-front PPF",
-          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing XPEL film", "10-year warranty"]),
+          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing Xpel film", "10-year warranty"]),
       PKG("Most popular", "Daily Driver", "Full-front PPF + ceramic tint",
           ["Everything in Front Protection", "Ceramic tint, all glass", "Cooler cabin", "Cleaner look"], featured=True),
       PKG("Maximum", "Full Armor", "Full-body PPF + tint + coating",
@@ -304,25 +304,25 @@ MODELS = {
     ],
     "specs": [("Best entry service", "Full-front PPF (hood, fenders, mirrors, bumper)"),
               ("Heat &amp; glare", "Ceramic window tint, all glass"),
-              ("Gloss &amp; easy cleaning", "XPEL Fusion Plus ceramic coating"),
-              ("Film", "Genuine XPEL, model-specific patterns, warranty to VIN"),
+              ("Gloss &amp; easy cleaning", "Xpel Fusion Plus ceramic coating"),
+              ("Film", "Genuine Xpel, model-specific patterns, warranty to VIN"),
               ("Location", "Doral, FL, serving all of Miami-Dade")],
     "faqs": [("How much does it cost to protect a Tesla Model 3 in Miami?",
               "It depends on coverage. Full-front PPF, ceramic tint and ceramic coating are separate services you can combine. Call (786) 505-6162 for a Model 3 quote."),
              ("Is PPF worth it on a Model 3?",
               "Yes. The Model 3 spends most of its life on the highway where rock chips happen, and its factory paint is thin. Full-front PPF protects the areas that take the most impacts."),
              ("Can you tint a Model 3 in Miami?",
-              "Yes, with XPEL Prime XR Plus ceramic film that rejects up to 98% of infrared heat, a big comfort upgrade in the Miami sun.")],
+              "Yes, with Xpel Prime XR Plus ceramic film that rejects up to 98% of infrared heat, a big comfort upgrade in the Miami sun.")],
   },
   "model-y": {
     "name": "Model Y", "img": "tesla-model-y-window-tinting",
     "lead": "The Model Y is the Tesla we protect most. Here is exactly how we shield its paint, glass roof and finish from Miami roads, sun and resale wear.",
     "intro": ["The Tesla Model Y spends its life on I-95, the Palmetto and the Turnpike, exactly where sand and gravel chip a soft factory clear coat. Add relentless UV and afternoon heat, and an unprotected Model Y starts showing chips on the hood, swirls in the paint, and a hot cabin under the panoramic glass roof.",
-              "Our approach: paint protection film where impacts happen, ceramic coating for gloss and easy cleaning, and ceramic window tint to keep the heat out. Every service uses model-specific XPEL patterns cut for the Model Y."],
+              "Our approach: paint protection film where impacts happen, ceramic coating for gloss and easy cleaning, and ceramic window tint to keep the heat out. Every service uses model-specific Xpel patterns cut for the Model Y."],
     "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
     "packages": [
       PKG("Essential", "Front Protection", "Full-front PPF",
-          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing XPEL film", "10-year warranty"]),
+          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing Xpel film", "10-year warranty"]),
       PKG("Most popular", "Complete Comfort", "Full-front PPF + tint + coating",
           ["Everything in Front Protection", "Ceramic tint incl. glass roof", "Fusion Plus ceramic coating", "Cooler cabin, easy upkeep"], featured=True),
       PKG("Maximum", "Full Armor", "Full-body PPF + tint + coating",
@@ -330,38 +330,38 @@ MODELS = {
     ],
     "specs": [("Best entry service", "Full-front PPF (hood, fenders, mirrors, bumper)"),
               ("Heat &amp; glare", "Ceramic window tint, including the panoramic glass roof"),
-              ("Gloss &amp; easy cleaning", "XPEL Fusion Plus ceramic coating"),
+              ("Gloss &amp; easy cleaning", "Xpel Fusion Plus ceramic coating"),
               ("Color change", "Colored PPF in gloss, satin or stealth"),
-              ("Film", "Genuine XPEL, model-specific patterns, warranty to VIN"),
+              ("Film", "Genuine Xpel, model-specific patterns, warranty to VIN"),
               ("Location", "Doral, FL, serving all of Miami-Dade")],
     "faqs": [("How much does it cost to protect a Tesla Model Y in Miami?",
               "Pricing depends on coverage. Full-front PPF, ceramic window tint and ceramic coating are each separate services you can combine. Call (786) 505-6162 for a Model Y quote."),
              ("Which PPF coverage is best for a Model Y?",
               "For most owners we recommend at least a full-front package (full hood, fenders, mirrors and front bumper). For maximum resale protection, full-body PPF covers every painted panel."),
              ("Can you tint the Model Y glass roof?",
-              "Yes. The panoramic glass roof can receive XPEL ceramic film to cut infrared heat and UV without changing the look."),
-             ("Do you use genuine XPEL film on the Model Y?",
-              "Always. As an XPEL exclusive dealer we install only genuine XPEL film and coatings, registered to your Model Y's VIN.")],
+              "Yes. The panoramic glass roof can receive Xpel ceramic film to cut infrared heat and UV without changing the look."),
+             ("Do you use genuine Xpel film on the Model Y?",
+              "Always. As an Xpel exclusive dealer we install only genuine Xpel film and coatings, registered to your Model Y's VIN.")],
     "combo": ("tesla-model-y-ppf-miami.html", "Model Y PPF in Miami"),
   },
   "model-s": {
     "name": "Model S", "img": "tesla-model-s-ceramic-coating",
     "lead": "The Model S is Tesla's flagship, and it deserves flagship protection. Full-body film, ceramic coating and tint that keep a premium sedan immaculate.",
     "intro": ["A Model S owner is protecting a significant investment, so coverage tends to go deeper: full-body paint protection film to keep every panel flawless, a Fusion Plus ceramic coating for a liquid-gloss finish, and ceramic tint for comfort and UV protection.",
-              "We treat the Model S like the flagship it is, with meticulous edge wraps and genuine XPEL materials registered to your VIN."],
+              "We treat the Model S like the flagship it is, with meticulous edge wraps and genuine Xpel materials registered to your VIN."],
     "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
     "packages": [
       PKG("Essential", "Front Protection", "Full-front PPF",
-          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing XPEL film", "10-year warranty"]),
+          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing Xpel film", "10-year warranty"]),
       PKG("Most popular", "Flagship", "Full-front PPF + coating + tint",
-          ["Full-front XPEL film", "Fusion Plus ceramic coating", "Ceramic tint, all glass", "Liquid-gloss finish"], featured=True),
+          ["Full-front Xpel film", "Fusion Plus ceramic coating", "Ceramic tint, all glass", "Liquid-gloss finish"], featured=True),
       PKG("Maximum", "Full Armor", "Full-body PPF + coating + tint",
           ["Every painted panel filmed", "Ceramic coating over film", "Ceramic tint", "Best resale protection"]),
     ],
     "specs": [("Best for flagship owners", "Full-body PPF + ceramic coating"),
-              ("Gloss", "XPEL Fusion Plus over paint and film"),
+              ("Gloss", "Xpel Fusion Plus over paint and film"),
               ("Heat &amp; glare", "Ceramic window tint, all glass"),
-              ("Film", "Genuine XPEL, warranty to VIN"),
+              ("Film", "Genuine Xpel, warranty to VIN"),
               ("Location", "Doral, FL, serving all of Miami-Dade")],
     "faqs": [("Should I get full-body PPF on a Model S?",
               "For a flagship you plan to keep, yes. Full-body film keeps every panel chip-free and protects resale value far beyond the cost of repainting."),
@@ -372,13 +372,13 @@ MODELS = {
   },
   "model-x": {
     "name": "Model X", "img": "tesla-model-x-full-body-ppf",
-    "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine XPEL.",
+    "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine Xpel.",
     "intro": ["The Model X has large body panels and unique falcon-wing doors, which means more painted surface exposed to chips and more edges to wrap correctly. Full-body or extended-front PPF is popular here, paired with ceramic tint for the big glass area and a ceramic coating for gloss.",
               "We pattern the Model X precisely, including the door edges most installers rush, and register every install to your VIN."],
     "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
     "packages": [
       PKG("Essential", "Front Protection", "Full-front PPF",
-          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing XPEL film", "10-year warranty"]),
+          ["Full hood &amp; fenders", "Front bumper &amp; mirrors", "Self-healing Xpel film", "10-year warranty"]),
       PKG("Most popular", "Family SUV", "Extended-front PPF + tint + coating",
           ["Full-front plus rocker panels", "Ceramic tint, large glass", "Fusion Plus coating", "Cooler cabin"], featured=True),
       PKG("Maximum", "Full Armor", "Full-body PPF + tint + coating",
@@ -386,21 +386,21 @@ MODELS = {
     ],
     "specs": [("Best for big surfaces", "Extended-front or full-body PPF"),
               ("Heat &amp; glare", "Ceramic window tint, large glass area"),
-              ("Gloss &amp; easy cleaning", "XPEL Fusion Plus ceramic coating"),
-              ("Film", "Genuine XPEL, warranty to VIN"),
+              ("Gloss &amp; easy cleaning", "Xpel Fusion Plus ceramic coating"),
+              ("Film", "Genuine Xpel, warranty to VIN"),
               ("Location", "Doral, FL, serving all of Miami-Dade")],
     "faqs": [("Do the falcon-wing doors need special PPF?",
               "Yes, the door edges and seams need careful pattern work so the film wraps cleanly and does not interfere with the door mechanism. We pattern them precisely."),
              ("Is full-body PPF worth it on a Model X?",
               "On a large, premium SUV that holds value, full-body film is a popular choice. It keeps every panel chip-free and protects resale."),
              ("Can you tint the large Model X glass?",
-              "Yes, with XPEL Prime XR Plus ceramic film to cut heat and UV across the big glass area.")],
+              "Yes, with Xpel Prime XR Plus ceramic film to cut heat and UV across the big glass area.")],
   },
   "cybertruck": {
     "name": "Cybertruck", "img": "tesla-cybertruck-ppf-miami",
     "lead": "Stainless steel, not paint. The Cybertruck needs a different playbook, and we have it: PPF to protect the finish and colored PPF to actually change it.",
     "intro": ["The Cybertruck is unlike any other Tesla because its body is bare stainless steel, not painted. That changes everything: there is no clear coat to chip, but the stainless scratches, smudges and shows fine marks. Paint protection film over the stainless keeps it pristine and far easier to clean, while colored PPF is the way to give a Cybertruck real color with full protection underneath.",
-              "We film the Cybertruck's large flat panels with genuine XPEL, including satin and stealth options that suit its angular design."],
+              "We film the Cybertruck's large flat panels with genuine Xpel, including satin and stealth options that suit its angular design."],
     "services": ["paint-protection-film", "colored-ppf", "window-tint"],
     "packages": [
       PKG("Essential", "Stainless Guard", "Full-front PPF",
@@ -408,20 +408,20 @@ MODELS = {
       PKG("Most popular", "Full Stainless", "Full-body clear PPF",
           ["Every panel filmed", "Keeps stainless pristine", "Resists smudges &amp; marks", "Self-healing film"], featured=True),
       PKG("Color", "Colored Cybertruck", "Full-body colored PPF",
-          ["Gloss, satin or stealth color", "Full impact protection", "Reversible", "Genuine XPEL"]),
+          ["Gloss, satin or stealth color", "Full impact protection", "Reversible", "Genuine Xpel"]),
     ],
     "specs": [("Body type", "Bare stainless steel, not painted"),
               ("Keep it pristine", "Full-body clear PPF over stainless"),
               ("Change the color", "Full-body colored PPF, reversible"),
               ("Heat &amp; glare", "Ceramic window tint"),
-              ("Film", "Genuine XPEL, warranty to VIN"),
+              ("Film", "Genuine Xpel, warranty to VIN"),
               ("Location", "Doral, FL, serving all of Miami-Dade")],
     "faqs": [("Does a Cybertruck need PPF if it has no paint?",
               "The stainless does not chip like paint, but it scratches and shows fingerprints and marks. Clear PPF keeps it pristine and much easier to clean."),
              ("Can you change the color of a Cybertruck?",
               "Yes. Colored PPF wraps the stainless in gloss, satin or stealth color while protecting it underneath, and it is fully reversible."),
              ("Do you film the whole Cybertruck?",
-              "We can do full-front or full-body coverage. The large flat panels actually pattern well with genuine XPEL film.")],
+              "We can do full-front or full-body coverage. The large flat panels actually pattern well with genuine Xpel film.")],
   },
 }
 
@@ -430,10 +430,10 @@ SERVICES = {
   "paint-protection-film": {
     "name": "Paint Protection Film", "img": "tesla-model-3-ppf-doral",
     "h1": 'Tesla <span class="highlight">Paint Protection Film</span>',
-    "lead": "Invisible, self-healing XPEL film that takes the rock chips and scratches so your Tesla's paint does not. The single best thing you can do to keep a Tesla looking new in Miami.",
+    "lead": "Invisible, self-healing Xpel film that takes the rock chips and scratches so your Tesla's paint does not. The single best thing you can do to keep a Tesla looking new in Miami.",
     "sections": [
       ("What is paint protection film?",
-       ["Paint protection film (PPF, or a clear bra) is a transparent, flexible urethane film bonded directly to your Tesla's painted surfaces. It absorbs impacts: gravel, sand, bug acid and minor abrasions hit the film instead of the paint. XPEL's self-healing top coat goes further, so fine swirl marks vanish with the warmth of the Miami sun.",
+       ["Paint protection film (PPF, or a clear bra) is a transparent, flexible urethane film bonded directly to your Tesla's painted surfaces. It absorbs impacts: gravel, sand, bug acid and minor abrasions hit the film instead of the paint. Xpel's self-healing top coat goes further, so fine swirl marks vanish with the warmth of the Miami sun.",
         "Unlike a coating, PPF has real physical thickness, so it is the only option that genuinely stops chips. On a Tesla, whose factory clear coat is famously soft, that difference is the whole point."]),
       ("Why Tesla owners choose PPF",
        ["<ul><li><strong>Stops rock chips</strong> on the hood, bumper and fenders.</li>"
@@ -441,8 +441,8 @@ SERVICES = {
         "<li><strong>Preserves resale value</strong> by protecting factory paint.</li>"
         "<li><strong>Invisible</strong>, gloss film disappears.</li>"
         "<li><strong>Stain &amp; chemical resistant</strong> against bugs and water spots.</li></ul>"]),
-      ("The technology and XPEL products we use",
-       ["We install genuine <strong>XPEL Ultimate Plus</strong>, the reference self-healing PPF, and <strong>XPEL Stealth</strong> for a satin finish. Patterns are pre-cut for each Tesla model, then refined by hand so edges wrap cleanly. Every install is registered to your VIN for the full 10-year XPEL warranty."]),
+      ("The technology and Xpel products we use",
+       ["We install genuine <strong>Xpel Ultimate Plus</strong>, the reference self-healing PPF, and <strong>Xpel Stealth</strong> for a satin finish. Patterns are pre-cut for each Tesla model, then refined by hand so edges wrap cleanly. Every install is registered to your VIN for the full 10-year Xpel warranty."]),
     ],
     "options": ("Coverage options", "How much to protect?", [
       PKG("Entry", "Partial Front", "Highest-impact zones", ["Partial hood &amp; fenders", "Mirrors", "Front bumper"]),
@@ -450,11 +450,11 @@ SERVICES = {
       PKG("Maximum", "Full Body", "Every painted panel", ["Complete coverage", "Gloss or Stealth finish", "Best resale protection"]),
     ]),
     "faqs": [("What is paint protection film (PPF)?",
-              "A clear, durable urethane film applied over your Tesla's paint. It absorbs rock chips and scratches, and XPEL's self-healing top coat makes light swirls disappear with heat."),
+              "A clear, durable urethane film applied over your Tesla's paint. It absorbs rock chips and scratches, and Xpel's self-healing top coat makes light swirls disappear with heat."),
              ("Is PPF worth it on a Tesla?",
               "Yes. Tesla factory paint is relatively soft and chips easily on Miami highways. PPF preserves the finish and resale value, and is far cheaper than repainting panels."),
-             ("How long does XPEL PPF last?",
-              "Genuine XPEL Ultimate Plus carries a 10-year manufacturer warranty against yellowing, cracking and peeling when professionally installed."),
+             ("How long does Xpel PPF last?",
+              "Genuine Xpel Ultimate Plus carries a 10-year manufacturer warranty against yellowing, cracking and peeling when professionally installed."),
              ("Full-front or full-body PPF?",
               "Full-front covers the areas that take about 90% of road impacts and is most popular. Full-body films every painted panel for maximum protection.")],
   },
@@ -466,8 +466,8 @@ SERVICES = {
       ("Color change that also protects",
        ["Colored PPF is paint protection film with pigment. You get a real color change in gloss, satin or matte stealth, plus the same self-healing chip protection as clear PPF. Because it is film, your factory paint stays untouched underneath, which protects resale value and lets you return the car to original whenever you want.",
         "It is the smart alternative to a respray or a cheap vinyl wrap: tougher than vinyl, reversible unlike paint, and protective rather than just cosmetic."]),
-      ("Finishes and the XPEL products we use",
-       ["We install genuine XPEL colored and stealth films in a range of factory-style and custom shades. On the Cybertruck especially, colored PPF is the cleanest way to add color to bare stainless while protecting it."]),
+      ("Finishes and the Xpel products we use",
+       ["We install genuine Xpel colored and stealth films in a range of factory-style and custom shades. On the Cybertruck especially, colored PPF is the cleanest way to add color to bare stainless while protecting it."]),
     ],
     "options": ("Popular finishes", "Choose your look", [
       PKG("Gloss", "Gloss Color", "Deep, wet-look color", ["Vivid color change", "Self-healing film", "Reversible"]),
@@ -484,36 +484,36 @@ SERVICES = {
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
     "h1": 'Tesla <span class="highlight">Ceramic Coating</span>',
-    "lead": "A hydrophobic XPEL Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
+    "lead": "A hydrophobic Xpel Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
     "sections": [
       ("What ceramic coating does",
        ["A ceramic coating is a liquid polymer that bonds to your Tesla's surface and cures into a hard, slick, hydrophobic layer. Water beads and sheets off, dirt and bugs struggle to stick, and the paint gains a deep, glassy gloss. It is not a chip barrier like PPF, it is a gloss-and-easy-clean upgrade, and the two work beautifully together.",
         "Ceramic also adds UV and chemical resistance, which matters under the Miami sun."]),
-      ("XPEL Fusion Plus and how we apply it",
-       ["We apply genuine <strong>XPEL Fusion Plus</strong> after a proper decontamination and, where needed, paint correction, so the coating locks in a flawless finish rather than sealing in swirls. It can be applied over bare paint and over PPF for a uniform look."]),
+      ("Xpel Fusion Plus and how we apply it",
+       ["We apply genuine <strong>Xpel Fusion Plus</strong> after a proper decontamination and, where needed, paint correction, so the coating locks in a flawless finish rather than sealing in swirls. It can be applied over bare paint and over PPF for a uniform look."]),
     ],
     "options": None,
     "faqs": [("Does ceramic coating replace PPF?",
               "No. Ceramic adds gloss and easy cleaning but does not stop rock chips. For impact protection you need PPF. Many owners do PPF on the front and ceramic everywhere."),
              ("How long does ceramic coating last?",
-              "A professionally applied XPEL Fusion Plus coating lasts for years with proper maintenance, far longer than a wax or sealant."),
+              "A professionally applied Xpel Fusion Plus coating lasts for years with proper maintenance, far longer than a wax or sealant."),
              ("Should I correct the paint first?",
               "Usually yes. Ceramic locks in whatever is underneath, so removing swirls with paint correction first gives the best, deepest result.")],
   },
   "window-tint": {
     "name": "Window Tint", "img": "tesla-model-y-window-tinting",
     "h1": 'Tesla <span class="highlight">Window Tint</span>',
-    "lead": "XPEL Prime XR Plus ceramic tint rejects up to 98% of infrared heat and blocks UV, keeping your Tesla's cabin cool and comfortable in the Miami sun, without changing the look.",
+    "lead": "Xpel Prime XR Plus ceramic tint rejects up to 98% of infrared heat and blocks UV, keeping your Tesla's cabin cool and comfortable in the Miami sun, without changing the look.",
     "sections": [
       ("Why ceramic tint, not cheap film",
-       ["Cheap dyed tint fades to purple and blocks signals. <strong>XPEL Prime XR Plus</strong> is a ceramic film that rejects up to 98% of infrared heat and 99% of UV while staying signal-friendly and color-stable. In Miami, the difference in cabin comfort is dramatic, and it protects your interior from fading.",
+       ["Cheap dyed tint fades to purple and blocks signals. <strong>Xpel Prime XR Plus</strong> is a ceramic film that rejects up to 98% of infrared heat and 99% of UV while staying signal-friendly and color-stable. In Miami, the difference in cabin comfort is dramatic, and it protects your interior from fading.",
         "On Teslas with a panoramic glass roof, adding ceramic film to the roof is one of the biggest comfort upgrades you can make."]),
-      ("Coverage and the XPEL products we use",
-       ["We tint side and rear glass, panoramic roofs and, where legal, the windshield, all with genuine XPEL ceramic film and a lifetime warranty against fading and bubbling."]),
+      ("Coverage and the Xpel products we use",
+       ["We tint side and rear glass, panoramic roofs and, where legal, the windshield, all with genuine Xpel ceramic film and a lifetime warranty against fading and bubbling."]),
     ],
     "options": None,
     "faqs": [("How much heat does ceramic tint block?",
-              "XPEL Prime XR Plus rejects up to 98% of infrared heat, the part of sunlight you feel as warmth, which makes a real difference in the Miami sun."),
+              "Xpel Prime XR Plus rejects up to 98% of infrared heat, the part of sunlight you feel as warmth, which makes a real difference in the Miami sun."),
              ("Can you tint the Tesla glass roof?",
               "Yes. Adding ceramic film to a panoramic glass roof is one of the most effective comfort upgrades, cutting heat without changing the look."),
              ("Will tint affect my Tesla's signals or cameras?",
@@ -590,7 +590,7 @@ def build_model(slug, d):
                                  (d["name"], f"{DOMAIN}/models/{slug}.html")]),
           faq_ld(d["faqs"])]
     title = f'Tesla {d["name"]} PPF, Ceramic Coating &amp; Window Tint in Miami | Tesla Boutique Miami'
-    desc = f'Protect your Tesla {d["name"]} in Miami and Doral: XPEL paint protection film, ceramic coating and ceramic window tint. Packages, projects and FAQs. Call (786) 505-6162.'
+    desc = f'Protect your Tesla {d["name"]} in Miami and Doral: Xpel paint protection film, ceramic coating and ceramic window tint. Packages, projects and FAQs. Call (786) 505-6162.'
     return doc(f"models/{slug}.html", title, desc, body, active="models", preload=d["img"], extra_ld=ld)
 
 def build_service(slug, d):
@@ -618,7 +618,7 @@ def build_service(slug, d):
     cta = cta_block(f"Ready for {d['name']}?", "Tell us your Tesla and what you are after, and we will give you a clear quote and timeline.")
     body = hero + secs + opts + bymodel + fq + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
-        "name": f"Tesla {d['name']}", "serviceType": d["name"], "brand": {"@type": "Brand", "name": "XPEL"},
+        "name": f"Tesla {d['name']}", "serviceType": d["name"], "brand": {"@type": "Brand", "name": "Xpel"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162",
                      "url": DOMAIN + "/", "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave",
                      "addressLocality": "Doral", "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"}},
@@ -626,7 +626,7 @@ def build_service(slug, d):
         "description": d["lead"]}, ensure_ascii=False)
     ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Services", DOMAIN + "/#services"),
                                  (d["name"], f"{DOMAIN}/services/{slug}.html")]), service_ld, faq_ld(d["faqs"])]
-    title = f'Tesla {d["name"]} in Miami &amp; Doral | XPEL | Tesla Boutique Miami'
+    title = f'Tesla {d["name"]} in Miami &amp; Doral | Xpel | Tesla Boutique Miami'
     desc = d["lead"]
     return doc(f"services/{slug}.html", title, desc, body, active="services", preload=d["img"], extra_ld=ld)
 
@@ -636,32 +636,32 @@ def build_combo():
                                         ("Model Y", prefix + "models/model-y.html"), ("Model Y PPF in Miami", "")])
     ctas = f'<div class="hero-ctas"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">Get a Model Y PPF quote</a></div>'
     hero = page_hero(prefix, "tesla-model-y-window-tinting", 'Tesla Model Y <span class="highlight">PPF</span> in Miami',
-        "Genuine XPEL paint protection film for the Model Y, installed in our Doral shop and serving all of Miami-Dade. Full-front to full-body coverage, self-healing, with a 10-year warranty.", ctas, crumbs)
+        "Genuine Xpel paint protection film for the Model Y, installed in our Doral shop and serving all of Miami-Dade. Full-front to full-body coverage, self-healing, with a 10-year warranty.", ctas, crumbs)
     prose = ('<section class="section"><div class="container"><div class="prose">'
              '<h2>The right PPF for a Model Y in Miami</h2>'
-             '<p>Miami highways are tough on a Model Y. Between construction sand on the Palmetto and gravel on I-95, the hood and front bumper take constant fire, and Tesla\'s soft factory paint chips fast. Paint protection film is the fix: a clear, self-healing XPEL layer that takes the hits so your paint stays flawless.</p>'
+             '<p>Miami highways are tough on a Model Y. Between construction sand on the Palmetto and gravel on I-95, the hood and front bumper take constant fire, and Tesla\'s soft factory paint chips fast. Paint protection film is the fix: a clear, self-healing Xpel layer that takes the hits so your paint stays flawless.</p>'
              '<p>For the Model Y specifically, we cut patterns to the exact panels: full hood, fenders, mirror caps and the deep front bumper that catches the most debris. Owners keeping the car long term often extend coverage to the full body.</p>'
              '<h3>Most-requested Model Y PPF in Miami</h3><ul>'
              '<li><strong>Full-front:</strong> hood, fenders, mirrors, bumper, headlights.</li>'
              '<li><strong>Track package:</strong> full-front plus rockers and rear-arch impact zones.</li>'
-             '<li><strong>Full-body:</strong> every painted panel, optionally in XPEL Stealth satin.</li></ul>'
+             '<li><strong>Full-body:</strong> every painted panel, optionally in Xpel Stealth satin.</li></ul>'
              '<p>Want the broader picture? See the full <a href="model-y.html">Tesla Model Y protection guide</a> or the <a href="../services/paint-protection-film.html">PPF service overview</a>.</p>'
              '</div></div></section>')
     rel = related_block("Nearby &amp; related", [chip("model-y.html", "Model Y window tint Miami"),
         chip("model-3.html", "Model 3 PPF Miami"), chip("../projects/index.html", "Model Y PPF projects"),
-        chip("../services/paint-protection-film.html", "About XPEL PPF")])
+        chip("../services/paint-protection-film.html", "About Xpel PPF")])
     cta = cta_block("Get your Model Y filmed", "Quick quote for full-front or full-body PPF on your Model Y.")
     body = hero + prose + rel + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
         "name": "Tesla Model Y Paint Protection Film (PPF) in Miami", "serviceType": "Paint Protection Film installation",
-        "brand": {"@type": "Brand", "name": "XPEL"}, "audience": {"@type": "Audience", "name": "Tesla Model Y owners"},
+        "brand": {"@type": "Brand", "name": "Xpel"}, "audience": {"@type": "Audience", "name": "Tesla Model Y owners"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162", "url": DOMAIN + "/"},
         "areaServed": {"@type": "City", "name": "Miami"},
-        "description": "XPEL self-healing paint protection film installed on the Tesla Model Y in Miami and Doral, FL."}, ensure_ascii=False)
+        "description": "Xpel self-healing paint protection film installed on the Tesla Model Y in Miami and Doral, FL."}, ensure_ascii=False)
     ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Model Y", DOMAIN + "/models/model-y.html"),
                                  ("Model Y PPF in Miami", DOMAIN + "/models/tesla-model-y-ppf-miami.html")]), service_ld]
-    title = "Tesla Model Y PPF in Miami | Full-Front &amp; Full-Body XPEL | Tesla Boutique Miami"
-    desc = "Paint protection film (PPF) for the Tesla Model Y in Miami and Doral. XPEL self-healing film, full-front and full-body, 10-year warranty. Call (786) 505-6162."
+    title = "Tesla Model Y PPF in Miami | Full-Front &amp; Full-Body Xpel | Tesla Boutique Miami"
+    desc = "Paint protection film (PPF) for the Tesla Model Y in Miami and Doral. Xpel self-healing film, full-front and full-body, 10-year warranty. Call (786) 505-6162."
     return doc("models/tesla-model-y-ppf-miami.html", title, desc, body, active="models", preload="tesla-model-y-window-tinting", extra_ld=ld)
 
 def build_projects_index():
@@ -706,7 +706,7 @@ def build_project_sample():
     meta = ('<dl class="project-meta">'
             '<div><dt>Vehicle</dt><dd>Tesla Model Y</dd></div>'
             '<div><dt>Services</dt><dd>Full-Front PPF, Ceramic Tint</dd></div>'
-            '<div><dt>Products</dt><dd>XPEL Ultimate Plus, Prime XR Plus</dd></div>'
+            '<div><dt>Products</dt><dd>Xpel Ultimate Plus, Prime XR Plus</dd></div>'
             '<div><dt>Install time</dt><dd>2 days</dd></div>'
             '<div><dt>Location</dt><dd>Doral, FL</dd></div></dl>')
     gallery = (f'<div class="project-gallery">'
@@ -718,14 +718,14 @@ def build_project_sample():
              '<p style="background:rgba(43,57,144,0.12);border:1px solid rgba(43,57,144,0.4);padding:14px 18px;border-radius:8px;color:var(--gray-light)"><strong>Note:</strong> This is a sample layout, not a real client job. It exists so you can see exactly how documented projects will look once we start publishing real installs.</p>'
              '<h2>The project</h2>'
              '<p>A new Model Y comes in straight from the Tesla Doral dealer for protection before its first highway drive. Protecting a Tesla before it accumulates road miles means the paint underneath the film stays factory-perfect.</p>'
-             '<p>We install XPEL Ultimate Plus full-front coverage: hood, both front fenders, the front bumper, mirror caps and headlights, with wrapped edges and no visible seams. Then XPEL Prime XR Plus ceramic tint on the side and rear glass plus the panoramic roof to cut the Miami heat.</p>'
+             '<p>We install Xpel Ultimate Plus full-front coverage: hood, both front fenders, the front bumper, mirror caps and headlights, with wrapped edges and no visible seams. Then Xpel Prime XR Plus ceramic tint on the side and rear glass plus the panoramic roof to cut the Miami heat.</p>'
              '<h2>Photos</h2>' + gallery +
              '<h2>Services performed</h2><ul>'
              '<li><a href="../services/paint-protection-film.html">Full-front paint protection film</a></li>'
              '<li><a href="../services/window-tint.html">Ceramic window tint</a>, side, rear and roof glass</li></ul>'
              '<h2>Products used</h2><ul>'
-             '<li><strong>XPEL Ultimate Plus</strong>, self-healing clear PPF, 10-year warranty</li>'
-             '<li><strong>XPEL Prime XR Plus</strong>, ceramic IR-rejecting window film</li></ul>'
+             '<li><strong>Xpel Ultimate Plus</strong>, self-healing clear PPF, 10-year warranty</li>'
+             '<li><strong>Xpel Prime XR Plus</strong>, ceramic IR-rejecting window film</li></ul>'
              '<p style="margin-top:32px"><a href="../models/model-y.html" class="btn btn-outline">More on Model Y protection</a></p>'
              '</div></div></section>')
     cta = cta_block("Protect your Model Y like this", "New Tesla? Bring it in before the first road trip and keep the paint perfect.")
@@ -746,11 +746,11 @@ def build_news():
     prefix = "../"
     crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Updates", "")])
     hero = page_hero(prefix, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
-        "News and resources from Tesla Boutique Miami: fresh projects, XPEL product updates, and practical tips on caring for your Tesla's film, coating and tint. Updated regularly.", "", crumbs)
+        "News and resources from Tesla Boutique Miami: fresh projects, Xpel product updates, and practical tips on caring for your Tesla's film, coating and tint. Updated regularly.", "", crumbs)
     posts = [
         ("Tesla", "How soon after buying a Tesla should you get PPF?", "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most."),
-        ("Maintenance", "Caring for your PPF and ceramic coating in Miami", "Simple wash habits that keep XPEL film and Fusion Plus coating performing for years in the Florida heat."),
-        ("XPEL", "Ultimate Plus vs Stealth: which PPF finish is right for you?", "Gloss or satin? A quick guide to choosing the XPEL film finish that suits your Tesla."),
+        ("Maintenance", "Caring for your PPF and ceramic coating in Miami", "Simple wash habits that keep Xpel film and Fusion Plus coating performing for years in the Florida heat."),
+        ("Xpel", "Ultimate Plus vs Stealth: which PPF finish is right for you?", "Gloss or satin? A quick guide to choosing the Xpel film finish that suits your Tesla."),
         ("Maintenance", "Removing water spots from glass and paint", "What causes hard-water spotting in South Florida and how to remove it safely without damaging your finish."),
     ]
     cards = ""
@@ -769,7 +769,7 @@ def build_news():
         "name": "Tesla Boutique Updates", "url": DOMAIN + "/news/index.html",
         "description": "News, updates and Tesla care resources from Tesla Boutique Miami."}, ensure_ascii=False)]
     return doc("news/index.html", "Tesla Boutique Updates, News &amp; Tesla Care Tips | Tesla Boutique Miami",
-               "Updates from Tesla Boutique Miami: new projects, XPEL product news and practical tips for caring for your Tesla's PPF, ceramic coating and tint.",
+               "Updates from Tesla Boutique Miami: new projects, Xpel product news and practical tips for caring for your Tesla's PPF, ceramic coating and tint.",
                body, active="news", preload="tesla-model-s-ceramic-coating", extra_ld=ld)
 
 def build_home():
@@ -777,17 +777,17 @@ def build_home():
     hero = (f'<section class="hero"><div class="hero-bg"><div class="hero-bg-image" style="{bg_style(prefix, "model-s")}"></div></div>'
             f'<div class="container"><div class="hero-content">'
             f'<h1 class="hero-title"><span class="tesla">Tesla</span> Protection<br>Experts in <span class="highlight">Miami</span></h1>'
-            f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating built exclusively for Tesla. Master XPEL installers with 15+ years protecting Model 3, Y, S, X and Cybertruck across Doral and Miami-Dade.</p>'
+            f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating built exclusively for Tesla. Master Xpel installers with 15+ years protecting Model 3, Y, S, X and Cybertruck across Doral and Miami-Dade.</p>'
             f'<div class="hero-ctas"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">{svg(IC["phone"], w=20, h=20)} Call Now</a>'
             f'<a href="#models" class="btn btn-outline btn-lg">Find My Tesla</a></div>'
             f'<div class="hero-stats">'
             f'<div class="hero-stat"><span class="hero-stat-value">15+</span><span class="hero-stat-label">Years Experience</span></div>'
             f'<div class="hero-stat"><span class="hero-stat-value">Tesla</span><span class="hero-stat-label">Only Specialists</span></div>'
-            f'<div class="hero-stat"><span class="hero-stat-value">XPEL</span><span class="hero-stat-label">Exclusive Dealer</span></div>'
+            f'<div class="hero-stat"><span class="hero-stat-value">Xpel</span><span class="hero-stat-label">Exclusive Dealer</span></div>'
             f'</div></div></div></section>')
     banner = ('<section class="xpel-banner"><div class="container"><div class="xpel-banner-content">'
-              '<div class="xpel-badge"><svg class="xpel-logo" viewBox="0 0 100 28" fill="white" role="img" aria-label="XPEL"><text x="0" y="22" font-family="Arial Black, sans-serif" font-size="24" font-weight="900">XPEL</text></svg>'
-              '<span class="xpel-text"><strong>Exclusive Dealer</strong>, genuine XPEL products only</span></div>'
+              '<div class="xpel-badge"><svg class="xpel-logo" viewBox="0 0 100 28" fill="white" role="img" aria-label="Xpel"><text x="0" y="22" font-family="Arial Black, sans-serif" font-size="24" font-weight="900">Xpel</text></svg>'
+              '<span class="xpel-text"><strong>Exclusive Dealer</strong>, genuine Xpel products only</span></div>'
               '<div class="xpel-badge"><span class="xpel-text">10-Year Warranty on all PPF installations</span></div>'
               '</div></div></section>')
     # models grid
@@ -811,14 +811,14 @@ def build_home():
     services_sec = (f'<section class="section section-alt" id="services"><div class="container">'
                     f'<div class="section-header"><span class="section-tag">What we do</span>'
                     f'<h2 class="section-title">Protection &amp; detailing for Tesla</h2>'
-                    f'<p class="section-desc">Six specialized services, each with its own page explaining the technology, the XPEL products we use and exactly what you get.</p></div>'
+                    f'<p class="section-desc">Six specialized services, each with its own page explaining the technology, the Xpel products we use and exactly what you get.</p></div>'
                     f'<div class="services-grid">{scards}</div></div></section>')
     why = ('<section class="section section-grad"><div class="container">'
            '<div class="section-header"><span class="section-tag">Why Tesla Boutique Miami</span>'
-           '<h2 class="section-title">Tesla only, XPEL certified</h2></div><div class="why-grid">'
-           '<div class="why-item reveal"><span class="why-number">01</span><h3>XPEL Exclusive Dealer</h3><p>Authorized XPEL exclusive dealer with 15+ years installing PPF, ceramic and films on Tesla, exotic and luxury vehicles.</p></div>'
+           '<h2 class="section-title">Tesla only, Xpel certified</h2></div><div class="why-grid">'
+           '<div class="why-item reveal"><span class="why-number">01</span><h3>Xpel Exclusive Dealer</h3><p>Authorized Xpel exclusive dealer with 15+ years installing PPF, ceramic and films on Tesla, exotic and luxury vehicles.</p></div>'
            '<div class="why-item reveal"><span class="why-number">02</span><h3>Tesla Specialists</h3><p>We know every panel, sensor and camera placement on Model 3, Y, S, X and Cybertruck. Patterns made for Tesla, not adapted.</p></div>'
-           '<div class="why-item reveal"><span class="why-number">03</span><h3>Genuine XPEL Products</h3><p>Only authentic XPEL film and coatings, with full manufacturer warranty registered to your vehicle.</p></div>'
+           '<div class="why-item reveal"><span class="why-number">03</span><h3>Genuine Xpel Products</h3><p>Only authentic Xpel film and coatings, with full manufacturer warranty registered to your vehicle.</p></div>'
            '<div class="why-item reveal"><span class="why-number">04</span><h3>Real Project Documentation</h3><p>Every car we protect is photographed and documented, so you can see exactly the work that comes out of our shop.</p></div>'
            '</div></div></section>')
     gimgs = ["tesla-model-y-window-tinting", "tesla-model-3-ppf-doral", "tesla-model-x-full-body-ppf",
@@ -861,8 +861,8 @@ def build_home():
     body = hero + banner + models_sec + services_sec + why + work + areas + contact
     local_ld = json.dumps({"@context": "https://schema.org", "@type": "AutoBodyShop",
         "@id": DOMAIN + "/#business", "name": "Tesla Boutique Miami",
-        "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "XPEL Tesla Doral"],
-        "description": "Tesla only paint protection film, ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer powered by Unlimited Wraps, with 15+ years protecting Tesla, exotic and luxury vehicles.",
+        "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "Xpel Tesla Doral"],
+        "description": "Tesla only paint protection film, ceramic coating and window tint in Doral and Miami, FL. Xpel exclusive dealer powered by Unlimited Wraps, with 15+ years protecting Tesla, exotic and luxury vehicles.",
         "url": DOMAIN + "/", "telephone": "+1-786-505-6162", "image": DOMAIN + "/assets/img/model-s.webp",
         "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave", "addressLocality": "Doral",
                     "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"},
@@ -880,8 +880,8 @@ def build_home():
     website_ld = json.dumps({"@context": "https://schema.org", "@type": "WebSite", "@id": DOMAIN + "/#website",
         "url": DOMAIN + "/", "name": "Tesla Boutique Miami", "inLanguage": ["en", "es"],
         "publisher": {"@id": DOMAIN + "/#business"}}, ensure_ascii=False)
-    title = "Tesla PPF, Ceramic Coating &amp; Window Tint in Miami &amp; Doral | Tesla Boutique Miami, XPEL"
-    desc = "Tesla only paint protection film (PPF), ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer, 15+ years on Tesla. Model 3, Y, S, X and Cybertruck. Call (786) 505-6162."
+    title = "Tesla PPF, Ceramic Coating &amp; Window Tint in Miami &amp; Doral | Tesla Boutique Miami, Xpel"
+    desc = "Tesla only paint protection film (PPF), ceramic coating and window tint in Doral and Miami, FL. Xpel exclusive dealer, 15+ years on Tesla. Model 3, Y, S, X and Cybertruck. Call (786) 505-6162."
     return doc("index.html", title, desc, body, active="", preload="model-s", extra_ld=[local_ld, website_ld])
 
 def main():
