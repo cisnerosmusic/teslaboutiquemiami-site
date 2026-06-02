@@ -1,0 +1,13 @@
+/* TEAM */
+  Business: Tesla Boutique Miami
+  Parent company: Unlimited Wraps, Inc.
+  Focus: Tesla-only paint protection, ceramic coating & window tint
+  Location: Doral, Miami-Dade, Florida, USA
+  Contact: (786) 505-6162
+
+/* SITE */
+  Built by: Index01, index01.net (web design, SEO & AEO, Miami)
+  Standards: Semantic HTML5, CSS, minimal JavaScript
+  Performance: WebP imagery, lazy loading, Core Web Vitals focused
+  Components: Schema.org JSON-LD, hreflang EN/ES, sitemap, llms.txt
+  Last updated: 2026-06

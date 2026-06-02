@@ -1,0 +1,17 @@
+# Heavy original source photos (the site serves optimized assets/img/*.webp + *.avif)
+*.jpg
+*.jpeg
+*.png
+_build/source_images/
+
+# Backups & briefs (not part of the deployed site)
+_original_index_backup.html
+referencia.docx
+
+# Python / build artifacts
+__pycache__/
+*.pyc
+
+# OS noise
+.DS_Store
+Thumbs.db
