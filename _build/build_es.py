@@ -79,9 +79,9 @@ def footer_es(esp, rootp):
         '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></div>'
         '<p>Protección de pintura, cerámico y polarizado solo para Tesla en Doral y Miami. Distribuidor exclusivo XPEL.</p>'
         '<div class="footer-powered"><span>Un servicio impulsado por </span><a href="https://www.unlimitedwraps.com" target="_blank" rel="noopener">Unlimited Wraps</a></div></div>'
-        '<div class="footer-links"><h4>Modelos Tesla</h4><ul>%s</ul></div>'
-        '<div class="footer-links"><h4>Servicios</h4><ul>%s</ul></div>'
-        '<div class="footer-links"><h4>Horario</h4><div class="footer-hours">'
+        '<div class="footer-links"><h3>Modelos Tesla</h3><ul>%s</ul></div>'
+        '<div class="footer-links"><h3>Servicios</h3><ul>%s</ul></div>'
+        '<div class="footer-links"><h3>Horario</h3><div class="footer-hours">'
         '<div class="footer-hours-row"><span class="footer-hours-day">Lun a Vie</span><span class="footer-hours-time">9:00 a 5:30</span></div>'
         '<div class="footer-hours-row"><span class="footer-hours-day">Sábado</span><span class="footer-hours-time">Cerrado</span></div>'
         '<div class="footer-hours-row"><span class="footer-hours-day">Domingo</span><span class="footer-hours-time">Cerrado</span></div>'
@@ -110,7 +110,7 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
         '<meta property="og:site_name" content="Tesla Boutique Miami">\n<meta name="twitter:card" content="summary_large_image">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">\n'
-        '%s\n<link rel="stylesheet" href="%sassets/css/style.css">\n%s</head>\n<body>\n%s\n%s\n%s\n'
+        '%s\n<link rel="stylesheet" href="%sassets/css/style.css">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
         '<script src="%sassets/js/main.js" defer></script>\n</body>\n</html>\n') % (
         title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,
         DOMAIN, (preload or "model-s"), preload_tag, rootp, ld,
@@ -541,7 +541,9 @@ def build_projects_index_es():
         cards += ('<a class="project-tile reveal" href="%s">%s<div class="project-tile-body"><div class="tag-row">%s</div>'
                   '<h3>%s</h3><p>%s</p><span class="card-link">Ver proyecto &rarr;</span></div></a>') % (
                   href, S.pic(rootp, img, h3+" proyecto Tesla en Miami", 700, 438), ph, h3, p)
-    grid = ('<section class="section"><div class="container"><div class="project-list-grid">%s</div>'
+    grid = ('<section class="section"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Nuestro trabajo</span><h2 class="section-title">Últimas instalaciones</h2></div>'
+            '<div class="project-list-grid">%s</div>'
             '<p style="text-align:center;color:var(--gray);margin-top:40px;font-size:0.95rem">'
             'Se añaden proyectos nuevos cada semana. Este es un conjunto inicial, el archivo crece con cada Tesla que protegemos.</p></div></section>') % cards
     cta = cta_es("Tu Tesla podría ser el próximo", "Reserva tu instalación y también documentamos tu proyecto.")

@@ -454,3 +454,13 @@ img { max-width: 100%; height: auto; display: block; }
 .project-list-grid > .project-tile { flex: 0 1 calc((100% - 48px) / 3); }
 @media (max-width: 900px) { .project-list-grid > .project-tile { flex-basis: calc((100% - 24px) / 2); } }
 @media (max-width: 600px) { .project-list-grid > .project-tile { flex-basis: 100%; } }
+
+/* ===== Accessibility: higher-contrast text colors ===== */
+:root { --gray: #8c8c8c; --blue-brand: #6678da; --accent-text: #6678da; }
+.section-tag, .pill, .card-link, .service-card .card-link, .project-tile .card-link,
+.why-number, .footer-powered a, .prose a:not(.btn) { color: var(--accent-text); }
+.footer-links h3 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 20px; }
+
+/* a11y: in-text links distinguishable beyond color; pill contrast on tinted bg */
+.prose a:not(.btn), .section-desc a { text-decoration: underline; text-underline-offset: 2px; }
+.pill { color: #93a2ec; }

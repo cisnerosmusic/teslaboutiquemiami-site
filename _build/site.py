@@ -207,9 +207,9 @@ def footer(prefix):
       <p>Tesla only paint protection, ceramic coating and window tint in Doral and Miami. XPEL exclusive dealer.</p>
       <div class="footer-powered"><span>A service powered by </span><a href="https://www.unlimitedwraps.com" target="_blank" rel="noopener">Unlimited Wraps</a></div>
     </div>
-    <div class="footer-links"><h4>Tesla Models</h4><ul>{models_li}</ul></div>
-    <div class="footer-links"><h4>Services</h4><ul>{services_li}</ul></div>
-    <div class="footer-links"><h4>Hours</h4><div class="footer-hours">
+    <div class="footer-links"><h3>Tesla Models</h3><ul>{models_li}</ul></div>
+    <div class="footer-links"><h3>Services</h3><ul>{services_li}</ul></div>
+    <div class="footer-links"><h3>Hours</h3><div class="footer-hours">
       <div class="footer-hours-row"><span class="footer-hours-day">Mon to Fri</span><span class="footer-hours-time">9:00 to 5:30</span></div>
       <div class="footer-hours-row"><span class="footer-hours-day">Saturday</span><span class="footer-hours-time">Closed</span></div>
       <div class="footer-hours-row"><span class="footer-hours-day">Sunday</span><span class="footer-hours-time">Closed</span></div>
@@ -261,7 +261,9 @@ def doc(path, title, desc, body, active="", preload=None, extra_ld=None, depth=N
 {ld}</head>
 <body>
 {header(prefix, active)}
+<main>
 {body}
+</main>
 {footer(prefix)}
 <script src="{prefix}assets/js/main.js" defer></script>
 </body>
@@ -683,7 +685,9 @@ def build_projects_index():
         cards += (f'<a class="project-tile reveal" href="{href}">{pic(prefix, img, h3 + " Tesla project in Miami", 700, 438)}'
                   f'<div class="project-tile-body"><div class="tag-row">{pillhtml}</div>'
                   f'<h3>{h3}</h3><p>{p}</p><span class="card-link">View project &rarr;</span></div></a>')
-    grid = (f'<section class="section"><div class="container"><div class="project-list-grid">{cards}</div>'
+    grid = (f'<section class="section"><div class="container">'
+            f'<div class="section-header"><span class="section-tag">Our work</span><h2 class="section-title">Latest installs</h2></div>'
+            f'<div class="project-list-grid">{cards}</div>'
             f'<p style="text-align:center;color:var(--gray);margin-top:40px;font-size:0.95rem">'
             f'New projects are added every week. This is a starter set, the archive grows with each Tesla we protect.</p>'
             f'</div></section>')
@@ -839,7 +843,7 @@ def build_home():
     work = (f'<section class="section section-alt"><div class="container">'
             f'<div class="section-header"><span class="section-tag">Our work</span>'
             f'<h2 class="section-title">Recent Tesla projects</h2>'
-            f'<p class="section-desc">Real Teslas, real installs in our Doral shop. See the full archive in <a href="projects/index.html" style="color:var(--accent)">Projects</a>.</p></div>'
+            f'<p class="section-desc">Real Teslas, real installs in our Doral shop. See the full archive in <a href="projects/index.html" style="color:var(--accent-text)">Projects</a>.</p></div>'
             f'<div class="gallery-grid">{galleries}</div></div></section>')
     areas = ('<section class="section"><div class="container">'
              '<div class="section-header"><span class="section-tag">Service areas</span>'
