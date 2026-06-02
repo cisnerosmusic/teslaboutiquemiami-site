@@ -76,41 +76,6 @@
             align-items: center;
         }
         
-        .logo {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-        
-        .logo-main {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-        }
-        
-        .logo-main .logo-tesla {
-            color: var(--white);
-        }
-        
-        .logo-main .logo-boutique {
-            color: var(--blue-brand);
-        }
-        
-        .logo-main .logo-miami {
-            color: var(--white);
-        }
-        
-        .logo-sub {
-            font-size: 0.6rem;
-            color: var(--gray);
-            letter-spacing: 0.06em;
-            font-weight: 400;
-        }
-        
-        .logo-sub strong {
-            color: var(--gray-light);
-        }
-        
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -313,6 +278,16 @@
                 padding: 20px;
             }
         }
+    
+        /* Logo, matched exactly to the home */
+        .logo { display: flex; flex-direction: column; gap: 2px; }
+        .logo-main { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
+        .logo-main .logo-tesla { color: var(--white); }
+        .logo-main .logo-boutique { color: #6678da; }
+        .logo-main .logo-miami { color: var(--white); }
+        .logo-sub { font-size: 0.7rem; color: #8c8c8c; letter-spacing: 0.04em; font-weight: 400; line-height: 1.4; text-align: center; }
+        .logo-sub strong { color: #a0a0a0; }
+        .logo-xpel { color: #a0a0a0; font-size: 0.65rem; }
     </style>
 </head>
 <body>
@@ -320,11 +295,10 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <span class="logo-main">
-                        <span class="logo-tesla">Tesla</span> <span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span>
-                    </span>
-                    <span class="logo-sub">Powered by <strong>UnlimitedWraps</strong> · XPEL Exclusive Dealer</span>
+                <a href="index.html" class="logo" aria-label="Tesla Boutique Miami home">
+                    <span class="logo-main"><span class="logo-tesla">Tesla</span> <span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>
+                    <span class="logo-sub">Powered by <strong>UnlimitedWraps</strong></span>
+                    <span class="logo-sub logo-xpel">XPEL Exclusive Dealer</span>
                 </a>
                 
                 <a href="index.html" class="back-link">
