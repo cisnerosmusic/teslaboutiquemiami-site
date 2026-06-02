@@ -47,7 +47,7 @@ def esp_root(path):
 LOGO_ES = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
            '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>'
            '<span class="logo-sub">Impulsado por <strong>UnlimitedWraps</strong></span>'
-           '<span class="logo-sub logo-xpel">Distribuidor Exclusivo Xpel</span>')
+           '<span class="logo-sub logo-xpel">Distribuidor Exclusivo <span class="xpel-mark"><span class="xx">X</span><span class="pel">PEL</span></span></span>')
 
 def header_es(esp, rootp, en_path, active=""):
     md = "".join('<li><a href="%smodels/%s.html">%s</a></li>' % (esp, s, l) for s, l in MODELS_NAV)

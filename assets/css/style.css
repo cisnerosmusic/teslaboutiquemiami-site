@@ -424,3 +424,9 @@ img { max-width: 100%; height: auto; display: block; }
     .logo-xpel { font-size: 0.5rem; }
     .btn { padding: 8px 12px; font-size: 0.7rem; }
 }
+
+/* Xpel typographic wordmark (temporary approximation until the official logo) */
+.xpel-mark { font-weight: 800; letter-spacing: 0.02em; white-space: nowrap; display: inline-flex; align-items: baseline; }
+.xpel-mark .xx { font-size: 1.18em; }
+.xpel-mark .pel { font-size: 0.78em; }
+.xpel-banner-logo { font-size: 1.7rem; color: var(--white); line-height: 1; }

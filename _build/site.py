@@ -157,7 +157,7 @@ def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
 LOGO = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
         '<span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span>'
         '<span class="logo-sub">Powered by <strong>UnlimitedWraps</strong></span>'
-        '<span class="logo-sub logo-xpel">Xpel Exclusive Dealer</span>')
+        '<span class="logo-sub logo-xpel"><span class="xpel-mark"><span class="xx">X</span><span class="pel">PEL</span></span> Exclusive Dealer</span>')
 
 def header(prefix, active=""):
     models_dd = "".join(
@@ -786,7 +786,7 @@ def build_home():
             f'<div class="hero-stat"><span class="hero-stat-value">Xpel</span><span class="hero-stat-label">Exclusive Dealer</span></div>'
             f'</div></div></div></section>')
     banner = ('<section class="xpel-banner"><div class="container"><div class="xpel-banner-content">'
-              '<div class="xpel-badge"><svg class="xpel-logo" viewBox="0 0 100 28" fill="white" role="img" aria-label="Xpel"><text x="0" y="22" font-family="Arial Black, sans-serif" font-size="24" font-weight="900">Xpel</text></svg>'
+              '<div class="xpel-badge"><span class="xpel-mark xpel-banner-logo" role="img" aria-label="XPEL"><span class="xx">X</span><span class="pel">PEL</span></span>'
               '<span class="xpel-text"><strong>Exclusive Dealer</strong>, genuine Xpel products only</span></div>'
               '<div class="xpel-badge"><span class="xpel-text">10-Year Warranty on all PPF installations</span></div>'
               '</div></div></section>')
