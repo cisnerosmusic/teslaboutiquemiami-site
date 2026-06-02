@@ -793,7 +793,7 @@ def build_home():
             f'<div class="hero-stats">'
             f'<div class="hero-stat"><span class="hero-stat-value">15+</span><span class="hero-stat-label">Years Experience</span></div>'
             f'<div class="hero-stat"><span class="hero-stat-value">Tesla</span><span class="hero-stat-label">Only Specialists</span></div>'
-            f'<div class="hero-stat"><span class="hero-stat-value">XPEL</span><span class="hero-stat-label">Exclusive Dealer</span></div>'
+            f'<div class="hero-stat"><span class="hero-stat-value"><img class="hero-stat-logo" src="{prefix}assets/img/xpel-logo.png" alt="XPEL" width="600" height="183"></span><span class="hero-stat-label">Exclusive Dealer</span></div>'
             f'</div></div></div></section>')
     banner = ('<section class="xpel-banner"><div class="container"><div class="xpel-banner-content">'
               '<div class="xpel-badge"><span class="xpel-banner-logo" role="img" aria-label="XPEL">XPEL</span>'

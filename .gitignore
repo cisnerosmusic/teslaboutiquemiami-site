@@ -2,6 +2,8 @@
 *.jpg
 *.jpeg
 *.png
+# Exception: the XPEL logo is a small transparent served asset (no webp/avif variant)
+!assets/img/xpel-logo.png
 _build/source_images/
 
 # Backups & briefs (not part of the deployed site)
