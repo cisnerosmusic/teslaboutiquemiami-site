@@ -796,7 +796,7 @@ def build_home():
             f'<div class="hero-stat"><span class="hero-stat-value"><img class="hero-stat-logo" src="{prefix}assets/img/xpel-logo.png" alt="XPEL" width="600" height="183"></span><span class="hero-stat-label">Exclusive Dealer</span></div>'
             f'</div></div></div></section>')
     banner = ('<section class="xpel-banner"><div class="container"><div class="xpel-banner-content">'
-              '<div class="xpel-badge"><span class="xpel-banner-logo" role="img" aria-label="XPEL">XPEL</span>'
+              '<div class="xpel-badge"><span class="xpel-banner-logo"><img src="assets/img/xpel-logo-solid.png" alt="XPEL" width="700" height="190"></span>'
               '<span class="xpel-text"><strong>Exclusive Dealer</strong>, genuine XPEL products only</span></div>'
               '<div class="xpel-badge"><span class="xpel-text">10-Year Warranty on all PPF installations</span></div>'
               '</div></div></section>')

@@ -451,6 +451,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Updates: published post meta + uniform XPEL banner wordmark */
 .post-date { font-size: 0.72rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block; }
 .xpel-banner-logo { font-size: 1.7rem; font-weight: 800; color: var(--white); letter-spacing: 0.03em; line-height: 1; }
+.xpel-banner-logo img { display: block; height: 2rem; width: auto; }
 
 /* Project/Updates tiles: centered, balanced rows */
 .project-list-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
