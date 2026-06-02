@@ -430,3 +430,27 @@ img { max-width: 100%; height: auto; display: block; }
 .xpel-mark .xx { font-size: 1.18em; }
 .xpel-mark .pel { font-size: 0.78em; }
 .xpel-banner-logo { font-size: 1.7rem; color: var(--white); line-height: 1; }
+
+/* ===== Centered, responsive grids (any incomplete row stays centered) ===== */
+.models-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.models-grid > .model-card { flex: 0 1 calc((100% - 80px) / 5); }
+.gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.gallery-grid > .gallery-item { flex: 0 1 calc((100% - 48px) / 4); }
+.areas-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.areas-grid > .area-item { flex: 0 1 calc((100% - 40px) / 3); }
+@media (max-width: 1100px) { .models-grid > .model-card { flex-basis: calc((100% - 40px) / 3); } }
+@media (max-width: 900px)  { .gallery-grid > .gallery-item { flex-basis: calc((100% - 16px) / 2); } }
+@media (max-width: 760px)  { .areas-grid > .area-item { flex-basis: calc((100% - 20px) / 2); } }
+@media (max-width: 640px)  { .models-grid > .model-card { flex-basis: 100%; } }
+@media (max-width: 560px)  { .gallery-grid > .gallery-item { flex-basis: 100%; } }
+@media (max-width: 480px)  { .areas-grid > .area-item { flex-basis: 100%; } }
+
+/* Updates: published post meta + uniform XPEL banner wordmark */
+.post-date { font-size: 0.72rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block; }
+.xpel-banner-logo { font-size: 1.7rem; font-weight: 800; color: var(--white); letter-spacing: 0.03em; line-height: 1; }
+
+/* Project/Updates tiles: centered, balanced rows */
+.project-list-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.project-list-grid > .project-tile { flex: 0 1 calc((100% - 48px) / 3); }
+@media (max-width: 900px) { .project-list-grid > .project-tile { flex-basis: calc((100% - 24px) / 2); } }
+@media (max-width: 600px) { .project-list-grid > .project-tile { flex-basis: 100%; } }
