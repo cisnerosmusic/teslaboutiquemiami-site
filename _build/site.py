@@ -352,8 +352,8 @@ PKG = lambda badge, name, price, items, featured=False: {
 # ---------------------------------------------------------------- MODELS data
 MODELS = {
   "model-3": {
-    "name": "Model 3", "img": "cars/model-3/model-3-grey-2", "card": "tesla-model-3-ppf-doral",
-    "gallery": ["cars/model-3/model-3-detalle", "cars/model-3/model-3-grey", "cars/model-3/model-3-grey-3", "cars/model-3/model-3-grey-4", "cars/model-3/model-3-grey-5", "cars/model-3/model-3-grey-6"],
+    "name": "Model 3", "img": "cars/model-3/model-3-blue-performance", "card": "tesla-model-3-ppf-doral",
+    "gallery": ["cars/model-3/model-3-grey-2", "cars/model-3/model-3-detalle", "cars/model-3/model-3-grey", "cars/model-3/model-3-grey-3", "cars/model-3/model-3-grey-4", "cars/model-3/model-3-grey-5", "cars/model-3/model-3-grey-6"],
     "lead": "The Model 3 is the Tesla that lives on the highway, which is exactly why its front end takes the most punishment. Here is how we keep a daily-driven Model 3 looking new in Miami.",
     "intro": ["As the most-driven Tesla on South Florida roads, the Model 3 racks up highway miles fast, and with them come rock chips on the hood and bumper plus a hot cabin under the Miami sun. The fix is targeted: paint protection film where impacts happen, ceramic window tint for heat, and an optional ceramic coating for gloss and easy washing.",
               "We use model-specific XPEL patterns cut for the Model 3, so coverage is precise with no lifted edges, and every install is registered to your VIN."],
@@ -379,8 +379,8 @@ MODELS = {
               "Yes, with XPEL Prime XR Plus ceramic film that rejects up to 98% of infrared heat, a big comfort upgrade in the Miami sun.")],
   },
   "model-y": {
-    "name": "Model Y", "img": "cars/model-y/model-y-3", "card": "tesla-model-y-window-tinting",
-    "gallery": ["cars/model-y/model-y-1", "cars/model-y/model-y-2", "cars/model-y/model-y-detail-1", "cars/model-y/model-y-white-1", "cars/model-y/model-y-white-2", "cars/model-y/model-y-white-3"],
+    "name": "Model Y", "img": "cars/model-y/model-y-blue-studio", "card": "tesla-model-y-window-tinting",
+    "gallery": ["cars/model-y/model-y-3", "cars/model-y/model-y-1", "cars/model-y/model-y-2", "cars/model-y/model-y-detail-1", "cars/model-y/model-y-white-1", "cars/model-y/model-y-white-2", "cars/model-y/model-y-white-3"],
     "lead": "The Model Y is the Tesla we protect most. Here is exactly how we shield its paint, glass roof and finish from Miami roads, sun and resale wear.",
     "intro": ["The Tesla Model Y spends its life on I-95, the Palmetto and the Turnpike, exactly where sand and gravel chip a soft factory clear coat. Add relentless UV and afternoon heat, and an unprotected Model Y starts showing chips on the hood, swirls in the paint, and a hot cabin under the panoramic glass roof.",
               "Our approach: paint protection film where impacts happen, ceramic coating for gloss and easy cleaning, and ceramic window tint to keep the heat out. Every service uses model-specific XPEL patterns cut for the Model Y."],
@@ -437,8 +437,8 @@ MODELS = {
               "It depends on coverage. Call (786) 505-6162 and we will build a package around how you use the car.")],
   },
   "model-x": {
-    "name": "Model X", "img": "cars/model-x/model-x-red-1", "card": "cars/model-x/model-x-red-1",
-    "gallery": ["cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
+    "name": "Model X", "img": "cars/model-x/model-x-red-studio", "card": "cars/model-x/model-x-red-1",
+    "gallery": ["cars/model-x/model-x-red-1", "cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
     "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine XPEL.",
     "intro": ["The Model X has large body panels and unique falcon-wing doors, which means more painted surface exposed to chips and more edges to wrap correctly. Full-body or extended-front PPF is popular here, paired with ceramic tint for the big glass area and a ceramic coating for gloss.",
               "We pattern the Model X precisely, including the door edges most installers rush, and register every install to your VIN."],

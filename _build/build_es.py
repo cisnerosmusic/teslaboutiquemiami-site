@@ -181,7 +181,7 @@ PK = S.PKG
 
 # ---------- ES models content ----------
 MODELS_ES = {
-  "model-3": dict(name="Model 3", img="cars/model-3/model-3-grey-2", gallery=["cars/model-3/model-3-detalle","cars/model-3/model-3-grey","cars/model-3/model-3-grey-3","cars/model-3/model-3-grey-4","cars/model-3/model-3-grey-5","cars/model-3/model-3-grey-6"],
+  "model-3": dict(name="Model 3", img="cars/model-3/model-3-blue-performance", gallery=["cars/model-3/model-3-grey-2","cars/model-3/model-3-detalle","cars/model-3/model-3-grey","cars/model-3/model-3-grey-3","cars/model-3/model-3-grey-4","cars/model-3/model-3-grey-5","cars/model-3/model-3-grey-6"],
     lead="El Model 3 es el Tesla que vive en la autopista, y por eso su frente recibe el mayor castigo. Así mantenemos un Model 3 de uso diario como nuevo en Miami.",
     intro=["Como el Tesla más manejado en el sur de Florida, el Model 3 acumula kilómetros de autopista rápido, y con ellos llegan las picaduras en el capó y el parachoques, más una cabina caliente bajo el sol de Miami. La solución es puntual: protección de pintura donde ocurren los impactos, polarizado cerámico para el calor, y un recubrimiento cerámico opcional para brillo y lavado fácil.",
            "Usamos patrones XPEL cortados para el Model 3, así la cobertura es precisa, sin bordes levantados, y cada instalación queda registrada a tu VIN."],
@@ -205,7 +205,7 @@ MODELS_ES = {
            "Sí. El Model 3 pasa casi toda su vida en la autopista, donde ocurren las picaduras, y su pintura de fábrica es delgada. El PPF frontal protege las zonas que reciben más impactos."),
           ("¿Pueden polarizar un Model 3 en Miami?",
            "Sí, con film cerámico XPEL Prime XR Plus que rechaza hasta el 98% del calor infrarrojo, una gran mejora de confort bajo el sol de Miami.")]),
-  "model-y": dict(name="Model Y", img="cars/model-y/model-y-3", gallery=["cars/model-y/model-y-1","cars/model-y/model-y-2","cars/model-y/model-y-detail-1","cars/model-y/model-y-white-1","cars/model-y/model-y-white-2","cars/model-y/model-y-white-3"],
+  "model-y": dict(name="Model Y", img="cars/model-y/model-y-blue-studio", gallery=["cars/model-y/model-y-3","cars/model-y/model-y-1","cars/model-y/model-y-2","cars/model-y/model-y-detail-1","cars/model-y/model-y-white-1","cars/model-y/model-y-white-2","cars/model-y/model-y-white-3"],
     lead="El Model Y es el Tesla que más protegemos. Así blindamos su pintura, su techo de cristal y su acabado contra las calles, el sol y el desgaste de reventa de Miami.",
     intro=["El Tesla Model Y vive en la I-95, el Palmetto y el Turnpike, justo donde la arena y la grava pican una capa transparente de fábrica blanda. Suma el UV implacable y el calor de la tarde, y un Model Y sin protección empieza a mostrar picaduras en el capó, remolinos en la pintura y una cabina caliente bajo el techo panorámico de cristal.",
            "Nuestro enfoque: protección de pintura donde ocurren los impactos, recubrimiento cerámico para brillo y lavado fácil, y polarizado cerámico para mantener el calor afuera. Cada servicio usa patrones XPEL cortados para el Model Y."],
@@ -257,7 +257,7 @@ MODELS_ES = {
            "Sí. Un recubrimiento cerámico Fusion Plus va sobre pintura y film para un acabado uniforme, fácil de limpiar y de alto brillo."),
           ("¿Cuánto cuesta proteger un Model S en Miami?",
            "Depende de la cobertura. Llama al (786) 505-6162 y armamos un paquete según cómo usas el auto.")]),
-  "model-x": dict(name="Model X", img="cars/model-x/model-x-red-1", gallery=["cars/model-x/model-x-red-2","cars/model-x/model-x-red-3","cars/model-x/model-x-red-4","cars/model-x/model-x-red-5","cars/model-x/model-x-red-6"],
+  "model-x": dict(name="Model X", img="cars/model-x/model-x-red-studio", gallery=["cars/model-x/model-x-red-1","cars/model-x/model-x-red-2","cars/model-x/model-x-red-3","cars/model-x/model-x-red-4","cars/model-x/model-x-red-5","cars/model-x/model-x-red-6"],
     lead="Superficies grandes, puertas tipo halcón y un parabrisas panorámico. El Model X tiene más que proteger, y lo cubrimos todo con XPEL original.",
     intro=["El Model X tiene paneles grandes y puertas falcon-wing únicas, lo que significa más superficie pintada expuesta a picaduras y más bordes que envolver correctamente. Aquí es popular el PPF de cuerpo completo o frontal extendido, junto con polarizado cerámico para la gran área de vidrio y un recubrimiento cerámico para el brillo.",
            "Patrónamos el Model X con precisión, incluidos los bordes de las puertas que muchos instaladores apuran, y registramos cada instalación a tu VIN."],
