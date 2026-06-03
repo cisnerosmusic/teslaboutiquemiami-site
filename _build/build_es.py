@@ -181,7 +181,7 @@ PK = S.PKG
 
 # ---------- ES models content ----------
 MODELS_ES = {
-  "model-3": dict(name="Model 3", img="tesla-model-3-ppf-doral",
+  "model-3": dict(name="Model 3", img="model-3-grey-2", gallery=["model-3-detalle","model-3-grey","model-3-grey-3"],
     lead="El Model 3 es el Tesla que vive en la autopista, y por eso su frente recibe el mayor castigo. Así mantenemos un Model 3 de uso diario como nuevo en Miami.",
     intro=["Como el Tesla más manejado en el sur de Florida, el Model 3 acumula kilómetros de autopista rápido, y con ellos llegan las picaduras en el capó y el parachoques, más una cabina caliente bajo el sol de Miami. La solución es puntual: protección de pintura donde ocurren los impactos, polarizado cerámico para el calor, y un recubrimiento cerámico opcional para brillo y lavado fácil.",
            "Usamos patrones XPEL cortados para el Model 3, así la cobertura es precisa, sin bordes levantados, y cada instalación queda registrada a tu VIN."],
@@ -205,7 +205,7 @@ MODELS_ES = {
            "Sí. El Model 3 pasa casi toda su vida en la autopista, donde ocurren las picaduras, y su pintura de fábrica es delgada. El PPF frontal protege las zonas que reciben más impactos."),
           ("¿Pueden polarizar un Model 3 en Miami?",
            "Sí, con film cerámico XPEL Prime XR Plus que rechaza hasta el 98% del calor infrarrojo, una gran mejora de confort bajo el sol de Miami.")]),
-  "model-y": dict(name="Model Y", img="tesla-model-y-window-tinting",
+  "model-y": dict(name="Model Y", img="model-y-3", gallery=["model-y-1","model-y-2","model-y-detail-1"],
     lead="El Model Y es el Tesla que más protegemos. Así blindamos su pintura, su techo de cristal y su acabado contra las calles, el sol y el desgaste de reventa de Miami.",
     intro=["El Tesla Model Y vive en la I-95, el Palmetto y el Turnpike, justo donde la arena y la grava pican una capa transparente de fábrica blanda. Suma el UV implacable y el calor de la tarde, y un Model Y sin protección empieza a mostrar picaduras en el capó, remolinos en la pintura y una cabina caliente bajo el techo panorámico de cristal.",
            "Nuestro enfoque: protección de pintura donde ocurren los impactos, recubrimiento cerámico para brillo y lavado fácil, y polarizado cerámico para mantener el calor afuera. Cada servicio usa patrones XPEL cortados para el Model Y."],
@@ -233,7 +233,7 @@ MODELS_ES = {
           ("¿Usan film XPEL original en el Model Y?",
            "Siempre. Como distribuidor exclusivo XPEL instalamos solo film y recubrimientos XPEL originales, registrados al VIN de tu Model Y.")],
     combo=("tesla-model-y-ppf-miami.html", "Model Y PPF en Miami")),
-  "model-s": dict(name="Model S", img="tesla-model-s-ceramic-coating",
+  "model-s": dict(name="Model S", img="model-s-red-2", gallery=["model-s-detalle","model-s-detalle-2","model-s-red"],
     lead="El Model S es el buque insignia de Tesla, y merece protección de buque insignia. Film de cuerpo completo, cerámico y polarizado que mantienen impecable un sedán premium.",
     intro=["Quien tiene un Model S protege una inversión importante, así que la cobertura suele ir más a fondo: protección de pintura de cuerpo completo para mantener cada panel impecable, un recubrimiento cerámico Fusion Plus para un brillo líquido, y polarizado cerámico para confort y protección UV.",
            "Tratamos el Model S como el buque insignia que es, con bordes envueltos meticulosamente y materiales XPEL originales registrados a tu VIN."],
@@ -257,7 +257,7 @@ MODELS_ES = {
            "Sí. Un recubrimiento cerámico Fusion Plus va sobre pintura y film para un acabado uniforme, fácil de limpiar y de alto brillo."),
           ("¿Cuánto cuesta proteger un Model S en Miami?",
            "Depende de la cobertura. Llama al (786) 505-6162 y armamos un paquete según cómo usas el auto.")]),
-  "model-x": dict(name="Model X", img="tesla-model-x-full-body-ppf",
+  "model-x": dict(name="Model X", img="model-x-red-1", gallery=["model-x-red-2","model-x-red-3","model-x-red-4","model-x-red-5"],
     lead="Superficies grandes, puertas tipo halcón y un parabrisas panorámico. El Model X tiene más que proteger, y lo cubrimos todo con XPEL original.",
     intro=["El Model X tiene paneles grandes y puertas falcon-wing únicas, lo que significa más superficie pintada expuesta a picaduras y más bordes que envolver correctamente. Aquí es popular el PPF de cuerpo completo o frontal extendido, junto con polarizado cerámico para la gran área de vidrio y un recubrimiento cerámico para el brillo.",
            "Patrónamos el Model X con precisión, incluidos los bordes de las puertas que muchos instaladores apuran, y registramos cada instalación a tu VIN."],
@@ -281,7 +281,7 @@ MODELS_ES = {
            "En un SUV grande y premium que conserva valor, el film de cuerpo completo es una opción popular. Mantiene cada panel sin picaduras y protege la reventa."),
           ("¿Pueden polarizar el gran vidrio del Model X?",
            "Sí, con film cerámico XPEL Prime XR Plus para cortar el calor y el UV en toda la gran área de vidrio.")]),
-  "cybertruck": dict(name="Cybertruck", img="tesla-cybertruck-ppf-miami",
+  "cybertruck": dict(name="Cybertruck", img="cybertruck-1-black", gallery=["cybertruck-2-black","cybertruck-3-white","cybertruck-4-white","cybertruck-5-white","cybertruck-6-white","cybertruck-7-metallic","cybertruck-8-metallic","cybertruck-9-metallic","cybertruck-10-red","cybertruck-11-red","cybertruck-12-red"],
     lead="Acero inoxidable, no pintura. El Cybertruck necesita otro manual, y lo tenemos: PPF para proteger el acabado y PPF de color para de verdad cambiarlo.",
     intro=["El Cybertruck es distinto a cualquier otro Tesla porque su carrocería es acero inoxidable puro, no pintada. Eso lo cambia todo: no hay capa transparente que se pique, pero el inoxidable se raya, se mancha y muestra marcas finas. La protección de pintura sobre el inoxidable lo mantiene impecable y mucho más fácil de limpiar, mientras que el PPF de color es la forma de darle al Cybertruck color real con protección debajo.",
            "Cubrimos con film los grandes paneles planos del Cybertruck con XPEL original, incluidas opciones satinadas y stealth que combinan con su diseño angular."],
@@ -459,7 +459,8 @@ def build_model_es(slug, d):
               chip(esp+"projects/index.html", "Ver proyectos %s" % name)]
     rel = related_es(chips)
     cta = cta_es("Protege tu %s" % name, "Dinos tu color y cómo manejas, y te recomendamos la combinación correcta de PPF, polarizado y cerámico para tu %s." % name)
-    body = hero + intro_sec + svc + pk + sp + fq + rel + cta
+    gallery = model_gallery_es(rootp, name, d["gallery"]) if d.get("gallery") else ""
+    body = hero + intro_sec + gallery + svc + pk + sp + fq + rel + cta
     ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Modelos Tesla", DOMAIN+"/es/#models"), (name, "%s/es/models/%s.html" % (DOMAIN, slug))]), S.faq_ld(d["faqs"])]
     title = "Tesla %s: PPF, Cerámico y Polarizado en Miami | Tesla Boutique Miami" % name
     desc = "Protege tu Tesla %s en Miami y Doral: protección de pintura XPEL, recubrimiento cerámico y polarizado cerámico. Paquetes, proyectos y preguntas frecuentes. Llama al (786) 505-6162." % name
@@ -468,6 +469,18 @@ def build_model_es(slug, d):
 def product_badge_es(rootp, b):
     return ('<div class="product-badge"><span class="product-badge-label">Producto XPEL original</span>'
             '<img class="product-badge-logo" src="%sassets/img/%s" alt="%s"></div>' % (rootp, b["img"], b["alt"]))
+
+def model_gallery_es(rootp, name, names):
+    items = "".join(
+        ('<div class="gallery-item reveal"><picture>'
+         '<source srcset="%sassets/img/%s.avif" type="image/avif">'
+         '<source srcset="%sassets/img/%s.webp" type="image/webp">'
+         '<img src="%sassets/img/%s.webp" alt="Tesla %s protegido por Tesla Boutique Miami en Miami" width="700" height="525" decoding="async" loading="lazy">'
+         '</picture></div>') % (rootp, n, rootp, n, rootp, n, name) for n in names)
+    return ('<section class="section"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Galería %s</span>'
+            '<h2 class="section-title">Trabajos reales en %s</h2></div>'
+            '<div class="gallery-grid">%s</div></div></section>') % (name, name, items)
 
 def media_showcase_es(rootp, s):
     cap = '<figcaption>%s</figcaption>' % s["caption"] if s.get("caption") else ""
