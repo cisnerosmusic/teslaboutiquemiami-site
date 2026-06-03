@@ -627,27 +627,74 @@ def build_project_sample_es():
                   "Diseño de proyecto de muestra que enseña cómo Tesla Boutique Miami documenta cada instalación real: fotos, servicios, productos y tiempo de instalación.",
                   body, active="projects", preload="tesla-model-y-window-tinting", extra_ld=ld)
 
+POSTS_ES = {
+  "xpel-care-products": dict(
+    pill="XPEL", date="Junio 2026", crumb="Productos de cuidado XPEL", img="tesla-model-s-ceramic-coating",
+    title="Más allá del PPF: productos de cuidado XPEL | Tesla Boutique Miami",
+    desc="Los productos de cuidado XPEL que usamos y vendemos, de Detail Spray y Ceramic Boost a PPF Cleaner e Iron Remover, para mantener tu Tesla protegido entre visitas.",
+    h1='Más allá del <span class="highlight">PPF</span>: los productos XPEL que usamos y que tú también puedes usar',
+    card_title="Más allá del PPF: los productos XPEL que usamos y que tú también puedes usar",
+    blurb="Los productos de cuidado XPEL que usamos, vendemos y recomendamos, de Detail Spray y Ceramic Boost a PPF Cleaner e Iron Remover, para mantener tu Tesla como nuevo entre visitas.",
+    lead="En Tesla Boutique hablamos mucho de PPF, recubrimiento cerámico y protección de parabrisas, porque son la base de proteger un Tesla. Pero la protección no termina el día que sale del taller. XPEL fabrica una línea de productos de cuidado que usamos a diario en el shop y que tú puedes usar en casa para que tu Tesla se mantenga como el primer día. Aquí te contamos cuáles son y para qué sirve cada uno.",
+    cta_title="¿No sabes qué producto le va a tu Tesla?",
+    cta_desc="Dinos qué tienes instalado y te indicamos los productos de cuidado XPEL correctos.",
+    sections=[
+      ("Cuidado del día a día", [
+        "<strong>XPEL Detail Spray.</strong> Es nuestro producto de cabecera para el toque final. Limpia polvo ligero, huellas y manchas sin necesidad de lavar el carro completo, y deja un acabado sin marcas. Está formulado para ser seguro tanto sobre la pintura como sobre el PPF, así que no tienes que preocuparte por la zona protegida. También funciona como lubricante de arcilla durante la descontaminación. Un consejo de taller: bajo sol directo, rocía el producto sobre el paño de microfibra, no directamente sobre la superficie.",
+        "<strong>XPEL Ceramic Boost.</strong> Un spray con dióxido de silicio (SiO2) que repele agua, polvo y pelusa, y devuelve brillo después de cada lavado. Sirve para mantener un recubrimiento cerámico FUSION PLUS ya instalado, y también funciona por sí solo como capa de protección y brillo. Es la forma fácil de recargar el efecto hidrofóbico entre mantenimientos.",
+        "<strong>XPEL Wash Solution.</strong> Champú con pH balanceado para lavado a mano, seguro tanto para PPF como para recubrimientos cerámicos. Pensado para que el lavado de rutina no agreda las capas de protección."]),
+      ("Limpieza profunda y manchas", [
+        "<strong>XPEL PPF Cleaner.</strong> Limpiador específico para PPF. Elimina depósitos del ambiente como alquitrán, aceite, manchas de agua dura y ácidos de insectos, y devuelve al film su aspecto claro y recién instalado. Mantener limpio el PPF es lo que conserva su protección y su transparencia con el tiempo.",
+        "<strong>XPEL Water Spot Remover.</strong> Disuelve manchas de agua dura (las que dejan los aspersores y el agua de grifo) en segundos. Está formulado para usarse con seguridad sobre pintura, films XPEL y recubrimiento FUSION PLUS, atacando los depósitos minerales sin dañar las superficies. Modo de uso: agitar, rociar, dejar actuar 30 a 45 segundos y retirar con microfibra. No usar bajo sol directo.",
+        "<strong>XPEL Iron Remover (removedor de óxido de hierro).</strong> Fórmula especializada que ayuda a retirar las partículas de óxido de hierro que se incrustan en la pintura y en el PPF (vienen del polvo de frenos y del ambiente). Importante: tiene un olor fuerte, así que se usa en zona ventilada o al aire libre."]),
+      ("Interior y cristales", [
+        "<strong>XPEL Interior Cleaner.</strong> Limpia suciedad y manchas en distintas superficies interiores. No es para textiles, y conviene probar primero en una zona oculta. Se aplica a la microfibra, se limpia y se retira el exceso.",
+        "<strong>XPEL Anti-Static Window Tint Cleaner.</strong> Limpiador para cristales y laminado de control solar, formulado para no dañar el tinte."]),
+      ("¿Cuál necesitas?", [
+        'Todos estos productos los tenemos en el shop, los usamos en cada Tesla que pasa por nuestras manos y los vendemos a quien quiera mantener su carro en casa. Si no sabes cuál necesitas para tu caso, pregúntanos: te decimos exactamente qué usar según lo que tengas instalado en tu Tesla. Para fichas técnicas oficiales, la fuente es <a href="https://www.xpel.com" target="_blank" rel="noopener">xpel.com</a>.']),
+    ],
+  ),
+}
+
+def build_post_es(slug, d):
+    path = "news/%s.html" % slug; esp, rootp = esp_root(path)
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Updates", esp+"news/index.html"), (d["crumb"], "")])
+    hero = S.page_hero(rootp, d["img"], d["h1"], d["lead"], "", crumbs)
+    inner = '<span class="post-date">Publicado &middot; %s</span>' % d["date"]
+    for h2, paras in d["sections"]:
+        bi = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
+        inner += "<h2>%s</h2>%s" % (h2, bi)
+    prose = '<section class="section"><div class="container"><div class="prose">%s</div></div></section>' % inner
+    cta = cta_es(d["cta_title"], d["cta_desc"])
+    body = hero + prose + cta
+    post_ld = json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": d["card_title"],
+        "description": d["desc"], "datePublished": "2026-06-03", "dateModified": "2026-06-03", "inLanguage": "es",
+        "author": {"@type": "Organization", "name": "Tesla Boutique Miami"},
+        "publisher": {"@type": "Organization", "name": "Tesla Boutique Miami", "url": DOMAIN+"/"},
+        "image": "%s/assets/img/%s.webp" % (DOMAIN, d["img"]),
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "%s/es/news/%s.html" % (DOMAIN, slug)}}, ensure_ascii=False)
+    ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Updates", DOMAIN+"/es/news/index.html"), (d["crumb"], "%s/es/news/%s.html" % (DOMAIN, slug))]), post_ld]
+    return doc_es(path, d["title"], d["desc"], body, active="news", preload=d["img"], extra_ld=ld)
+
 def build_news_es():
     path = "news/index.html"; esp, rootp = esp_root(path)
     crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Updates", "")])
     hero = S.page_hero(rootp, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
         "Noticias y recursos de Tesla Boutique Miami: proyectos nuevos, novedades de productos XPEL y consejos prácticos para cuidar el film, el recubrimiento y el polarizado de tu Tesla. Actualizado seguido.", "", crumbs)
     posts = [
-        ("Tesla", "¿Cuándo poner PPF tras comprar un Tesla?", "La respuesta corta: antes del primer viaje largo. Aquí explicamos por qué proteger la pintura de fábrica importa más."),
         ("Mantenimiento", "Cuidar tu PPF y cerámico en Miami", "Hábitos simples de lavado que mantienen el film XPEL y el cerámico Fusion Plus rindiendo por años bajo el calor de Florida."),
         ("XPEL", "Ultimate Plus vs Stealth: ¿qué acabado de PPF es para ti?", "¿Brillante o satinado? Una guía rápida para elegir el acabado de film XPEL que le va a tu Tesla."),
+        ("Tesla", "¿Cuándo poner PPF tras comprar un Tesla?", "La respuesta corta: antes del primer viaje largo. Aquí explicamos por qué proteger la pintura de fábrica importa más."),
         ("Mantenimiento", "Quitar manchas de agua del vidrio y la pintura", "Qué causa las manchas de agua dura en el sur de Florida y cómo quitarlas con seguridad sin dañar tu acabado."),
     ]
     cards = ""
-    for i, (pill, h3, p) in enumerate(posts):
-        if i == 0:
-            meta = '<span class="post-date">Publicado &middot; Mayo 2026</span>'
-            link = '<a class="card-link" href="#">Leer artículo &rarr;</a>'
-        else:
-            meta = ''
-            link = '<span class="card-link">Próximamente</span>'
-        cards += ('<div class="project-tile reveal"><div class="project-tile-body"><div class="tag-row"><span class="pill">%s</span></div>%s'
-                  '<h3>%s</h3><p>%s</p>%s</div></div>') % (pill, meta, h3, p, link)
+    for slug, d in POSTS_ES.items():
+        cards += ('<div class="project-tile reveal"><div class="project-tile-body"><div class="tag-row"><span class="pill">%s</span></div>'
+                  '<span class="post-date">Publicado &middot; %s</span><h3>%s</h3><p>%s</p>'
+                  '<a class="card-link" href="%s.html">Leer artículo &rarr;</a></div></div>') % (d["pill"], d["date"], d["card_title"], d["blurb"], slug)
+    for pill, h3, p in posts:
+        cards += ('<div class="project-tile reveal"><div class="project-tile-body"><div class="tag-row"><span class="pill">%s</span></div>'
+                  '<h3>%s</h3><p>%s</p><span class="card-link">Próximamente</span></div></div>') % (pill, h3, p)
     grid = ('<section class="section"><div class="container"><div class="section-header">'
             '<span class="section-tag">Tesla Boutique News</span><h2 class="section-title">Últimas novedades</h2>'
             '<p class="section-desc">Un adelanto de los temas que cubriremos. Publicamos entradas nuevas a medida que llegan proyectos y productos.</p></div>'
@@ -670,6 +717,8 @@ def main():
     pages["projects/index.html"] = build_projects_index_es()
     pages["projects/sample-tesla-model-y-full-front-ppf.html"] = build_project_sample_es()
     pages["news/index.html"] = build_news_es()
+    for slug, d in POSTS_ES.items():
+        pages["news/%s.html" % slug] = build_post_es(slug, d)
     for path, html in pages.items():
         full = os.path.join(ROOT, "es", path)
         os.makedirs(os.path.dirname(full), exist_ok=True)

@@ -823,28 +823,77 @@ def build_project_sample():
                "Sample project layout showing how Tesla Boutique Miami documents each real install: photos, services, products and install time.",
                body, active="projects", preload="tesla-model-y-window-tinting", extra_ld=ld)
 
+POSTS = {
+  "xpel-care-products": {
+    "pill": "XPEL", "date": "June 2026", "crumb": "XPEL care products", "img": "tesla-model-s-ceramic-coating",
+    "title": "Beyond PPF: XPEL Tesla Care Products We Use | Tesla Boutique Miami",
+    "desc": "The XPEL care products we use and sell, from Detail Spray and Ceramic Boost to PPF Cleaner and Iron Remover, to keep your Tesla protected between shop visits.",
+    "h1": 'Beyond <span class="highlight">PPF</span>: the XPEL care products we use, and that you can use too',
+    "card_title": "Beyond PPF: the XPEL care products we use, and that you can use too",
+    "blurb": "The XPEL care products we use, sell and recommend, from Detail Spray and Ceramic Boost to PPF Cleaner and Iron Remover, to keep your Tesla looking new between visits.",
+    "lead": "At Tesla Boutique we talk a lot about PPF, ceramic coating and windshield protection, because they are the foundation of protecting a Tesla. But protection does not end the day your car leaves the shop. XPEL also makes a line of care products we use every day in the shop, and that you can use at home to keep your Tesla looking like new. Here is what they are and what each one does.",
+    "cta_title": "Not sure which product fits your Tesla?",
+    "cta_desc": "Tell us what is installed on your car and we will point you to the right XPEL care products.",
+    "sections": [
+      ("Everyday care", [
+        "<strong>XPEL Detail Spray.</strong> Our go-to for the final touch. It removes light dust, fingerprints and smudges without washing the whole car, leaving a streak-free finish. It is formulated to be safe on both paint and PPF, so the protected areas are covered too. It also works as a clay lubricant during decontamination. Shop tip: in direct sunlight, mist it onto the microfiber towel, not directly on the surface.",
+        "<strong>XPEL Ceramic Boost.</strong> A silicon dioxide (SiO2) spray that repels water, dust and lint and restores gloss after every wash. It maintains an installed FUSION PLUS ceramic coating, and also works on its own as a layer of protection and shine. It is the easy way to top up the hydrophobic effect between detailing sessions.",
+        "<strong>XPEL Wash Solution.</strong> A pH-balanced shampoo for hand washing, safe for both PPF and ceramic coatings. Made so routine washing does not attack your protection layers."]),
+      ("Deep cleaning and spots", [
+        "<strong>XPEL PPF Cleaner.</strong> A cleaner made specifically for PPF. It removes environmental deposits like tar, oil, hard water stains and bug acids, and restores the film's clear, freshly installed look. Keeping PPF clean is what preserves its protection and clarity over time.",
+        "<strong>XPEL Water Spot Remover.</strong> Dissolves hard water spots (the kind left by sprinklers and tap water) in seconds. It is formulated to be safe on paint, XPEL films and FUSION PLUS coating, targeting mineral deposits without harming the surfaces. How to use: shake, spray, let it sit 30 to 45 seconds, then wipe with microfiber. Do not use in direct sunlight.",
+        "<strong>XPEL Iron Remover.</strong> A specialized formula that helps lift iron oxide particles embedded in the paint and the PPF (they come from brake dust and the environment). Note: it has a strong scent, so use it in a well ventilated area or outdoors."]),
+      ("Interior and glass", [
+        "<strong>XPEL Interior Cleaner.</strong> Removes dirt and stains from various interior surfaces. Not for fabrics, and best tested on a hidden area first. Apply to the microfiber, clean, and wipe off the excess.",
+        "<strong>XPEL Anti-Static Window Tint Cleaner.</strong> A cleaner for glass and window film, formulated so it will not damage the tint."]),
+      ("Which one do you need?", [
+        'We keep all of these in the shop, we use them on every Tesla that comes through our hands, and we sell them to anyone who wants to maintain their car at home. If you are not sure which one you need, ask us: we will tell you exactly what to use based on what is installed on your Tesla. For official spec sheets, the source is <a href="https://www.xpel.com" target="_blank" rel="noopener">xpel.com</a>.']),
+    ],
+  },
+}
+
+def build_post(slug, d):
+    prefix = "../"
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Updates", prefix + "news/index.html"), (d["crumb"], "")])
+    hero = page_hero(prefix, d["img"], d["h1"], d["lead"], "", crumbs)
+    inner = f'<span class="post-date">Published &middot; {d["date"]}</span>'
+    for h2, paras in d["sections"]:
+        bi = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
+        inner += f'<h2>{h2}</h2>{bi}'
+    prose = f'<section class="section"><div class="container"><div class="prose">{inner}</div></div></section>'
+    cta = cta_block(d["cta_title"], d["cta_desc"])
+    body = hero + prose + cta
+    post_ld = json.dumps({"@context": "https://schema.org", "@type": "BlogPosting", "headline": d["card_title"],
+        "description": d["desc"], "datePublished": "2026-06-03", "dateModified": "2026-06-03", "inLanguage": "en",
+        "author": {"@type": "Organization", "name": "Tesla Boutique Miami"},
+        "publisher": {"@type": "Organization", "name": "Tesla Boutique Miami", "url": DOMAIN + "/"},
+        "image": f"{DOMAIN}/assets/img/{d['img']}.webp",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{DOMAIN}/news/{slug}.html"}}, ensure_ascii=False)
+    ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Updates", DOMAIN + "/news/index.html"), (d["crumb"], f"{DOMAIN}/news/{slug}.html")]), post_ld]
+    return doc(f"news/{slug}.html", d["title"], d["desc"], body, active="news", preload=d["img"], extra_ld=ld)
+
 def build_news():
     prefix = "../"
     crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Updates", "")])
     hero = page_hero(prefix, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
         "News and resources from Tesla Boutique Miami: fresh projects, XPEL product updates, and practical tips on caring for your Tesla's film, coating and tint. Updated regularly.", "", crumbs)
     posts = [
-        ("Tesla", "How soon after buying a Tesla should you get PPF?", "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most."),
         ("Maintenance", "Caring for your PPF and ceramic coating in Miami", "Simple wash habits that keep XPEL film and Fusion Plus coating performing for years in the Florida heat."),
         ("XPEL", "Ultimate Plus vs Stealth: which PPF finish is right for you?", "Gloss or satin? A quick guide to choosing the XPEL film finish that suits your Tesla."),
+        ("Tesla", "How soon after buying a Tesla should you get PPF?", "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most."),
         ("Maintenance", "Removing water spots from glass and paint", "What causes hard-water spotting in South Florida and how to remove it safely without damaging your finish."),
     ]
     cards = ""
-    for i, (pill, h3, p) in enumerate(posts):
-        if i == 0:
-            meta = '<span class="post-date">Published &middot; May 2026</span>'
-            link = '<a class="card-link" href="#">Read article &rarr;</a>'
-        else:
-            meta = ''
-            link = '<span class="card-link">Coming soon</span>'
+    for slug, d in POSTS.items():
         cards += (f'<div class="project-tile reveal"><div class="project-tile-body">'
-                  f'<div class="tag-row"><span class="pill">{pill}</span></div>{meta}'
-                  f'<h3>{h3}</h3><p>{p}</p>{link}</div></div>')
+                  f'<div class="tag-row"><span class="pill">{d["pill"]}</span></div>'
+                  f'<span class="post-date">Published &middot; {d["date"]}</span>'
+                  f'<h3>{d["card_title"]}</h3><p>{d["blurb"]}</p>'
+                  f'<a class="card-link" href="{slug}.html">Read article &rarr;</a></div></div>')
+    for pill, h3, p in posts:
+        cards += (f'<div class="project-tile reveal"><div class="project-tile-body">'
+                  f'<div class="tag-row"><span class="pill">{pill}</span></div>'
+                  f'<h3>{h3}</h3><p>{p}</p><span class="card-link">Coming soon</span></div></div>')
     grid = (f'<section class="section"><div class="container">'
             f'<div class="section-header"><span class="section-tag">Tesla Boutique News</span>'
             f'<h2 class="section-title">Latest updates</h2>'
@@ -982,6 +1031,8 @@ def main():
     pages["projects/index.html"] = build_projects_index()
     pages["projects/sample-tesla-model-y-full-front-ppf.html"] = build_project_sample()
     pages["news/index.html"] = build_news()
+    for slug, d in POSTS.items():
+        pages[f"news/{slug}.html"] = build_post(slug, d)
     for path, html in pages.items():
         full = os.path.join(ROOT, path)
         os.makedirs(os.path.dirname(full), exist_ok=True)

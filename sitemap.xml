@@ -257,6 +257,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://teslaboutiquemiami.com/news/xpel-care-products.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/news/xpel-care-products.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/news/xpel-care-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/news/xpel-care-products.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/news/xpel-care-products.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/news/xpel-care-products.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/news/xpel-care-products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/news/xpel-care-products.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://teslaboutiquemiami.com/legal.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
