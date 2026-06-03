@@ -181,7 +181,7 @@ PK = S.PKG
 
 # ---------- ES models content ----------
 MODELS_ES = {
-  "model-3": dict(name="Model 3", img="cars/model-3/model-3-grey-2", gallery=["cars/model-3/model-3-detalle","cars/model-3/model-3-grey","cars/model-3/model-3-grey-3"],
+  "model-3": dict(name="Model 3", img="cars/model-3/model-3-grey-2", gallery=["cars/model-3/model-3-detalle","cars/model-3/model-3-grey","cars/model-3/model-3-grey-3","cars/model-3/model-3-grey-4","cars/model-3/model-3-grey-5","cars/model-3/model-3-grey-6"],
     lead="El Model 3 es el Tesla que vive en la autopista, y por eso su frente recibe el mayor castigo. Así mantenemos un Model 3 de uso diario como nuevo en Miami.",
     intro=["Como el Tesla más manejado en el sur de Florida, el Model 3 acumula kilómetros de autopista rápido, y con ellos llegan las picaduras en el capó y el parachoques, más una cabina caliente bajo el sol de Miami. La solución es puntual: protección de pintura donde ocurren los impactos, polarizado cerámico para el calor, y un recubrimiento cerámico opcional para brillo y lavado fácil.",
            "Usamos patrones XPEL cortados para el Model 3, así la cobertura es precisa, sin bordes levantados, y cada instalación queda registrada a tu VIN."],

@@ -314,7 +314,7 @@ PKG = lambda badge, name, price, items, featured=False: {
 MODELS = {
   "model-3": {
     "name": "Model 3", "img": "cars/model-3/model-3-grey-2", "card": "tesla-model-3-ppf-doral",
-    "gallery": ["cars/model-3/model-3-detalle", "cars/model-3/model-3-grey", "cars/model-3/model-3-grey-3"],
+    "gallery": ["cars/model-3/model-3-detalle", "cars/model-3/model-3-grey", "cars/model-3/model-3-grey-3", "cars/model-3/model-3-grey-4", "cars/model-3/model-3-grey-5", "cars/model-3/model-3-grey-6"],
     "lead": "The Model 3 is the Tesla that lives on the highway, which is exactly why its front end takes the most punishment. Here is how we keep a daily-driven Model 3 looking new in Miami.",
     "intro": ["As the most-driven Tesla on South Florida roads, the Model 3 racks up highway miles fast, and with them come rock chips on the hood and bumper plus a hot cabin under the Miami sun. The fix is targeted: paint protection film where impacts happen, ceramic window tint for heat, and an optional ceramic coating for gloss and easy washing.",
               "We use model-specific XPEL patterns cut for the Model 3, so coverage is precise with no lifted edges, and every install is registered to your VIN."],
