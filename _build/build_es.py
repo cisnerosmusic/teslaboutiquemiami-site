@@ -475,8 +475,8 @@ def model_gallery_es(rootp, name, names):
         ('<div class="gallery-item reveal"><picture>'
          '<source srcset="%sassets/img/%s.avif" type="image/avif">'
          '<source srcset="%sassets/img/%s.webp" type="image/webp">'
-         '<img src="%sassets/img/%s.webp" alt="Tesla %s protegido por Tesla Boutique Miami en Miami" width="700" height="525" decoding="async" loading="lazy">'
-         '</picture></div>') % (rootp, n, rootp, n, rootp, n, name) for n in names)
+         '<img src="%sassets/img/%s.webp" alt="%s" width="700" height="525" decoding="async" loading="lazy">'
+         '</picture></div>') % (rootp, n, rootp, n, rootp, n, S.img_alt(n, "es")) for n in names)
     return ('<section class="section"><div class="container">'
             '<div class="section-header"><span class="section-tag">Galería %s</span>'
             '<h2 class="section-title">Trabajos reales en %s</h2></div>'

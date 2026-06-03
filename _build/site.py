@@ -147,6 +147,45 @@ def breadcrumbs_html(prefix, items):
             lis.append(f'<li aria-current="page">{label}</li>')
     return (f'<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>{"".join(lis)}</ol></nav>')
 
+def img_alt(name, lang="en"):
+    """Unique, SEO-friendly alt text derived from a car-photo basename (EN/ES)."""
+    b = name.split("/")[-1]
+    if "cybertruck" in b: model = "Cybertruck"
+    elif "model-3" in b: model = "Model 3"
+    elif "model-s" in b: model = "Model S"
+    elif "model-x" in b: model = "Model X"
+    elif "model-y" in b: model = "Model Y"
+    else: model = "Tesla"
+    detail = ("detalle" in b) or ("detail" in b)
+    colEn = colEs = None
+    for t, en, es in [("red","red","rojo"),("white","white","blanco"),("black","black","negro"),
+                      ("metallic","metallic gray","gris metálico"),("grey","gray","gris"),("gray","gray","gris"),("blue","blue","azul")]:
+        if t in b:
+            colEn, colEs = en, es; break
+    svcEn = svcEs = None
+    if "window-tint" in b: svcEn, svcEs = "XPEL ceramic window tint", "polarizado cerámico XPEL"
+    elif "ceramic" in b: svcEn, svcEs = "XPEL ceramic coating", "recubrimiento cerámico XPEL"
+    elif "ppf" in b: svcEn, svcEs = "XPEL paint protection film (PPF)", "film de protección de pintura XPEL (PPF)"
+    runs = []; cur = ""
+    for ch in b:
+        if ch.isdigit(): cur += ch
+        elif cur: runs.append(cur); cur = ""
+    if cur: runs.append(cur)
+    idx = int(runs[-1]) if runs else len(b)
+    techEn = ["XPEL paint protection film (PPF)", "self-healing XPEL PPF", "XPEL clear bra film", "genuine XPEL paint protection"]
+    techEs = ["film de protección de pintura XPEL (PPF)", "PPF XPEL autorreparable", "film clear bra XPEL", "protección de pintura XPEL original"]
+    loc = ["Doral, Miami", "Miami-Dade, FL", "Miami, FL"]
+    tEn = svcEn or techEn[idx % len(techEn)]
+    tEs = svcEs or techEs[idx % len(techEs)]
+    L = loc[idx % len(loc)]
+    if lang == "es":
+        if detail: return f"Primer plano del {tEs} en un Tesla {model} en {L}"
+        if colEs: return f"Tesla {model} en {colEs} con {tEs} en {L}"
+        return f"Tesla {model} con {tEs} en {L}"
+    if detail: return f"Close-up of {tEn} on a Tesla {model} in {L}"
+    if colEn: return f"Tesla {model} in {colEn} with {tEn} in {L}"
+    return f"Tesla {model} with {tEn} in {L}"
+
 def product_badge(prefix, b):
     return (f'<div class="product-badge"><span class="product-badge-label">Genuine XPEL product</span>'
             f'<img class="product-badge-logo" src="{prefix}assets/img/{b["img"]}" alt="{b["alt"]}"></div>')
@@ -156,7 +195,7 @@ def model_gallery(prefix, name, names):
         f'<div class="gallery-item reveal"><picture>'
         f'<source srcset="{prefix}assets/img/{n}.avif" type="image/avif">'
         f'<source srcset="{prefix}assets/img/{n}.webp" type="image/webp">'
-        f'<img src="{prefix}assets/img/{n}.webp" alt="Tesla {name} protected by Tesla Boutique Miami in Miami" width="700" height="525" decoding="async" loading="lazy">'
+        f'<img src="{prefix}assets/img/{n}.webp" alt="{img_alt(n, "en")}" width="700" height="525" decoding="async" loading="lazy">'
         f'</picture></div>' for n in names)
     return (f'<section class="section"><div class="container">'
             f'<div class="section-header"><span class="section-tag">{name} gallery</span>'
@@ -842,7 +881,7 @@ def build_home():
     mcards = ""
     for s, l in MODELS_NAV:
         d = MODELS[s]
-        mcards += (f'<a class="model-card reveal" href="models/{s}.html">{pic(prefix, d.get("card", d["img"]), f"Tesla {l} protection in Miami", 700, 525)}'
+        mcards += (f'<a class="model-card reveal" href="models/{s}.html">{pic(prefix, d.get("card", d["img"]), img_alt(d.get("card", d["img"]), "en"), 700, 525)}'
                    f'<div class="model-card-overlay"><h3>{l}</h3><span>PPF &middot; Tint &middot; Ceramic</span></div></a>')
     models_sec = (f'<section class="section" id="models"><div class="container">'
                   f'<div class="section-header"><span class="section-tag">Start with your Tesla</span>'
@@ -873,7 +912,7 @@ def build_home():
              "cars/model-x/model-x-red-2", "tesla-cybertruck-ppf-miami"]
     galleries = ""
     for i, g in enumerate(gimgs):
-        inner = pic(prefix, g, "Recent Tesla project in Miami and Doral", 700, 525)
+        inner = pic(prefix, g, img_alt(g, "en"), 700, 525)
         if i == 0:
             galleries += f'<a class="gallery-item reveal" href="projects/sample-tesla-model-y-full-front-ppf.html">{inner}</a>'
         else:
