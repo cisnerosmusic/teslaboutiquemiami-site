@@ -233,7 +233,7 @@ MODELS_ES = {
           ("¿Usan film XPEL original en el Model Y?",
            "Siempre. Como distribuidor exclusivo XPEL instalamos solo film y recubrimientos XPEL originales, registrados al VIN de tu Model Y.")],
     combo=("tesla-model-y-ppf-miami.html", "Model Y PPF en Miami")),
-  "model-s": dict(name="Model S", img="cars/model-s/model-s-red-2", gallery=["cars/model-s/model-s-detalle","cars/model-s/model-s-detalle-2","cars/model-s/model-s-red","cars/model-s/model-s-blue-1","cars/model-s/model-s-blue-2","cars/model-s/model-s-blue-3","cars/model-s/model-s-blue-4"],
+  "model-s": dict(name="Model S", img="cars/model-s/model-s-blue-studio", gallery=["cars/model-s/model-s-red-2","cars/model-s/model-s-detalle","cars/model-s/model-s-detalle-2","cars/model-s/model-s-red","cars/model-s/model-s-blue-1","cars/model-s/model-s-blue-2","cars/model-s/model-s-blue-3","cars/model-s/model-s-blue-4"],
     lead="El Model S es el buque insignia de Tesla, y merece protección de buque insignia. Film de cuerpo completo, cerámico y polarizado que mantienen impecable un sedán premium.",
     intro=["Quien tiene un Model S protege una inversión importante, así que la cobertura suele ir más a fondo: protección de pintura de cuerpo completo para mantener cada panel impecable, un recubrimiento cerámico Fusion Plus para un brillo líquido, y polarizado cerámico para confort y protección UV.",
            "Tratamos el Model S como el buque insignia que es, con bordes envueltos meticulosamente y materiales XPEL originales registrados a tu VIN."],
