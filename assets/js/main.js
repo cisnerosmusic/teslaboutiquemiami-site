@@ -65,3 +65,41 @@
     }
   }
 })();
+
+/* ========== CONTACT FORM ========== */
+document.querySelectorAll('.cform').forEach(function (form) {
+    var tsField = form.querySelector('input[name="ts"]');
+    if (tsField) tsField.value = Date.now();
+
+    form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var btn = form.querySelector('.cform-btn');
+        var ok = form.querySelector('.cform-ok');
+        var err = form.querySelector('.cform-err');
+        ok.hidden = true;
+        err.hidden = true;
+
+        var phone = form.querySelector('input[name="phone"]').value.trim();
+        var email = form.querySelector('input[name="email"]').value.trim();
+        if (!phone && !email) {
+            err.hidden = false;
+            return;
+        }
+
+        btn.disabled = true;
+        var datos = new URLSearchParams(new FormData(form));
+        fetch(form.action, { method: 'POST', body: datos })
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                if (d && d.ok) {
+                    form.reset();
+                    if (tsField) tsField.value = Date.now();
+                    ok.hidden = false;
+                } else {
+                    err.hidden = false;
+                }
+            })
+            .catch(function () { err.hidden = false; })
+            .finally(function () { btn.disabled = false; });
+    });
+});

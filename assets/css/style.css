@@ -480,3 +480,63 @@ img { max-width: 100%; height: auto; display: block; }
 /* a11y: in-text links distinguishable beyond color; pill contrast on tinted bg */
 .prose a:not(.btn), .section-desc a { text-decoration: underline; text-underline-offset: 2px; }
 .pill { color: #93a2ec; }
+
+/* ========== CONTACT FORM ========== */
+.cform-wrap {
+    max-width: 720px;
+    margin: 48px auto 0;
+    padding: 32px 28px;
+    background: var(--black-light);
+    border: 1px solid var(--gray-dark);
+    border-radius: 16px;
+    text-align: left;
+}
+.cform-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 4px; }
+.cform-sub { color: var(--gray-light); font-size: 0.95rem; margin-bottom: 24px; }
+.cform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.cform-field { display: flex; flex-direction: column; gap: 6px; }
+.cform-field > span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray-light);
+}
+.cform-field input,
+.cform-field select,
+.cform-field textarea {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--black-lighter);
+    border: 1px solid var(--gray-dark);
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    width: 100%;
+}
+.cform-field select { appearance: none; -webkit-appearance: none; cursor: pointer; }
+.cform-field textarea { resize: vertical; min-height: 110px; }
+.cform-field input:focus,
+.cform-field select:focus,
+.cform-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.cform-full { grid-column: 1 / -1; }
+.cform-note { color: var(--gray); font-size: 0.85rem; margin: 14px 0 18px; }
+.cform-btn { width: 100%; justify-content: center; }
+.cform-btn:disabled { opacity: 0.6; cursor: wait; }
+.cform-msg { margin-top: 16px; font-size: 0.95rem; padding: 12px 14px; border-radius: 10px; }
+.cform-ok { background: rgba(22, 167, 102, 0.12); border: 1px solid rgba(22, 167, 102, 0.4); color: #7be0b4; }
+.cform-err { background: rgba(217, 72, 72, 0.10); border: 1px solid rgba(217, 72, 72, 0.4); color: #f0a2a2; }
+.cform-hp { position: absolute; left: -9999px; top: -9999px; height: 0; overflow: hidden; }
+@media (max-width: 640px) {
+    .cform-wrap { padding: 24px 18px; }
+    .cform-grid { grid-template-columns: 1fr; }
+}

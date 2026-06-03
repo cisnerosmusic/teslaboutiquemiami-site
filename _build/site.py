@@ -939,6 +939,31 @@ def build_news():
                "Updates from Tesla Boutique Miami: new projects, XPEL product news and practical tips for caring for your Tesla's PPF, ceramic coating and tint.",
                body, active="news", preload="tesla-model-s-ceramic-coating", extra_ld=ld)
 
+CONTACT_FORM_EN = '''<div class="cform-wrap">
+  <h3 class="cform-title">Or send us the details</h3>
+  <p class="cform-sub">Tell us about your Tesla and we will get back to you.</p>
+  <form class="cform" action="https://script.google.com/macros/s/AKfycbwxH5z4fadzu_YAI_FFUNs7oHej3mgeVG67v6A2-Ds1ZjqhBY8AN0qxv4hvWs9GRWXV/exec" method="POST" novalidate>
+    <input type="hidden" name="lang" value="en">
+    <input type="hidden" name="page" value="home-en">
+    <input type="hidden" name="ts" value="">
+    <div class="cform-hp" aria-hidden="true">
+      <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+    </div>
+    <div class="cform-grid">
+      <label class="cform-field"><span>Name *</span><input type="text" name="name" required autocomplete="name"></label>
+      <label class="cform-field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
+      <label class="cform-field"><span>Email</span><input type="email" name="email" autocomplete="email" inputmode="email"></label>
+      <label class="cform-field"><span>Tesla model</span><select name="model"><option value="">Select your model</option><option>Model 3</option><option>Model Y</option><option>Model S</option><option>Model X</option><option>Cybertruck</option><option>Other</option></select></label>
+      <label class="cform-field cform-full"><span>Service you are interested in</span><select name="service"><option value="">Select a service</option><option>Paint Protection Film (PPF)</option><option>Colored PPF</option><option>Ceramic Coating</option><option>Window Tint</option><option>Windshield Protection</option><option>Paint Correction</option><option>Not sure yet</option></select></label>
+      <label class="cform-field cform-full"><span>Message</span><textarea name="message" rows="4" placeholder="Color, year, what you have in mind..."></textarea></label>
+    </div>
+    <p class="cform-note">Provide at least a phone number or an email so we can reach you.</p>
+    <button type="submit" class="btn btn-primary btn-lg cform-btn">Send inquiry</button>
+    <p class="cform-msg cform-ok" hidden>Thank you! We received your inquiry and will contact you shortly.</p>
+    <p class="cform-msg cform-err" hidden>Something went wrong. Please call us at (786) 505-6162 and we will take care of you.</p>
+  </form>
+</div>'''
+
 def build_home():
     prefix = ""
     hero = (f'<section class="hero"><div class="hero-bg"><div class="hero-bg-image" style="{bg_style(prefix, "model-s")}"></div></div>'
@@ -1021,6 +1046,7 @@ def build_home():
                f'<p class="cta-desc">Tell us your model and what you are after, and we will guide you to the right PPF, tint or ceramic package. Booking is currently handled through our parent shop, Unlimited Wraps.</p>'
                f'<div class="cta-buttons"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">{phone_svg} {PHONE_DISP}</a>'
                f'<a href="https://www.unlimitedwraps.com/contact-us" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Book via Unlimited Wraps</a></div>'
+               f'{CONTACT_FORM_EN}'
                f'<div class="cta-contact-info">'
                f'<div class="cta-contact-item">{pin_svg}<span>1835 NW 79th Ave, Doral, FL 33126</span></div>'
                f'<div class="cta-contact-item">{clock_svg}<span>Mon to Fri: 9AM to 5:30PM</span></div>'
