@@ -850,6 +850,36 @@ POSTS = {
         'We keep all of these in the shop, we use them on every Tesla that comes through our hands, and we sell them to anyone who wants to maintain their car at home. If you are not sure which one you need, ask us: we will tell you exactly what to use based on what is installed on your Tesla. For official spec sheets, the source is <a href="https://www.xpel.com" target="_blank" rel="noopener">xpel.com</a>.']),
     ],
   },
+  "when-to-get-ppf-new-tesla": {
+    "pill": "Tesla", "date": "June 2026", "crumb": "When to get PPF", "img": "tesla-model-3-ppf-doral",
+    "title": "How Soon Should You Get PPF on a New Tesla? | Tesla Boutique",
+    "desc": "The short answer: before the first long drive. Why factory-fresh paint is the best canvas for PPF, and why waiting costs more in Miami.",
+    "h1": 'How soon after buying a Tesla should you get <span class="highlight">PPF</span>?',
+    "card_title": "How soon after buying a Tesla should you get PPF?",
+    "blurb": "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most.",
+    "lead": "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most.",
+    "cta_title": "Getting a new Tesla?",
+    "cta_desc": "Tell us your delivery date and we will have genuine XPEL PPF ready the day it arrives."},
+  "ultimate-plus-vs-stealth": {
+    "pill": "XPEL", "date": "June 2026", "crumb": "Ultimate Plus vs Stealth", "img": "tesla-cybertruck-ppf-miami",
+    "title": "Ultimate Plus vs Stealth: Which PPF Finish for Your Tesla?",
+    "desc": "Gloss or satin? Same XPEL protection, two very different looks. A quick guide to choosing between Ultimate Plus and Stealth for your Tesla.",
+    "h1": 'Ultimate Plus vs Stealth: which <span class="highlight">PPF</span> finish is right for you?',
+    "card_title": "Ultimate Plus vs Stealth: which PPF finish is right for you?",
+    "blurb": "Gloss or satin? A quick guide to choosing the XPEL film finish that suits your Tesla.",
+    "lead": "Gloss or satin? A quick guide to choosing the XPEL film finish that suits your Tesla.",
+    "cta_title": "Want to see satin next to gloss?",
+    "cta_desc": "We keep both finishes on hand at the Doral shop. Come compare them in person."},
+  "ppf-ceramic-care-miami": {
+    "pill": "Maintenance", "date": "June 2026", "crumb": "Caring for PPF and ceramic", "img": "tesla-model-s-ceramic-coating",
+    "title": "Caring for PPF &amp; Ceramic Coating in Miami | Tesla Boutique",
+    "desc": "Simple wash habits that keep XPEL film and Fusion Plus ceramic performing for years in the Florida heat, from a Tesla-only shop in Doral.",
+    "h1": 'Caring for your <span class="highlight">PPF</span> and ceramic coating in Miami',
+    "card_title": "Caring for your PPF and ceramic coating in Miami",
+    "blurb": "Simple wash habits that keep XPEL film and Fusion Plus coating performing for years in the Florida heat.",
+    "lead": "Simple wash habits that keep XPEL film and Fusion Plus coating performing for years in the Florida heat.",
+    "cta_title": "Not sure how to care for your setup?",
+    "cta_desc": "Call us and tell us what your Tesla is wearing. We will tell you exactly how to care for it."},
 }
 
 def build_post(slug, d):
@@ -857,9 +887,13 @@ def build_post(slug, d):
     crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Updates", prefix + "news/index.html"), (d["crumb"], "")])
     hero = page_hero(prefix, d["img"], d["h1"], d["lead"], "", crumbs)
     inner = f'<span class="post-date">Published &middot; {d["date"]}</span>'
-    for h2, paras in d["sections"]:
-        bi = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
-        inner += f'<h2>{h2}</h2>{bi}'
+    if d.get("sections"):
+        for h2, paras in d["sections"]:
+            bi = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
+            inner += f'<h2>{h2}</h2>{bi}'
+    else:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "posts", f"{slug}.en.html"), encoding="utf-8") as _f:
+            inner += _f.read()
     prose = f'<section class="section"><div class="container"><div class="prose">{inner}</div></div></section>'
     cta = cta_block(d["cta_title"], d["cta_desc"])
     body = hero + prose + cta
@@ -878,9 +912,6 @@ def build_news():
     hero = page_hero(prefix, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
         "News and resources from Tesla Boutique Miami: fresh projects, XPEL product updates, and practical tips on caring for your Tesla's film, coating and tint. Updated regularly.", "", crumbs)
     posts = [
-        ("Maintenance", "Caring for your PPF and ceramic coating in Miami", "Simple wash habits that keep XPEL film and Fusion Plus coating performing for years in the Florida heat."),
-        ("XPEL", "Ultimate Plus vs Stealth: which PPF finish is right for you?", "Gloss or satin? A quick guide to choosing the XPEL film finish that suits your Tesla."),
-        ("Tesla", "How soon after buying a Tesla should you get PPF?", "The short answer: before the first long drive. Here is why protecting factory-fresh paint matters most."),
         ("Maintenance", "Removing water spots from glass and paint", "What causes hard-water spotting in South Florida and how to remove it safely without damaging your finish."),
     ]
     cards = ""

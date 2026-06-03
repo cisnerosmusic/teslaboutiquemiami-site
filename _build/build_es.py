@@ -654,6 +654,36 @@ POSTS_ES = {
         'Todos estos productos los tenemos en el shop, los usamos en cada Tesla que pasa por nuestras manos y los vendemos a quien quiera mantener su carro en casa. Si no sabes cuál necesitas para tu caso, pregúntanos: te decimos exactamente qué usar según lo que tengas instalado en tu Tesla. Para fichas técnicas oficiales, la fuente es <a href="https://www.xpel.com" target="_blank" rel="noopener">xpel.com</a>.']),
     ],
   ),
+  "when-to-get-ppf-new-tesla": dict(
+    pill="Tesla", date="Junio 2026", crumb="Cuándo poner PPF", img="tesla-model-3-ppf-doral",
+    title="Cuándo ponerle PPF a un Tesla nuevo | Tesla Boutique Miami",
+    desc="La respuesta corta: antes del primer viaje largo. Por qué la pintura recién salida de fábrica es el mejor momento para proteger tu Tesla.",
+    h1='Acabas de comprar un Tesla: ¿cuándo ponerle el <span class="highlight">PPF</span>?',
+    card_title="Acabas de comprar un Tesla: ¿cuándo ponerle el PPF?",
+    blurb="La respuesta corta: antes del primer viaje largo. Aquí te explicamos por qué proteger la pintura recién salida de fábrica es lo que más importa.",
+    lead="La respuesta corta: antes del primer viaje largo. Aquí te explicamos por qué proteger la pintura recién salida de fábrica es lo que más importa.",
+    cta_title="¿Vas a estrenar un Tesla?",
+    cta_desc="Dinos tu fecha de entrega y tendremos el PPF XPEL genuino listo el día que llegue."),
+  "ultimate-plus-vs-stealth": dict(
+    pill="XPEL", date="Junio 2026", crumb="Ultimate Plus vs Stealth", img="tesla-cybertruck-ppf-miami",
+    title="Ultimate Plus vs Stealth: qué acabado PPF para tu Tesla",
+    desc="¿Brillo o satinado? La misma protección XPEL con dos looks muy distintos. Guía rápida para elegir entre Ultimate Plus y Stealth para tu Tesla.",
+    h1='Ultimate Plus vs Stealth: ¿cuál acabado de <span class="highlight">PPF</span> es para ti?',
+    card_title="Ultimate Plus vs Stealth: ¿cuál acabado de PPF es para ti?",
+    blurb="¿Brillo o satinado? Una guía rápida para elegir el acabado de film XPEL que le va a tu Tesla.",
+    lead="¿Brillo o satinado? Una guía rápida para elegir el acabado de film XPEL que le va a tu Tesla.",
+    cta_title="¿Quieres ver el satinado junto al brillo?",
+    cta_desc="Tenemos ambos acabados a mano en el taller de Doral. Ven a compararlos en persona."),
+  "ppf-ceramic-care-miami": dict(
+    pill="Mantenimiento", date="Junio 2026", crumb="Cuidar PPF y cerámico", img="tesla-model-s-ceramic-coating",
+    title="Cómo cuidar tu PPF y cerámico en Miami | Tesla Boutique",
+    desc="Hábitos simples de lavado para que tu film XPEL y tu cerámico Fusion Plus rindan por años bajo el calor de la Florida, desde Doral.",
+    h1='Cómo cuidar tu <span class="highlight">PPF</span> y tu recubrimiento cerámico en Miami',
+    card_title="Cómo cuidar tu PPF y tu recubrimiento cerámico en Miami",
+    blurb="Hábitos simples de lavado para que tu film XPEL y tu cerámico Fusion Plus rindan por años bajo el calor de la Florida.",
+    lead="Hábitos simples de lavado para que tu film XPEL y tu cerámico Fusion Plus rindan por años bajo el calor de la Florida.",
+    cta_title="¿No sabes cómo cuidar tu Tesla?",
+    cta_desc="Llámanos y dinos qué lleva puesto. Te decimos exactamente cómo cuidarlo."),
 }
 
 def build_post_es(slug, d):
@@ -661,9 +691,13 @@ def build_post_es(slug, d):
     crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Updates", esp+"news/index.html"), (d["crumb"], "")])
     hero = S.page_hero(rootp, d["img"], d["h1"], d["lead"], "", crumbs)
     inner = '<span class="post-date">Publicado &middot; %s</span>' % d["date"]
-    for h2, paras in d["sections"]:
-        bi = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
-        inner += "<h2>%s</h2>%s" % (h2, bi)
+    if d.get("sections"):
+        for h2, paras in d["sections"]:
+            bi = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
+            inner += "<h2>%s</h2>%s" % (h2, bi)
+    else:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "posts", "%s.es.html" % slug), encoding="utf-8") as _f:
+            inner += _f.read()
     prose = '<section class="section"><div class="container"><div class="prose">%s</div></div></section>' % inner
     cta = cta_es(d["cta_title"], d["cta_desc"])
     body = hero + prose + cta
@@ -682,9 +716,6 @@ def build_news_es():
     hero = S.page_hero(rootp, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
         "Noticias y recursos de Tesla Boutique Miami: proyectos nuevos, novedades de productos XPEL y consejos prácticos para cuidar el film, el recubrimiento y el polarizado de tu Tesla. Actualizado seguido.", "", crumbs)
     posts = [
-        ("Mantenimiento", "Cuidar tu PPF y cerámico en Miami", "Hábitos simples de lavado que mantienen el film XPEL y el cerámico Fusion Plus rindiendo por años bajo el calor de Florida."),
-        ("XPEL", "Ultimate Plus vs Stealth: ¿qué acabado de PPF es para ti?", "¿Brillante o satinado? Una guía rápida para elegir el acabado de film XPEL que le va a tu Tesla."),
-        ("Tesla", "¿Cuándo poner PPF tras comprar un Tesla?", "La respuesta corta: antes del primer viaje largo. Aquí explicamos por qué proteger la pintura de fábrica importa más."),
         ("Mantenimiento", "Quitar manchas de agua del vidrio y la pintura", "Qué causa las manchas de agua dura en el sur de Florida y cómo quitarlas con seguridad sin dañar tu acabado."),
     ]
     cards = ""
