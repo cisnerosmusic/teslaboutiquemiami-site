@@ -313,8 +313,8 @@ PKG = lambda badge, name, price, items, featured=False: {
 # ---------------------------------------------------------------- MODELS data
 MODELS = {
   "model-3": {
-    "name": "Model 3", "img": "model-3-grey-2", "card": "tesla-model-3-ppf-doral",
-    "gallery": ["model-3-detalle", "model-3-grey", "model-3-grey-3"],
+    "name": "Model 3", "img": "cars/model-3/model-3-grey-2", "card": "tesla-model-3-ppf-doral",
+    "gallery": ["cars/model-3/model-3-detalle", "cars/model-3/model-3-grey", "cars/model-3/model-3-grey-3"],
     "lead": "The Model 3 is the Tesla that lives on the highway, which is exactly why its front end takes the most punishment. Here is how we keep a daily-driven Model 3 looking new in Miami.",
     "intro": ["As the most-driven Tesla on South Florida roads, the Model 3 racks up highway miles fast, and with them come rock chips on the hood and bumper plus a hot cabin under the Miami sun. The fix is targeted: paint protection film where impacts happen, ceramic window tint for heat, and an optional ceramic coating for gloss and easy washing.",
               "We use model-specific XPEL patterns cut for the Model 3, so coverage is precise with no lifted edges, and every install is registered to your VIN."],
@@ -340,8 +340,8 @@ MODELS = {
               "Yes, with XPEL Prime XR Plus ceramic film that rejects up to 98% of infrared heat, a big comfort upgrade in the Miami sun.")],
   },
   "model-y": {
-    "name": "Model Y", "img": "model-y-3", "card": "tesla-model-y-window-tinting",
-    "gallery": ["model-y-1", "model-y-2", "model-y-detail-1"],
+    "name": "Model Y", "img": "cars/model-y/model-y-3", "card": "tesla-model-y-window-tinting",
+    "gallery": ["cars/model-y/model-y-1", "cars/model-y/model-y-2", "cars/model-y/model-y-detail-1", "cars/model-y/model-y-white-1", "cars/model-y/model-y-white-2", "cars/model-y/model-y-white-3"],
     "lead": "The Model Y is the Tesla we protect most. Here is exactly how we shield its paint, glass roof and finish from Miami roads, sun and resale wear.",
     "intro": ["The Tesla Model Y spends its life on I-95, the Palmetto and the Turnpike, exactly where sand and gravel chip a soft factory clear coat. Add relentless UV and afternoon heat, and an unprotected Model Y starts showing chips on the hood, swirls in the paint, and a hot cabin under the panoramic glass roof.",
               "Our approach: paint protection film where impacts happen, ceramic coating for gloss and easy cleaning, and ceramic window tint to keep the heat out. Every service uses model-specific XPEL patterns cut for the Model Y."],
@@ -371,8 +371,8 @@ MODELS = {
     "combo": ("tesla-model-y-ppf-miami.html", "Model Y PPF in Miami"),
   },
   "model-s": {
-    "name": "Model S", "img": "model-s-red-2", "card": "tesla-model-s-ceramic-coating",
-    "gallery": ["model-s-detalle", "model-s-detalle-2", "model-s-red"],
+    "name": "Model S", "img": "cars/model-s/model-s-red-2", "card": "tesla-model-s-ceramic-coating",
+    "gallery": ["cars/model-s/model-s-detalle", "cars/model-s/model-s-detalle-2", "cars/model-s/model-s-red", "cars/model-s/model-s-blue-1", "cars/model-s/model-s-blue-2", "cars/model-s/model-s-blue-3", "cars/model-s/model-s-blue-4"],
     "lead": "The Model S is Tesla's flagship, and it deserves flagship protection. Full-body film, ceramic coating and tint that keep a premium sedan immaculate.",
     "intro": ["A Model S owner is protecting a significant investment, so coverage tends to go deeper: full-body paint protection film to keep every panel flawless, a Fusion Plus ceramic coating for a liquid-gloss finish, and ceramic tint for comfort and UV protection.",
               "We treat the Model S like the flagship it is, with meticulous edge wraps and genuine XPEL materials registered to your VIN."],
@@ -398,8 +398,8 @@ MODELS = {
               "It depends on coverage. Call (786) 505-6162 and we will build a package around how you use the car.")],
   },
   "model-x": {
-    "name": "Model X", "img": "model-x-red-1", "card": "model-x-red-1",
-    "gallery": ["model-x-red-2", "model-x-red-3", "model-x-red-4", "model-x-red-5"],
+    "name": "Model X", "img": "cars/model-x/model-x-red-1", "card": "cars/model-x/model-x-red-1",
+    "gallery": ["cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
     "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine XPEL.",
     "intro": ["The Model X has large body panels and unique falcon-wing doors, which means more painted surface exposed to chips and more edges to wrap correctly. Full-body or extended-front PPF is popular here, paired with ceramic tint for the big glass area and a ceramic coating for gloss.",
               "We pattern the Model X precisely, including the door edges most installers rush, and register every install to your VIN."],
@@ -425,8 +425,8 @@ MODELS = {
               "Yes, with XPEL Prime XR Plus ceramic film to cut heat and UV across the big glass area.")],
   },
   "cybertruck": {
-    "name": "Cybertruck", "img": "cybertruck-1-black", "card": "tesla-cybertruck-ppf-miami",
-    "gallery": ["cybertruck-2-black", "cybertruck-3-white", "cybertruck-4-white", "cybertruck-5-white", "cybertruck-6-white", "cybertruck-7-metallic", "cybertruck-8-metallic", "cybertruck-9-metallic", "cybertruck-10-red", "cybertruck-11-red", "cybertruck-12-red"],
+    "name": "Cybertruck", "img": "cars/cybertruck/cybertruck-1-black", "card": "tesla-cybertruck-ppf-miami",
+    "gallery": ["cars/cybertruck/cybertruck-2-black", "cars/cybertruck/cybertruck-3-white", "cars/cybertruck/cybertruck-4-white", "cars/cybertruck/cybertruck-5-white", "cars/cybertruck/cybertruck-6-white", "cars/cybertruck/cybertruck-7-metallic", "cars/cybertruck/cybertruck-8-metallic", "cars/cybertruck/cybertruck-9-metallic", "cars/cybertruck/cybertruck-10-red", "cars/cybertruck/cybertruck-11-red", "cars/cybertruck/cybertruck-12-red"],
     "lead": "Stainless steel, not paint. The Cybertruck needs a different playbook, and we have it: PPF to protect the finish and colored PPF to actually change it.",
     "intro": ["The Cybertruck is unlike any other Tesla because its body is bare stainless steel, not painted. That changes everything: there is no clear coat to chip, but the stainless scratches, smudges and shows fine marks. Paint protection film over the stainless keeps it pristine and far easier to clean, while colored PPF is the way to give a Cybertruck real color with full protection underneath.",
               "We film the Cybertruck's large flat panels with genuine XPEL, including satin and stealth options that suit its angular design."],
@@ -870,7 +870,7 @@ def build_home():
            '<div class="why-item reveal"><span class="why-number">04</span><h3>Real Project Documentation</h3><p>Every car we protect is photographed and documented, so you can see exactly the work that comes out of our shop.</p></div>'
            '</div></div></section>')
     gimgs = ["tesla-model-y-window-tinting", "tesla-model-3-ppf-doral",
-             "model-x-red-2", "tesla-cybertruck-ppf-miami"]
+             "cars/model-x/model-x-red-2", "tesla-cybertruck-ppf-miami"]
     galleries = ""
     for i, g in enumerate(gimgs):
         inner = pic(prefix, g, "Recent Tesla project in Miami and Doral", 700, 525)
