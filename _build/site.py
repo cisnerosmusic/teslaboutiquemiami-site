@@ -966,7 +966,7 @@ CONTACT_FORM_EN = '''<div class="cform-wrap">
 
 def build_home():
     prefix = ""
-    hero = (f'<section class="hero"><div class="hero-bg"><div class="hero-bg-image" style="{bg_style(prefix, "cars/cybertruck/cybertruck-3-white")}"></div></div>'
+    hero = (f'<section class="hero"><div class="hero-bg"><div class="hero-bg-image" style="{bg_style(prefix, "cars/model-s/model-s-blue-1")}"></div></div>'
             f'<div class="container"><div class="hero-content">'
             f'<h1 class="hero-title"><span class="tesla">Tesla</span> Protection<br>Experts in <span class="highlight">Miami</span></h1>'
             f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating built exclusively for Tesla. Master XPEL installers with 15+ years protecting Model 3, Y, S, X and Cybertruck across Doral and Miami-Dade.</p>'
@@ -1056,7 +1056,7 @@ def build_home():
         "@id": DOMAIN + "/#business", "name": "Tesla Boutique Miami",
         "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "XPEL Tesla Doral"],
         "description": "Tesla only paint protection film, ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer powered by Unlimited Wraps, with 15+ years protecting Tesla, exotic and luxury vehicles.",
-        "url": DOMAIN + "/", "telephone": "+1-786-505-6162", "image": DOMAIN + "/assets/img/cars/cybertruck/cybertruck-3-white.webp",
+        "url": DOMAIN + "/", "telephone": "+1-786-505-6162", "image": DOMAIN + "/assets/img/cars/model-s/model-s-blue-1.webp",
         "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave", "addressLocality": "Doral",
                     "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"},
         "geo": {"@type": "GeoCoordinates", "latitude": 25.791474, "longitude": -80.323911},
@@ -1075,7 +1075,7 @@ def build_home():
         "publisher": {"@id": DOMAIN + "/#business"}}, ensure_ascii=False)
     title = "Tesla PPF, Ceramic Coating &amp; Window Tint in Miami &amp; Doral | Tesla Boutique Miami, XPEL"
     desc = "Tesla only paint protection film (PPF), ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer, 15+ years on Tesla. Model 3, Y, S, X and Cybertruck. Call (786) 505-6162."
-    return doc("index.html", title, desc, body, active="", preload="cars/cybertruck/cybertruck-3-white", extra_ld=[local_ld, website_ld])
+    return doc("index.html", title, desc, body, active="", preload="cars/model-s/model-s-blue-1", extra_ld=[local_ld, website_ld])
 
 def main():
     pages = {}
