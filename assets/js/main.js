@@ -9,7 +9,7 @@
       if (window.pageYOffset > 50) header.classList.add('scrolled');
       else header.classList.remove('scrolled');
     };
-    onScroll();
+    requestAnimationFrame(onScroll);
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
@@ -108,6 +108,18 @@ document.querySelectorAll('.cform').forEach(function (form) {
     var slides = document.querySelectorAll('.hero .hero-bg-image');
     if (slides.length < 2) return;
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Hydrate deferred slide backgrounds only after first paint, so the LCP
+    // (first slide) is not starved of bandwidth by the other slides.
+    var hydrate = function () {
+        slides.forEach(function (s) {
+            if (s.dataset && s.dataset.bg) {
+                s.setAttribute('style', s.dataset.bg);
+                s.removeAttribute('data-bg');
+            }
+        });
+    };
+    if (document.readyState === 'complete') hydrate();
+    else window.addEventListener('load', hydrate);
     var i = 0;
     setInterval(function () {
         slides[i].classList.remove('is-active');

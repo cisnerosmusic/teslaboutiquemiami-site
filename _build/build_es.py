@@ -101,7 +101,7 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
     esp, rootp = esp_root(path)
     canonical = DOMAIN + "/es/" + path
     en_url = DOMAIN + "/" + path
-    preload_tag = ('<link rel="preload" as="image" href="%sassets/img/%s.webp" fetchpriority="high">' % (rootp, preload)) if preload else ""
+    preload_tag = ('<link rel="preload" as="image" type="image/avif" href="%sassets/img/%s.avif" fetchpriority="high">' % (rootp, preload)) if preload else ""
     ld = "".join('<script type="application/ld+json">%s</script>\n' % b for b in (extra_ld or []))
     return ('<!DOCTYPE html>\n<html lang="es">\n<head>\n'
         '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
@@ -116,7 +116,8 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
         '<meta property="og:image" content="%s/assets/img/%s.webp">\n<meta property="og:locale" content="es_US">\n'
         '<meta property="og:site_name" content="Tesla Boutique Miami">\n<meta name="twitter:card" content="summary_large_image">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-        '<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">\n'
+        '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media=\'all\'">\n'
+        '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>\n'
         '%s\n<link rel="stylesheet" href="%sassets/css/style.css?v=%s">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
         '<script src="%sassets/js/main.js" defer></script>\n</body>\n</html>\n') % (
         title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,

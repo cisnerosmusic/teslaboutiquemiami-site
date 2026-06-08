@@ -304,7 +304,7 @@ def doc(path, title, desc, body, active="", preload=None, extra_ld=None, depth=N
     es_url = DOMAIN + "/" + ("es/" if path == "index.html" else es_path)
     preload_tag = ""
     if preload:
-        preload_tag = (f'<link rel="preload" as="image" href="{prefix}assets/img/{preload}.webp" fetchpriority="high">')
+        preload_tag = (f'<link rel="preload" as="image" type="image/avif" href="{prefix}assets/img/{preload}.avif" fetchpriority="high">')
     ld = ""
     for block in (extra_ld or []):
         ld += f'<script type="application/ld+json">{block}</script>\n'
@@ -329,7 +329,8 @@ def doc(path, title, desc, body, active="", preload=None, extra_ld=None, depth=N
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
 {preload_tag}
 <link rel="stylesheet" href="{prefix}assets/css/style.css?v={CSS_VER}">
 {ld}</head>
@@ -961,18 +962,22 @@ def build_news():
 
 HERO_SLIDES = [
     "cars/model-s/model-s-blue-1",
-    "cars/model-3/model-3-grey-2",
-    "cars/model-x/model-x-red-6",
     "cars/model-y/model-y-1",
-    "cars/model-y/model-y-white-3",
+    "cars/model-x/model-x-red-6",
     "cars/cybertruck/cybertruck-3-white",
-    "cars/cybertruck/cybertruck-9-metallic",
 ]
 
 def hero_slides(prefix):
-    return "".join(
-        f'<div class="hero-bg-image{" is-active" if i == 0 else ""}" style="{bg_style(prefix, n)}"></div>'
-        for i, n in enumerate(HERO_SLIDES))
+    # Only the first slide gets its background eagerly (it is the LCP and is
+    # preloaded). The rest carry the style in data-bg and are hydrated by JS
+    # after load, so they do not compete with the LCP image for bandwidth.
+    out = []
+    for i, n in enumerate(HERO_SLIDES):
+        if i == 0:
+            out.append(f'<div class="hero-bg-image is-active" style="{bg_style(prefix, n)}"></div>')
+        else:
+            out.append(f'<div class="hero-bg-image" data-bg="{bg_style(prefix, n)}"></div>')
+    return "".join(out)
 
 CONTACT_FORM_EN = '''<div class="cform-wrap">
   <h3 class="cform-title">Or send us the details</h3>
