@@ -17,9 +17,8 @@ legal.html                 Legal & trademark notice (hand-maintained, self-style
 es/index.html              Home (ES) (hand-maintained)
 models/                    Per-model pages (Model 3, Y, S, X, Cybertruck) + SEO combo page
 services/                  Per-service pages (PPF, Colored PPF, Ceramic, Tint, Windshield, Correction)
-projects/                  Project archive + individual project pages
 news/                      Updates: index + article pages (EN)
-es/                         Spanish mirror of models/, services/, projects/, news/
+es/                         Spanish mirror of models/, services/, news/
 assets/css/style.css       Shared design system (colors, type, layout)
 assets/js/main.js          Minimal JS (header scroll, mobile nav, FAQ accordion, scroll reveal)
 assets/img/                Optimized images (.avif + .webp)

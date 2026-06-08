@@ -239,7 +239,7 @@ def header(prefix, active=""):
           <ul class="dropdown">{models_dd}</ul></li>
         <li class="has-dropdown"><a href="{prefix}index.html#services"{cur('services')}>Services</a>
           <ul class="dropdown">{services_dd}</ul></li>
-        <li><a href="{prefix}projects/index.html"{cur('projects')}>Projects</a></li>
+        <li><a href="{prefix}service-area/index.html"{cur('area')}>Service Area</a></li>
         <li><a href="{prefix}news/index.html"{cur('news')}>Updates</a></li>
         <li><a href="{prefix}index.html#contact">Contact</a></li>
       </ul>
@@ -256,6 +256,8 @@ SOCIALS = (
     '<a href="https://www.instagram.com/unlimitedwraps" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>'
     '<a href="https://www.facebook.com/UnlimitedWraps" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg></a>'
     '<a href="https://www.youtube.com/user/UnlimitedWraps" target="_blank" rel="noopener" class="footer-social" aria-label="YouTube"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>'
+    '<a href="https://www.tiktok.com/@unlimitedwraps" target="_blank" rel="noopener" class="footer-social" aria-label="TikTok"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>'
+    '<a href="https://www.threads.net/@unlimitedwraps" target="_blank" rel="noopener" class="footer-social" aria-label="Threads"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.785-1.548 7.158-1.85 1.812-4.094 2.628-7.277 2.65zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></a>'
 )
 
 def footer(prefix):
@@ -656,8 +658,7 @@ def build_model(slug, d):
     if d.get("combo"):
         chips.append(chip(d["combo"][0], d["combo"][1]))
     chips += [chip(prefix + "services/window-tint.html", "Tesla window tint"),
-              chip(prefix + "services/ceramic-coating.html", "Tesla ceramic coating"),
-              chip(prefix + "projects/index.html", f"See {d['name']} projects")]
+              chip(prefix + "services/ceramic-coating.html", "Tesla ceramic coating")]
     rel = related_block("Related", chips)
     cta = cta_block(f"Protect your {d['name']}", f"Tell us your color and how you drive, and we will recommend the right PPF, tint and ceramic combination for your {d['name']}.")
     gallery = model_gallery(prefix, d["name"], d["gallery"]) if d.get("gallery") else ""
@@ -727,7 +728,7 @@ def build_combo():
              '<p>Want the broader picture? See the full <a href="model-y.html">Tesla Model Y protection guide</a> or the <a href="../services/paint-protection-film.html">PPF service overview</a>.</p>'
              '</div></div></section>')
     rel = related_block("Nearby &amp; related", [chip("model-y.html", "Model Y window tint Miami"),
-        chip("model-3.html", "Model 3 PPF Miami"), chip("../projects/index.html", "Model Y PPF projects"),
+        chip("model-3.html", "Model 3 PPF Miami"),
         chip("../services/paint-protection-film.html", "About XPEL PPF")])
     cta = cta_block("Get your Model Y filmed", "Quick quote for full-front or full-body PPF on your Model Y.")
     body = hero + prose + rel + cta
@@ -1028,20 +1029,6 @@ def build_home():
            '<div class="why-item reveal"><span class="why-number">03</span><h3>Genuine XPEL Products</h3><p>Only authentic XPEL film and coatings, with full manufacturer warranty registered to your vehicle.</p></div>'
            '<div class="why-item reveal"><span class="why-number">04</span><h3>Real Project Documentation</h3><p>Every car we protect is photographed and documented, so you can see exactly the work that comes out of our shop.</p></div>'
            '</div></div></section>')
-    gimgs = ["tesla-model-y-window-tinting", "tesla-model-3-ppf-doral",
-             "cars/model-x/model-x-red-2", "tesla-cybertruck-ppf-miami"]
-    galleries = ""
-    for i, g in enumerate(gimgs):
-        inner = pic(prefix, g, img_alt(g, "en"), 700, 525)
-        if i == 0:
-            galleries += f'<a class="gallery-item reveal" href="projects/sample-tesla-model-y-full-front-ppf.html">{inner}</a>'
-        else:
-            galleries += f'<div class="gallery-item reveal">{inner}</div>'
-    work = (f'<section class="section section-alt"><div class="container">'
-            f'<div class="section-header"><span class="section-tag">Our work</span>'
-            f'<h2 class="section-title">Recent Tesla projects</h2>'
-            f'<p class="section-desc">Real Teslas, real installs in our Doral shop. See the full archive in <a href="projects/index.html" style="color:var(--accent-text)">Projects</a>.</p></div>'
-            f'<div class="gallery-grid">{galleries}</div></div></section>')
     areas = ('<section class="section"><div class="container">'
              '<div class="section-header"><span class="section-tag">Service areas</span>'
              '<h2 class="section-title">Serving Tesla owners across Miami-Dade</h2>'
@@ -1066,7 +1053,7 @@ def build_home():
                f'<div class="cta-contact-item">{pin_svg}<span>1835 NW 79th Ave, Doral, FL 33126</span></div>'
                f'<div class="cta-contact-item">{clock_svg}<span>Mon to Fri: 9AM to 5:30PM</span></div>'
                f'</div></div></div></section>')
-    body = hero + banner + models_sec + services_sec + why + work + areas + contact
+    body = hero + banner + models_sec + services_sec + why + areas + contact
     local_ld = json.dumps({"@context": "https://schema.org", "@type": "AutoBodyShop",
         "@id": DOMAIN + "/#business", "name": "Tesla Boutique Miami",
         "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "XPEL Tesla Doral"],
@@ -1092,6 +1079,449 @@ def build_home():
     desc = "Tesla only paint protection film (PPF), ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer, 15+ years on Tesla. Model 3, Y, S, X and Cybertruck. Call (786) 505-6162."
     return doc("index.html", title, desc, body, active="", preload="cars/model-s/model-s-blue-1", extra_ld=[local_ld, website_ld])
 
+# ---------------------------------------------------------------- SERVICE AREA data
+COUNTIES = [
+  {"slug": "miami-dade", "name": "Miami-Dade County", "short": "Miami-Dade",
+   "img": "cars/model-y/model-y-1", "tag": "Our home county",
+   "lead": "From Doral to the beaches, Miami-Dade is where Tesla Boutique Miami lives and works. This is our home county, and the one we know best.",
+   "intro": [
+     "Miami-Dade is the most populous county in Florida and one of the densest Tesla markets in the country. It is also our home: our shop sits in Doral, in the heart of the county, which means Miami-Dade Tesla owners get the fastest, most convenient service we offer. From the financial towers of Brickell to the sand of Miami Beach and the canopy streets of Coral Gables, the county packs an enormous range of driving conditions into a small area.",
+     "What every Miami-Dade Tesla shares is exposure: I-95, the Palmetto and the Dolphin Expressway throw constant gravel and construction debris, the sun is relentless year-round, and dense valet and garage parking means door dings and tight squeezes. That is exactly the environment XPEL paint protection film, ceramic coating and ceramic window tint were built for. Choose your city below to see how we protect Teslas in your part of Miami-Dade."],
+   "cities": ["miami", "miami-beach", "doral", "coral-gables", "aventura"]},
+  {"slug": "broward", "name": "Broward County", "short": "Broward",
+   "img": "cars/model-3/model-3-grey", "tag": "Fort Lauderdale & north",
+   "lead": "Fort Lauderdale, Hollywood and the cities just north of us. Broward Tesla owners are a short drive up I-95 or the Turnpike from our Doral shop.",
+   "intro": [
+     "Broward County stretches from the Atlantic beaches inland to the edge of the Everglades, and it is one of the fastest-growing Tesla markets in South Florida. For owners in Fort Lauderdale, Hollywood and the western suburbs, we are a straight shot down I-95 or the Turnpike from our Doral shop. Broward blends beach living with sprawling commuter suburbs, so a Tesla here faces salt air near the coast and long, gravel-strewn highway miles inland.",
+     "Whether you are crossing the 595, parking near Las Olas or commuting from Weston, the threats are the same: rock chips, relentless sun and coastal salt. XPEL paint protection film, ceramic coating and ceramic window tint are built for exactly this. Choose your Broward city below to see how we protect Teslas in your area."],
+   "cities": ["fort-lauderdale", "hollywood", "pembroke-pines", "weston", "miramar"]},
+  {"slug": "palm-beach", "name": "Palm Beach County", "short": "Palm Beach",
+   "img": "cars/model-x/model-x-red-1", "tag": "Boca Raton & the coast",
+   "lead": "Boca Raton, West Palm Beach and the affluent communities of Palm Beach County, where Teslas are everywhere and a flawless finish is the standard.",
+   "intro": [
+     "Palm Beach County is where South Florida turns affluent and unhurried, and Teslas are everywhere, from Boca Raton's gated communities to the waterfront estates of Palm Beach itself. It is the northern edge of our service area, an easy run up I-95 or the Turnpike from Doral. The county pairs pristine coastal living with long suburban drives, so Teslas here see both salt air and serious highway mileage.",
+     "For owners who expect their car to look showroom-perfect year-round, XPEL paint protection film, ceramic coating and ceramic tint are the standard. Pick your Palm Beach city below to see how we protect Teslas there."],
+   "cities": ["boca-raton", "west-palm-beach", "delray-beach", "wellington", "jupiter"]},
+  {"slug": "monroe", "name": "Monroe County", "short": "Monroe (The Keys)",
+   "img": "cars/cybertruck/cybertruck-3-white", "tag": "The Florida Keys",
+   "lead": "Key West, Key Largo and the island chain. Salt air and sun make the Keys one of the harshest places in Florida for a Tesla's paint and glass.",
+   "intro": [
+     "Monroe County is the Florida Keys, a 100-mile island chain where the Overseas Highway is the only road in or out. It is the most demanding environment in our service area for a vehicle: constant salt air, blinding sun and a single long highway that funnels every mile of driving. A Tesla in the Keys is gorgeous and seriously exposed.",
+     "That is exactly where XPEL protection earns its keep: film against the relentless sun and road debris of US-1, ceramic coating that makes salt residue rinse off, and ceramic tint to cut the open-sky heat. We serve Keys Tesla owners by appointment, so reach out and we will coordinate timing for the drive up to Doral. Choose your island community below."],
+   "cities": ["key-west", "key-largo", "islamorada", "marathon", "tavernier"]},
+]
+COUNTY_BY_SLUG = {c["slug"]: c for c in COUNTIES}
+
+CITIES = {
+  "miami": {"name": "Miami", "county": "miami-dade", "img": "cars/model-3/model-3-grey-2",
+    "lead": "From Brickell high-rises to Wynwood and Coconut Grove, Miami is hard on a Tesla: tight valet garages, I-95 rock chips and relentless sun. Here is how we protect Teslas for Miami owners.",
+    "intro": [
+      "Tesla Boutique Miami provides premium paint protection film, ceramic coating and window tint built exclusively for Tesla owners across Miami, FL. Whether you park in a Brickell tower, commute downtown or weekend in Coconut Grove, your Model 3, Y, S, X or Cybertruck faces the same daily threats: gravel and construction debris on I-95 and the Dolphin Expressway, door dings in packed valet garages, and the kind of sun and heat that fades interiors and bakes soft Tesla paint.",
+      "Our answer is Tesla-specific. We install genuine XPEL paint protection film on the panels that take the most impact, XPEL Prime XR Plus ceramic tint to cut the heat that builds under the Miami sun, and XPEL Fusion Plus ceramic coating for gloss and easy washing. Every install uses model-specific patterns cut for your exact Tesla and is registered to your VIN. Our shop is a short drive away in Doral, serving Miami owners by appointment."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Do you provide Tesla PPF and tint in Miami?",
+       "Yes. We protect Teslas for owners across Miami, from Brickell and Downtown to Wynwood and Coconut Grove. Our installation shop is in nearby Doral, an easy drive from anywhere in the city. Call (786) 505-6162 to book."),
+      ("How far is your shop from Brickell or Downtown Miami?",
+       "Our Doral shop at 1835 NW 79th Ave is roughly 15 to 20 minutes from Brickell and Downtown via the Dolphin Expressway or NW 12th Street. Most clients drop the car off and we coordinate timing around their day."),
+      ("Why does my Tesla need PPF in Miami?",
+       "Miami highways like I-95 and the Palmetto throw constant gravel and construction debris, and Tesla's factory clear coat is soft and chips easily. Full-front PPF shields the hood, fenders, mirrors and bumper that take the most hits.")]},
+  "miami-beach": {"name": "Miami Beach", "county": "miami-dade", "img": "cars/model-y/model-y-white-3",
+    "lead": "Salt air, beach sand and sun all day. Miami Beach is one of the toughest environments in Florida for a Tesla's paint and glass, and exactly where protection pays off.",
+    "intro": [
+      "Tesla Boutique Miami brings premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across Miami Beach, from South Beach to Mid-Beach and North Beach. Life on the island is beautiful and brutal on a car: salt-laden ocean air, blowing sand, intense UV and street parking mean your Model 3, Y, S, X or Cybertruck is constantly exposed.",
+      "We protect Miami Beach Teslas with genuine XPEL film that takes the sand and grit instead of your paint, ceramic coating that locks out salt and makes rinsing off beach residue effortless, and XPEL ceramic tint that blocks the heat and UV pouring through the glass. Patterns are cut specifically for your Tesla and registered to your VIN. We are based in Doral, a straight shot over the causeways, and serve Miami Beach owners by appointment."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Is ceramic coating worth it for a Tesla in Miami Beach?",
+       "Very much. Salt air and beach residue are relentless on the island. A Fusion Plus ceramic coating makes salt and sand far easier to rinse off and adds UV and chemical resistance, protecting your Tesla between washes."),
+      ("Do you come to Miami Beach or do I drive to you?",
+       "Installs are done in our controlled Doral shop for a flawless, dust-free result. Miami Beach is a quick drive over the MacArthur or Julia Tuttle Causeway. Call (786) 505-6162 and we will coordinate timing."),
+      ("Will tint help with the Miami Beach sun and heat?",
+       "Yes. XPEL Prime XR Plus ceramic tint rejects up to 98% of infrared heat and 99% of UV, a major comfort upgrade for a Tesla parked in island sun, and it protects the interior from fading.")]},
+  "doral": {"name": "Doral", "county": "miami-dade", "img": "cars/model-s/model-s-blue-1",
+    "lead": "Doral is home. Our shop is here, minutes from CityPlace and the Tesla dealership, which makes it the easiest place in South Florida to protect your Tesla.",
+    "intro": [
+      "Tesla Boutique Miami is based right here in Doral, FL, and Doral Tesla owners are our neighbors. From our shop at 1835 NW 79th Ave we provide premium paint protection film, ceramic coating, window tint and custom vehicle wrap services for every Tesla, just minutes from CityPlace Doral, Downtown Doral and the Tesla dealership on NW 12th Street.",
+      "Because we are local, protecting a Doral Tesla is effortless: drop the car off before work and pick it up ready. We install genuine XPEL PPF where Palmetto Expressway gravel does its damage, XPEL Prime XR Plus ceramic tint for the Doral heat, and XPEL Fusion Plus coating for a deep, easy-clean gloss. Many of our clients buy new at the Doral Tesla store and bring the car straight to us so the paint is protected before its first highway mile. Every install uses model-specific patterns and is registered to your VIN."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Where is your Tesla shop in Doral?",
+       "We are at 1835 NW 79th Ave, Doral, FL 33126, near the Palmetto Expressway and minutes from CityPlace Doral and the Tesla dealership. Call (786) 505-6162 to book your install."),
+      ("I just bought a Tesla at the Doral dealership. Can you protect it before I drive it?",
+       "Absolutely, and it is the ideal time. Bring it straight from the dealership and we will install PPF and tint before the paint sees highway miles, so the finish underneath stays factory-perfect."),
+      ("Do you offer same-area convenience for Doral residents?",
+       "Yes. Being local means easy drop-off and pickup, quick in-person quotes, and no long drive. Doral is our home base and our fastest-served area.")]},
+  "coral-gables": {"name": "Coral Gables", "county": "miami-dade", "img": "cars/model-s/model-s-red",
+    "lead": "Tree-lined, upscale and detail-obsessed. Coral Gables Tesla owners expect a flawless finish, and that is exactly what we deliver.",
+    "intro": [
+      "Tesla Boutique Miami offers premium, Tesla-only paint protection film, ceramic coating and window tint to discerning Tesla owners throughout Coral Gables, FL. The Gables is known for its beauty, its banyan-lined streets and its standards, and the same canopy that makes Miracle Mile and Old Cutler Road gorgeous also drops sap, pollen and debris onto your Model 3, Y, S, X or Cybertruck.",
+      "We protect Coral Gables Teslas with genuine XPEL paint protection film against chips and tree debris, Fusion Plus ceramic coating so sap and pollen rinse away instead of etching the paint, and XPEL ceramic tint for comfort and UV protection without altering the car's elegant look. Every install is meticulous, edge-wrapped and registered to your VIN, the level of finish Gables owners expect. Our shop is a short drive away in Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Does tree sap and pollen really damage Tesla paint in Coral Gables?",
+       "Over time, yes. Sap and pollen can etch a soft clear coat, especially in the heat. A ceramic coating makes them far easier to remove and adds a protective barrier, while PPF guards against falling debris and chips."),
+      ("Can window tint be done without changing my Tesla's look in the Gables?",
+       "Yes. XPEL ceramic tint comes in shades that keep a clean, factory-correct appearance while cutting heat and UV, so your Tesla looks refined and stays comfortable."),
+      ("Do you serve Coral Gables?",
+       "Yes, we protect Teslas throughout Coral Gables, from Miracle Mile to Cocoplum and Gables Estates. Our Doral shop is a short drive away. Call (786) 505-6162 to schedule.")]},
+  "aventura": {"name": "Aventura", "county": "miami-dade", "img": "cars/model-x/model-x-red-3",
+    "lead": "Between the ocean, the high-rises and the Aventura Mall traffic, an Aventura Tesla earns its protection. Here is how we keep it pristine.",
+    "intro": [
+      "Tesla Boutique Miami provides premium paint protection film, ceramic coating and window tint built exclusively for Tesla owners in Aventura, FL and the surrounding Sunny Isles area. Life near the water means salt air and intense sun, while the daily reality of Aventura Mall garages, Biscayne Boulevard and high-rise valet means door dings, tight parking and constant exposure for your Model 3, Y, S, X or Cybertruck.",
+      "We protect Aventura Teslas with genuine XPEL paint protection film on high-impact panels, XPEL Fusion Plus ceramic coating that shrugs off salt air and makes washing easy, and XPEL Prime XR Plus ceramic tint that rejects the heat and UV coming off the water and the open sky. Patterns are model-specific and every install is registered to your VIN. Our installation shop is in Doral, an easy drive down US-1 or the Turnpike."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you protect Teslas in Aventura and Sunny Isles?",
+       "Yes. We serve Tesla owners across Aventura, Sunny Isles Beach and Williams Island. Installs are done at our Doral shop, an easy drive via US-1 or the Turnpike. Call (786) 505-6162."),
+      ("Is salt air from the ocean bad for my Tesla near Aventura?",
+       "Salt air accelerates corrosion and leaves residue that bonds to paint and glass. A ceramic coating plus PPF gives a protective, easy-clean barrier that stands up to the coastal environment far better than bare paint."),
+      ("How much does it cost to protect a Tesla in Aventura?",
+       "It depends on coverage; full-front vs full-body PPF, tint and ceramic are separate services you can combine. Call (786) 505-6162 for a quote tailored to your Tesla and how you drive.")]},
+  # ----- Broward -----
+  "fort-lauderdale": {"name": "Fort Lauderdale", "county": "broward", "img": "cars/model-s/model-s-blue-2",
+    "lead": "Yachts, Las Olas and the beach. Fort Lauderdale Teslas live between salt air and city traffic, and that is exactly what XPEL protection is built for.",
+    "intro": [
+      "Tesla Boutique Miami brings premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across Fort Lauderdale, FL. From Las Olas Boulevard to the beach and the downtown high-rises, a Fort Lauderdale Tesla deals with coastal salt air, intense sun and the stop-and-go of a busy city, all of which wear on factory paint and heat up the cabin.",
+      "We protect Fort Lauderdale Teslas with genuine XPEL film on the high-impact panels, Fusion Plus ceramic coating that makes salt and grime easy to rinse off, and XPEL Prime XR Plus ceramic tint to cut the heat near the water. Patterns are model-specific and registered to your VIN. Our shop is a quick run south on I-95 from Fort Lauderdale."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Fort Lauderdale Tesla owners?",
+       "Yes. We protect Teslas across Fort Lauderdale, from Las Olas and Victoria Park to the beach. Installs are done at our Doral shop, a quick drive south on I-95. Call (786) 505-6162 to book."),
+      ("Is salt air near the beach bad for my Tesla?",
+       "Yes. Coastal salt air leaves residue that bonds to paint and glass. A ceramic coating plus PPF makes it far easier to rinse off and protects the finish from the corrosive effects of living near the water."),
+      ("Where do you install, and how far is it from Fort Lauderdale?",
+       "All work is done in our controlled Doral shop for a flawless result. It is roughly 30 to 40 minutes south on I-95 or the Turnpike. Most clients drop off and we coordinate around their schedule.")]},
+  "hollywood": {"name": "Hollywood", "county": "broward", "img": "cars/model-y/model-y-2",
+    "lead": "Between the Broadwalk and the Turnpike, a Hollywood Tesla sees beach salt and highway grit in the same day. Here is how we keep it flawless.",
+    "intro": [
+      "Tesla Boutique Miami provides premium paint protection film, ceramic coating and window tint built exclusively for Tesla owners in Hollywood, FL. From the Hollywood Beach Broadwalk to Young Circle and the neighborhoods along the Turnpike, a Hollywood Tesla lives between salt air off the Atlantic and gravel-strewn commuter highways, with sun beating down year-round.",
+      "We protect Hollywood Teslas with genuine XPEL paint protection film where chips happen, Fusion Plus ceramic coating to shrug off beach residue and make washing easy, and XPEL Prime XR Plus ceramic tint to keep the cabin cool. Every install uses model-specific patterns registered to your VIN. Our Doral shop is a short drive south."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Do you protect Teslas in Hollywood, FL?",
+       "Yes, we serve Tesla owners throughout Hollywood, from the beach and Broadwalk to Young Circle and West Hollywood. Installs are at our nearby Doral shop. Call (786) 505-6162."),
+      ("My Tesla is parked near Hollywood Beach. What do you recommend?",
+       "Near the beach, the salt air is the main enemy. We recommend a ceramic coating to make salt residue easy to rinse, plus PPF on the front to stop chips. Ceramic tint keeps the cabin cool."),
+      ("How much does Tesla PPF cost for a Hollywood owner?",
+       "It depends on coverage; full-front vs full-body PPF, tint and ceramic are separate services you can combine. Call (786) 505-6162 for a quote tailored to your Tesla.")]},
+  "pembroke-pines": {"name": "Pembroke Pines", "county": "broward", "img": "cars/model-3/model-3-grey-3",
+    "lead": "A commuter's Tesla in Pembroke Pines racks up highway miles on I-75 and Pines Boulevard. That is exactly where paint protection pays off.",
+    "intro": [
+      "Tesla Boutique Miami offers premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across Pembroke Pines, FL. As one of Broward's largest family suburbs, Pembroke Pines means real daily mileage, on I-75, Pines Boulevard and the Turnpike, where gravel and construction debris chip a soft factory clear coat, plus long hours parked under the Florida sun.",
+      "We protect Pembroke Pines Teslas with genuine XPEL film on the hood, fenders and bumper that take the most impacts, XPEL Prime XR Plus ceramic tint to fight the heat in driveways and lots, and Fusion Plus ceramic coating for gloss and easy washing. Model-specific patterns, registered to your VIN. Our Doral shop is a short hop down I-75 or the Turnpike."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Do you serve Pembroke Pines?",
+       "Yes, we protect Teslas throughout Pembroke Pines. Installs are done at our Doral shop, an easy drive via I-75 or the Turnpike. Call (786) 505-6162 to schedule."),
+      ("I commute a lot on I-75. Is PPF worth it?",
+       "Definitely. High highway mileage is exactly when rock chips accumulate. Full-front PPF shields the panels that take the most fire and keeps your Tesla's paint, and resale value, intact."),
+      ("Does ceramic tint help in a hot Pembroke Pines driveway?",
+       "Yes. XPEL Prime XR Plus rejects up to 98% of infrared heat, so a Tesla parked in an open driveway or lot stays far cooler and the interior is protected from UV fading.")]},
+  "weston": {"name": "Weston", "county": "broward", "img": "cars/model-x/model-x-red-2",
+    "lead": "Manicured, gated and detail-conscious. Weston Tesla owners want their cars as immaculate as their neighborhoods, and we deliver exactly that.",
+    "intro": [
+      "Tesla Boutique Miami brings premium paint protection film, ceramic coating and window tint, exclusively for Tesla, to owners throughout Weston, FL. Known for its planned, manicured communities at the western edge of Broward near I-75 and the Everglades, Weston is home to discerning owners who expect a flawless finish, and to long commutes that expose a Tesla to highway debris and intense sun.",
+      "We protect Weston Teslas with meticulous, edge-wrapped XPEL film, Fusion Plus ceramic coating for a deep, easy-clean gloss, and XPEL Prime XR Plus ceramic tint for comfort and UV protection. Every install uses model-specific patterns and is registered to your VIN. Our Doral shop is a straight run south on I-75."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Weston Tesla owners?",
+       "Yes, we protect Teslas throughout Weston. Installs are done at our Doral shop, a straight drive south on I-75. Call (786) 505-6162 to book."),
+      ("I want a showroom finish. What gives the best gloss?",
+       "Paint correction followed by a Fusion Plus ceramic coating delivers the deepest, glassiest finish, and the coating makes the car far easier to keep clean. Add PPF up front to stop chips."),
+      ("Is full-body PPF popular in Weston?",
+       "Yes. For owners who keep their Tesla pristine and protect resale, full-body film covers every painted panel. We pattern it precisely with wrapped edges.")]},
+  "miramar": {"name": "Miramar", "county": "broward", "img": "cars/model-y/model-y-white-1",
+    "lead": "A growing Miramar Tesla spends its life on the Turnpike and I-75. Protect the paint before the highway miles add up.",
+    "intro": [
+      "Tesla Boutique Miami provides premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across Miramar, FL. As one of South Florida's fastest-growing suburbs, Miramar means commuting, on the Turnpike, I-75 and Miramar Parkway, where gravel and debris chip factory paint, plus year-round sun on cars parked in the open.",
+      "We protect Miramar Teslas with genuine XPEL film on the high-impact front end, XPEL Prime XR Plus ceramic tint to cut heat and UV, and Fusion Plus ceramic coating for gloss and easy cleaning. Patterns are model-specific and registered to your VIN. Our Doral shop is just minutes away to the south."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Do you serve Miramar?",
+       "Yes, we protect Teslas throughout Miramar, and our Doral shop is only minutes south. Call (786) 505-6162 to schedule your install."),
+      ("I just got a new Tesla in Miramar. When should I get PPF?",
+       "Before the first long highway drive. Protecting factory-fresh paint means the finish under the film stays perfect. Bring it in early and we will have genuine XPEL ready."),
+      ("What is the closest Tesla protection shop to Miramar?",
+       "Our Doral shop is one of the closest dedicated Tesla protection studios, just a short drive south. We are Tesla-only and an XPEL exclusive dealer.")]},
+  # ----- Palm Beach -----
+  "boca-raton": {"name": "Boca Raton", "county": "palm-beach", "img": "cars/model-s/model-s-blue-3",
+    "lead": "Golf, gated communities and an eye for detail. Boca Raton Tesla owners expect perfection, and XPEL protection delivers it.",
+    "intro": [
+      "Tesla Boutique Miami offers premium paint protection film, ceramic coating and window tint, built exclusively for Tesla, to owners throughout Boca Raton, FL. From Mizner Park to the gated golf communities and the A1A coastline, Boca is synonymous with high standards, and its mix of coastal salt air and sun-drenched parking is hard on an unprotected Tesla.",
+      "We protect Boca Raton Teslas with meticulous XPEL paint protection film, Fusion Plus ceramic coating that keeps salt and grime from bonding, and XPEL Prime XR Plus ceramic tint for comfort and UV defense. Every install uses model-specific patterns and is registered to your VIN. We are an easy run down I-95 from Boca."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Boca Raton Tesla owners?",
+       "Yes. We protect Teslas across Boca Raton, from Mizner Park to the coastal communities. Installs are at our Doral shop, a straightforward drive south on I-95. Call (786) 505-6162."),
+      ("What protection keeps a Tesla looking showroom-perfect in Boca?",
+       "A combination: PPF to stop chips, a Fusion Plus ceramic coating for deep gloss and easy cleaning, and ceramic tint for the sun. Together they keep the car immaculate year-round."),
+      ("Is the drive from Boca to your shop worth it?",
+       "Our clients think so. We are Tesla-only, an XPEL exclusive dealer, and we document every install. Most drop the car and we coordinate timing for the drive down.")]},
+  "west-palm-beach": {"name": "West Palm Beach", "county": "palm-beach", "img": "cars/model-3/model-3-grey-4",
+    "lead": "Downtown energy and waterfront views. A West Palm Beach Tesla deals with city miles and coastal sun in equal measure.",
+    "intro": [
+      "Tesla Boutique Miami provides premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across West Palm Beach, FL. From Clematis Street and downtown to the Intracoastal waterfront, a West Palm Tesla sees busy city driving, coastal salt air and strong year-round sun, a combination that chips paint and bakes cabins.",
+      "We protect West Palm Beach Teslas with genuine XPEL film on the front-end impact zones, Fusion Plus ceramic coating for easy cleaning and gloss, and XPEL Prime XR Plus ceramic tint to cut the heat. Model-specific patterns, registered to your VIN. Our Doral shop is a clear run south on I-95 or the Turnpike."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("Do you protect Teslas in West Palm Beach?",
+       "Yes, we serve Tesla owners throughout West Palm Beach. Installs are at our Doral shop via I-95 or the Turnpike. Call (786) 505-6162 to book."),
+      ("Does the waterfront salt air affect my Tesla?",
+       "Yes. Salt residue from the Intracoastal and ocean bonds to paint and glass. A ceramic coating makes it far easier to rinse off and protects the finish; PPF guards against chips."),
+      ("How much to protect a Tesla from West Palm Beach?",
+       "Pricing depends on the coverage you choose. Call (786) 505-6162 and we will build a PPF, tint and ceramic package around how you use the car.")]},
+  "delray-beach": {"name": "Delray Beach", "county": "palm-beach", "img": "cars/model-y/model-y-3",
+    "lead": "Atlantic Avenue, the beach and the sun. A Delray Beach Tesla is a beach-town car, and beach-town cars need real protection.",
+    "intro": [
+      "Tesla Boutique Miami brings premium paint protection film, ceramic coating and window tint, exclusively for Tesla, to owners throughout Delray Beach, FL. Between Atlantic Avenue, the beach and the coastal neighborhoods, a Delray Tesla lives in salt air and sun, the two things hardest on automotive paint and interiors.",
+      "We protect Delray Beach Teslas with genuine XPEL film against chips, Fusion Plus ceramic coating so salt and sand rinse away instead of etching the finish, and XPEL Prime XR Plus ceramic tint to block heat and UV. Patterns are model-specific and registered to your VIN. Our shop is a straightforward drive south in Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Delray Beach?",
+       "Yes, we protect Teslas throughout Delray Beach, from Atlantic Avenue to the coastal neighborhoods. Installs are at our Doral shop. Call (786) 505-6162."),
+      ("Is ceramic coating a good idea for a beach-town Tesla?",
+       "Absolutely. In a salt-and-sand environment like Delray, a ceramic coating makes residue easy to rinse, adds UV resistance and keeps the gloss looking fresh between washes."),
+      ("Do you use genuine XPEL on Delray Teslas?",
+       "Always. As an XPEL exclusive dealer we install only genuine XPEL film and coatings, registered to your Tesla's VIN with the full manufacturer warranty.")]},
+  "wellington": {"name": "Wellington", "county": "palm-beach", "img": "cars/model-x/model-x-red-4",
+    "lead": "Equestrian country, manicured and refined. Wellington Tesla owners hold their cars to a high standard, and so do we.",
+    "intro": [
+      "Tesla Boutique Miami offers premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners across Wellington, FL. Known for its equestrian estates and manicured communities, Wellington pairs refined tastes with real driving, long roads, open sun and the dust and debris of a semi-rural setting at the edge of Palm Beach County.",
+      "We protect Wellington Teslas with meticulous XPEL paint protection film, Fusion Plus ceramic coating for an easy-clean, high-gloss finish, and XPEL Prime XR Plus ceramic tint for comfort under the open sky. Every install uses model-specific patterns and is registered to your VIN. We are a clear run south from Wellington."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Wellington Tesla owners?",
+       "Yes, we protect Teslas throughout Wellington. Installs are done at our Doral shop. Call (786) 505-6162 and we will coordinate timing for the drive."),
+      ("Does dust and open-road debris matter for my Tesla?",
+       "It does. Open roads and a semi-rural setting mean more airborne grit and chips. PPF protects the front-end impact zones and a ceramic coating keeps dust from bonding to the paint."),
+      ("What is the best protection for a low-maintenance, glossy finish?",
+       "A ceramic coating over corrected paint gives the deepest gloss and the easiest upkeep. Add front PPF to stop chips and your Tesla stays showroom-fresh with minimal effort.")]},
+  "jupiter": {"name": "Jupiter", "county": "palm-beach", "img": "cars/cybertruck/cybertruck-4-white",
+    "lead": "Lighthouse, beaches and boating. At the northern tip of our service area, a Jupiter Tesla lives in salt air and sun.",
+    "intro": [
+      "Tesla Boutique Miami provides premium paint protection film, ceramic coating and window tint, built exclusively for Tesla, to owners in Jupiter, FL. From the Jupiter Inlet Lighthouse to the beaches and the boating communities along the Loxahatchee, a Jupiter Tesla is constantly exposed to coastal salt air and strong sun at the northern edge of Palm Beach County.",
+      "We protect Jupiter Teslas with genuine XPEL film against chips and debris, Fusion Plus ceramic coating that makes salt residue easy to rinse, and XPEL Prime XR Plus ceramic tint to cut heat and UV. Patterns are model-specific and registered to your VIN. We serve Jupiter owners by appointment at our Doral shop."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Jupiter, FL Tesla owners?",
+       "Yes. Jupiter is at the northern edge of our service area; we protect Teslas there by appointment at our Doral shop. Call (786) 505-6162 and we will coordinate timing."),
+      ("Is salt air from the inlet and ocean hard on a Tesla?",
+       "Yes. Coastal salt bonds to paint and glass and accelerates wear. A ceramic coating plus PPF gives a protective, easy-clean barrier that handles the coastal environment far better than bare paint."),
+      ("Is the drive from Jupiter worth it?",
+       "For owners who want a Tesla-only, XPEL exclusive specialist, yes. Most drop the car and we coordinate the visit. We document every install so you see exactly the finish.")]},
+  # ----- Monroe (The Keys) -----
+  "key-west": {"name": "Key West", "county": "monroe", "img": "cars/cybertruck/cybertruck-5-white",
+    "lead": "The southernmost city in the US, all salt air and sun. A Key West Tesla is gorgeous and seriously exposed.",
+    "intro": [
+      "Tesla Boutique Miami brings premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners in Key West, FL. At the very end of the Overseas Highway, Key West is surrounded by ocean on all sides, which means relentless salt air, blinding sun and humidity, about the harshest environment a vehicle can live in.",
+      "We protect Key West Teslas with genuine XPEL film against sun and road debris, Fusion Plus ceramic coating that makes salt residue rinse off and adds UV and chemical resistance, and XPEL Prime XR Plus ceramic tint to cut the open-sky heat. Patterns are model-specific and registered to your VIN. We serve Keys owners by appointment; reach out and we will coordinate the drive up to Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Key West Tesla owners?",
+       "Yes, we protect Teslas for Key West owners by appointment. Because installs are done at our Doral shop, we coordinate timing for the drive up US-1. Call (786) 505-6162."),
+      ("Is the Key West environment really that hard on a Tesla?",
+       "Yes. Surrounded by ocean, Key West subjects a car to constant salt air, intense UV and humidity. Ceramic coating plus PPF is the most effective defense, and ceramic tint protects the interior."),
+      ("How does service work if I am in the Keys?",
+       "We arrange a convenient drop-off window at our Doral shop and plan the work around your trip up the Overseas Highway, so the drive happens once and your Tesla comes back fully protected.")]},
+  "key-largo": {"name": "Key Largo", "county": "monroe", "img": "cars/model-y/model-y-white-2",
+    "lead": "The diving capital and gateway to the Keys. A Key Largo Tesla starts every trip on US-1, in full sun and salt air.",
+    "intro": [
+      "Tesla Boutique Miami offers premium paint protection film, ceramic coating and window tint, exclusively for Tesla, to owners in Key Largo, FL. As the first island in the chain and the gateway to the Keys, Key Largo means life on US-1, surrounded by water, sun and salt that work relentlessly on automotive paint, glass and interiors.",
+      "We protect Key Largo Teslas with genuine XPEL film against the sun and road debris of the Overseas Highway, Fusion Plus ceramic coating so salt rinses off easily, and XPEL Prime XR Plus ceramic tint to block heat and UV. Patterns are model-specific and registered to your VIN. We are the closest Keys community to our Doral shop; reach out to coordinate."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Key Largo?",
+       "Yes. Key Largo is the closest Keys community to our Doral shop. We protect Teslas there by appointment and coordinate timing for the drive up US-1. Call (786) 505-6162."),
+      ("What protection is best for a Tesla in the Keys?",
+       "Ceramic coating plus PPF. The coating fights salt and UV and keeps the car easy to rinse; PPF stops chips on the long US-1 miles. Ceramic tint keeps the cabin cool."),
+      ("Can you protect my new Tesla before I take it to the Keys?",
+       "Ideally yes. Protecting factory-fresh paint before the salt and sun of island life keeps the finish underneath perfect. Bring it in early and we will have genuine XPEL ready.")]},
+  "islamorada": {"name": "Islamorada", "county": "monroe", "img": "cars/model-s/model-s-blue-4",
+    "lead": "The sport-fishing village of islands. An Islamorada Tesla is a coastal car through and through, and needs protection to match.",
+    "intro": [
+      "Tesla Boutique Miami provides premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners in Islamorada, FL. Strung across several islands in the Upper Keys, Islamorada is all waterfront, which means constant salt air, strong sun and the open exposure of life along the Overseas Highway.",
+      "We protect Islamorada Teslas with genuine XPEL film against debris and UV, Fusion Plus ceramic coating that keeps salt from bonding to the finish, and XPEL Prime XR Plus ceramic tint to cut the heat. Patterns are model-specific and registered to your VIN. We serve Islamorada owners by appointment at our Doral shop."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Islamorada Tesla owners?",
+       "Yes, by appointment. Installs are done at our Doral shop, so we coordinate timing for the drive up US-1 from the Upper Keys. Call (786) 505-6162."),
+      ("Why does a coastal Tesla need ceramic coating?",
+       "Salt air and sun are relentless in Islamorada. A ceramic coating makes salt residue easy to rinse, adds UV and chemical resistance, and keeps the gloss looking fresh far longer than wax."),
+      ("Do you only work on Teslas?",
+       "Yes. We are a Tesla-only studio and an XPEL exclusive dealer, so every pattern, product and process is tuned specifically for Tesla, including yours in the Keys.")]},
+  "marathon": {"name": "Marathon", "county": "monroe", "img": "cars/model-x/model-x-red-5",
+    "lead": "Middle Keys, the Seven Mile Bridge and open water on both sides. A Marathon Tesla lives in salt air and sun.",
+    "intro": [
+      "Tesla Boutique Miami brings premium paint protection film, ceramic coating and window tint, built exclusively for Tesla, to owners in Marathon, FL. In the heart of the Middle Keys near the Seven Mile Bridge, Marathon is surrounded by open water, which means a Tesla here faces constant salt air, intense sun and the long highway miles of island living.",
+      "We protect Marathon Teslas with genuine XPEL film against road debris and UV, Fusion Plus ceramic coating so salt rinses away easily, and XPEL Prime XR Plus ceramic tint to block the open-sky heat. Patterns are model-specific and registered to your VIN. We serve Marathon owners by appointment at our Doral shop."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Marathon in the Keys?",
+       "Yes, by appointment. Because installs are at our Doral shop, we coordinate timing for the drive up the Overseas Highway. Call (786) 505-6162 to plan it."),
+      ("Is salt air across the Seven Mile Bridge bad for my Tesla?",
+       "Open water on both sides means heavy salt exposure. A ceramic coating plus PPF gives the best protection: easy salt rinse-off, UV resistance and chip defense for the long highway miles."),
+      ("How long does protection take if I drive up from Marathon?",
+       "We plan the work around a single trip: drop the car at our Doral shop, and we complete the PPF, tint or ceramic so it comes back fully protected. Timelines depend on coverage; we confirm up front.")]},
+  "tavernier": {"name": "Tavernier", "county": "monroe", "img": "cars/model-3/model-3-grey-5",
+    "lead": "A quiet Upper Keys community on US-1. A Tavernier Tesla still faces the salt air and sun of island life every day.",
+    "intro": [
+      "Tesla Boutique Miami offers premium, Tesla-only paint protection film, ceramic coating and window tint to Tesla owners in Tavernier, FL. A residential community in the Upper Keys just south of Key Largo, Tavernier means everyday life on US-1, surrounded by water and sun, with salt air working constantly on paint, glass and interiors.",
+      "We protect Tavernier Teslas with genuine XPEL film against chips and UV, Fusion Plus ceramic coating that makes salt easy to rinse off, and XPEL Prime XR Plus ceramic tint to cut heat and protect the interior. Patterns are model-specific and registered to your VIN. We serve Tavernier owners by appointment at our Doral shop."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("Do you serve Tavernier Tesla owners?",
+       "Yes, by appointment. Tavernier is in the Upper Keys, a manageable drive up US-1 to our Doral shop. Call (786) 505-6162 and we will coordinate timing."),
+      ("What is the most important protection for a Keys Tesla?",
+       "A ceramic coating to handle salt and UV, paired with PPF on the front to stop chips on the long US-1 miles. Ceramic tint keeps the cabin cool under the island sun."),
+      ("Do you install genuine XPEL products?",
+       "Always. As an XPEL exclusive dealer we use only genuine XPEL film and coatings, registered to your Tesla's VIN with the full manufacturer warranty.")]},
+}
+
+def sa_postcard(prefix, href, img, pills, title, text, cta="Explore"):
+    pill_html = "".join(f'<span class="pill">{p}</span>' for p in pills)
+    img_html = pic(prefix, img, f"{title} - Tesla protection by Tesla Boutique Miami", 700, 438)
+    if href:
+        return (f'<a class="project-tile reveal" href="{href}">{img_html}'
+                f'<div class="project-tile-body"><div class="tag-row">{pill_html}</div>'
+                f'<h3>{title}</h3><p>{text}</p><span class="card-link">{cta} &rarr;</span></div></a>')
+    return (f'<div class="project-tile reveal">{img_html}'
+            f'<div class="project-tile-body"><div class="tag-row">{pill_html}</div>'
+            f'<h3>{title}</h3><p>{text}</p>'
+            f'<span class="card-link" style="opacity:.55">Coming soon</span></div></div>')
+
+def sa_why_block(place):
+    return ('<section class="section section-grad"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Why Tesla Boutique Miami</span>'
+            '<h2 class="section-title">Why choose Tesla Boutique Miami?</h2></div><div class="why-grid">'
+            '<div class="why-item reveal"><span class="why-number">01</span><h3>Tesla Specialists Only</h3>'
+            f'<p>We work exclusively on Tesla. We know every panel, sensor and camera placement on Model 3, Y, S, X and Cybertruck, so {place} owners get patterns made for Tesla, not adapted.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">02</span><h3>XPEL Exclusive Dealer</h3>'
+            '<p>Authorized XPEL exclusive dealer with 15+ years installing PPF, ceramic and films. Only genuine XPEL products, with full manufacturer warranty registered to your VIN.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">03</span><h3>Built for Miami</h3>'
+            f'<p>Salt air, sun and gravel-strewn highways are exactly what we protect against every day. Our recommendations are tuned to how Teslas actually get driven in {place}.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">04</span><h3>Flawless, Documented Work</h3>'
+            '<p>Meticulous edge wraps, a controlled install bay in Doral, and every project photographed, so you see exactly the finish that comes out of our shop.</p></div>'
+            '</div></div></section>')
+
+def sa_cta(prefix, title, desc):
+    return (f'<section class="cta-section"><div class="container"><div class="cta-content">'
+            f'<h2 class="cta-title">{title}</h2><p class="cta-desc">{desc}</p>'
+            f'<div class="cta-buttons">'
+            f'<a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">{PHONE_DISP}</a>'
+            f'<a href="{prefix}index.html#contact" class="btn btn-outline btn-lg">Send an inquiry</a>'
+            f'<a href="https://www.unlimitedwraps.com/contact-us" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Book via Unlimited Wraps</a>'
+            f'</div></div></div></section>')
+
+def build_service_area_hub():
+    path = "service-area/index.html"
+    prefix = "../"
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Service Area", "")])
+    hero = page_hero(prefix, "cars/model-s/model-s-blue-1", 'Tesla <span class="highlight">Service Area</span> in South Florida',
+        "Tesla Boutique Miami protects Teslas across South Florida. Find your county and city to see how we keep your Tesla flawless in your area.", "", crumbs)
+    intro = ('<section class="section"><div class="container"><div class="prose">'
+             '<h2>Where we protect Teslas</h2>'
+             '<p>Based in Doral, Tesla Boutique Miami serves Tesla owners throughout South Florida with genuine XPEL paint protection film, ceramic coating, window tint and custom wraps. We have organized our service area by county and city so you can see exactly how we protect Teslas where you live and drive: the local roads, the climate and the everyday hazards your Model 3, Y, S, X or Cybertruck faces.</p>'
+             '<p>Choose your county below to get started. Each area links to the cities we serve, with local detail and the services we recommend most.</p>'
+             '</div></div></section>')
+    cards = ""
+    for c in COUNTIES:
+        live = bool(c["cities"])
+        href = f"{prefix}service-area/{c['slug']}/index.html" if live else ""
+        n = len(c["cities"])
+        text = c["lead"] if live else c["lead"] + " Coming soon."
+        cards += sa_postcard(prefix, href, c["img"], [c["tag"]], c["name"], text,
+                             cta=f"Explore {c['short']}")
+    grid = (f'<section class="section section-alt"><div class="container">'
+            f'<div class="section-header"><span class="section-tag">By county</span>'
+            f'<h2 class="section-title">Choose your county</h2></div>'
+            f'<div class="project-list-grid">{cards}</div></div></section>')
+    cta = sa_cta(prefix, "Protect your Tesla, wherever you are in South Florida",
+                 "Tell us your Tesla and your city, and we will recommend the right PPF, tint and ceramic package and a convenient time at our Doral shop.")
+    body = hero + intro + grid + cta
+    ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Service Area", f"{DOMAIN}/service-area/index.html")]),
+          json.dumps({"@context": "https://schema.org", "@type": "CollectionPage",
+            "name": "Tesla Boutique Miami Service Area", "url": f"{DOMAIN}/service-area/index.html",
+            "description": "Counties and cities served by Tesla Boutique Miami for Tesla PPF, ceramic coating and window tint across South Florida."}, ensure_ascii=False)]
+    title = "Tesla Service Area in Miami &amp; South Florida | Tesla Boutique Miami"
+    desc = "Tesla Boutique Miami serves Tesla owners across South Florida with XPEL PPF, ceramic coating and window tint. Find your county and city, from Miami-Dade to the Keys. Call (786) 505-6162."
+    return doc(path, title, desc, body, active="area", preload="cars/model-s/model-s-blue-1", extra_ld=ld)
+
+def build_county(c):
+    slug = c["slug"]
+    path = f"service-area/{slug}/index.html"
+    prefix = "../../"
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"),
+                                       ("Service Area", prefix + "service-area/index.html"), (c["name"], "")])
+    hero = page_hero(prefix, c["img"], f'Tesla protection in <span class="highlight">{c["name"]}</span>',
+                     c["lead"], "", crumbs)
+    intro = "".join(f"<p>{p}</p>" for p in c["intro"])
+    intro_sec = (f'<section class="section"><div class="container"><div class="prose">'
+                 f'<h2>Protecting Teslas across {c["short"]}</h2>{intro}</div></div></section>')
+    cards = ""
+    for cs in c["cities"]:
+        ci = CITIES[cs]
+        cards += sa_postcard(prefix, f"{prefix}service-area/{slug}/{cs}.html", ci["img"],
+                             [ci["name"]], ci["name"] + ", FL",
+                             ci["lead"], cta=f"Tesla protection in {ci['name']}")
+    grid = (f'<section class="section section-alt"><div class="container">'
+            f'<div class="section-header"><span class="section-tag">Cities we serve</span>'
+            f'<h2 class="section-title">Find your city in {c["short"]}</h2></div>'
+            f'<div class="project-list-grid">{cards}</div></div></section>')
+    svc = service_cards_block("What we do", "Tesla services we recommend", prefix,
+                              ["paint-protection-film", "window-tint", "ceramic-coating"])
+    cta = sa_cta(prefix, f"Protect your Tesla in {c['short']}",
+                 "Pick your city above for local detail, or tell us your Tesla and we will recommend the right protection and a time at our Doral shop.")
+    body = hero + intro_sec + grid + svc + cta
+    ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Service Area", f"{DOMAIN}/service-area/index.html"),
+                                 (c["name"], f"{DOMAIN}/service-area/{slug}/index.html")])]
+    title = f'Tesla PPF, Ceramic &amp; Window Tint in {c["name"]} | Tesla Boutique Miami'
+    desc = (c["lead"][:150]).rsplit(" ", 1)[0] + " XPEL PPF, ceramic and tint. Call (786) 505-6162."
+    return doc(path, title, desc, body, active="area", preload=c["img"], extra_ld=ld)
+
+def build_city(slug, d):
+    county = COUNTY_BY_SLUG[d["county"]]
+    path = f"service-area/{county['slug']}/{slug}.html"
+    prefix = "../../"
+    city = d["name"]
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"),
+                                       ("Service Area", prefix + "service-area/index.html"),
+                                       (county["name"], prefix + f"service-area/{county['slug']}/index.html"),
+                                       (city, "")])
+    ctas = (f'<div class="hero-ctas"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">Get a quote</a>'
+            f'<a href="{prefix}index.html#contact" class="btn btn-outline btn-lg">Send an inquiry</a></div>')
+    hero = page_hero(prefix, d["img"], f'Tesla protection in <span class="highlight">{city}, FL</span>',
+                     d["lead"], ctas, crumbs)
+    intro = "".join(f"<p>{p}</p>" for p in d["intro"])
+    intro_sec = (f'<section class="section"><div class="container"><div class="prose">'
+                 f'<h2>Premium Tesla PPF, ceramic &amp; tint in {city}, FL</h2>{intro}</div></div></section>')
+    svc = service_cards_block(f"For {city} Tesla owners", "Our services", prefix, d["services"])
+    why = sa_why_block(city)
+    fq = faq_block(d["faqs"])
+    rel_chips = [chip(prefix + f"service-area/{county['slug']}/index.html", f"All of {county['short']}")]
+    for cs in county["cities"]:
+        if cs != slug:
+            rel_chips.append(chip(prefix + f"service-area/{county['slug']}/{cs}.html", CITIES[cs]["name"]))
+    rel = related_block("Nearby cities", rel_chips)
+    cta = sa_cta(prefix, f"Ready to protect your Tesla in {city}?",
+                 f"Tell us your model and what you are after. We will recommend the right PPF, tint or ceramic for {city} driving and set a time at our Doral shop.")
+    body = hero + intro_sec + svc + why + fq + rel + cta
+    service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
+        "name": f"Tesla Paint Protection, Ceramic Coating &amp; Window Tint in {city}",
+        "serviceType": "Automotive paint protection film, ceramic coating and window tint",
+        "brand": {"@type": "Brand", "name": "XPEL"},
+        "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162",
+                     "url": DOMAIN + "/", "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave",
+                     "addressLocality": "Doral", "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"}},
+        "areaServed": {"@type": "City", "name": city + ", FL"},
+        "description": d["lead"]}, ensure_ascii=False)
+    ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Service Area", f"{DOMAIN}/service-area/index.html"),
+                                 (county["name"], f"{DOMAIN}/service-area/{county['slug']}/index.html"),
+                                 (city, f"{DOMAIN}/{path}")]), service_ld, faq_ld(d["faqs"])]
+    title = f'Tesla PPF, Ceramic Coating &amp; Window Tint in {city}, FL | Tesla Boutique Miami'
+    desc = f'Premium Tesla paint protection film, ceramic coating and window tint for {city}, FL. Genuine XPEL, Tesla-only specialists in nearby Doral. Call (786) 505-6162.'
+    return doc(path, title, desc, body, active="area", preload=d["img"], extra_ld=ld)
+
 def main():
     pages = {}
     pages["index.html"] = build_home()
@@ -1100,11 +1530,16 @@ def main():
     pages["models/tesla-model-y-ppf-miami.html"] = build_combo()
     for slug, d in SERVICES.items():
         pages[f"services/{slug}.html"] = build_service(slug, d)
-    pages["projects/index.html"] = build_projects_index()
-    pages["projects/sample-tesla-model-y-full-front-ppf.html"] = build_project_sample()
     pages["news/index.html"] = build_news()
     for slug, d in POSTS.items():
         pages[f"news/{slug}.html"] = build_post(slug, d)
+    pages["service-area/index.html"] = build_service_area_hub()
+    for c in COUNTIES:
+        if c["cities"]:
+            pages[f"service-area/{c['slug']}/index.html"] = build_county(c)
+    for slug, d in CITIES.items():
+        county = COUNTY_BY_SLUG[d["county"]]
+        pages[f"service-area/{county['slug']}/{slug}.html"] = build_city(slug, d)
     for path, html in pages.items():
         full = os.path.join(ROOT, path)
         os.makedirs(os.path.dirname(full), exist_ok=True)

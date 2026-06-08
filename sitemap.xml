@@ -235,42 +235,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://teslaboutiquemiami.com/projects/index.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/projects/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/projects/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/projects/index.html"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://teslaboutiquemiami.com/es/projects/index.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/projects/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/projects/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/projects/index.html"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://teslaboutiquemiami.com/projects/sample-tesla-model-y-full-front-ppf.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://teslaboutiquemiami.com/es/projects/sample-tesla-model-y-full-front-ppf.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/projects/sample-tesla-model-y-full-front-ppf.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://teslaboutiquemiami.com/news/index.html</loc>
     <lastmod>2026-06-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/news/index.html"/>
@@ -359,5 +323,455 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/news/ppf-ceramic-care-miami.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/fort-lauderdale.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/fort-lauderdale.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/fort-lauderdale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/fort-lauderdale.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/fort-lauderdale.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/fort-lauderdale.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/fort-lauderdale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/fort-lauderdale.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/hollywood.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/hollywood.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/hollywood.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/hollywood.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/hollywood.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/hollywood.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/hollywood.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/hollywood.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/miramar.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/miramar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/miramar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/miramar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/miramar.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/miramar.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/miramar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/miramar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/pembroke-pines.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/pembroke-pines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/pembroke-pines.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/pembroke-pines.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/pembroke-pines.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/pembroke-pines.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/pembroke-pines.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/pembroke-pines.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/broward/weston.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/weston.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/weston.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/weston.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/broward/weston.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/broward/weston.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/broward/weston.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/broward/weston.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/aventura.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/aventura.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/aventura.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/aventura.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/aventura.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/aventura.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/aventura.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/aventura.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/coral-gables.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/coral-gables.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/coral-gables.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/coral-gables.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/coral-gables.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/coral-gables.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/coral-gables.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/coral-gables.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/doral.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/doral.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/doral.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/doral.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/doral.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/doral.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/doral.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/doral.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/miami-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/miami-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/miami-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/miami-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/miami-dade/miami.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/miami.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/miami-dade/miami.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/miami-dade/miami.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/miami-dade/miami.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/islamorada.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/islamorada.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/islamorada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/islamorada.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/islamorada.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/islamorada.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/islamorada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/islamorada.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/key-largo.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/key-largo.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/key-largo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/key-largo.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/key-largo.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/key-largo.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/key-largo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/key-largo.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/key-west.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/key-west.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/key-west.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/key-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/key-west.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/key-west.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/key-west.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/key-west.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/marathon.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/marathon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/marathon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/marathon.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/marathon.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/marathon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/marathon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/marathon.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/monroe/tavernier.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/tavernier.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/tavernier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/tavernier.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/monroe/tavernier.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/monroe/tavernier.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/monroe/tavernier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/monroe/tavernier.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/boca-raton.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/boca-raton.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/boca-raton.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/boca-raton.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/boca-raton.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/boca-raton.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/boca-raton.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/boca-raton.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/delray-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/delray-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/delray-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/delray-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/delray-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/delray-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/delray-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/delray-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/jupiter.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/jupiter.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/jupiter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/jupiter.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/jupiter.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/jupiter.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/jupiter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/jupiter.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/wellington.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/wellington.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/wellington.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/wellington.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/wellington.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/wellington.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/wellington.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/wellington.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/service-area/palm-beach/west-palm-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/west-palm-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/west-palm-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/west-palm-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/service-area/palm-beach/west-palm-beach.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/service-area/palm-beach/west-palm-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/service-area/palm-beach/west-palm-beach.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/service-area/palm-beach/west-palm-beach.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -59,7 +59,7 @@ def header_es(esp, rootp, en_path, active=""):
         '<nav class="main-nav" id="primary-nav" aria-label="Principal"><ul class="main-nav-links">'
         '<li class="has-dropdown"><a href="%sindex.html#models"%s>Modelos Tesla</a><ul class="dropdown">%s</ul></li>'
         '<li class="has-dropdown"><a href="%sindex.html#services"%s>Servicios</a><ul class="dropdown">%s</ul></li>'
-        '<li><a href="%sprojects/index.html"%s>Proyectos</a></li>'
+        '<li><a href="%sservice-area/index.html"%s>Zona de Servicio</a></li>'
         '<li><a href="%snews/index.html"%s>Updates</a></li>'
         '<li><a href="%sindex.html#contact">Contacto</a></li></ul>'
         '<div class="lang-switch" aria-label="Idioma"><a href="%s%s">EN</a><a href="#" aria-current="true">ES</a></div></nav>'
@@ -68,7 +68,7 @@ def header_es(esp, rootp, en_path, active=""):
         '</div></div></header>') % (
         esp, LOGO_ES, svg('<path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'),
         esp, cur("models"), md, esp, cur("services"), sd,
-        esp, cur("projects"), esp, cur("news"), esp,
+        esp, cur("area"), esp, cur("news"), esp,
         rootp, en_path, PHONE_TEL, svg(IC["phone"]), PHONE_DISP, esp)
 
 def footer_es(esp, rootp):
@@ -455,8 +455,7 @@ def build_model_es(slug, d):
     chips = []
     if d.get("combo"): chips.append(chip(d["combo"][0], d["combo"][1]))
     chips += [chip(esp+"services/window-tint.html", "Polarizado Tesla"),
-              chip(esp+"services/ceramic-coating.html", "Cerámico Tesla"),
-              chip(esp+"projects/index.html", "Ver proyectos %s" % name)]
+              chip(esp+"services/ceramic-coating.html", "Cerámico Tesla")]
     rel = related_es(chips)
     cta = cta_es("Protege tu %s" % name, "Dinos tu color y cómo manejas, y te recomendamos la combinación correcta de PPF, polarizado y cerámico para tu %s." % name)
     gallery = model_gallery_es(rootp, name, d["gallery"]) if d.get("gallery") else ""
@@ -541,7 +540,7 @@ def build_combo_es():
              '<p>¿Quieres el panorama completo? Ve la <a href="model-y.html">guía de protección del Tesla Model Y</a> o el <a href="../services/paint-protection-film.html">resumen del servicio de PPF</a>.</p>'
              '</div></div></section>')
     rel = related_es([chip("model-y.html", "Polarizado de Model Y en Miami"), chip("model-3.html", "PPF de Model 3 en Miami"),
-                      chip("../projects/index.html", "Proyectos de PPF Model Y"), chip("../services/paint-protection-film.html", "Sobre el PPF de XPEL")])
+                      chip("../services/paint-protection-film.html", "Sobre el PPF de XPEL")])
     cta = cta_es("Pon film a tu Model Y", "Cotización rápida para PPF frontal o de cuerpo completo en tu Model Y.")
     body = hero + prose + rel + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
@@ -738,6 +737,432 @@ def build_news_es():
                   "Novedades de Tesla Boutique Miami: proyectos nuevos, noticias de productos XPEL y consejos para cuidar el PPF, el cerámico y el polarizado de tu Tesla.",
                   body, active="news", preload="tesla-model-s-ceramic-coating", extra_ld=ld)
 
+# ---------- ES SERVICE AREA ----------
+COUNTIES_ES = [
+  {"slug": "miami-dade", "name": "Condado de Miami-Dade", "short": "Miami-Dade",
+   "img": "cars/model-y/model-y-1", "tag": "Nuestro condado",
+   "lead": "De Doral a las playas, Miami-Dade es donde Tesla Boutique Miami vive y trabaja. Es nuestro condado, y el que mejor conocemos.",
+   "intro": [
+     "Miami-Dade es el condado más poblado de Florida y uno de los mercados Tesla más densos del país. También es nuestra casa: nuestro taller está en Doral, en el corazón del condado, lo que significa que los propietarios de Tesla en Miami-Dade reciben el servicio más rápido y conveniente que ofrecemos. De las torres financieras de Brickell a la arena de Miami Beach y las calles arboladas de Coral Gables, el condado concentra una enorme variedad de condiciones de manejo en poco espacio.",
+     "Lo que todo Tesla de Miami-Dade comparte es la exposición: la I-95, el Palmetto y el Dolphin Expressway lanzan grava y escombros de construcción sin parar, el sol es implacable todo el año, y el estacionamiento denso de valet y garajes significa golpes de puerta y espacios apretados. Ese es exactamente el entorno para el que se crearon la protección de pintura, el recubrimiento cerámico y el polarizado cerámico XPEL. Elige tu ciudad abajo para ver cómo protegemos Teslas en tu parte de Miami-Dade."],
+   "cities": ["miami", "miami-beach", "doral", "coral-gables", "aventura"]},
+  {"slug": "broward", "name": "Condado de Broward", "short": "Broward",
+   "img": "cars/model-3/model-3-grey", "tag": "Fort Lauderdale y norte",
+   "lead": "Fort Lauderdale, Hollywood y las ciudades justo al norte. Los propietarios de Tesla en Broward están a un corto trayecto por la I-95 o el Turnpike desde nuestro taller en Doral.",
+   "intro": [
+     "El condado de Broward se extiende de las playas del Atlántico hacia el interior hasta el borde de los Everglades, y es uno de los mercados Tesla de más rápido crecimiento del sur de Florida. Para los propietarios en Fort Lauderdale, Hollywood y los suburbios del oeste, estamos a un trayecto directo por la I-95 o el Turnpike desde nuestro taller en Doral. Broward combina la vida de playa con suburbios extensos, así que un Tesla aquí enfrenta aire salino cerca de la costa y largos kilómetros de autopista llenos de grava tierra adentro.",
+     "Ya sea que cruces la 595, estaciones cerca de Las Olas o viajes desde Weston, las amenazas son las mismas: picaduras, sol implacable y sal costera. La protección de pintura, el recubrimiento cerámico y el polarizado cerámico XPEL están hechos justo para esto. Elige tu ciudad de Broward abajo para ver cómo protegemos Teslas en tu zona."],
+   "cities": ["fort-lauderdale", "hollywood", "pembroke-pines", "weston", "miramar"]},
+  {"slug": "palm-beach", "name": "Condado de Palm Beach", "short": "Palm Beach",
+   "img": "cars/model-x/model-x-red-1", "tag": "Boca Raton y la costa",
+   "lead": "Boca Raton, West Palm Beach y las comunidades acomodadas del condado de Palm Beach, donde los Teslas están por todas partes y un acabado impecable es el estándar.",
+   "intro": [
+     "El condado de Palm Beach es donde el sur de Florida se vuelve acomodado y tranquilo, y los Teslas están por todas partes, de las comunidades cerradas de Boca Raton a las mansiones frente al agua de la propia Palm Beach. Es el extremo norte de nuestra zona de servicio, a un trayecto fácil por la I-95 o el Turnpike desde Doral. El condado combina una vida costera impecable con largos recorridos suburbanos, así que los Teslas aquí ven tanto aire salino como kilómetros serios de autopista.",
+     "Para los propietarios que esperan que su auto luzca perfecto de sala de exhibición todo el año, la protección de pintura, el recubrimiento cerámico y el polarizado cerámico XPEL son el estándar. Elige tu ciudad de Palm Beach abajo para ver cómo protegemos Teslas ahí."],
+   "cities": ["boca-raton", "west-palm-beach", "delray-beach", "wellington", "jupiter"]},
+  {"slug": "monroe", "name": "Condado de Monroe", "short": "Monroe (Los Cayos)",
+   "img": "cars/cybertruck/cybertruck-3-white", "tag": "Los Cayos de Florida",
+   "lead": "Key West, Key Largo y la cadena de islas. El aire salino y el sol hacen de los Cayos uno de los lugares más duros de Florida para la pintura y el vidrio de un Tesla.",
+   "intro": [
+     "El condado de Monroe son los Cayos de Florida, una cadena de islas de 160 km donde la Overseas Highway es la única vía de entrada y salida. Es el entorno más exigente de nuestra zona de servicio para un vehículo: aire salino constante, sol cegador y una sola autopista larga que concentra cada kilómetro de manejo. Un Tesla en los Cayos es precioso y está muy expuesto.",
+     "Ahí es exactamente donde la protección XPEL rinde: film contra el sol implacable y los escombros de la US-1, recubrimiento cerámico que hace que la sal se enjuague, y polarizado cerámico para cortar el calor del cielo abierto. Atendemos a propietarios de Tesla en los Cayos con cita, así que contáctanos y coordinamos los tiempos para el viaje hasta Doral. Elige tu comunidad isleña abajo."],
+   "cities": ["key-west", "key-largo", "islamorada", "marathon", "tavernier"]},
+]
+COUNTY_BY_SLUG_ES = {c["slug"]: c for c in COUNTIES_ES}
+
+CITIES_ES = {
+  "miami": {"name": "Miami", "county": "miami-dade", "img": "cars/model-3/model-3-grey-2",
+    "lead": "De los rascacielos de Brickell a Wynwood y Coconut Grove, Miami es dura con un Tesla: garajes de valet apretados, picaduras de la I-95 y sol implacable. Así protegemos los Teslas de los propietarios de Miami.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium creados exclusivamente para propietarios de Tesla en Miami, FL. Ya sea que estaciones en una torre de Brickell, manejes al centro o pases el fin de semana en Coconut Grove, tu Model 3, Y, S, X o Cybertruck enfrenta las mismas amenazas diarias: grava y escombros de construcción en la I-95 y el Dolphin Expressway, golpes de puerta en garajes de valet llenos, y el tipo de sol y calor que decolora interiores y castiga la blanda pintura Tesla.",
+      "Nuestra respuesta es específica para Tesla. Instalamos protección de pintura XPEL original en los paneles que reciben más impactos, polarizado cerámico XPEL Prime XR Plus para cortar el calor que se acumula bajo el sol de Miami, y recubrimiento cerámico XPEL Fusion Plus para brillo y lavado fácil. Cada instalación usa patrones cortados para tu Tesla exacto y queda registrada a tu VIN. Nuestro taller está cerca, en Doral, atendiendo a propietarios de Miami con cita."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Ofrecen PPF y polarizado para Tesla en Miami?",
+       "Sí. Protegemos Teslas de propietarios en todo Miami, de Brickell y el centro a Wynwood y Coconut Grove. Nuestro taller está en la cercana Doral, a un trayecto fácil desde cualquier punto de la ciudad. Llama al (786) 505-6162 para reservar."),
+      ("¿Qué tan lejos está su taller de Brickell o el centro de Miami?",
+       "Nuestro taller en Doral, en 1835 NW 79th Ave, está a unos 15 a 20 minutos de Brickell y el centro por el Dolphin Expressway o la NW 12th Street. La mayoría deja el auto y coordinamos los tiempos según su día."),
+      ("¿Por qué mi Tesla necesita PPF en Miami?",
+       "Autopistas como la I-95 y el Palmetto lanzan grava y escombros de construcción sin parar, y la capa transparente de fábrica del Tesla es blanda y se pica fácil. El PPF frontal protege capó, guardabarros, espejos y parachoques, que reciben más impactos.")]},
+  "miami-beach": {"name": "Miami Beach", "county": "miami-dade", "img": "cars/model-y/model-y-white-3",
+    "lead": "Aire salino, arena de playa y sol todo el día. Miami Beach es uno de los entornos más duros de Florida para la pintura y el vidrio de un Tesla, y justo donde la protección rinde.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo Miami Beach, de South Beach a Mid-Beach y North Beach. La vida en la isla es bella y brutal con un auto: el aire cargado de sal del océano, la arena que vuela, el UV intenso y el estacionamiento en la calle dejan tu Model 3, Y, S, X o Cybertruck constantemente expuesto.",
+      "Protegemos los Teslas de Miami Beach con film XPEL original que recibe la arena y la grava en lugar de tu pintura, recubrimiento cerámico que bloquea la sal y hace fácil enjuagar los residuos de playa, y polarizado cerámico XPEL que bloquea el calor y el UV que entran por el vidrio. Los patrones se cortan específicamente para tu Tesla y se registran a tu VIN. Tenemos base en Doral, a un trayecto directo por las causeways, y atendemos a propietarios de Miami Beach con cita."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Vale la pena el recubrimiento cerámico para un Tesla en Miami Beach?",
+       "Muchísimo. El aire salino y los residuos de playa son implacables en la isla. Un recubrimiento cerámico Fusion Plus hace que la sal y la arena se enjuaguen mucho más fácil y añade resistencia a UV y químicos, protegiendo tu Tesla entre lavados."),
+      ("¿Van a Miami Beach o llevo el auto a ustedes?",
+       "Las instalaciones se hacen en nuestro taller controlado de Doral para un resultado impecable y sin polvo. Miami Beach está a un trayecto corto por la MacArthur o la Julia Tuttle Causeway. Llama al (786) 505-6162 y coordinamos los tiempos."),
+      ("¿El polarizado ayuda con el sol y el calor de Miami Beach?",
+       "Sí. El polarizado cerámico XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo y el 99% del UV, una gran mejora de confort para un Tesla estacionado bajo el sol de la isla, y protege el interior de la decoloración.")]},
+  "doral": {"name": "Doral", "county": "miami-dade", "img": "cars/model-s/model-s-blue-1",
+    "lead": "Doral es casa. Nuestro taller está aquí, a minutos de CityPlace y del concesionario Tesla, lo que lo hace el lugar más fácil del sur de Florida para proteger tu Tesla.",
+    "intro": [
+      "Tesla Boutique Miami tiene su base aquí mismo en Doral, FL, y los propietarios de Tesla en Doral son nuestros vecinos. Desde nuestro taller en 1835 NW 79th Ave ofrecemos protección de pintura, recubrimiento cerámico, polarizado y servicios de wrap personalizado para cada Tesla, a minutos de CityPlace Doral, Downtown Doral y el concesionario Tesla en la NW 12th Street.",
+      "Como somos locales, proteger un Tesla de Doral es facilísimo: deja el auto antes del trabajo y recógelo listo. Instalamos PPF XPEL original donde la grava del Palmetto Expressway hace daño, polarizado cerámico XPEL Prime XR Plus para el calor de Doral, y recubrimiento XPEL Fusion Plus para un brillo profundo y fácil de lavar. Muchos de nuestros clientes compran nuevo en la tienda Tesla de Doral y traen el auto directo a nosotros para que la pintura quede protegida antes de su primer kilómetro de autopista. Cada instalación usa patrones por modelo y queda registrada a tu VIN."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Dónde está su taller Tesla en Doral?",
+       "Estamos en 1835 NW 79th Ave, Doral, FL 33126, cerca del Palmetto Expressway y a minutos de CityPlace Doral y el concesionario Tesla. Llama al (786) 505-6162 para reservar tu instalación."),
+      ("Acabo de comprar un Tesla en el concesionario de Doral. ¿Pueden protegerlo antes de manejarlo?",
+       "Por supuesto, y es el momento ideal. Tráelo directo del concesionario e instalamos PPF y polarizado antes de que la pintura vea kilómetros de autopista, para que el acabado debajo quede perfecto de fábrica."),
+      ("¿Ofrecen conveniencia local para los residentes de Doral?",
+       "Sí. Ser locales significa entrega y recogida fáciles, cotizaciones rápidas en persona y sin trayectos largos. Doral es nuestra base y la zona que atendemos más rápido.")]},
+  "coral-gables": {"name": "Coral Gables", "county": "miami-dade", "img": "cars/model-s/model-s-red",
+    "lead": "Arbolada, exclusiva y obsesionada con el detalle. Los propietarios de Tesla en Coral Gables esperan un acabado impecable, y eso es exactamente lo que entregamos.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios exigentes en todo Coral Gables, FL. The Gables es conocida por su belleza, sus calles bordeadas de banianos y sus estándares, y la misma fronda que hace hermosas la Miracle Mile y Old Cutler Road también deja savia, polen y escombros sobre tu Model 3, Y, S, X o Cybertruck.",
+      "Protegemos los Teslas de Coral Gables con protección de pintura XPEL original contra picaduras y escombros de árboles, recubrimiento cerámico Fusion Plus para que la savia y el polen se enjuaguen en lugar de grabar la pintura, y polarizado cerámico XPEL para confort y protección UV sin alterar el aspecto elegante del auto. Cada instalación es meticulosa, con bordes envueltos y registrada a tu VIN, el nivel de acabado que los propietarios de the Gables esperan. Nuestro taller está a un corto trayecto en Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿La savia y el polen realmente dañan la pintura Tesla en Coral Gables?",
+       "Con el tiempo, sí. La savia y el polen pueden grabar una capa transparente blanda, sobre todo con el calor. Un recubrimiento cerámico los hace mucho más fáciles de quitar y añade una barrera protectora, mientras el PPF protege contra escombros que caen y picaduras."),
+      ("¿Se puede polarizar sin cambiar el aspecto de mi Tesla en the Gables?",
+       "Sí. El polarizado cerámico XPEL viene en tonos que mantienen una apariencia limpia y de fábrica mientras cortan el calor y el UV, así tu Tesla se ve refinado y permanece cómodo."),
+      ("¿Atienden Coral Gables?",
+       "Sí, protegemos Teslas en todo Coral Gables, de Miracle Mile a Cocoplum y Gables Estates. Nuestro taller en Doral está a un corto trayecto. Llama al (786) 505-6162 para agendar.")]},
+  "aventura": {"name": "Aventura", "county": "miami-dade", "img": "cars/model-x/model-x-red-3",
+    "lead": "Entre el océano, los rascacielos y el tráfico del Aventura Mall, un Tesla de Aventura se gana su protección. Así lo mantenemos impecable.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium creados exclusivamente para propietarios de Tesla en Aventura, FL y la zona cercana de Sunny Isles. Vivir cerca del agua significa aire salino y sol intenso, mientras que la realidad diaria de los garajes del Aventura Mall, Biscayne Boulevard y el valet de los rascacielos significa golpes de puerta, estacionamiento apretado y exposición constante para tu Model 3, Y, S, X o Cybertruck.",
+      "Protegemos los Teslas de Aventura con protección de pintura XPEL original en los paneles de alto impacto, recubrimiento cerámico XPEL Fusion Plus que aguanta el aire salino y facilita el lavado, y polarizado cerámico XPEL Prime XR Plus que rechaza el calor y el UV que vienen del agua y el cielo abierto. Los patrones son por modelo y cada instalación queda registrada a tu VIN. Nuestro taller está en Doral, a un trayecto fácil por la US-1 o el Turnpike."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Protegen Teslas en Aventura y Sunny Isles?",
+       "Sí. Atendemos a propietarios de Tesla en Aventura, Sunny Isles Beach y Williams Island. Las instalaciones se hacen en nuestro taller de Doral, a un trayecto fácil por la US-1 o el Turnpike. Llama al (786) 505-6162."),
+      ("¿El aire salino del océano es malo para mi Tesla cerca de Aventura?",
+       "El aire salino acelera la corrosión y deja residuos que se adhieren a pintura y vidrio. Un recubrimiento cerámico más PPF da una barrera protectora y fácil de limpiar que resiste el entorno costero mucho mejor que la pintura desnuda."),
+      ("¿Cuánto cuesta proteger un Tesla en Aventura?",
+       "Depende de la cobertura; el PPF frontal o de cuerpo completo, el polarizado y el cerámico son servicios separados que puedes combinar. Llama al (786) 505-6162 para una cotización a la medida de tu Tesla y de cómo manejas.")]},
+  # ----- Broward -----
+  "fort-lauderdale": {"name": "Fort Lauderdale", "county": "broward", "img": "cars/model-s/model-s-blue-2",
+    "lead": "Yates, Las Olas y la playa. Los Teslas de Fort Lauderdale viven entre el aire salino y el tráfico de ciudad, y eso es justo para lo que se creó la protección XPEL.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo Fort Lauderdale, FL. De Las Olas Boulevard a la playa y los rascacielos del centro, un Tesla de Fort Lauderdale enfrenta aire salino costero, sol intenso y el pare y siga de una ciudad ajetreada, todo lo cual desgasta la pintura de fábrica y calienta la cabina.",
+      "Protegemos los Teslas de Fort Lauderdale con film XPEL original en los paneles de alto impacto, recubrimiento cerámico Fusion Plus que hace fácil enjuagar la sal y la mugre, y polarizado cerámico XPEL Prime XR Plus para cortar el calor cerca del agua. Los patrones son por modelo y quedan registrados a tu VIN. Nuestro taller está a un trayecto rápido al sur por la I-95 desde Fort Lauderdale."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Fort Lauderdale?",
+       "Sí. Protegemos Teslas en todo Fort Lauderdale, de Las Olas y Victoria Park a la playa. Las instalaciones se hacen en nuestro taller de Doral, a un trayecto rápido al sur por la I-95. Llama al (786) 505-6162 para reservar."),
+      ("¿El aire salino cerca de la playa es malo para mi Tesla?",
+       "Sí. El aire salino costero deja residuos que se adhieren a pintura y vidrio. Un recubrimiento cerámico más PPF hace mucho más fácil enjuagarlos y protege el acabado de los efectos corrosivos de vivir cerca del agua."),
+      ("¿Dónde instalan y qué tan lejos está de Fort Lauderdale?",
+       "Todo el trabajo se hace en nuestro taller controlado de Doral para un resultado impecable. Está a unos 30 a 40 minutos al sur por la I-95 o el Turnpike. La mayoría deja el auto y coordinamos según su agenda.")]},
+  "hollywood": {"name": "Hollywood", "county": "broward", "img": "cars/model-y/model-y-2",
+    "lead": "Entre el Broadwalk y el Turnpike, un Tesla de Hollywood ve sal de playa y grava de autopista el mismo día. Así lo mantenemos impecable.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium creados exclusivamente para propietarios de Tesla en Hollywood, FL. Del Hollywood Beach Broadwalk a Young Circle y los barrios a lo largo del Turnpike, un Tesla de Hollywood vive entre el aire salino del Atlántico y autopistas de viaje al trabajo llenas de grava, con el sol pegando todo el año.",
+      "Protegemos los Teslas de Hollywood con film de protección de pintura XPEL original donde ocurren las picaduras, recubrimiento cerámico Fusion Plus para quitarse de encima los residuos de playa y facilitar el lavado, y polarizado cerámico XPEL Prime XR Plus para mantener la cabina fresca. Cada instalación usa patrones por modelo registrados a tu VIN. Nuestro taller de Doral está a un corto trayecto al sur."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Protegen Teslas en Hollywood, FL?",
+       "Sí, atendemos a propietarios de Tesla en todo Hollywood, de la playa y el Broadwalk a Young Circle y West Hollywood. Las instalaciones se hacen en nuestro cercano taller de Doral. Llama al (786) 505-6162."),
+      ("Mi Tesla se estaciona cerca de Hollywood Beach. ¿Qué recomiendan?",
+       "Cerca de la playa, el aire salino es el principal enemigo. Recomendamos un recubrimiento cerámico para que la sal se enjuague fácil, más PPF en el frente para detener picaduras. El polarizado cerámico mantiene la cabina fresca."),
+      ("¿Cuánto cuesta el PPF Tesla para un propietario de Hollywood?",
+       "Depende de la cobertura; el PPF frontal o de cuerpo completo, el polarizado y el cerámico son servicios separados que puedes combinar. Llama al (786) 505-6162 para una cotización a la medida de tu Tesla.")]},
+  "pembroke-pines": {"name": "Pembroke Pines", "county": "broward", "img": "cars/model-3/model-3-grey-3",
+    "lead": "El Tesla de quien viaja al trabajo en Pembroke Pines acumula kilómetros de autopista en la I-75 y Pines Boulevard. Ahí es justo donde la protección de pintura rinde.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo Pembroke Pines, FL. Como uno de los mayores suburbios familiares de Broward, Pembroke Pines significa kilometraje diario real, en la I-75, Pines Boulevard y el Turnpike, donde la grava y los escombros de construcción pican una capa transparente de fábrica blanda, además de largas horas estacionado bajo el sol de Florida.",
+      "Protegemos los Teslas de Pembroke Pines con film XPEL original en el capó, los guardabarros y el parachoques que reciben más impactos, polarizado cerámico XPEL Prime XR Plus para combatir el calor en entradas y estacionamientos, y recubrimiento cerámico Fusion Plus para brillo y lavado fácil. Patrones por modelo, registrados a tu VIN. Nuestro taller de Doral está a un salto corto por la I-75 o el Turnpike."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Atienden Pembroke Pines?",
+       "Sí, protegemos Teslas en todo Pembroke Pines. Las instalaciones se hacen en nuestro taller de Doral, a un trayecto fácil por la I-75 o el Turnpike. Llama al (786) 505-6162 para agendar."),
+      ("Viajo mucho por la I-75. ¿Vale la pena el PPF?",
+       "Sin duda. El alto kilometraje de autopista es justo cuando se acumulan las picaduras. El PPF frontal protege los paneles que reciben más impactos y conserva la pintura de tu Tesla, y su valor de reventa."),
+      ("¿El polarizado cerámico ayuda en una entrada calurosa de Pembroke Pines?",
+       "Sí. El XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo, así que un Tesla estacionado en una entrada o lote abierto se mantiene mucho más fresco y el interior queda protegido de la decoloración por UV.")]},
+  "weston": {"name": "Weston", "county": "broward", "img": "cars/model-x/model-x-red-2",
+    "lead": "Cuidada, cerrada y con ojo para el detalle. Los propietarios de Tesla en Weston quieren sus autos tan impecables como sus vecindarios, y eso entregamos.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado, exclusivamente para Tesla, a propietarios en todo Weston, FL. Conocida por sus comunidades planificadas y cuidadas en el borde oeste de Broward, cerca de la I-75 y los Everglades, Weston es hogar de propietarios exigentes que esperan un acabado impecable, y de largos viajes al trabajo que exponen un Tesla a escombros de autopista y sol intenso.",
+      "Protegemos los Teslas de Weston con film XPEL meticuloso y con bordes envueltos, recubrimiento cerámico Fusion Plus para un brillo profundo y fácil de lavar, y polarizado cerámico XPEL Prime XR Plus para confort y protección UV. Cada instalación usa patrones por modelo y queda registrada a tu VIN. Nuestro taller de Doral está a un trayecto directo al sur por la I-75."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Weston?",
+       "Sí, protegemos Teslas en todo Weston. Las instalaciones se hacen en nuestro taller de Doral, a un trayecto directo al sur por la I-75. Llama al (786) 505-6162 para reservar."),
+      ("Quiero un acabado de sala de exhibición. ¿Qué da el mejor brillo?",
+       "La corrección de pintura seguida de un recubrimiento cerámico Fusion Plus entrega el acabado más profundo y cristalino, y el recubrimiento hace el auto mucho más fácil de mantener limpio. Suma PPF al frente para detener picaduras."),
+      ("¿Es popular el PPF de cuerpo completo en Weston?",
+       "Sí. Para quienes mantienen su Tesla impecable y protegen la reventa, el film de cuerpo completo cubre cada panel pintado. Lo cortamos con precisión y bordes envueltos.")]},
+  "miramar": {"name": "Miramar", "county": "broward", "img": "cars/model-y/model-y-white-1",
+    "lead": "Un Tesla en crecimiento de Miramar pasa su vida en el Turnpike y la I-75. Protege la pintura antes de que los kilómetros de autopista se acumulen.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo Miramar, FL. Como uno de los suburbios de más rápido crecimiento del sur de Florida, Miramar significa viajar al trabajo, en el Turnpike, la I-75 y Miramar Parkway, donde la grava y los escombros pican la pintura de fábrica, además del sol todo el año sobre autos estacionados al aire libre.",
+      "Protegemos los Teslas de Miramar con film XPEL original en el frente de alto impacto, polarizado cerámico XPEL Prime XR Plus para cortar el calor y el UV, y recubrimiento cerámico Fusion Plus para brillo y limpieza fácil. Los patrones son por modelo y quedan registrados a tu VIN. Nuestro taller de Doral está a solo minutos al sur."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Atienden Miramar?",
+       "Sí, protegemos Teslas en todo Miramar, y nuestro taller de Doral está a solo minutos al sur. Llama al (786) 505-6162 para agendar tu instalación."),
+      ("Acabo de comprar un Tesla nuevo en Miramar. ¿Cuándo debo poner PPF?",
+       "Antes del primer viaje largo por autopista. Proteger la pintura recién salida de fábrica significa que el acabado bajo el film queda perfecto. Tráelo temprano y tendremos XPEL original listo."),
+      ("¿Cuál es el taller de protección Tesla más cercano a Miramar?",
+       "Nuestro taller de Doral es uno de los estudios de protección Tesla dedicados más cercanos, a un corto trayecto al sur. Somos solo Tesla y distribuidor exclusivo XPEL.")]},
+  # ----- Palm Beach -----
+  "boca-raton": {"name": "Boca Raton", "county": "palm-beach", "img": "cars/model-s/model-s-blue-3",
+    "lead": "Golf, comunidades cerradas y ojo para el detalle. Los propietarios de Tesla en Boca Raton esperan perfección, y la protección XPEL la entrega.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado, creados exclusivamente para Tesla, a propietarios en todo Boca Raton, FL. De Mizner Park a las comunidades de golf cerradas y la costa de la A1A, Boca es sinónimo de altos estándares, y su mezcla de aire salino costero y estacionamiento bajo el sol es dura con un Tesla sin protección.",
+      "Protegemos los Teslas de Boca Raton con film de protección de pintura XPEL meticuloso, recubrimiento cerámico Fusion Plus que evita que la sal y la mugre se adhieran, y polarizado cerámico XPEL Prime XR Plus para confort y defensa contra UV. Cada instalación usa patrones por modelo y queda registrada a tu VIN. Estamos a un trayecto fácil bajando por la I-95 desde Boca."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Boca Raton?",
+       "Sí. Protegemos Teslas en todo Boca Raton, de Mizner Park a las comunidades costeras. Las instalaciones se hacen en nuestro taller de Doral, a un trayecto directo al sur por la I-95. Llama al (786) 505-6162."),
+      ("¿Qué protección mantiene un Tesla perfecto de sala de exhibición en Boca?",
+       "Una combinación: PPF para detener picaduras, un recubrimiento cerámico Fusion Plus para brillo profundo y limpieza fácil, y polarizado cerámico para el sol. Juntos mantienen el auto impecable todo el año."),
+      ("¿Vale la pena el trayecto de Boca a su taller?",
+       "Nuestros clientes creen que sí. Somos solo Tesla, distribuidor exclusivo XPEL, y documentamos cada instalación. La mayoría deja el auto y coordinamos los tiempos para el viaje.")]},
+  "west-palm-beach": {"name": "West Palm Beach", "county": "palm-beach", "img": "cars/model-3/model-3-grey-4",
+    "lead": "Energía del centro y vistas al agua. Un Tesla de West Palm Beach enfrenta kilómetros de ciudad y sol costero por igual.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo West Palm Beach, FL. De Clematis Street y el centro al frente de agua del Intracoastal, un Tesla de West Palm ve manejo de ciudad ajetreado, aire salino costero y sol fuerte todo el año, una combinación que pica la pintura y calienta las cabinas.",
+      "Protegemos los Teslas de West Palm Beach con film XPEL original en las zonas de impacto del frente, recubrimiento cerámico Fusion Plus para limpieza fácil y brillo, y polarizado cerámico XPEL Prime XR Plus para cortar el calor. Patrones por modelo, registrados a tu VIN. Nuestro taller de Doral está a un trayecto claro al sur por la I-95 o el Turnpike."],
+    "services": ["paint-protection-film", "window-tint", "ceramic-coating"],
+    "faqs": [
+      ("¿Protegen Teslas en West Palm Beach?",
+       "Sí, atendemos a propietarios de Tesla en todo West Palm Beach. Las instalaciones se hacen en nuestro taller de Doral por la I-95 o el Turnpike. Llama al (786) 505-6162 para reservar."),
+      ("¿El aire salino del frente de agua afecta mi Tesla?",
+       "Sí. El residuo de sal del Intracoastal y el océano se adhiere a pintura y vidrio. Un recubrimiento cerámico hace mucho más fácil enjuagarlo y protege el acabado; el PPF protege contra picaduras."),
+      ("¿Cuánto cuesta proteger un Tesla desde West Palm Beach?",
+       "El precio depende de la cobertura que elijas. Llama al (786) 505-6162 y armamos un paquete de PPF, polarizado y cerámico según cómo usas el auto.")]},
+  "delray-beach": {"name": "Delray Beach", "county": "palm-beach", "img": "cars/model-y/model-y-3",
+    "lead": "Atlantic Avenue, la playa y el sol. Un Tesla de Delray Beach es un auto de pueblo de playa, y esos autos necesitan protección real.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado, exclusivamente para Tesla, a propietarios en todo Delray Beach, FL. Entre Atlantic Avenue, la playa y los barrios costeros, un Tesla de Delray vive en aire salino y sol, las dos cosas más duras para la pintura y los interiores de un auto.",
+      "Protegemos los Teslas de Delray Beach con film XPEL original contra picaduras, recubrimiento cerámico Fusion Plus para que la sal y la arena se enjuaguen en lugar de grabar el acabado, y polarizado cerámico XPEL Prime XR Plus para bloquear el calor y el UV. Los patrones son por modelo y quedan registrados a tu VIN. Nuestro taller está a un trayecto directo al sur en Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden Delray Beach?",
+       "Sí, protegemos Teslas en todo Delray Beach, de Atlantic Avenue a los barrios costeros. Las instalaciones se hacen en nuestro taller de Doral. Llama al (786) 505-6162."),
+      ("¿Es buena idea el recubrimiento cerámico para un Tesla de pueblo de playa?",
+       "Por supuesto. En un entorno de sal y arena como Delray, un recubrimiento cerámico hace que el residuo se enjuague fácil, añade resistencia UV y mantiene el brillo fresco entre lavados."),
+      ("¿Usan XPEL original en los Teslas de Delray?",
+       "Siempre. Como distribuidor exclusivo XPEL instalamos solo film y recubrimientos XPEL originales, registrados al VIN de tu Tesla con la garantía de fábrica completa.")]},
+  "wellington": {"name": "Wellington", "county": "palm-beach", "img": "cars/model-x/model-x-red-4",
+    "lead": "Tierra ecuestre, cuidada y refinada. Los propietarios de Tesla en Wellington exigen mucho de sus autos, y nosotros también.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en todo Wellington, FL. Conocida por sus fincas ecuestres y comunidades cuidadas, Wellington combina gustos refinados con manejo real, caminos largos, sol abierto y el polvo y los escombros de un entorno semirrural en el borde del condado de Palm Beach.",
+      "Protegemos los Teslas de Wellington con film de protección de pintura XPEL meticuloso, recubrimiento cerámico Fusion Plus para un acabado de alto brillo y fácil de limpiar, y polarizado cerámico XPEL Prime XR Plus para confort bajo el cielo abierto. Cada instalación usa patrones por modelo y queda registrada a tu VIN. Estamos a un trayecto claro al sur desde Wellington."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Wellington?",
+       "Sí, protegemos Teslas en todo Wellington. Las instalaciones se hacen en nuestro taller de Doral. Llama al (786) 505-6162 y coordinamos los tiempos para el viaje."),
+      ("¿Importan el polvo y los escombros de camino abierto para mi Tesla?",
+       "Sí. Los caminos abiertos y un entorno semirrural significan más grava en el aire y picaduras. El PPF protege las zonas de impacto del frente y un recubrimiento cerámico evita que el polvo se adhiera a la pintura."),
+      ("¿Cuál es la mejor protección para un acabado brillante y de bajo mantenimiento?",
+       "Un recubrimiento cerámico sobre pintura corregida da el brillo más profundo y el mantenimiento más fácil. Suma PPF al frente para detener picaduras y tu Tesla se mantiene fresco de sala de exhibición con mínimo esfuerzo.")]},
+  "jupiter": {"name": "Jupiter", "county": "palm-beach", "img": "cars/cybertruck/cybertruck-4-white",
+    "lead": "Faro, playas y náutica. En el extremo norte de nuestra zona de servicio, un Tesla de Jupiter vive en aire salino y sol.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado, creados exclusivamente para Tesla, a propietarios en Jupiter, FL. Del faro de Jupiter Inlet a las playas y las comunidades náuticas a lo largo del Loxahatchee, un Tesla de Jupiter está constantemente expuesto al aire salino costero y al sol fuerte en el extremo norte del condado de Palm Beach.",
+      "Protegemos los Teslas de Jupiter con film XPEL original contra picaduras y escombros, recubrimiento cerámico Fusion Plus que hace fácil enjuagar el residuo de sal, y polarizado cerámico XPEL Prime XR Plus para cortar el calor y el UV. Los patrones son por modelo y quedan registrados a tu VIN. Atendemos a propietarios de Jupiter con cita en nuestro taller de Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Jupiter, FL?",
+       "Sí. Jupiter está en el extremo norte de nuestra zona de servicio; protegemos Teslas ahí con cita en nuestro taller de Doral. Llama al (786) 505-6162 y coordinamos los tiempos."),
+      ("¿El aire salino del inlet y el océano es duro con un Tesla?",
+       "Sí. La sal costera se adhiere a pintura y vidrio y acelera el desgaste. Un recubrimiento cerámico más PPF da una barrera protectora y fácil de limpiar que maneja el entorno costero mucho mejor que la pintura desnuda."),
+      ("¿Vale la pena el trayecto desde Jupiter?",
+       "Para quienes quieren un especialista solo Tesla y distribuidor exclusivo XPEL, sí. La mayoría deja el auto y coordinamos la visita. Documentamos cada instalación para que veas exactamente el acabado.")]},
+  # ----- Monroe (Los Cayos) -----
+  "key-west": {"name": "Key West", "county": "monroe", "img": "cars/cybertruck/cybertruck-5-white",
+    "lead": "La ciudad más al sur de EE. UU., pura sal y sol. Un Tesla de Key West es precioso y está muy expuesto.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en Key West, FL. Al final mismo de la Overseas Highway, Key West está rodeada de océano por todos lados, lo que significa aire salino implacable, sol cegador y humedad, casi el entorno más duro en el que puede vivir un vehículo.",
+      "Protegemos los Teslas de Key West con film XPEL original contra el sol y los escombros del camino, recubrimiento cerámico Fusion Plus que hace que el residuo de sal se enjuague y añade resistencia a UV y químicos, y polarizado cerámico XPEL Prime XR Plus para cortar el calor del cielo abierto. Los patrones son por modelo y quedan registrados a tu VIN. Atendemos a propietarios de los Cayos con cita; contáctanos y coordinamos el viaje hasta Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Key West?",
+       "Sí, protegemos Teslas de propietarios de Key West con cita. Como las instalaciones se hacen en nuestro taller de Doral, coordinamos los tiempos para el viaje por la US-1. Llama al (786) 505-6162."),
+      ("¿El entorno de Key West es realmente tan duro con un Tesla?",
+       "Sí. Rodeada de océano, Key West somete a un auto a aire salino constante, UV intenso y humedad. El recubrimiento cerámico más PPF es la defensa más eficaz, y el polarizado cerámico protege el interior."),
+      ("¿Cómo funciona el servicio si estoy en los Cayos?",
+       "Coordinamos una ventana de entrega conveniente en nuestro taller de Doral y planificamos el trabajo en torno a tu viaje por la Overseas Highway, así el trayecto se hace una vez y tu Tesla vuelve totalmente protegido.")]},
+  "key-largo": {"name": "Key Largo", "county": "monroe", "img": "cars/model-y/model-y-white-2",
+    "lead": "La capital del buceo y la puerta de entrada a los Cayos. Un Tesla de Key Largo empieza cada viaje en la US-1, a pleno sol y aire salino.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado, exclusivamente para Tesla, a propietarios en Key Largo, FL. Como la primera isla de la cadena y la puerta de entrada a los Cayos, Key Largo significa vida en la US-1, rodeada de agua, sol y sal que trabajan sin descanso sobre la pintura, el vidrio y los interiores de un auto.",
+      "Protegemos los Teslas de Key Largo con film XPEL original contra el sol y los escombros de la Overseas Highway, recubrimiento cerámico Fusion Plus para que la sal se enjuague fácil, y polarizado cerámico XPEL Prime XR Plus para bloquear el calor y el UV. Los patrones son por modelo y quedan registrados a tu VIN. Somos la comunidad de los Cayos más cercana a nuestro taller de Doral; contáctanos para coordinar."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden Key Largo?",
+       "Sí. Key Largo es la comunidad de los Cayos más cercana a nuestro taller de Doral. Protegemos Teslas ahí con cita y coordinamos los tiempos para el viaje por la US-1. Llama al (786) 505-6162."),
+      ("¿Cuál es la mejor protección para un Tesla en los Cayos?",
+       "Recubrimiento cerámico más PPF. El recubrimiento combate la sal y el UV y mantiene el auto fácil de enjuagar; el PPF detiene picaduras en los largos kilómetros de la US-1. El polarizado cerámico mantiene la cabina fresca."),
+      ("¿Pueden proteger mi Tesla nuevo antes de llevarlo a los Cayos?",
+       "Idealmente sí. Proteger la pintura recién salida de fábrica antes de la sal y el sol de la vida isleña mantiene el acabado debajo perfecto. Tráelo temprano y tendremos XPEL original listo.")]},
+  "islamorada": {"name": "Islamorada", "county": "monroe", "img": "cars/model-s/model-s-blue-4",
+    "lead": "El pueblo de pesca deportiva de las islas. Un Tesla de Islamorada es un auto costero de pies a cabeza, y necesita protección a la altura.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en Islamorada, FL. Repartida en varias islas de los Cayos Altos, Islamorada es todo frente de agua, lo que significa aire salino constante, sol fuerte y la exposición abierta de la vida a lo largo de la Overseas Highway.",
+      "Protegemos los Teslas de Islamorada con film XPEL original contra escombros y UV, recubrimiento cerámico Fusion Plus que evita que la sal se adhiera al acabado, y polarizado cerámico XPEL Prime XR Plus para cortar el calor. Los patrones son por modelo y quedan registrados a tu VIN. Atendemos a propietarios de Islamorada con cita en nuestro taller de Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Islamorada?",
+       "Sí, con cita. Las instalaciones se hacen en nuestro taller de Doral, así que coordinamos los tiempos para el viaje por la US-1 desde los Cayos Altos. Llama al (786) 505-6162."),
+      ("¿Por qué un Tesla costero necesita recubrimiento cerámico?",
+       "El aire salino y el sol son implacables en Islamorada. Un recubrimiento cerámico hace que el residuo de sal se enjuague fácil, añade resistencia a UV y químicos, y mantiene el brillo fresco mucho más que una cera."),
+      ("¿Solo trabajan en Teslas?",
+       "Sí. Somos un estudio solo Tesla y distribuidor exclusivo XPEL, así que cada patrón, producto y proceso está afinado específicamente para Tesla, incluido el tuyo en los Cayos.")]},
+  "marathon": {"name": "Marathon", "county": "monroe", "img": "cars/model-x/model-x-red-5",
+    "lead": "Cayos Medios, el Seven Mile Bridge y agua abierta a ambos lados. Un Tesla de Marathon vive en aire salino y sol.",
+    "intro": [
+      "Tesla Boutique Miami lleva protección de pintura, recubrimiento cerámico y polarizado, creados exclusivamente para Tesla, a propietarios en Marathon, FL. En el corazón de los Cayos Medios, cerca del Seven Mile Bridge, Marathon está rodeada de agua abierta, lo que significa que un Tesla aquí enfrenta aire salino constante, sol intenso y los largos kilómetros de autopista de la vida isleña.",
+      "Protegemos los Teslas de Marathon con film XPEL original contra escombros del camino y UV, recubrimiento cerámico Fusion Plus para que la sal se enjuague fácil, y polarizado cerámico XPEL Prime XR Plus para bloquear el calor del cielo abierto. Los patrones son por modelo y quedan registrados a tu VIN. Atendemos a propietarios de Marathon con cita en nuestro taller de Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden Marathon en los Cayos?",
+       "Sí, con cita. Como las instalaciones son en nuestro taller de Doral, coordinamos los tiempos para el viaje por la Overseas Highway. Llama al (786) 505-6162 para planificarlo."),
+      ("¿El aire salino cruzando el Seven Mile Bridge es malo para mi Tesla?",
+       "Agua abierta a ambos lados significa exposición fuerte a la sal. Un recubrimiento cerámico más PPF da la mejor protección: enjuague fácil de la sal, resistencia UV y defensa contra picaduras en los largos kilómetros de autopista."),
+      ("¿Cuánto tarda la protección si subo manejando desde Marathon?",
+       "Planificamos el trabajo en torno a un solo viaje: deja el auto en nuestro taller de Doral y completamos el PPF, el polarizado o el cerámico para que vuelva totalmente protegido. Los tiempos dependen de la cobertura; los confirmamos por adelantado.")]},
+  "tavernier": {"name": "Tavernier", "county": "monroe", "img": "cars/model-3/model-3-grey-5",
+    "lead": "Una comunidad tranquila de los Cayos Altos en la US-1. Un Tesla de Tavernier igual enfrenta el aire salino y el sol de la vida isleña cada día.",
+    "intro": [
+      "Tesla Boutique Miami ofrece protección de pintura, recubrimiento cerámico y polarizado premium solo para Tesla a propietarios en Tavernier, FL. Una comunidad residencial de los Cayos Altos justo al sur de Key Largo, Tavernier significa vida diaria en la US-1, rodeada de agua y sol, con el aire salino trabajando constantemente sobre la pintura, el vidrio y los interiores.",
+      "Protegemos los Teslas de Tavernier con film XPEL original contra picaduras y UV, recubrimiento cerámico Fusion Plus que hace fácil enjuagar la sal, y polarizado cerámico XPEL Prime XR Plus para cortar el calor y proteger el interior. Los patrones son por modelo y quedan registrados a tu VIN. Atendemos a propietarios de Tavernier con cita en nuestro taller de Doral."],
+    "services": ["paint-protection-film", "ceramic-coating", "window-tint"],
+    "faqs": [
+      ("¿Atienden a propietarios de Tesla en Tavernier?",
+       "Sí, con cita. Tavernier está en los Cayos Altos, un viaje manejable por la US-1 hasta nuestro taller de Doral. Llama al (786) 505-6162 y coordinamos los tiempos."),
+      ("¿Cuál es la protección más importante para un Tesla de los Cayos?",
+       "Un recubrimiento cerámico para manejar la sal y el UV, junto con PPF al frente para detener picaduras en los largos kilómetros de la US-1. El polarizado cerámico mantiene la cabina fresca bajo el sol isleño."),
+      ("¿Instalan productos XPEL originales?",
+       "Siempre. Como distribuidor exclusivo XPEL usamos solo film y recubrimientos XPEL originales, registrados al VIN de tu Tesla con la garantía de fábrica completa.")]},
+}
+
+def sa_postcard_es(rootp, href, img, pills, title, text, cta="Explorar"):
+    pill_html = "".join('<span class="pill">%s</span>' % p for p in pills)
+    img_html = S.pic(rootp, img, "%s - protección Tesla por Tesla Boutique Miami" % title, 700, 438)
+    if href:
+        return ('<a class="project-tile reveal" href="%s">%s<div class="project-tile-body">'
+                '<div class="tag-row">%s</div><h3>%s</h3><p>%s</p>'
+                '<span class="card-link">%s &rarr;</span></div></a>' % (href, img_html, pill_html, title, text, cta))
+    return ('<div class="project-tile reveal">%s<div class="project-tile-body">'
+            '<div class="tag-row">%s</div><h3>%s</h3><p>%s</p>'
+            '<span class="card-link" style="opacity:.55">Próximamente</span></div></div>' % (img_html, pill_html, title, text))
+
+def sa_why_es(place):
+    return ('<section class="section section-grad"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Por qué Tesla Boutique Miami</span>'
+            '<h2 class="section-title">¿Por qué elegir Tesla Boutique Miami?</h2></div><div class="why-grid">'
+            '<div class="why-item reveal"><span class="why-number">01</span><h3>Solo especialistas Tesla</h3>'
+            '<p>Trabajamos exclusivamente en Tesla. Conocemos cada panel, sensor y cámara del Model 3, Y, S, X y Cybertruck, así que los propietarios de %s reciben patrones hechos para Tesla, no adaptados.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">02</span><h3>Distribuidor exclusivo XPEL</h3>'
+            '<p>Distribuidor exclusivo XPEL autorizado con más de 15 años instalando PPF, cerámico y films. Solo productos XPEL originales, con garantía de fábrica registrada a tu VIN.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">03</span><h3>Hecho para Miami</h3>'
+            '<p>El aire salino, el sol y las autopistas llenas de grava son justo lo que protegemos a diario. Nuestras recomendaciones se ajustan a cómo se manejan los Teslas en %s.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">04</span><h3>Trabajo impecable y documentado</h3>'
+            '<p>Bordes envueltos con precisión, una bahía de instalación controlada en Doral, y cada proyecto fotografiado, para que veas exactamente el acabado que sale de nuestro taller.</p></div>'
+            '</div></div></section>') % (place, place)
+
+def sa_cta_es(esp, title, desc):
+    return ('<section class="cta-section"><div class="container"><div class="cta-content">'
+            '<h2 class="cta-title">%s</h2><p class="cta-desc">%s</p><div class="cta-buttons">'
+            '<a href="tel:%s" class="btn btn-primary btn-lg">%s</a>'
+            '<a href="%sindex.html#contact" class="btn btn-outline btn-lg">Enviar consulta</a>'
+            '<a href="https://www.unlimitedwraps.com/contact-us" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Reservar vía Unlimited Wraps</a>'
+            '</div></div></div></section>' % (title, desc, PHONE_TEL, PHONE_DISP, esp))
+
+def build_service_area_hub_es():
+    path = "service-area/index.html"; esp, rootp = esp_root(path)
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Zona de Servicio", "")])
+    hero = S.page_hero(rootp, "cars/model-s/model-s-blue-1", 'Zona de <span class="highlight">Servicio</span> Tesla en el Sur de Florida',
+        "Tesla Boutique Miami protege Teslas en todo el sur de Florida. Encuentra tu condado y ciudad para ver cómo mantenemos tu Tesla impecable en tu zona.", "", crumbs)
+    intro = ('<section class="section"><div class="container"><div class="prose">'
+             '<h2>Dónde protegemos Teslas</h2>'
+             '<p>Con base en Doral, Tesla Boutique Miami atiende a propietarios de Tesla en todo el sur de Florida con protección de pintura XPEL original, recubrimiento cerámico, polarizado y wraps personalizados. Hemos organizado nuestra zona de servicio por condado y ciudad para que veas exactamente cómo protegemos Teslas donde vives y manejas: las carreteras locales, el clima y los riesgos cotidianos que enfrenta tu Model 3, Y, S, X o Cybertruck.</p>'
+             '<p>Elige tu condado abajo para empezar. Cada zona enlaza a las ciudades que atendemos, con detalle local y los servicios que más recomendamos.</p>'
+             '</div></div></section>')
+    cards = ""
+    for c in COUNTIES_ES:
+        live = bool(c["cities"])
+        href = esp + "service-area/%s/index.html" % c["slug"] if live else ""
+        text = c["lead"] if live else c["lead"] + " Proximamente."
+        cards += sa_postcard_es(rootp, href, c["img"], [c["tag"]], c["name"], text, cta="Explorar %s" % c["short"])
+    grid = ('<section class="section section-alt"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Por condado</span>'
+            '<h2 class="section-title">Elige tu condado</h2></div>'
+            '<div class="project-list-grid">%s</div></div></section>' % cards)
+    cta = sa_cta_es(esp, "Protege tu Tesla, estés donde estés en el sur de Florida",
+                    "Dinos tu Tesla y tu ciudad, y te recomendamos el paquete correcto de PPF, polarizado y cerámico y una hora conveniente en nuestro taller de Doral.")
+    body = hero + intro + grid + cta
+    ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Zona de Servicio", DOMAIN+"/es/service-area/index.html")]),
+          json.dumps({"@context": "https://schema.org", "@type": "CollectionPage",
+            "name": "Zona de Servicio de Tesla Boutique Miami", "url": DOMAIN+"/es/service-area/index.html",
+            "description": "Condados y ciudades que atiende Tesla Boutique Miami para PPF, recubrimiento cerámico y polarizado Tesla en el sur de Florida."}, ensure_ascii=False)]
+    title = "Zona de Servicio Tesla en Miami y el Sur de Florida | Tesla Boutique Miami"
+    desc = "Tesla Boutique Miami atiende a propietarios de Tesla en todo el sur de Florida con PPF, recubrimiento cerámico y polarizado XPEL. Encuentra tu condado y ciudad, de Miami-Dade a los Cayos. Llama al (786) 505-6162."
+    return doc_es(path, title, desc, body, active="area", preload="cars/model-s/model-s-blue-1", extra_ld=ld)
+
+def build_county_es(c):
+    slug = c["slug"]; path = "service-area/%s/index.html" % slug; esp, rootp = esp_root(path)
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Zona de Servicio", esp+"service-area/index.html"), (c["name"], "")])
+    hero = S.page_hero(rootp, c["img"], 'Protección Tesla en <span class="highlight">%s</span>' % c["name"], c["lead"], "", crumbs)
+    intro = "".join("<p>%s</p>" % p for p in c["intro"])
+    intro_sec = ('<section class="section"><div class="container"><div class="prose">'
+                 '<h2>Protegiendo Teslas en %s</h2>%s</div></div></section>' % (c["short"], intro))
+    cards = ""
+    for cs in c["cities"]:
+        ci = CITIES_ES[cs]
+        cards += sa_postcard_es(rootp, esp+"service-area/%s/%s.html" % (slug, cs), ci["img"],
+                                [ci["name"]], ci["name"] + ", FL", ci["lead"], cta="Proteccion Tesla en %s" % ci["name"])
+    grid = ('<section class="section section-alt"><div class="container">'
+            '<div class="section-header"><span class="section-tag">Ciudades que atendemos</span>'
+            '<h2 class="section-title">Encuentra tu ciudad en %s</h2></div>'
+            '<div class="project-list-grid">%s</div></div></section>' % (c["short"], cards))
+    svc = service_cards_es("Lo que hacemos", "Servicios Tesla que recomendamos", esp,
+                           ["paint-protection-film", "window-tint", "ceramic-coating"])
+    cta = sa_cta_es(esp, "Protege tu Tesla en %s" % c["short"],
+                    "Elige tu ciudad arriba para el detalle local, o dinos tu Tesla y te recomendamos la protección correcta y una hora en nuestro taller de Doral.")
+    body = hero + intro_sec + grid + svc + cta
+    ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Zona de Servicio", DOMAIN+"/es/service-area/index.html"),
+                               (c["name"], "%s/es/service-area/%s/index.html" % (DOMAIN, slug))])]
+    title = "Tesla PPF, Cerámico y Polarizado en %s | Tesla Boutique Miami" % c["name"]
+    desc = (c["lead"][:150]).rsplit(" ", 1)[0] + " PPF, cerámico y polarizado XPEL. Llama al (786) 505-6162."
+    return doc_es(path, title, desc, body, active="area", preload=c["img"], extra_ld=ld)
+
+def build_city_es(slug, d):
+    county = COUNTY_BY_SLUG_ES[d["county"]]; cslug = county["slug"]
+    path = "service-area/%s/%s.html" % (cslug, slug); esp, rootp = esp_root(path); city = d["name"]
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Zona de Servicio", esp+"service-area/index.html"),
+                             (county["name"], esp+"service-area/%s/index.html" % cslug), (city, "")])
+    ctas = ('<div class="hero-ctas"><a href="tel:%s" class="btn btn-primary btn-lg">Pedir cotización</a>'
+            '<a href="%sindex.html#contact" class="btn btn-outline btn-lg">Enviar consulta</a></div>' % (PHONE_TEL, esp))
+    hero = S.page_hero(rootp, d["img"], 'Protección Tesla en <span class="highlight">%s, FL</span>' % city, d["lead"], ctas, crumbs)
+    intro = "".join("<p>%s</p>" % p for p in d["intro"])
+    intro_sec = ('<section class="section"><div class="container"><div class="prose">'
+                 '<h2>PPF, cerámico y polarizado premium para Tesla en %s, FL</h2>%s</div></div></section>' % (city, intro))
+    svc = service_cards_es("Para propietarios de Tesla en %s" % city, "Nuestros servicios", esp, d["services"])
+    why = sa_why_es(city)
+    fq = faq_es(d["faqs"])
+    rel_chips = [chip(esp+"service-area/%s/index.html" % cslug, "Todo %s" % county["short"])]
+    for cs in county["cities"]:
+        if cs != slug:
+            rel_chips.append(chip(esp+"service-area/%s/%s.html" % (cslug, cs), CITIES_ES[cs]["name"]))
+    rel = related_es(rel_chips)
+    cta = sa_cta_es(esp, "Listo para proteger tu Tesla en %s" % city,
+                    "Dinos tu modelo y que buscas. Te recomendamos el PPF, polarizado o ceramico correcto para manejar en %s y agendamos una hora en nuestro taller de Doral." % city)
+    body = hero + intro_sec + svc + why + fq + rel + cta
+    service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
+        "name": "Protección de pintura, recubrimiento cerámico y polarizado Tesla en %s" % city,
+        "serviceType": "Protección de pintura, recubrimiento cerámico y polarizado de autos",
+        "brand": {"@type": "Brand", "name": "XPEL"},
+        "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162", "url": DOMAIN+"/es/",
+                     "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave", "addressLocality": "Doral", "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"}},
+        "areaServed": {"@type": "City", "name": city + ", FL"}, "description": d["lead"]}, ensure_ascii=False)
+    ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Zona de Servicio", DOMAIN+"/es/service-area/index.html"),
+                               (county["name"], "%s/es/service-area/%s/index.html" % (DOMAIN, cslug)),
+                               (city, "%s/es/%s" % (DOMAIN, path))]), service_ld, S.faq_ld(d["faqs"])]
+    title = "Tesla PPF, Cerámico y Polarizado en %s, FL | Tesla Boutique Miami" % city
+    desc = "Protección de pintura, recubrimiento cerámico y polarizado premium para Tesla en %s, FL. XPEL original, especialistas solo en Tesla en la cercana Doral. Llama al (786) 505-6162." % city
+    return doc_es(path, title, desc, body, active="area", preload=d["img"], extra_ld=ld)
+
 def main():
     pages = {}
     for slug, d in MODELS_ES.items():
@@ -745,11 +1170,16 @@ def main():
     pages["models/tesla-model-y-ppf-miami.html"] = build_combo_es()
     for slug, d in SERVICES_ES.items():
         pages["services/%s.html" % slug] = build_service_es(slug, d)
-    pages["projects/index.html"] = build_projects_index_es()
-    pages["projects/sample-tesla-model-y-full-front-ppf.html"] = build_project_sample_es()
     pages["news/index.html"] = build_news_es()
     for slug, d in POSTS_ES.items():
         pages["news/%s.html" % slug] = build_post_es(slug, d)
+    pages["service-area/index.html"] = build_service_area_hub_es()
+    for c in COUNTIES_ES:
+        if c["cities"]:
+            pages["service-area/%s/index.html" % c["slug"]] = build_county_es(c)
+    for slug, d in CITIES_ES.items():
+        county = COUNTY_BY_SLUG_ES[d["county"]]
+        pages["service-area/%s/%s.html" % (county["slug"], slug)] = build_city_es(slug, d)
     for path, html in pages.items():
         full = os.path.join(ROOT, "es", path)
         os.makedirs(os.path.dirname(full), exist_ok=True)
