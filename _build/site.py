@@ -1031,15 +1031,17 @@ def build_home():
            '</div></div></section>')
     areas = ('<section class="section"><div class="container">'
              '<div class="section-header"><span class="section-tag">Service areas</span>'
-             '<h2 class="section-title">Serving Tesla owners across Miami-Dade</h2>'
-             '<p class="section-desc">Based in Doral, protecting Teslas throughout South Florida.</p></div><div class="areas-grid">'
-             '<div class="area-item reveal"><h3>Doral, FL</h3><p>Our home base and installation shop.</p></div>'
-             '<div class="area-item reveal"><h3>Miami, FL</h3><p>Downtown, Brickell and Wynwood.</p></div>'
-             '<div class="area-item reveal"><h3>Miami Beach</h3><p>South Beach, Mid-Beach and North Beach.</p></div>'
-             '<div class="area-item reveal"><h3>Coral Gables</h3><p>Ceramic coating and PPF for the Gables.</p></div>'
-             '<div class="area-item reveal"><h3>Aventura</h3><p>Aventura and Sunny Isles.</p></div>'
-             '<div class="area-item reveal"><h3>Kendall</h3><p>Tesla PPF for the Kendall community.</p></div>'
-             '</div></div></section>')
+             '<h2 class="section-title">Serving Tesla owners across South Florida</h2>'
+             '<p class="section-desc">Based in Doral, protecting Teslas across Miami-Dade, Broward, Palm Beach and the Florida Keys.</p></div><div class="areas-grid">'
+             '<a class="area-item reveal" href="service-area/miami-dade/doral.html"><h3>Doral, FL</h3><p>Our home base and installation shop.</p></a>'
+             '<a class="area-item reveal" href="service-area/miami-dade/miami.html"><h3>Miami, FL</h3><p>Downtown, Brickell and Wynwood.</p></a>'
+             '<a class="area-item reveal" href="service-area/miami-dade/miami-beach.html"><h3>Miami Beach</h3><p>South Beach, Mid-Beach and North Beach.</p></a>'
+             '<a class="area-item reveal" href="service-area/miami-dade/coral-gables.html"><h3>Coral Gables</h3><p>Ceramic coating and PPF for the Gables.</p></a>'
+             '<a class="area-item reveal" href="service-area/miami-dade/aventura.html"><h3>Aventura</h3><p>Aventura and Sunny Isles.</p></a>'
+             '<a class="area-item reveal" href="service-area/index.html"><h3>Broward, Palm Beach &amp; the Keys</h3><p>Fort Lauderdale, Boca Raton, Key West and more.</p></a>'
+             '</div>'
+             '<div class="areas-cta"><a href="service-area/index.html" class="btn btn-outline btn-lg">Explore our full service area &rarr;</a></div>'
+             '</div></section>')
     pin_svg = svg('<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>')
     clock_svg = svg('<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>')
     phone_svg = svg(IC["phone"], w=20, h=20)

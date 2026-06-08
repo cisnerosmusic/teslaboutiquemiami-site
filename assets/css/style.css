@@ -317,7 +317,10 @@ img { max-width: 100%; height: auto; display: block; }
 /* ========== SERVICE AREAS ========== */
 .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .area-item { padding: 24px; background: var(--black-light); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; transition: var(--transition-med); }
+a.area-item { display: block; text-decoration: none; }
 .area-item:hover { border-color: rgba(43, 57, 144, 0.3); }
+a.area-item:hover { transform: translateY(-3px); }
+.areas-cta { text-align: center; margin-top: 40px; }
 .area-item h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--white); }
 .area-item p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
 
