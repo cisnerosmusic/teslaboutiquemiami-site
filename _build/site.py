@@ -939,6 +939,21 @@ def build_news():
                "Updates from Tesla Boutique Miami: new projects, XPEL product news and practical tips for caring for your Tesla's PPF, ceramic coating and tint.",
                body, active="news", preload="tesla-model-s-ceramic-coating", extra_ld=ld)
 
+HERO_SLIDES = [
+    "cars/model-s/model-s-blue-1",
+    "cars/model-3/model-3-grey-2",
+    "cars/model-x/model-x-red-6",
+    "cars/model-y/model-y-1",
+    "cars/model-y/model-y-white-3",
+    "cars/cybertruck/cybertruck-3-white",
+    "cars/cybertruck/cybertruck-9-metallic",
+]
+
+def hero_slides(prefix):
+    return "".join(
+        f'<div class="hero-bg-image{" is-active" if i == 0 else ""}" style="{bg_style(prefix, n)}"></div>'
+        for i, n in enumerate(HERO_SLIDES))
+
 CONTACT_FORM_EN = '''<div class="cform-wrap">
   <h3 class="cform-title">Or send us the details</h3>
   <p class="cform-sub">Tell us about your Tesla and we will get back to you.</p>
@@ -966,7 +981,7 @@ CONTACT_FORM_EN = '''<div class="cform-wrap">
 
 def build_home():
     prefix = ""
-    hero = (f'<section class="hero"><div class="hero-bg"><div class="hero-bg-image" style="{bg_style(prefix, "cars/model-s/model-s-blue-1")}"></div></div>'
+    hero = (f'<section class="hero"><div class="hero-bg">{hero_slides(prefix)}</div>'
             f'<div class="container"><div class="hero-content">'
             f'<h1 class="hero-title"><span class="tesla">Tesla</span> Protection<br>Experts in <span class="highlight">Miami</span></h1>'
             f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating built exclusively for Tesla. Master XPEL installers with 15+ years protecting Model 3, Y, S, X and Cybertruck across Doral and Miami-Dade.</p>'
