@@ -1419,8 +1419,8 @@ def sa_why_block(place):
             f'<p>We work exclusively on Tesla. We know every panel, sensor and camera placement on Model 3, Y, S, X and Cybertruck, so {place} owners get patterns made for Tesla, not adapted.</p></div>'
             '<div class="why-item reveal"><span class="why-number">02</span><h3>XPEL Exclusive Dealer</h3>'
             '<p>Authorized XPEL exclusive dealer with 15+ years installing PPF, ceramic and films. Only genuine XPEL products, with full manufacturer warranty registered to your VIN.</p></div>'
-            '<div class="why-item reveal"><span class="why-number">03</span><h3>Built for Miami</h3>'
-            f'<p>Salt air, sun and gravel-strewn highways are exactly what we protect against every day. Our recommendations are tuned to how Teslas actually get driven in {place}.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">03</span><h3>Built for South Florida</h3>'
+            f'<p>Salt air, intense sun and debris-strewn roads are exactly what we protect against every day. Our recommendations are tuned to how Teslas actually get driven in {place}.</p></div>'
             '<div class="why-item reveal"><span class="why-number">04</span><h3>Flawless, Documented Work</h3>'
             '<p>Meticulous edge wraps, a controlled install bay in Doral, and every project photographed, so you see exactly the finish that comes out of our shop.</p></div>'
             '</div></div></section>')

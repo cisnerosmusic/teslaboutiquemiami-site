@@ -1070,8 +1070,8 @@ def sa_why_es(place):
             '<p>Trabajamos exclusivamente en Tesla. Conocemos cada panel, sensor y cámara del Model 3, Y, S, X y Cybertruck, así que los propietarios de %s reciben patrones hechos para Tesla, no adaptados.</p></div>'
             '<div class="why-item reveal"><span class="why-number">02</span><h3>Distribuidor exclusivo XPEL</h3>'
             '<p>Distribuidor exclusivo XPEL autorizado con más de 15 años instalando PPF, cerámico y films. Solo productos XPEL originales, con garantía de fábrica registrada a tu VIN.</p></div>'
-            '<div class="why-item reveal"><span class="why-number">03</span><h3>Hecho para Miami</h3>'
-            '<p>El aire salino, el sol y las autopistas llenas de grava son justo lo que protegemos a diario. Nuestras recomendaciones se ajustan a cómo se manejan los Teslas en %s.</p></div>'
+            '<div class="why-item reveal"><span class="why-number">03</span><h3>Hecho para el sur de Florida</h3>'
+            '<p>El aire salino, el sol intenso y los caminos con escombros son justo lo que protegemos a diario. Nuestras recomendaciones se ajustan a cómo se manejan los Teslas en %s.</p></div>'
             '<div class="why-item reveal"><span class="why-number">04</span><h3>Trabajo impecable y documentado</h3>'
             '<p>Bordes envueltos con precisión, una bahía de instalación controlada en Doral, y cada proyecto fotografiado, para que veas exactamente el acabado que sale de nuestro taller.</p></div>'
             '</div></div></section>') % (place, place)
