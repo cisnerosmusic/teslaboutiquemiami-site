@@ -437,7 +437,7 @@ MODELS = {
               "It depends on coverage. Call (786) 505-6162 and we will build a package around how you use the car.")],
   },
   "model-x": {
-    "name": "Model X", "img": "cars/model-x/model-x-red-studio", "card": "cars/model-x/model-x-red-1",
+    "name": "Model X", "img": "cars/model-x/model-x-red-studio", "card": "cars/model-x/model-x-red-6",
     "gallery": ["cars/model-x/model-x-red-1", "cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
     "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine XPEL.",
     "intro": ["The Model X has large body panels and unique falcon-wing doors, which means more painted surface exposed to chips and more edges to wrap correctly. Full-body or extended-front PPF is popular here, paired with ceramic tint for the big glass area and a ceramic coating for gloss.",
