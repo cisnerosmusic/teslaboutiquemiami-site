@@ -225,6 +225,15 @@ def header(prefix, active=""):
         f'<li><a href="{prefix}models/{s}.html">{l}</a></li>' for s, l in MODELS_NAV)
     services_dd = "".join(
         f'<li><a href="{prefix}services/{s}.html">{l}</a></li>' for s, l in SERVICES_NAV)
+    area_cols = ""
+    for c in COUNTIES:
+        if not c["cities"]:
+            continue
+        city_lis = "".join(
+            f'<li><a href="{prefix}service-area/{c["slug"]}/{cs}.html">{CITIES[cs]["name"]}</a></li>'
+            for cs in c["cities"])
+        area_cols += (f'<li class="mega-col"><a class="mega-head" href="{prefix}service-area/{c["slug"]}/index.html">{c["short"]}</a>'
+                      f'<ul>{city_lis}</ul></li>')
     def cur(key):
         return ' aria-current="page"' if active == key else ""
     return f'''<header class="header" id="header">
@@ -239,7 +248,8 @@ def header(prefix, active=""):
           <ul class="dropdown">{models_dd}</ul></li>
         <li class="has-dropdown"><a href="{prefix}index.html#services"{cur('services')}>Services</a>
           <ul class="dropdown">{services_dd}</ul></li>
-        <li><a href="{prefix}service-area/index.html"{cur('area')}>Service Area</a></li>
+        <li class="has-dropdown"><a href="{prefix}service-area/index.html"{cur('area')}>Service Area</a>
+          <ul class="dropdown dropdown-mega">{area_cols}</ul></li>
         <li><a href="{prefix}news/index.html"{cur('news')}>Updates</a></li>
         <li><a href="{prefix}index.html#contact">Contact</a></li>
       </ul>

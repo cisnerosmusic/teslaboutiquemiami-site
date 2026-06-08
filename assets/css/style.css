@@ -102,6 +102,11 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--gray-light); white-space: nowrap;
 }
 .dropdown li a:hover { background: rgba(43,57,144,0.18); color: var(--white); }
+.dropdown-mega { display: grid; grid-template-columns: repeat(4, minmax(150px, 1fr)); gap: 2px 8px; width: min(720px, calc(100vw - 32px)); }
+.dropdown-mega .mega-col { list-style: none; }
+.dropdown-mega .mega-col > ul { list-style: none; }
+.dropdown-mega .mega-col > .mega-head { display: block; padding: 8px 14px 5px; margin-bottom: 2px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); border-bottom: 1px solid rgba(255,255,255,0.08); white-space: nowrap; }
+.dropdown-mega .mega-col > .mega-head:hover { color: var(--white); background: transparent; }
 
 .header-cta { display: flex; align-items: center; gap: 16px; }
 .header-phone {
@@ -414,6 +419,9 @@ a.area-item:hover { transform: translateY(-3px); }
     .has-dropdown > a::after { margin-left: auto; }
     .dropdown { position: static; transform: none; opacity: 1; visibility: visible; box-shadow: none; background: transparent; border: none; padding: 4px 0 8px 14px; min-width: 0; }
     .has-dropdown:hover .dropdown { transform: none; }
+    .dropdown-mega { display: block; width: auto; }
+    .dropdown-mega .mega-col > .mega-head { padding: 8px 14px 4px 0; border-bottom: none; }
+    .dropdown-mega .mega-col > ul { padding-left: 12px; }
 }
 @media (max-width: 768px) {
     .header-phone span { display: none; }

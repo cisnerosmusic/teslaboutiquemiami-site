@@ -52,6 +52,13 @@ LOGO_ES = ('<span class="logo-main"><span class="logo-tesla">Tesla</span> '
 def header_es(esp, rootp, en_path, active=""):
     md = "".join('<li><a href="%smodels/%s.html">%s</a></li>' % (esp, s, l) for s, l in MODELS_NAV)
     sd = "".join('<li><a href="%sservices/%s.html">%s</a></li>' % (esp, s, l) for s, l in SERVICES_NAV_ES)
+    ac = ""
+    for c in COUNTIES_ES:
+        if not c["cities"]:
+            continue
+        cl = "".join('<li><a href="%sservice-area/%s/%s.html">%s</a></li>' % (esp, c["slug"], cs, CITIES_ES[cs]["name"]) for cs in c["cities"])
+        ac += ('<li class="mega-col"><a class="mega-head" href="%sservice-area/%s/index.html">%s</a><ul>%s</ul></li>'
+               % (esp, c["slug"], c["short"], cl))
     cur = lambda k: ' aria-current="page"' if active == k else ""
     return ('<header class="header" id="header"><div class="container"><div class="header-inner">'
         '<div class="logo"><a href="%sindex.html" class="logo-home-link" aria-label="Tesla Boutique Miami inicio"></a>%s</div>'
@@ -59,7 +66,7 @@ def header_es(esp, rootp, en_path, active=""):
         '<nav class="main-nav" id="primary-nav" aria-label="Principal"><ul class="main-nav-links">'
         '<li class="has-dropdown"><a href="%sindex.html#models"%s>Modelos Tesla</a><ul class="dropdown">%s</ul></li>'
         '<li class="has-dropdown"><a href="%sindex.html#services"%s>Servicios</a><ul class="dropdown">%s</ul></li>'
-        '<li><a href="%sservice-area/index.html"%s>Zona de Servicio</a></li>'
+        '<li class="has-dropdown"><a href="%sservice-area/index.html"%s>Zona de Servicio</a><ul class="dropdown dropdown-mega">%s</ul></li>'
         '<li><a href="%snews/index.html"%s>Updates</a></li>'
         '<li><a href="%sindex.html#contact">Contacto</a></li></ul>'
         '<div class="lang-switch" aria-label="Idioma"><a href="%s%s">EN</a><a href="#" aria-current="true">ES</a></div></nav>'
@@ -68,7 +75,7 @@ def header_es(esp, rootp, en_path, active=""):
         '</div></div></header>') % (
         esp, LOGO_ES, svg('<path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'),
         esp, cur("models"), md, esp, cur("services"), sd,
-        esp, cur("area"), esp, cur("news"), esp,
+        esp, cur("area"), ac, esp, cur("news"), esp,
         rootp, en_path, PHONE_TEL, svg(IC["phone"]), PHONE_DISP, esp)
 
 def footer_es(esp, rootp):
