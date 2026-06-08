@@ -774,4 +774,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/news/removing-water-spots.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/news/removing-water-spots.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/news/removing-water-spots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/news/removing-water-spots.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/news/removing-water-spots.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/news/removing-water-spots.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/news/removing-water-spots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/news/removing-water-spots.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

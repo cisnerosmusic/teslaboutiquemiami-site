@@ -683,6 +683,16 @@ POSTS_ES = {
     lead="Hábitos simples de lavado para que tu film XPEL y tu cerámico Fusion Plus rindan por años bajo el calor de la Florida.",
     cta_title="¿No sabes cómo cuidar tu Tesla?",
     cta_desc="Llámanos y dinos qué lleva puesto. Te decimos exactamente cómo cuidarlo."),
+  "removing-water-spots": dict(
+    pill="Mantenimiento", date="Junio 2026", crumb="Quitar manchas de agua", img="tesla-model-y-window-tinting",
+    title="Cómo quitar manchas de agua de un Tesla (vidrio y pintura) | Tesla Boutique Miami",
+    desc="Qué causa las manchas de agua dura en un Tesla en el sur de Florida, cómo quitarlas con seguridad del vidrio y la pintura, y cómo evitar que vuelvan. Desde un taller solo Tesla en Doral.",
+    h1='Quitar <span class="highlight">manchas de agua</span> de tu Tesla, vidrio y pintura',
+    card_title="Quitar manchas de agua del vidrio y la pintura de tu Tesla",
+    blurb="Qué causa las manchas de agua dura en el sur de Florida y cómo quitarlas con seguridad del vidrio y la pintura sin dañar tu acabado.",
+    lead="Qué causa las manchas de agua dura en el sur de Florida y cómo quitarlas con seguridad del vidrio y la pintura sin dañar tu acabado.",
+    cta_title="¿Manchas de agua rebeldes en tu Tesla?",
+    cta_desc="Tráelo a nuestro taller de Doral y las quitamos con seguridad, y te ayudamos a que no vuelvan."),
 }
 
 def build_post_es(slug, d):
@@ -714,9 +724,7 @@ def build_news_es():
     crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Updates", "")])
     hero = S.page_hero(rootp, "tesla-model-s-ceramic-coating", 'Tesla Boutique <span class="highlight">Updates</span>',
         "Noticias y recursos de Tesla Boutique Miami: proyectos nuevos, novedades de productos XPEL y consejos prácticos para cuidar el film, el recubrimiento y el polarizado de tu Tesla. Actualizado seguido.", "", crumbs)
-    posts = [
-        ("Mantenimiento", "Quitar manchas de agua del vidrio y la pintura", "Qué causa las manchas de agua dura en el sur de Florida y cómo quitarlas con seguridad sin dañar tu acabado."),
-    ]
+    posts = []
     cards = ""
     for slug, d in POSTS_ES.items():
         cards += ('<div class="project-tile reveal"><div class="project-tile-body"><div class="tag-row"><span class="pill">%s</span></div>'
