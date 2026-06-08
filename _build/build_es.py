@@ -117,10 +117,10 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
         '<meta property="og:site_name" content="Tesla Boutique Miami">\n<meta name="twitter:card" content="summary_large_image">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">\n'
-        '%s\n<link rel="stylesheet" href="%sassets/css/style.css">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
+        '%s\n<link rel="stylesheet" href="%sassets/css/style.css?v=%s">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
         '<script src="%sassets/js/main.js" defer></script>\n</body>\n</html>\n') % (
         title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,
-        DOMAIN, (preload or "model-s"), preload_tag, rootp, ld,
+        DOMAIN, (preload or "model-s"), preload_tag, rootp, S.CSS_VER, ld,
         header_es(esp, rootp, path, active), body, footer_es(esp, rootp), rootp)
 
 # ---------- ES section helpers ----------
