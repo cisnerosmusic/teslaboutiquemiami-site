@@ -435,7 +435,7 @@ MODELS = {
   },
   "model-s": {
     "name": "Model S", "img": "cars/model-s/model-s-blue-studio", "card": "tesla-model-s-ceramic-coating",
-    "gallery": ["cars/model-s/model-s-red-2", "cars/model-s/model-s-detalle", "cars/model-s/model-s-detalle-2", "cars/model-s/model-s-red", "cars/model-s/model-s-blue-1", "cars/model-s/model-s-blue-2", "cars/model-s/model-s-blue-3", "cars/model-s/model-s-blue-4"],
+    "gallery": ["cars/model-s/model-s-black-1", "cars/model-s/model-s-red-2", "cars/model-s/model-s-detalle", "cars/model-s/model-s-detalle-2", "cars/model-s/model-s-red", "cars/model-s/model-s-blue-1", "cars/model-s/model-s-blue-2", "cars/model-s/model-s-blue-3", "cars/model-s/model-s-blue-4"],
     "lead": "The Model S is Tesla's flagship, and it deserves flagship protection. Full-body film, ceramic coating and tint that keep a premium sedan immaculate.",
     "intro": ["A Model S owner is protecting a significant investment, so coverage tends to go deeper: full-body paint protection film to keep every panel flawless, a Fusion Plus ceramic coating for a liquid-gloss finish, and ceramic tint for comfort and UV protection.",
               "We treat the Model S like the flagship it is, with meticulous edge wraps and genuine XPEL materials registered to your VIN."],
@@ -522,6 +522,11 @@ SERVICES = {
   "paint-protection-film": {
     "name": "Paint Protection Film", "img": "tesla-model-3-ppf-doral",
     "badge": {"img": "xpel-ultimate-plus.png", "alt": "XPEL Ultimate Plus paint protection film"},
+    "process": ("Real PPF work in our Doral shop", "Paint protection film, applied by hand", [
+      {"img": "tesla-model-y-ppf-application", "w": 1080, "h": 1432, "cls": "pr-tall",
+       "alt": "Installer applying XPEL paint protection film to a Tesla Model Y door panel in Doral",
+       "caption": "Squeegeeing PPF onto a Model Y door, panel by panel"},
+    ]),
     "h1": 'Tesla <span class="highlight">Paint Protection Film</span>',
     "lead": "Invisible, self-healing XPEL film that takes the rock chips and scratches so your Tesla's paint does not. The single best thing you can do to keep a Tesla looking new in Miami.",
     "sections": [
