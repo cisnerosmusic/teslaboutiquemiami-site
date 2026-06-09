@@ -249,6 +249,13 @@ img { max-width: 100%; height: auto; display: block; }
 .media-showcase { max-width: 960px; margin: 0 auto; }
 .media-showcase img { display: block; width: 100%; height: auto; border-radius: 16px; }
 .media-showcase figcaption { margin-top: 14px; text-align: center; color: var(--gray); font-size: 0.85rem; letter-spacing: 0.02em; }
+.process-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; justify-content: center; max-width: 1000px; margin: 0 auto; }
+.process-row figure { margin: 0; }
+.process-row .pr-wide { flex: 2 1 380px; }
+.process-row .pr-tall { flex: 1 1 240px; max-width: 340px; }
+.process-row picture { display: block; }
+.process-row img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.process-row figcaption { margin-top: 10px; text-align: center; color: var(--gray); font-size: 0.82rem; letter-spacing: 0.02em; }
 
 /* ========== SERVICES GRID / CARDS ========== */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }

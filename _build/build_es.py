@@ -408,8 +408,16 @@ SERVICES_ES = {
            "Sí. Añadir film cerámico a un techo panorámico de cristal es una de las mejoras de confort más efectivas, cortando el calor sin cambiar el look."),
           ("¿El polarizado afecta las señales o cámaras de mi Tesla?",
            "No. El film cerámico no es metálico, así que no interfiere con GPS, celular ni las cámaras y sensores de Tesla.")]),
-  "windshield-protection": dict(name="Protección de Parabrisas", img="model-s",
+  "windshield-protection": dict(name="Protección de Parabrisas", img="tesla-windshield-protection-install",
     badge=dict(img="xpel-windshield-film.png", alt="Film de protección de parabrisas XPEL"),
+    process=("En nuestro taller de Doral", "Cómo es una instalación de parabrisas Tesla", [
+      dict(img="tesla-windshield-film-application", w=1080, h=706, cls="pr-wide",
+           alt="Dos instaladores colocando film de protección de parabrisas XPEL sobre un Tesla en Doral",
+           caption="Posicionando el film antes de pasar el squeegee"),
+      dict(img="tesla-windshield-film-detail", w=1080, h=1920, cls="pr-tall",
+           alt="Primer plano del film de protección de parabrisas XPEL trabajado con squeegee en un Tesla",
+           caption="Eliminando la solución para un acabado ópticamente claro"),
+    ]),
     h1='Tesla <span class="highlight">Protección de Parabrisas</span>',
     lead="Un film protector ópticamente claro que ayuda a proteger el costoso parabrisas de tu Tesla de impactos de piedra, grietas y picaduras, un seguro inteligente y de bajo costo.",
     sections=[
@@ -495,6 +503,16 @@ def media_showcase_es(rootp, s):
             '<img src="%sassets/img/%s" alt="%s" width="%s" height="%s" loading="lazy" decoding="async">%s</figure></div></section>' % (
             rootp, s["img"], s["alt"], s["w"], s["h"], cap))
 
+def process_es(rootp, tag, title, items):
+    figs = ""
+    for it in items:
+        cap = '<figcaption>%s</figcaption>' % it["caption"] if it.get("caption") else ""
+        figs += '<figure class="%s">%s%s</figure>' % (it["cls"], S.pic(rootp, it["img"], it["alt"], it["w"], it["h"]), cap)
+    return ('<section class="section"><div class="container">'
+            '<div class="section-header"><span class="section-tag">%s</span>'
+            '<h2 class="section-title">%s</h2></div>'
+            '<div class="process-row">%s</div></div></section>') % (tag, title, figs)
+
 def build_service_es(slug, d):
     path = "services/%s.html" % slug
     esp, rootp = esp_root(path); name = d["name"]
@@ -519,7 +537,8 @@ def build_service_es(slug, d):
     fq = faq_es(d["faqs"])
     cta = cta_es("¿Listo para %s?" % name, "Dinos tu Tesla y qué buscas, y te damos una cotización y tiempos claros.")
     showcase = media_showcase_es(rootp, d["showcase"]) if d.get("showcase") else ""
-    body = hero + secs + showcase + opts + bymodel + fq + cta
+    proc = process_es(rootp, *d["process"]) if d.get("process") else ""
+    body = hero + secs + showcase + proc + opts + bymodel + fq + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service", "name": "Tesla %s" % name,
         "serviceType": name, "brand": {"@type": "Brand", "name": "XPEL"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162", "url": DOMAIN+"/es/",

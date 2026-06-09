@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "https://teslaboutiquemiami.com"
 PHONE_TEL = "7865056162"
 PHONE_DISP = "(786) 505-6162"
-CSS_VER = "20260608"  # bump on every style.css change to bust browser cache
+CSS_VER = "20260609"  # bump on every style.css change to bust browser cache
 
 # ---------------------------------------------------------------- icons
 IC = {
@@ -208,6 +208,16 @@ def media_showcase(prefix, s):
     return (f'<section class="section"><div class="container"><figure class="media-showcase">'
             f'<img src="{prefix}assets/img/{s["img"]}" alt="{s["alt"]}" width="{s["w"]}" height="{s["h"]}" loading="lazy" decoding="async">'
             f'{cap}</figure></div></section>')
+
+def process_block(prefix, tag, title, items):
+    figs = ""
+    for it in items:
+        cap = f'<figcaption>{it["caption"]}</figcaption>' if it.get("caption") else ""
+        figs += f'<figure class="{it["cls"]}">{pic(prefix, it["img"], it["alt"], it["w"], it["h"])}{cap}</figure>'
+    return (f'<section class="section"><div class="container">'
+            f'<div class="section-header"><span class="section-tag">{tag}</span>'
+            f'<h2 class="section-title">{title}</h2></div>'
+            f'<div class="process-row">{figs}</div></div></section>')
 
 def page_hero(prefix, img, title_html, lead, ctas_html, crumbs_html=""):
     return (f'<section class="page-hero"><div class="page-hero-bg" style="{bg_style(prefix, img)}"></div>'
@@ -608,8 +618,16 @@ SERVICES = {
               "No. Ceramic film is non-metallic, so it does not interfere with GPS, cellular or Tesla's cameras and sensors.")],
   },
   "windshield-protection": {
-    "name": "Windshield Protection", "img": "model-s",
+    "name": "Windshield Protection", "img": "tesla-windshield-protection-install",
     "badge": {"img": "xpel-windshield-film.png", "alt": "XPEL windshield protection film"},
+    "process": ("In our Doral shop", "How a Tesla windshield install looks", [
+      {"img": "tesla-windshield-film-application", "w": 1080, "h": 706, "cls": "pr-wide",
+       "alt": "Two installers positioning XPEL windshield protection film over a Tesla windshield in Doral",
+       "caption": "Positioning the film before squeegeeing"},
+      {"img": "tesla-windshield-film-detail", "w": 1080, "h": 1920, "cls": "pr-tall",
+       "alt": "Close-up of XPEL windshield protection film being squeegeed onto a Tesla windshield",
+       "caption": "Working out the slip solution for an optically clear finish"},
+    ]),
     "h1": 'Tesla <span class="highlight">Windshield Protection</span>',
     "lead": "An optically clear protective film that helps shield your Tesla's expensive windshield from rock strikes, cracks and pitting, a smart, low-cost insurance policy.",
     "sections": [
@@ -701,6 +719,7 @@ def build_service(slug, d):
         tag, title, cards = d["options"]
         opts = packages_block(tag, title, "Every build is tailored, final pricing is confirmed on a quick call or visit.", cards)
     showcase = media_showcase(prefix, d["showcase"]) if d.get("showcase") else ""
+    proc = process_block(prefix, *d["process"]) if d.get("process") else ""
     bymodel = ('<section class="section section-alt"><div class="container">'
                '<div class="section-header left"><span class="section-tag">By Tesla model</span>'
                '<h2 class="section-title">Pick your Tesla</h2></div><div class="link-cloud">'
@@ -708,7 +727,7 @@ def build_service(slug, d):
                + "</div></div></section>")
     fq = faq_block(d["faqs"])
     cta = cta_block(f"Ready for {d['name']}?", "Tell us your Tesla and what you are after, and we will give you a clear quote and timeline.")
-    body = hero + secs + showcase + opts + bymodel + fq + cta
+    body = hero + secs + showcase + proc + opts + bymodel + fq + cta
     service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
         "name": f"Tesla {d['name']}", "serviceType": d["name"], "brand": {"@type": "Brand", "name": "XPEL"},
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162",
