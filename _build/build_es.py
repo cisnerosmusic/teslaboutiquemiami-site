@@ -392,6 +392,14 @@ SERVICES_ES = {
            "Normalmente sí. El cerámico fija lo que haya debajo, así que quitar los remolinos con corrección de pintura primero da el mejor y más profundo resultado.")]),
   "window-tint": dict(name="Polarizado", img="tesla-model-y-window-tinting",
     badge=dict(img="xpel-prime-xr-plus.png", alt="Polarizado cerámico XPEL Prime XR Plus"),
+    process=("En nuestro taller de Doral", "Cómo es una instalación de polarizado Tesla", [
+      dict(img="tesla-window-tint-squeegee", w=940, h=1278, cls="pr-tall",
+           alt="Instalador pasando el squeegee sobre el polarizado cerámico XPEL en la ventana de un Tesla en Doral",
+           caption="Pasando el squeegee para un acabado sin burbujas"),
+      dict(img="tesla-window-tint-result", w=1080, h=1575, cls="pr-tall",
+           alt="Ventana lateral de un Tesla con polarizado cerámico XPEL recién instalado en Doral",
+           caption="El polarizado terminado, limpio y parejo"),
+    ]),
     h1='Tesla <span class="highlight">Polarizado</span>',
     lead="El polarizado cerámico XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo y bloquea el UV, manteniendo la cabina de tu Tesla fresca y cómoda bajo el sol de Miami, sin cambiar su aspecto.",
     sections=[

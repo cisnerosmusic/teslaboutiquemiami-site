@@ -600,6 +600,14 @@ SERVICES = {
   "window-tint": {
     "name": "Window Tint", "img": "tesla-model-y-window-tinting",
     "badge": {"img": "xpel-prime-xr-plus.png", "alt": "XPEL Prime XR Plus window film"},
+    "process": ("In our Doral shop", "How a Tesla tint install looks", [
+      {"img": "tesla-window-tint-squeegee", "w": 940, "h": 1278, "cls": "pr-tall",
+       "alt": "Installer squeegeeing XPEL ceramic window tint onto a Tesla side window in Doral",
+       "caption": "Squeegeeing the ceramic film for a bubble-free finish"},
+      {"img": "tesla-window-tint-result", "w": 1080, "h": 1575, "cls": "pr-tall",
+       "alt": "Tesla side window with freshly installed XPEL ceramic window tint in Doral",
+       "caption": "The finished tint, crisp and even"},
+    ]),
     "h1": 'Tesla <span class="highlight">Window Tint</span>',
     "lead": "XPEL Prime XR Plus ceramic tint rejects up to 98% of infrared heat and blocks UV, keeping your Tesla's cabin cool and comfortable in the Miami sun, without changing the look.",
     "sections": [
