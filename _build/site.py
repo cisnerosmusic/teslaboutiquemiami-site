@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "https://teslaboutiquemiami.com"
 PHONE_TEL = "7865056162"
 PHONE_DISP = "(786) 505-6162"
-CSS_VER = "20260609"  # bump on every style.css change to bust browser cache
+CSS_VER = "20260610"  # bump on every style.css change to bust browser cache
 
 # ---------------------------------------------------------------- icons
 IC = {
@@ -1041,7 +1041,7 @@ def build_home():
     hero = (f'<section class="hero"><div class="hero-bg">{hero_slides(prefix)}</div>'
             f'<div class="container"><div class="hero-content">'
             f'<h1 class="hero-title"><span class="tesla">Tesla</span> Protection<br>Experts in <span class="highlight">Miami</span></h1>'
-            f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating built exclusively for Tesla. Master XPEL installers with 15+ years protecting Model 3, Y, S, X and Cybertruck across Doral and Miami-Dade.</p>'
+            f'<p class="hero-subtitle">Premium paint protection film, window tint and ceramic coating, especially recommended for Tesla. Master XPEL installers with 15+ years of experience across Florida.</p>'
             f'<div class="hero-ctas"><a href="tel:{PHONE_TEL}" class="btn btn-primary btn-lg">{svg(IC["phone"], w=20, h=20)} Call Now</a>'
             f'<a href="#models" class="btn btn-outline btn-lg">Find My Tesla</a></div>'
             f'<div class="hero-stats">'
