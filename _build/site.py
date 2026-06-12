@@ -404,7 +404,7 @@ MODELS = {
   },
   "model-y": {
     "name": "Model Y", "img": "cars/model-y/model-y-blue-studio", "card": "tesla-model-y-window-tinting",
-    "gallery": ["cars/model-y/model-y-3", "cars/model-y/model-y-1", "cars/model-y/model-y-2", "cars/model-y/model-y-detail-1", "cars/model-y/model-y-white-1", "cars/model-y/model-y-white-2", "cars/model-y/model-y-white-3"],
+    "gallery": ["cars/model-y/model-y-grey-2", "cars/model-y/model-y-grey-3", "cars/model-y/model-y-grey-1", "cars/model-y/model-y-3", "cars/model-y/model-y-1", "cars/model-y/model-y-2", "cars/model-y/model-y-detail-1", "cars/model-y/model-y-white-1", "cars/model-y/model-y-white-2", "cars/model-y/model-y-white-3"],
     "lead": "The Model Y is the Tesla we protect most. Here is exactly how we shield its paint, glass roof and finish from Miami roads, sun and resale wear.",
     "intro": ["The Tesla Model Y spends its life on I-95, the Palmetto and the Turnpike, exactly where sand and gravel chip a soft factory clear coat. Add relentless UV and afternoon heat, and an unprotected Model Y starts showing chips on the hood, swirls in the paint, and a hot cabin under the panoramic glass roof.",
               "Our approach: paint protection film where impacts happen, ceramic coating for gloss and easy cleaning, and ceramic window tint to keep the heat out. Every service uses model-specific XPEL patterns cut for the Model Y."],
