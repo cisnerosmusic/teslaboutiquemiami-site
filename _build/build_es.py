@@ -103,8 +103,13 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
     en_url = DOMAIN + "/" + path
     preload_tag = ('<link rel="preload" as="image" type="image/avif" href="%sassets/img/%s.avif" fetchpriority="high">' % (rootp, preload)) if preload else ""
     ld = "".join('<script type="application/ld+json">%s</script>\n' % b for b in (extra_ld or []))
+    fav = ('<link rel="icon" href="%sfavicon.ico" sizes="any">\n'
+           '<link rel="icon" type="image/svg+xml" href="%sfavicon.svg">\n'
+           '<link rel="icon" type="image/png" sizes="32x32" href="%sfavicon-32.png">\n'
+           '<link rel="icon" type="image/png" sizes="16x16" href="%sfavicon-16.png">\n'
+           '<link rel="apple-touch-icon" sizes="180x180" href="%sapple-touch-icon.png">\n') % (rootp, rootp, rootp, rootp, rootp)
     return ('<!DOCTYPE html>\n<html lang="es">\n<head>\n'
-        '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+        '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n%s'
         '<title>%s</title>\n<meta name="description" content="%s">\n'
         '<meta name="robots" content="index, follow, max-image-preview:large">\n'
         '<link rel="canonical" href="%s">\n'
@@ -120,7 +125,7 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
         '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>\n'
         '%s\n<link rel="stylesheet" href="%sassets/css/style.css?v=%s">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
         '<script src="%sassets/js/main.js" defer></script>\n</body>\n</html>\n') % (
-        title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,
+        fav, title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,
         DOMAIN, (preload or "model-s"), preload_tag, rootp, S.CSS_VER, ld,
         header_es(esp, rootp, path, active), body, footer_es(esp, rootp), rootp)
 

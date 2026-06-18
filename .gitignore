@@ -11,6 +11,13 @@
 !assets/img/xpel-windshield-film.png
 # Exception: Colored PPF sample fan photo (served JPG; webp/avif variants TBD via build)
 !assets/img/colored-ppf-samples.jpg
+# Exception: favicons / app icons (served PNGs, no webp/avif variant)
+!favicon-16.png
+!favicon-32.png
+!apple-touch-icon.png
+!icon-512.png
+# Exception: brand-kit icon assets (alternate favicon variants)
+!assets/img/brand/*.png
 _build/source_images/
 
 # Backups & briefs (not part of the deployed site)
