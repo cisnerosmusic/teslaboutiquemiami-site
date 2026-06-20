@@ -73,3 +73,13 @@ visual checks when Node/Python are not installed.
 Plain static site, runs from the repo root with relative links, so it works both on
 GitHub Pages and standard hosting. Canonical, hreflang and Open Graph URLs point to
 the production domain `https://teslaboutiquemiami.com`.
+
+## Effects / themes
+
+`.beam-edge` ("Linterna"): a slow, brand-colored light that sweeps a card's
+border, fading in 2s after the card scrolls into view, then looping. Add the
+class to any card; the contact card (`.cform-wrap`) opts in automatically.
+Tune per card with CSS custom props `--beam-spin` (speed), `--beam-thickness`,
+`--beam-fade`, and `--beam-c1/--beam-c2/--beam-c3` (colors). Honors
+`prefers-reduced-motion`. Use `data-beam-delay="0"` to start immediately.
+Defined in `assets/css/style.css`; triggered in `assets/js/main.js`.

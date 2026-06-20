@@ -127,19 +127,23 @@ document.querySelectorAll('.cform').forEach(function (form) {
         slides[i].classList.add('is-active');
     }, 7000);
 })();
-/* ========== CONTACT CARD beam: one-shot trigger 2s after it scrolls into view ========== */
+/* ========== "Linterna" beam theme: one-shot trigger when a card scrolls into view ========== */
+/* Any element with class .beam-edge (and the contact card .cform-wrap) gets a slow,
+   brand-colored light sweeping its border. Starts data-beam-delay ms after entering
+   view (default 2000), once, then loops. */
 (function () {
-    var card = document.querySelector('.cform-wrap');
-    if (!card) return;
-    var light = function () { card.classList.add('cform-lit'); };
-    if (!('IntersectionObserver' in window)) { light(); return; }
+    var cards = document.querySelectorAll('.beam-edge, .cform-wrap');
+    if (!cards.length) return;
+    var light = function (el) {
+        var d = parseInt(el.getAttribute('data-beam-delay'), 10);
+        if (isNaN(d)) d = 2000;
+        setTimeout(function () { el.classList.add('beam-on'); }, d);
+    };
+    if (!('IntersectionObserver' in window)) { cards.forEach(light); return; }
     var obs = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                obs.unobserve(entry.target);
-                setTimeout(light, 2000);   // 2s after arriving at the contact section
-            }
+            if (entry.isIntersecting) { obs.unobserve(entry.target); light(entry.target); }
         });
     }, { threshold: 0.35 });
-    obs.observe(card);
+    cards.forEach(function (el) { obs.observe(el); });
 })();

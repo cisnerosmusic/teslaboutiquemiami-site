@@ -562,28 +562,45 @@ a.area-item:hover { transform: translateY(-3px); }
     .cform-wrap { padding: 24px 18px; }
     .cform-grid { grid-template-columns: 1fr; }
 }
-/* ========== CONTACT CARD: rotating "flashlight" glass-edge glow ========== */
-@property --cform-beam {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+/* ========================================================================
+   THEME: "Linterna" — rotating brand-colored glass-edge beam (reusable)
+   Add class="beam-edge" to ANY card to opt in. The contact card (.cform-wrap)
+   opts in automatically. A slow light sweeps the border, fading in once the
+   card scrolls into view (JS adds .beam-on after data-beam-delay ms, def 2000),
+   then loops. GPU-only (angle + opacity); honors prefers-reduced-motion.
+   Per-card knobs (set inline style or a rule):
+     --beam-thickness  edge width    (default 1.5px)
+     --beam-spin       sec / rev     (default 15s, "muy lento")
+     --beam-fade       fade-in time  (default 1.8s)
+     --beam-c1/c2/c3   arc colors    (brand indigo -> periwinkle)
+   Start immediately with data-beam-delay="0".
+   ======================================================================== */
+@property --beam-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.beam-edge, .cform-wrap {
+    position: relative;
+    isolation: isolate;
+    --beam-thickness: 1.5px;
+    --beam-spin: 15s;
+    --beam-fade: 1.8s;
+    --beam-c1: #2B3990;   /* brand indigo (arc edges) */
+    --beam-c2: #6f80e0;   /* mid */
+    --beam-c3: #93a2ec;   /* brand periwinkle (brightest point) */
 }
-.cform-wrap { position: relative; isolation: isolate; }
-.cform-wrap::before {
+.beam-edge::before, .cform-wrap::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    padding: 1.5px;                 /* thickness of the lit glass edge */
-    background: conic-gradient(from var(--cform-beam),
+    padding: var(--beam-thickness);
+    background: conic-gradient(from var(--beam-angle),
         transparent 0deg,
         transparent 205deg,
         rgba(43, 57, 144, 0) 230deg,
-        #2B3990 262deg,
-        #6f80e0 296deg,
-        #93a2ec 312deg,             /* brightest point of the beam (brand periwinkle) */
-        #6f80e0 328deg,
-        #2B3990 352deg,
+        var(--beam-c1) 262deg,
+        var(--beam-c2) 296deg,
+        var(--beam-c3) 312deg,
+        var(--beam-c2) 328deg,
+        var(--beam-c1) 352deg,
         transparent 360deg);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -591,16 +608,16 @@ a.area-item:hover { transform: translateY(-3px); }
             mask-composite: exclude;
     filter: drop-shadow(0 0 5px rgba(111, 128, 224, 0.45))
             drop-shadow(0 0 11px rgba(43, 57, 144, 0.35));
-    opacity: 0;                     /* hidden until triggered by JS */
+    opacity: 0;
     pointer-events: none;
     z-index: 0;
 }
-.cform-wrap > * { position: relative; z-index: 1; }  /* keep the form above the glow */
+.beam-edge > *, .cform-wrap > * { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: no-preference) {
-    .cform-wrap.cform-lit::before {
-        animation: cformBeamFade 1.8s ease-out forwards,
-                   cformBeamSpin 15s linear infinite;
+    .beam-edge.beam-on::before, .cform-wrap.beam-on::before {
+        animation: beamFade var(--beam-fade) ease-out forwards,
+                   beamSpin var(--beam-spin) linear infinite;
     }
 }
-@keyframes cformBeamFade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes cformBeamSpin { to { --cform-beam: 360deg; } }
+@keyframes beamFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes beamSpin { to { --beam-angle: 360deg; } }
