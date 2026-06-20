@@ -127,3 +127,19 @@ document.querySelectorAll('.cform').forEach(function (form) {
         slides[i].classList.add('is-active');
     }, 7000);
 })();
+/* ========== CONTACT CARD beam: one-shot trigger 2s after it scrolls into view ========== */
+(function () {
+    var card = document.querySelector('.cform-wrap');
+    if (!card) return;
+    var light = function () { card.classList.add('cform-lit'); };
+    if (!('IntersectionObserver' in window)) { light(); return; }
+    var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                obs.unobserve(entry.target);
+                setTimeout(light, 2000);   // 2s after arriving at the contact section
+            }
+        });
+    }, { threshold: 0.35 });
+    obs.observe(card);
+})();

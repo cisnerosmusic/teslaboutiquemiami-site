@@ -562,3 +562,45 @@ a.area-item:hover { transform: translateY(-3px); }
     .cform-wrap { padding: 24px 18px; }
     .cform-grid { grid-template-columns: 1fr; }
 }
+/* ========== CONTACT CARD: rotating "flashlight" glass-edge glow ========== */
+@property --cform-beam {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.cform-wrap { position: relative; isolation: isolate; }
+.cform-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;                 /* thickness of the lit glass edge */
+    background: conic-gradient(from var(--cform-beam),
+        transparent 0deg,
+        transparent 205deg,
+        rgba(43, 57, 144, 0) 230deg,
+        #2B3990 262deg,
+        #6f80e0 296deg,
+        #93a2ec 312deg,             /* brightest point of the beam (brand periwinkle) */
+        #6f80e0 328deg,
+        #2B3990 352deg,
+        transparent 360deg);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    filter: drop-shadow(0 0 5px rgba(111, 128, 224, 0.45))
+            drop-shadow(0 0 11px rgba(43, 57, 144, 0.35));
+    opacity: 0;                     /* hidden until triggered by JS */
+    pointer-events: none;
+    z-index: 0;
+}
+.cform-wrap > * { position: relative; z-index: 1; }  /* keep the form above the glow */
+@media (prefers-reduced-motion: no-preference) {
+    .cform-wrap.cform-lit::before {
+        animation: cformBeamFade 1.8s ease-out forwards,
+                   cformBeamSpin 15s linear infinite;
+    }
+}
+@keyframes cformBeamFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cformBeamSpin { to { --cform-beam: 360deg; } }
