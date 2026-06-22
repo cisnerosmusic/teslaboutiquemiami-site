@@ -1067,7 +1067,7 @@ def build_home():
     for s, l in MODELS_NAV:
         d = MODELS[s]
         mcards += (f'<a class="model-card reveal" href="models/{s}.html">{pic(prefix, d.get("card", d["img"]), img_alt(d.get("card", d["img"]), "en"), 700, 525)}'
-                   f'<div class="model-card-overlay"><h3>{l}</h3><span>PPF &middot; Tint &middot; Ceramic</span></div></a>')
+                   f'<div class="model-card-overlay"><h3>{l}</h3></div></a>')
     models_sec = (f'<section class="section" id="models"><div class="container">'
                   f'<div class="section-header"><span class="section-tag">Start with your Tesla</span>'
                   f'<h2 class="section-title">Pick your model</h2>'
