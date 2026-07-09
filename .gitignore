@@ -31,3 +31,7 @@ __pycache__/
 # OS noise
 .DS_Store
 Thumbs.db
+
+# Local dev helpers (no forman parte del sitio publicado)
+.claude/
+_build/serve.ps1
