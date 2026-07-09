@@ -559,9 +559,29 @@ a.area-item:hover { transform: translateY(-3px); }
 .cform-err { background: rgba(217, 72, 72, 0.10); border: 1px solid rgba(217, 72, 72, 0.4); color: #f0a2a2; }
 .cform-hp { position: absolute; left: -9999px; top: -9999px; height: 0; overflow: hidden; }
 @media (max-width: 640px) {
-    .cform-wrap { padding: 24px 18px; }
     .cform-grid { grid-template-columns: 1fr; }
+    /* On phones the desktop "linterna" beam is off; the contact card instead
+       reads as THE important zone: brand frame + elevation glow + a light that
+       slowly travels along the top edge (a cheap, GPU-light echo of the beam). */
+    .cform-wrap {
+        padding: 24px 18px;
+        border: 1.5px solid rgba(43, 57, 144, 0.7);
+        box-shadow: 0 16px 50px rgba(43, 57, 144, 0.30);
+        overflow: hidden;
+    }
+    .cform-wrap::before { display: none; }          /* no rotating beam on mobile */
+    .cform-wrap::after {
+        content: "";
+        position: absolute; left: 0; right: 0; top: 0; height: 3px;
+        z-index: 2; pointer-events: none;
+        background: linear-gradient(90deg, transparent, #2B3990 18%, #93a2ec 50%, #2B3990 82%, transparent);
+        background-size: 200% 100%;
+    }
 }
+@media (max-width: 640px) and (prefers-reduced-motion: no-preference) {
+    .cform-wrap::after { animation: cformEdgeSweep 6s ease-in-out infinite; }
+}
+@keyframes cformEdgeSweep { 0%, 100% { background-position: 130% 0; } 50% { background-position: -30% 0; } }
 /* ========================================================================
    THEME: "Linterna" — rotating brand-colored glass-edge beam (reusable)
    Add class="beam-edge" to ANY card to opt in. The contact card (.cform-wrap)
