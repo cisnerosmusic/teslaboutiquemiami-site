@@ -1034,6 +1034,140 @@ GUIDES = {
       ("Can I get PPF, ceramic and tint done together?", "Yes, and it is the most efficient way: one visit, correct sequence, with film and coating layered properly and tint done alongside. Tell us your Model Y and we will quote the combined package."),
     ],
   },
+  "why-a-tesla-chips-more-easily": {
+    "pill": "Paint", "crumb": "Why Tesla paint chips", "img": "cars/model-y/model-y-lightblue-2", "reviewed": "July 2026",
+    "title": "Why a Tesla Chips More Easily Than You Expect | Tesla Boutique Miami",
+    "desc": "Tesla factory paint is thinner and softer than most owners assume. Here is why a Tesla shows chips and swirls faster, and what actually protects it in South Florida.",
+    "h1": 'Why a Tesla chips more easily than you <span class="highlight">expect</span>',
+    "card_title": "Why a Tesla chips more easily than you expect",
+    "blurb": "Tesla's factory clear coat is thin and soft. Here is what that means for your paint, and how to protect it.",
+    "lead": "If you came to a Tesla from a German or Japanese car and were surprised how fast it picked up chips and swirls, you are not imagining it. Tesla's factory paint, and especially the clear coat, tends to be thinner and softer than the industry average. That is not a defect, it is a manufacturing trade-off, but in South Florida it means an unprotected Tesla ages faster. Here is what is actually going on and what to do about it.",
+    "cta_title": "Want to protect soft Tesla paint the right way?",
+    "cta_desc": "Tell us your model and how you drive it, and we will spec the PPF, correction and ceramic that fit your Tesla.",
+    "sections": [
+      ("The factory clear coat is thinner and softer than you think", [
+        "Independent paint-thickness readings on Teslas routinely come in below what you would measure on a comparable European luxury car, and detailers who correct paint for a living consistently describe Tesla clear coat as on the soft side. Soft clear scratches and swirls more easily during washing, and thin clear gives rock chips less material to stop before they reach color or primer.",
+        "None of this makes Tesla paint bad. It photographs beautifully and it is perfectly serviceable. It just has less sacrificial margin than owners expect, which is why the same driving that a thick-clear car shrugs off will show up sooner on a Tesla."]),
+      ("Why that matters more in South Florida", [
+        "Thin, soft paint meets its worst case here. Highway grit on I-95, the Palmetto and the Turnpike throws chips at a front end that has less clear to absorb them. Relentless UV and heat stress the finish from above. And frequent washing, often to get off love-bug season and salt residue, is exactly the activity that puts swirls into soft clear coat.",
+        "So the South Florida version of \"my Tesla looks tired\" tends to arrive earlier than owners are used to: micro-chips on the hood and bumper, a haze of wash swirls under direct sun, and edges starting to look thin."]),
+      ("What actually protects soft Tesla paint", [
+        "Two different tools do two different jobs. <a href=\"../services/paint-protection-film.html\">Paint protection film</a> is the physical armor: a self-healing XPEL layer that takes rock chips and scratches so the thin factory clear never gets touched. A <a href=\"../services/ceramic-coating.html\">ceramic coating</a> is the chemical and UV shield: it hardens the surface against wash swirls, adds gloss, and makes contamination rinse off instead of bonding. On soft Tesla paint, the pairing is especially worth it because the factory finish gives you so little margin on its own.",
+        "For most owners the priority order is simple: film the impact zones up front, coat the rest for gloss and easy care. If the paint already shows wear, correct it first so you are locking in a clean finish, not sealing swirls under coating."]),
+      ("If your paint already has chips or swirls", [
+        "Existing swirls are usually correctable. <a href=\"../services/paint-correction.html\">Paint correction</a> levels the very top of the clear to remove the fine scratches, then film and coating keep it that way. Rock chips that have already reached color cannot be polished out, but they can be stopped from spreading and hidden far better before PPF goes on. The takeaway: soft Tesla paint rewards protecting it early, and the best single moment is right after delivery, before the first long highway drive."]),
+    ],
+    "faqs": [
+      ("Is Tesla paint really softer than other cars?", "In practice, yes. Tesla clear coat measures thinner on average and behaves softer under polishing than most European luxury paint, so it swirls and chips more easily. It is a known trait, not a defect, and it is exactly why owners here protect it early."),
+      ("Will a ceramic coating stop rock chips?", "No. Ceramic coating is a thin, hard chemical layer, it resists swirls, UV and contamination but it is not thick enough to stop a stone. Only paint protection film physically absorbs chips. The two are meant to work together, not replace each other."),
+      ("Should I correct the paint before coating a Tesla?", "If it already has visible swirls, yes. Coating locks in whatever is underneath, so correcting first means you seal a clean, glossy finish rather than trapping scratches under the coating. On a brand-new Tesla, a light prep is usually all it needs."),
+    ],
+  },
+  "rock-chips-florida-highways": {
+    "pill": "Rock chips", "crumb": "Rock chips on Florida highways", "img": "tesla-model-3-ppf-doral", "reviewed": "July 2026",
+    "title": "Rock Chips on Florida Highways: Protecting a Tesla Front End | Tesla Boutique Miami",
+    "desc": "I-95, the Palmetto and the Turnpike are brutal on a Tesla front end. Where rock chips actually land, how much PPF coverage you need, and what to do if you already have them.",
+    "h1": 'Rock chips on Florida highways, and how to stop <span class="highlight">them</span>',
+    "card_title": "Rock chips on Florida highways",
+    "blurb": "Where chips actually land on a Tesla, and how much front PPF coverage you really need here.",
+    "lead": "South Florida highways are a rock-chip machine: constant construction, sandy debris, gravel off trucks, and traffic moving fast enough to turn a small stone into a paint chip. On a Tesla, with its thinner factory clear coat, the front end takes the brunt. Here is where the chips actually land, how much paint protection film you need, and what to do if your Tesla already has a few.",
+    "cta_title": "Protecting a Tesla front end from Florida highways?",
+    "cta_desc": "Tell us your model and your commute, and we will spec the exact PPF coverage that stops the chips where they happen.",
+    "sections": [
+      ("Why South Florida highways are so hard on a front end", [
+        "It is a specific combination. Year-round road construction along I-95, the Palmetto (826), the Dolphin (836) and the Turnpike means loose gravel and debris are almost always present. Sandy grit blows onto the roads. Trucks drop stones. And unlike a slow city street, highway speed is what converts a harmless pebble into a chip that reaches paint. Do that commute daily on a bare front end and the damage is not a maybe, it is a matter of time."]),
+      ("Where the chips actually land", [
+        "Rock chips are not random, they cluster where the airflow throws debris. The leading edge of the hood is number one. Then the front bumper, the lower fascia, the mirror caps, the headlights, and the leading edge of the fenders. On faster cars the A-pillars and the front edge of the roof start catching them too. This map is exactly why <a href=\"../services/paint-protection-film.html\">full-front PPF</a> is designed the way it is: it covers the panels that statistically take the hits, not the whole car."]),
+      ("How much coverage you actually need", [
+        "There is a real range. A partial front (leading portion of the hood and fenders plus bumper and mirrors) is the budget entry, but on a Tesla in South Florida it leaves a visible line on the hood and an unprotected lower half that still chips. Full-front (entire hood, entire fenders, mirrors and bumper) is the coverage we recommend for a daily highway commuter here, there is no cut line mid-hood and the whole leading face is armored. Full-body is for owners who want every panel, including the rockers and rear arches that catch tire-thrown debris, left untouched.",
+        "The film itself matters as much as the coverage. Genuine XPEL is self-healing, so light marring buffs out with heat, and it is cut from model-specific patterns so the edges sit clean on your exact Tesla."]),
+      ("What to do if you already have chips", [
+        "Chips that have only broken the clear coat can often be improved before filming. Chips that reached color or primer cannot be undone, but they can be touched in and sealed so they stop spreading and rusting the metal, then covered with PPF so no new ones appear. If the front end is peppered, the honest move is usually to correct and touch up what we can, then film it so you are protecting from a clean baseline going forward. And on a new Tesla, the highest-value moment is before the first long drive, when the paint is still flawless."]),
+    ],
+    "faqs": [
+      ("Can existing rock chips be fixed?", "It depends how deep. Chips still in the clear coat can often be improved; chips that reached the color or primer cannot be fully undone, but they can be sealed so they stop spreading, and PPF over the top prevents new ones. We assess the front end and tell you honestly what is fixable."),
+      ("Is a partial hood or clear bra enough for Florida?", "Usually not on a highway commuter. A partial leaves a cut line mid-hood and an unprotected lower section that keeps chipping. Full-front covers the entire leading face with no line, which is what South Florida driving actually calls for."),
+      ("Does PPF really stop rock chips?", "Yes, that is exactly what it is for. Self-healing XPEL film is thick and pliable enough to absorb stone impacts that would chip bare paint, so the hits land on a replaceable film instead of your Tesla's finish."),
+    ],
+  },
+  "keeping-tesla-white-seats-clean": {
+    "pill": "Interior", "crumb": "Tesla white seats", "img": "cars/model-y/model-y-lightblue-3", "reviewed": "July 2026",
+    "title": "How to Keep Tesla White Seats Clean (Denim, Sun and Stains) | Tesla Boutique Miami",
+    "desc": "White Tesla seats look incredible and stain easily, mostly from denim dye transfer. How to clean them safely, what never to use, and how Florida sun and tint factor in.",
+    "h1": 'Keeping Tesla white seats <span class="highlight">clean</span>',
+    "card_title": "Keeping Tesla white seats clean",
+    "blurb": "The white interior looks amazing and stains fast, mostly from jeans. Here is how to keep it clean and safe.",
+    "lead": "Tesla's white interior is one of the best-looking cabins on the road, and it is also the one owners worry about most. The good news: the seats are a wipe-clean synthetic, not real leather, so they are more forgiving than they look. The bad news: the classic enemy is denim dye transfer, and South Florida sun and heat make every interior issue worse. Here is how to keep white Tesla seats looking new without damaging them.",
+    "cta_title": "Protecting a white Tesla interior from the Florida sun?",
+    "cta_desc": "Ceramic window tint keeps the cabin cooler and blocks the UV that ages a white interior. Ask us about it.",
+    "sections": [
+      ("Why white Tesla seats stain (denim is the culprit)", [
+        "Tesla's white seats are a synthetic material with a sealed surface, which is why most spills wipe right off. The exception that catches everyone is dye transfer, especially from dark denim. Sit in new jeans on a hot day and the indigo dye can migrate onto the seat bolsters, leaving a bluish stain that looks alarming. It is extremely common and, caught reasonably early, very treatable. Red-dye clothing and some phone cases can do the same thing."]),
+      ("Sun and heat make it worse in Florida", [
+        "Two ways. First, heat opens up the surface and softens dye, so denim transfer happens faster on a car that has been baking in a Miami parking lot. Second, constant UV slowly hardens and yellows any vinyl or synthetic over years, and it fades trim. A cool, UV-protected cabin simply ages better, which is why interior care in Florida is not only about wiping spills, it is about keeping the sun off the surfaces in the first place."]),
+      ("How to clean them safely, and what to avoid", [
+        "For routine cleaning, a damp microfiber cloth and a gentle interior cleaner made for synthetic surfaces handles most marks. For denim transfer, a dedicated white-seat or vinyl cleaner used promptly usually lifts it; work gently and do not scrub hard enough to burnish the surface. What to avoid: bleach, acetone, harsh degreasers and, despite the internet, aggressive use of a melamine (Magic Eraser) sponge, which is a fine abrasive that can dull and micro-scratch the sealed finish if you lean on it. Test any product on a hidden spot first, and blot rather than grind."]),
+      ("Protection and the role of tint", [
+        "The most effective interior protection in South Florida is keeping heat and UV out of the cabin. <a href=\"../services/window-tint.html\">Ceramic window tint</a>, including film on the big glass roof, cuts the infrared heat that accelerates dye transfer and the UV that yellows and fades over time, so a white interior stays brighter for longer. Combined with prompt cleaning and a periodic protectant made for the material, it keeps that white cabin looking the way it did on delivery day."]),
+    ],
+    "faqs": [
+      ("How do I get jean dye off white Tesla seats?", "Use a cleaner made for white synthetic or vinyl seats, applied promptly and worked gently with a microfiber cloth. Fresh denim transfer usually lifts with light effort. Avoid hard scrubbing, bleach or solvents, and never let it sit for weeks, the longer it stays, the harder it sets."),
+      ("Can I use a Magic Eraser or bleach on Tesla white seats?", "We would not. Melamine sponges are a fine abrasive that can dull the sealed surface, and bleach or solvents can discolor and dry out the material. Stick to cleaners formulated for synthetic seats and test on a hidden area first."),
+      ("Does window tint help protect a white interior?", "Yes, a lot. Ceramic tint blocks the UV that yellows and fades interiors and the infrared heat that makes dye transfer worse, so a white cabin stays cooler and brighter. In the Florida sun it is one of the best interior-preservation moves you can make."),
+    ],
+  },
+  "cybertruck-stainless-steel-care": {
+    "pill": "Cybertruck", "crumb": "Cybertruck stainless care", "img": "cars/cybertruck/cybertruck-1-black", "reviewed": "July 2026",
+    "title": "Caring for the Cybertruck's Stainless Steel in Florida | Tesla Boutique Miami",
+    "desc": "The Cybertruck's stainless is bare metal with no clear coat. Why it shows fingerprints and orange spots, what to avoid, and how PPF or ceramic protect it in South Florida.",
+    "h1": 'Caring for the Cybertruck\'s <span class="highlight">stainless steel</span>',
+    "card_title": "Caring for the Cybertruck's stainless steel",
+    "blurb": "Bare stainless, no paint, no clear coat. Why it marks up, and how to protect it in the Florida salt air.",
+    "lead": "The Cybertruck is unlike anything else we protect: its exterior is bare 30X stainless steel with no paint and no clear coat. That is durable in some ways and surprisingly needy in others. It shows fingerprints, it can develop orange surface spots that look like rust, and South Florida's salt air is exactly the environment that gets blamed for it. Here is what is really happening and how to keep a Cybertruck looking sharp.",
+    "cta_title": "Protecting a Cybertruck in South Florida?",
+    "cta_desc": "PPF and stainless-safe ceramic keep the panels clean and mark-free. Tell us how you use it and we will spec it.",
+    "sections": [
+      ("The exterior is bare metal, not painted", [
+        "On a normal car you are looking at clear coat over paint over primer over metal. On a Cybertruck you are looking at the metal itself. There is no sacrificial clear layer, so anything that touches the surface, skin oils, road film, sap, contamination, sits directly on the stainless. That is why fingerprints show so readily and why care is different: you are maintaining a metal finish, not a paint finish."]),
+      ("The orange spots are surface contamination, not the panel rusting through", [
+        "Owners understandably panic when they see orange freckling, but in the vast majority of cases the stainless panel itself is not rusting. What happens is that tiny particles of ordinary steel, brake dust, rail dust, airborne iron from construction and roadwork, land on the surface and those particles rust, leaving an orange speck on top of the stainless. It is contamination sitting on the metal, and it typically cleans off with a proper iron-removing decontamination wash. Left alone in a salty, humid climate it looks worse over time, which is why Cybertrucks here benefit from regular decon."]),
+      ("What to avoid, and how to clean it", [
+        "Do not use abrasive pads, steel wool or harsh acidic cleaners, and be careful with automatic car washes whose brushes can put swirl marks into bare stainless that are hard to remove. The safe routine is a gentle hand wash, an iron-remover decontamination when you see orange specks, and prompt rinsing after any exposure to salt, whether that is a beach day or salty summer air. Because there is no clear coat to hide marring, gentle technique matters even more than it does on paint."]),
+      ("PPF and ceramic can protect stainless too", [
+        "You can absolutely protect a Cybertruck. <a href=\"../services/paint-protection-film.html\">Paint protection film</a> goes over the stainless just as it does over paint, guarding against rock chips, scratches and contamination while keeping the raw look, and it is the strongest defense against the orange-speck problem because nothing lands on the metal directly. A stainless-appropriate <a href=\"../services/ceramic-coating.html\">ceramic coating</a> adds a slick, hydrophobic layer that cuts down fingerprints and makes contamination rinse off more easily. Owners who want the stealth look often go with a satin or colored film. Either way, in South Florida's salt and iron-dust environment, a protected Cybertruck stays clean with far less effort."]),
+    ],
+    "faqs": [
+      ("Is my Cybertruck actually rusting?", "Almost certainly not the panel itself. The orange spots are usually tiny particles of ordinary steel from brake and rail dust that landed on the surface and rusted there. An iron-removing decontamination wash typically lifts them off the stainless. Regular decon keeps them from building up in the humid, salty Florida air."),
+      ("Can you put PPF on a Cybertruck?", "Yes. Paint protection film applies over the stainless steel just like over paint, and it is the best way to stop rock chips, scratches and the surface contamination that causes orange specks, while keeping the metal look. Satin and colored films are popular for a stealth finish."),
+      ("Does Florida salt air damage the stainless?", "The salt does not rot the panel the way it would rust ordinary steel, but salt and humidity accelerate the surface contamination that leaves orange specks, and make marring show. Prompt rinsing after salt exposure plus PPF or ceramic keeps a Cybertruck looking clean here."),
+    ],
+  },
+  "ceramic-coating-and-ppf-together": {
+    "pill": "PPF + Ceramic", "crumb": "Ceramic and PPF together", "img": "tesla-model-s-ceramic-coating", "reviewed": "July 2026",
+    "title": "Ceramic Coating vs PPF (and Why a Tesla Wants Both) | Tesla Boutique Miami",
+    "desc": "PPF and ceramic coating are not competitors, they solve different problems. What each one does, why the best Tesla setup layers both, and the extras worth adding in South Florida.",
+    "h1": 'Ceramic coating and PPF, and why they work <span class="highlight">together</span>',
+    "card_title": "Ceramic coating and PPF, and why they work together",
+    "blurb": "They are not either/or. PPF is physical armor, ceramic is a chemical shield. Here is how they layer.",
+    "lead": "The most common question we get is some version of \"PPF or ceramic coating?\", as if you have to choose. You do not. They solve different problems: paint protection film is physical armor against impacts, ceramic coating is a chemical and UV shield that adds gloss and easy cleaning. On a Tesla in South Florida, the strongest setup uses both, layered in the right order. Here is how to think about it.",
+    "cta_title": "Not sure whether you need PPF, ceramic, or both?",
+    "cta_desc": "Tell us your Tesla and how you drive it, and we will spec the exact combination, no upsell, just what fits.",
+    "sections": [
+      ("They solve different problems", [
+        "<a href=\"../services/paint-protection-film.html\">Paint protection film</a> is a thick, self-healing urethane layer that physically absorbs rock chips, scratches and road debris. Think of it as armor for the panels that take hits. <a href=\"../services/ceramic-coating.html\">Ceramic coating</a> is a thin, hard, glass-like layer that bonds to the surface and resists UV, chemicals and water spots while making the finish glossier and easier to clean. It is a shield, not armor, it will not stop a stone, but it makes everything bead, rinse and shine. Different jobs, which is the whole point."]),
+      ("Why the best Tesla setup uses both", [
+        "Because South Florida throws both kinds of threat at your car. Highway debris is a physical problem, PPF's territory. Sun, heat, love-bug acids, salt residue and hard-water spots are chemical and UV problems, ceramic's territory. Tesla's thin factory clear coat has little margin against either, so covering only one leaves the other threat unaddressed. Film the impact zones, coat everything for gloss and easy care, and you have addressed the full picture instead of half of it."]),
+      ("The right order: film first, ceramic on top", [
+        "Sequence matters. Paint protection film goes on first, over the bare (corrected) paint. Then the ceramic coating goes over the top, over both the film and the unfilmed panels. That way the entire car, PPF and paint alike, gets the same slick, hydrophobic, UV-resistant surface, so it all cleans the same way and the film itself stays easier to maintain. Coating first and filming over it is the wrong way around. If your paint has swirls, we correct before any of it, so you are sealing a clean finish."]),
+      ("The extras worth considering", [
+        "Two add-ons round out a South Florida build. <a href=\"../services/windshield-protection.html\">Windshield protection film</a> guards the one piece of glass that rock chips crack most, an expensive part on a Tesla with a camera and sensors mounted to it. And <a href=\"../services/window-tint.html\">ceramic window tint</a>, including the glass roof, cuts cabin heat and protects the interior from UV. None of these compete with PPF or ceramic, they cover the gaps those two do not, which is how a complete protection package comes together."]),
+    ],
+    "faqs": [
+      ("Do I really need both PPF and ceramic coating?", "For full protection in South Florida, yes. PPF stops physical damage like rock chips; ceramic handles UV, chemicals, water spots and gloss. They cover different threats, so together they protect the whole car, while either one alone leaves a gap."),
+      ("Can you apply ceramic coating over PPF?", "Yes, and that is the correct order. Film goes on first, then ceramic over the top of both the film and the bare panels, so the entire car has one slick, easy-clean, UV-resistant surface. Coating first and filming over it is backwards."),
+      ("Is a ceramic coating alone enough to protect my Tesla?", "It is excellent for gloss, UV and easy cleaning, but it will not stop a rock chip, that takes PPF. If your priority is keeping the front end chip-free on Florida highways, coating alone is not enough; pair it with front film."),
+    ],
+  },
 }
 
 def build_guide(slug, d):

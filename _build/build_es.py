@@ -832,6 +832,140 @@ GUIDES_ES = {
       ("¿Puedo hacer PPF, cerámico y polarizado juntos?", "Sí, y es lo más eficiente: una visita, secuencia correcta, con el film y el cerámico bien estratificados y el polarizado al lado. Dinos tu Model Y y cotizamos el paquete combinado."),
     ],
   },
+  "why-a-tesla-chips-more-easily": {
+    "pill": "Pintura", "crumb": "Por qué la pintura Tesla se pica", "img": "cars/model-y/model-y-lightblue-2", "reviewed": "Julio 2026",
+    "title": "Por qué un Tesla se pica más fácil de lo que esperas | Tesla Boutique Miami",
+    "desc": "La pintura de fábrica de Tesla es más fina y blanda de lo que la mayoría cree. Por qué un Tesla muestra picaduras y remolinos antes, y qué lo protege de verdad en el sur de Florida.",
+    "h1": 'Por qué un Tesla se pica más fácil de lo que <span class="highlight">esperas</span>',
+    "card_title": "Por qué un Tesla se pica más fácil de lo que esperas",
+    "blurb": "La capa transparente de fábrica de Tesla es fina y blanda. Qué significa para tu pintura, y cómo protegerla.",
+    "lead": "Si llegaste a un Tesla desde un auto alemán o japonés y te sorprendió lo rápido que agarró picaduras y remolinos, no es tu imaginación. La pintura de fábrica de Tesla, y sobre todo la capa transparente, suele ser más fina y blanda que el promedio de la industria. No es un defecto, es una decisión de fabricación, pero en el sur de Florida significa que un Tesla sin proteger envejece más rápido. Esto es lo que pasa de verdad y qué hacer al respecto.",
+    "cta_title": "¿Quieres proteger la pintura blanda de tu Tesla como se debe?",
+    "cta_desc": "Dinos tu modelo y cómo lo manejas, y configuramos el PPF, la corrección y el cerámico que le convienen a tu Tesla.",
+    "sections": [
+      ("La capa transparente de fábrica es más fina y blanda de lo que crees", [
+        "Las mediciones independientes de espesor de pintura en Teslas suelen dar por debajo de lo que medirías en un auto de lujo europeo comparable, y los detallistas que corrigen pintura a diario describen de forma consistente la capa transparente de Tesla como blanda. La capa blanda se raya y hace remolinos con más facilidad al lavar, y la capa fina le da a las picaduras menos material para frenar antes de llegar al color o a la imprimación.",
+        "Nada de esto hace mala a la pintura de Tesla. Se ve preciosa y es perfectamente utilizable. Solo tiene menos margen de sacrificio del que los dueños esperan, por eso el mismo manejo que un auto de capa gruesa aguanta sin problema aparece antes en un Tesla."]),
+      ("Por qué eso importa más en el sur de Florida", [
+        "La pintura fina y blanda encuentra aquí su peor escenario. La grava de autopista en la I-95, el Palmetto y la Turnpike lanza picaduras a un frente que tiene menos capa transparente para absorberlas. El UV y el calor implacables estresan el acabado desde arriba. Y el lavado frecuente, muchas veces para quitar la temporada de love bugs y los residuos de sal, es justo la actividad que mete remolinos en una capa transparente blanda.",
+        "Así que la versión sur-de-Florida de \"mi Tesla se ve cansado\" suele llegar antes de lo que los dueños están acostumbrados: micro-picaduras en el capó y el parachoques, una neblina de remolinos de lavado bajo el sol directo, y bordes que empiezan a verse delgados."]),
+      ("Qué protege de verdad la pintura blanda de Tesla", [
+        "Dos herramientas distintas hacen dos trabajos distintos. El <a href=\"../services/paint-protection-film.html\">film de protección de pintura</a> es la armadura física: una capa XPEL autorregenerante que recibe las picaduras y rayones para que la fina capa transparente de fábrica nunca se toque. Un <a href=\"../services/ceramic-coating.html\">recubrimiento cerámico</a> es el escudo químico y UV: endurece la superficie contra los remolinos de lavado, añade brillo y hace que la contaminación se enjuague en vez de adherirse. En la pintura blanda de Tesla, la pareja vale especialmente la pena porque el acabado de fábrica te da muy poco margen por sí solo.",
+        "Para la mayoría el orden de prioridad es simple: enfilma las zonas de impacto al frente, recubre el resto para brillo y cuidado fácil. Si la pintura ya muestra desgaste, corrígela primero para fijar un acabado limpio, no para sellar remolinos bajo el cerámico."]),
+      ("Si tu pintura ya tiene picaduras o remolinos", [
+        "Los remolinos existentes suelen ser corregibles. La <a href=\"../services/paint-correction.html\">corrección de pintura</a> nivela la parte más superficial de la capa transparente para quitar los rayones finos, y luego el film y el cerámico lo mantienen así. Las picaduras que ya llegaron al color no se pueden pulir, pero se puede evitar que se extiendan y disimularlas mucho mejor antes de poner el PPF. La conclusión: la pintura blanda de Tesla premia protegerla temprano, y el mejor momento es justo tras la entrega, antes del primer viaje largo por autopista."]),
+    ],
+    "faqs": [
+      ("¿De verdad la pintura de Tesla es más blanda que la de otros autos?", "En la práctica, sí. La capa transparente de Tesla mide más fina en promedio y se comporta más blanda al pulir que la mayoría de la pintura de lujo europea, así que hace remolinos y se pica con más facilidad. Es un rasgo conocido, no un defecto, y por eso aquí se protege temprano."),
+      ("¿Un recubrimiento cerámico frena las picaduras de piedra?", "No. El cerámico es una capa química fina y dura, resiste remolinos, UV y contaminación, pero no tiene grosor para frenar una piedra. Solo el film de protección de pintura absorbe físicamente las picaduras. Los dos están hechos para trabajar juntos, no para reemplazarse."),
+      ("¿Debo corregir la pintura antes de recubrir un Tesla?", "Si ya tiene remolinos visibles, sí. El cerámico fija lo que haya debajo, así que corregir primero significa sellar un acabado limpio y brillante en vez de atrapar rayones bajo el recubrimiento. En un Tesla nuevo, suele bastar una preparación ligera."),
+    ],
+  },
+  "rock-chips-florida-highways": {
+    "pill": "Picaduras", "crumb": "Picaduras en autopistas de Florida", "img": "tesla-model-3-ppf-doral", "reviewed": "Julio 2026",
+    "title": "Picaduras en las autopistas de Florida: proteger el frente de un Tesla | Tesla Boutique Miami",
+    "desc": "La I-95, el Palmetto y la Turnpike son brutales con el frente de un Tesla. Dónde caen de verdad las picaduras, cuánta cobertura de PPF necesitas y qué hacer si ya las tienes.",
+    "h1": 'Picaduras en las autopistas de Florida, y cómo <span class="highlight">frenarlas</span>',
+    "card_title": "Picaduras en las autopistas de Florida",
+    "blurb": "Dónde caen de verdad las picaduras en un Tesla, y cuánto PPF frontal necesitas realmente aquí.",
+    "lead": "Las autopistas del sur de Florida son una máquina de picaduras: obras constantes, escombros de arena, grava que sueltan los camiones y tráfico a suficiente velocidad para convertir una piedrita en una picadura de pintura. En un Tesla, con su capa transparente de fábrica más fina, el frente se lleva lo peor. Esto es dónde caen de verdad las picaduras, cuánto film de protección necesitas y qué hacer si tu Tesla ya tiene algunas.",
+    "cta_title": "¿Proteges el frente de un Tesla de las autopistas de Florida?",
+    "cta_desc": "Dinos tu modelo y tu ruta diaria, y configuramos la cobertura exacta de PPF que frena las picaduras donde ocurren.",
+    "sections": [
+      ("Por qué las autopistas del sur de Florida castigan tanto un frente", [
+        "Es una combinación específica. Las obras viales todo el año en la I-95, el Palmetto (826), el Dolphin (836) y la Turnpike hacen que la grava y los escombros estén casi siempre presentes. La arena vuela sobre las vías. Los camiones sueltan piedras. Y a diferencia de una calle lenta, la velocidad de autopista es lo que convierte un guijarro inofensivo en una picadura que llega a la pintura. Haz esa ruta a diario con un frente sin proteger y el daño no es un quizá, es cuestión de tiempo."]),
+      ("Dónde caen de verdad las picaduras", [
+        "Las picaduras no son aleatorias, se agrupan donde el flujo de aire lanza los escombros. El borde delantero del capó es el número uno. Luego el parachoques delantero, el faldón inferior, las tapas de los espejos, los faros y el borde delantero de los guardabarros. En autos más rápidos, los pilares A y el borde delantero del techo también empiezan a recibirlas. Ese mapa es justo por qué el <a href=\"../services/paint-protection-film.html\">PPF frontal completo</a> está diseñado como está: cubre los paneles que estadísticamente reciben los golpes, no todo el auto."]),
+      ("Cuánta cobertura necesitas de verdad", [
+        "Hay un rango real. Un frontal parcial (la parte delantera del capó y los guardabarros más el parachoques y los espejos) es la entrada económica, pero en un Tesla en el sur de Florida deja una línea visible en el capó y una mitad inferior sin proteger que igual se pica. El frontal completo (capó entero, guardabarros enteros, espejos y parachoques) es la cobertura que recomendamos para un commuter diario de autopista aquí, no hay línea de corte a mitad del capó y toda la cara delantera queda blindada. El cuerpo completo es para quien quiere cada panel, incluidos los estribos y los arcos traseros que reciben los escombros que lanzan las ruedas, intacto.",
+        "El film importa tanto como la cobertura. El XPEL original es autorregenerante, así que el marcado leve desaparece con calor, y se corta con patrones específicos por modelo para que los bordes queden limpios en tu Tesla exacto."]),
+      ("Qué hacer si ya tienes picaduras", [
+        "Las picaduras que solo rompieron la capa transparente muchas veces se pueden mejorar antes de enfilmar. Las que llegaron al color o a la imprimación no se pueden deshacer, pero se pueden retocar y sellar para que dejen de extenderse y oxidar el metal, y luego cubrir con PPF para que no aparezcan nuevas. Si el frente está lleno de puntos, lo honesto suele ser corregir y retocar lo que se pueda, y luego enfilmar para proteger desde una base limpia de ahí en adelante. Y en un Tesla nuevo, el momento de mayor valor es antes del primer viaje largo, cuando la pintura todavía está impecable."]),
+    ],
+    "faqs": [
+      ("¿Se pueden arreglar las picaduras que ya tengo?", "Depende de qué tan profundas. Las picaduras que siguen en la capa transparente muchas veces se mejoran; las que llegaron al color o a la imprimación no se deshacen del todo, pero se pueden sellar para que no se extiendan, y el PPF encima evita nuevas. Revisamos el frente y te decimos con honestidad qué tiene arreglo."),
+      ("¿Un capó parcial o clear bra basta para Florida?", "Normalmente no en un commuter de autopista. Un parcial deja una línea de corte a mitad del capó y una sección inferior sin proteger que se sigue picando. El frontal completo cubre toda la cara delantera sin línea, que es lo que el manejo del sur de Florida realmente pide."),
+      ("¿El PPF de verdad frena las picaduras de piedra?", "Sí, para eso es exactamente. El film XPEL autorregenerante es lo bastante grueso y flexible para absorber los impactos de piedra que picarían la pintura desnuda, así que los golpes caen en un film reemplazable en vez de en el acabado de tu Tesla."),
+    ],
+  },
+  "keeping-tesla-white-seats-clean": {
+    "pill": "Interior", "crumb": "Asientos blancos Tesla", "img": "cars/model-y/model-y-lightblue-3", "reviewed": "Julio 2026",
+    "title": "Cómo mantener limpios los asientos blancos de Tesla (mezclilla, sol y manchas) | Tesla Boutique Miami",
+    "desc": "Los asientos blancos de Tesla se ven increíbles y se manchan fácil, sobre todo por transferencia de tinte de la mezclilla. Cómo limpiarlos seguro, qué nunca usar, y cómo influyen el sol y el polarizado de Florida.",
+    "h1": 'Mantener limpios los asientos blancos de <span class="highlight">Tesla</span>',
+    "card_title": "Mantener limpios los asientos blancos de Tesla",
+    "blurb": "El interior blanco se ve increíble y se mancha rápido, sobre todo por los jeans. Cómo mantenerlo limpio y seguro.",
+    "lead": "El interior blanco de Tesla es una de las cabinas más bonitas de la calle, y también la que más preocupa a los dueños. La buena noticia: los asientos son un sintético que se limpia con un paño, no cuero real, así que perdonan más de lo que parece. La mala: el enemigo clásico es la transferencia de tinte de la mezclilla, y el sol y el calor del sur de Florida empeoran cualquier problema del interior. Esto es cómo mantener los asientos blancos de Tesla como nuevos sin dañarlos.",
+    "cta_title": "¿Proteges un interior blanco de Tesla del sol de Florida?",
+    "cta_desc": "El polarizado cerámico mantiene la cabina más fresca y bloquea el UV que envejece un interior blanco. Pregúntanos.",
+    "sections": [
+      ("Por qué se manchan los asientos blancos de Tesla (la mezclilla es la culpable)", [
+        "Los asientos blancos de Tesla son un material sintético con superficie sellada, por eso la mayoría de los derrames se limpian de inmediato. La excepción que sorprende a todos es la transferencia de tinte, sobre todo de la mezclilla oscura. Siéntate con jeans nuevos en un día caluroso y el tinte índigo puede migrar a los laterales del asiento, dejando una mancha azulada que asusta. Es extremadamente común y, si se atiende razonablemente pronto, muy tratable. La ropa de tinte rojo y algunas fundas de teléfono hacen lo mismo."]),
+      ("El sol y el calor lo empeoran en Florida", [
+        "De dos maneras. Primero, el calor abre la superficie y ablanda el tinte, así que la transferencia de la mezclilla ocurre más rápido en un auto que estuvo horneándose en un parqueo de Miami. Segundo, el UV constante endurece y amarillea con los años cualquier vinilo o sintético, y decolora los acabados. Una cabina fresca y protegida del UV simplemente envejece mejor, por eso el cuidado del interior en Florida no es solo limpiar derrames, es mantener el sol lejos de las superficies desde el principio."]),
+      ("Cómo limpiarlos seguro, y qué evitar", [
+        "Para limpieza de rutina, un paño de microfibra húmedo y un limpiador de interiores suave hecho para superficies sintéticas resuelve la mayoría de las marcas. Para la transferencia de mezclilla, un limpiador dedicado para asientos blancos o vinilo usado pronto suele levantarla; trabaja con suavidad y no frotes tan fuerte como para pulir y opacar la superficie. Qué evitar: cloro, acetona, desengrasantes agresivos y, pese a internet, el uso agresivo de una esponja de melamina (Magic Eraser), que es un abrasivo fino que puede opacar y micro-rayar el acabado sellado si aprietas. Prueba cualquier producto en un punto escondido primero, y da toques en vez de restregar."]),
+      ("Protección y el papel del polarizado", [
+        "La protección de interior más efectiva en el sur de Florida es mantener el calor y el UV fuera de la cabina. El <a href=\"../services/window-tint.html\">polarizado cerámico</a>, incluido film en el gran techo de cristal, corta el calor infrarrojo que acelera la transferencia de tinte y el UV que amarillea y decolora con el tiempo, así un interior blanco se mantiene más brillante por más tiempo. Combinado con limpieza pronta y un protectante periódico hecho para el material, mantiene esa cabina blanca como el día de la entrega."]),
+    ],
+    "faqs": [
+      ("¿Cómo quito el tinte de los jeans de los asientos blancos de Tesla?", "Usa un limpiador hecho para asientos blancos sintéticos o de vinilo, aplicado pronto y trabajado con suavidad con un paño de microfibra. La transferencia de mezclilla fresca suele levantarse con poco esfuerzo. Evita restregar fuerte, el cloro o los solventes, y nunca lo dejes semanas, mientras más tiempo pasa, más se fija."),
+      ("¿Puedo usar un Magic Eraser o cloro en los asientos blancos de Tesla?", "No lo haríamos. Las esponjas de melamina son un abrasivo fino que puede opacar la superficie sellada, y el cloro o los solventes pueden decolorar y resecar el material. Quédate con limpiadores formulados para asientos sintéticos y prueba primero en una zona escondida."),
+      ("¿El polarizado ayuda a proteger un interior blanco?", "Sí, y mucho. El polarizado cerámico bloquea el UV que amarillea y decolora interiores y el calor infrarrojo que empeora la transferencia de tinte, así una cabina blanca se mantiene más fresca y brillante. Bajo el sol de Florida es una de las mejores jugadas de preservación de interior que puedes hacer."),
+    ],
+  },
+  "cybertruck-stainless-steel-care": {
+    "pill": "Cybertruck", "crumb": "Cuidado del acero del Cybertruck", "img": "cars/cybertruck/cybertruck-1-black", "reviewed": "Julio 2026",
+    "title": "Cuidar el acero inoxidable del Cybertruck en Florida | Tesla Boutique Miami",
+    "desc": "El inoxidable del Cybertruck es metal desnudo sin capa transparente. Por qué muestra huellas y puntos naranjas, qué evitar, y cómo el PPF o el cerámico lo protegen en el sur de Florida.",
+    "h1": 'Cuidar el acero inoxidable del <span class="highlight">Cybertruck</span>',
+    "card_title": "Cuidar el acero inoxidable del Cybertruck",
+    "blurb": "Inoxidable desnudo, sin pintura ni capa transparente. Por qué se marca, y cómo protegerlo en la sal de Florida.",
+    "lead": "El Cybertruck no se parece a nada más que protegemos: su exterior es acero inoxidable 30X desnudo, sin pintura y sin capa transparente. Eso es duradero en algunos aspectos y sorprendentemente delicado en otros. Muestra huellas, puede desarrollar puntos naranjas en la superficie que parecen óxido, y el aire salino del sur de Florida es justo el ambiente al que se le echa la culpa. Esto es lo que pasa de verdad y cómo mantener un Cybertruck impecable.",
+    "cta_title": "¿Proteges un Cybertruck en el sur de Florida?",
+    "cta_desc": "El PPF y el cerámico apto para inoxidable mantienen los paneles limpios y sin marcas. Dinos cómo lo usas y lo configuramos.",
+    "sections": [
+      ("El exterior es metal desnudo, no pintado", [
+        "En un auto normal estás viendo capa transparente sobre pintura sobre imprimación sobre metal. En un Cybertruck estás viendo el metal mismo. No hay capa transparente de sacrificio, así que cualquier cosa que toque la superficie, aceites de la piel, película de la vía, savia, contaminación, queda directamente sobre el inoxidable. Por eso las huellas se ven tan fácil y por eso el cuidado es distinto: estás manteniendo un acabado de metal, no un acabado de pintura."]),
+      ("Los puntos naranjas son contaminación de superficie, no el panel oxidándose", [
+        "Es comprensible que los dueños se asusten al ver un moteado naranja, pero en la gran mayoría de los casos el panel de inoxidable en sí no se está oxidando. Lo que pasa es que partículas diminutas de acero común, polvo de frenos, polvo de vías, hierro en el aire de obras y trabajos viales, caen en la superficie y esas partículas se oxidan, dejando un punto naranja encima del inoxidable. Es contaminación posada sobre el metal, y normalmente se limpia con un lavado de descontaminación que remueve hierro. Si se deja en un clima salino y húmedo se ve peor con el tiempo, por eso los Cybertrucks aquí se benefician de una descontaminación regular."]),
+      ("Qué evitar, y cómo limpiarlo", [
+        "No uses almohadillas abrasivas, lana de acero ni limpiadores ácidos fuertes, y ten cuidado con los lavados automáticos cuyos cepillos pueden meter remolinos en el inoxidable desnudo difíciles de quitar. La rutina segura es un lavado a mano suave, una descontaminación con removedor de hierro cuando veas puntos naranjas, y un enjuague pronto tras cualquier exposición a la sal, ya sea un día de playa o el aire salino del verano. Como no hay capa transparente que disimule el marcado, la técnica suave importa aún más que en la pintura."]),
+      ("El PPF y el cerámico también protegen el inoxidable", [
+        "Sí puedes proteger un Cybertruck. El <a href=\"../services/paint-protection-film.html\">film de protección de pintura</a> va sobre el inoxidable igual que sobre la pintura, protegiendo de picaduras, rayones y contaminación mientras conserva el look crudo, y es la mejor defensa contra el problema de los puntos naranjas porque nada cae directo sobre el metal. Un <a href=\"../services/ceramic-coating.html\">recubrimiento cerámico</a> apto para inoxidable añade una capa resbaladiza e hidrofóbica que reduce las huellas y hace que la contaminación se enjuague más fácil. Quien quiere el look sigiloso muchas veces va con un film satinado o de color. En cualquier caso, en el ambiente de sal y polvo de hierro del sur de Florida, un Cybertruck protegido se mantiene limpio con mucho menos esfuerzo."]),
+    ],
+    "faqs": [
+      ("¿Mi Cybertruck se está oxidando de verdad?", "Casi seguro que el panel en sí no. Los puntos naranjas suelen ser partículas diminutas de acero común de polvo de frenos y de vías que cayeron en la superficie y se oxidaron ahí. Un lavado de descontaminación que remueve hierro normalmente los levanta del inoxidable. La descontaminación regular evita que se acumulen en el aire húmedo y salino de Florida."),
+      ("¿Se le puede poner PPF a un Cybertruck?", "Sí. El film de protección de pintura se aplica sobre el acero inoxidable igual que sobre la pintura, y es la mejor forma de frenar picaduras, rayones y la contaminación de superficie que causa los puntos naranjas, conservando el look de metal. Los films satinados y de color son populares para un acabado sigiloso."),
+      ("¿El aire salino de Florida daña el inoxidable?", "La sal no pudre el panel como oxidaría al acero común, pero la sal y la humedad aceleran la contaminación de superficie que deja puntos naranjas, y hacen que el marcado se note. Un enjuague pronto tras la exposición a sal más PPF o cerámico mantienen un Cybertruck limpio aquí."),
+    ],
+  },
+  "ceramic-coating-and-ppf-together": {
+    "pill": "PPF + Cerámico", "crumb": "Cerámico y PPF juntos", "img": "tesla-model-s-ceramic-coating", "reviewed": "Julio 2026",
+    "title": "Cerámico vs PPF (y por qué un Tesla quiere ambos) | Tesla Boutique Miami",
+    "desc": "El PPF y el recubrimiento cerámico no compiten, resuelven problemas distintos. Qué hace cada uno, por qué el mejor setup de un Tesla combina ambos, y los extras que valen la pena en el sur de Florida.",
+    "h1": 'Cerámico y PPF, y por qué trabajan <span class="highlight">juntos</span>',
+    "card_title": "Cerámico y PPF, y por qué trabajan juntos",
+    "blurb": "No es uno u otro. El PPF es armadura física, el cerámico es un escudo químico. Así se estratifican.",
+    "lead": "La pregunta que más nos hacen es alguna versión de \"¿PPF o recubrimiento cerámico?\", como si hubiera que elegir. No hay que elegir. Resuelven problemas distintos: el film de protección de pintura es armadura física contra impactos, el recubrimiento cerámico es un escudo químico y UV que añade brillo y limpieza fácil. En un Tesla en el sur de Florida, el setup más fuerte usa ambos, estratificados en el orden correcto. Así conviene pensarlo.",
+    "cta_title": "¿No sabes si necesitas PPF, cerámico, o ambos?",
+    "cta_desc": "Dinos tu Tesla y cómo lo manejas, y configuramos la combinación exacta, sin venta de más, solo lo que encaja.",
+    "sections": [
+      ("Resuelven problemas distintos", [
+        "El <a href=\"../services/paint-protection-film.html\">film de protección de pintura</a> es una capa gruesa de uretano autorregenerante que absorbe físicamente picaduras, rayones y escombros de la vía. Piénsalo como armadura para los paneles que reciben golpes. El <a href=\"../services/ceramic-coating.html\">recubrimiento cerámico</a> es una capa fina, dura y tipo vidrio que se adhiere a la superficie y resiste UV, químicos y manchas de agua mientras hace el acabado más brillante y fácil de limpiar. Es un escudo, no una armadura, no frena una piedra, pero hace que todo perle, se enjuague y brille. Trabajos distintos, que es justo el punto."]),
+      ("Por qué el mejor setup de un Tesla usa ambos", [
+        "Porque el sur de Florida le lanza a tu auto los dos tipos de amenaza. Los escombros de autopista son un problema físico, territorio del PPF. El sol, el calor, los ácidos de los love bugs, los residuos de sal y las manchas de agua dura son problemas químicos y de UV, territorio del cerámico. La fina capa transparente de fábrica de Tesla tiene poco margen contra cualquiera de los dos, así que cubrir solo uno deja la otra amenaza sin atender. Enfilma las zonas de impacto, recubre todo para brillo y cuidado fácil, y has atendido el panorama completo en vez de la mitad."]),
+      ("El orden correcto: primero el film, el cerámico encima", [
+        "El orden importa. El film de protección de pintura va primero, sobre la pintura desnuda (corregida). Luego el recubrimiento cerámico va encima, sobre el film y sobre los paneles sin enfilmar. Así todo el auto, PPF y pintura por igual, recibe la misma superficie resbaladiza, hidrofóbica y resistente al UV, de modo que todo se limpia igual y el propio film se mantiene más fácil. Recubrir primero y enfilmar encima es al revés. Si tu pintura tiene remolinos, corregimos antes de todo, para sellar un acabado limpio."]),
+      ("Los extras que vale la pena considerar", [
+        "Dos complementos redondean un setup para el sur de Florida. El <a href=\"../services/windshield-protection.html\">film de protección de parabrisas</a> protege la única pieza de vidrio que las piedras agrietan más, una parte cara en un Tesla con una cámara y sensores montados en ella. Y el <a href=\"../services/window-tint.html\">polarizado cerámico</a>, incluido el techo de cristal, corta el calor de la cabina y protege el interior del UV. Ninguno compite con el PPF ni el cerámico, cubren los huecos que esos dos no cubren, que es cómo se arma un paquete de protección completo."]),
+    ],
+    "faqs": [
+      ("¿De verdad necesito PPF y cerámico?", "Para protección completa en el sur de Florida, sí. El PPF frena el daño físico como las picaduras; el cerámico maneja UV, químicos, manchas de agua y brillo. Cubren amenazas distintas, así que juntos protegen todo el auto, mientras que cualquiera solo deja un hueco."),
+      ("¿Se puede aplicar cerámico sobre el PPF?", "Sí, y es el orden correcto. El film va primero, luego el cerámico encima del film y de los paneles desnudos, para que todo el auto tenga una sola superficie resbaladiza, fácil de limpiar y resistente al UV. Recubrir primero y enfilmar encima es al revés."),
+      ("¿Un recubrimiento cerámico solo basta para proteger mi Tesla?", "Es excelente para brillo, UV y limpieza fácil, pero no frena una picadura de piedra, eso requiere PPF. Si tu prioridad es mantener el frente sin picaduras en las autopistas de Florida, el cerámico solo no basta; combínalo con film frontal."),
+    ],
+  },
 }
 
 def build_guide_es(slug, d):
