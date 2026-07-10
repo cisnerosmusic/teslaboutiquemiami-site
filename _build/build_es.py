@@ -219,7 +219,7 @@ MODELS_ES = {
            "Sí. El Model 3 pasa casi toda su vida en la autopista, donde ocurren las picaduras, y su pintura de fábrica es delgada. El PPF frontal protege las zonas que reciben más impactos."),
           ("¿Pueden polarizar un Model 3 en Miami?",
            "Sí, con film cerámico XPEL Prime XR Plus que rechaza hasta el 98% del calor infrarrojo, una gran mejora de confort bajo el sol de Miami.")]),
-  "model-y": dict(name="Model Y", img="cars/model-y/model-y-blue-studio", gallery=["cars/model-y/model-y-grey-2","cars/model-y/model-y-grey-3","cars/model-y/model-y-grey-1","cars/model-y/model-y-3","cars/model-y/model-y-1","cars/model-y/model-y-2","cars/model-y/model-y-detail-1","cars/model-y/model-y-white-1","cars/model-y/model-y-white-2","cars/model-y/model-y-white-3"],
+  "model-y": dict(name="Model Y", img="cars/model-y/model-y-lightblue-2", gallery=["cars/model-y/model-y-lightblue-1","cars/model-y/model-y-lightblue-3","cars/model-y/model-y-lightblue-shop","cars/model-y/model-y-lightblue-rear","cars/model-y/model-y-lightblue-detail","cars/model-y/model-y-3","cars/model-y/model-y-1","cars/model-y/model-y-white-1","cars/model-y/model-y-white-3","cars/model-y/model-y-grey-1","cars/model-y/model-y-detail-1","cars/model-y/model-y-grey-2"],
     lead="El Model Y es el Tesla que más protegemos. Así blindamos su pintura, su techo de cristal y su acabado contra las calles, el sol y el desgaste de reventa de Miami.",
     intro=["El Tesla Model Y vive en la I-95, el Palmetto y el Turnpike, justo donde la arena y la grava pican una capa transparente de fábrica blanda. Suma el UV implacable y el calor de la tarde, y un Model Y sin protección empieza a mostrar picaduras en el capó, remolinos en la pintura y una cabina caliente bajo el techo panorámico de cristal.",
            "Nuestro enfoque: protección de pintura donde ocurren los impactos, recubrimiento cerámico para brillo y lavado fácil, y polarizado cerámico para mantener el calor afuera. Cada servicio usa patrones XPEL cortados para el Model Y."],
@@ -805,7 +805,7 @@ GUIDES_ES = {
     ],
   },
   "best-protection-model-y-south-florida": {
-    "pill": "Model Y", "crumb": "Mejor paquete para un Model Y", "img": "cars/model-y/model-y-blue-studio", "reviewed": "Julio 2026",
+    "pill": "Model Y", "crumb": "Mejor paquete para un Model Y", "img": "cars/model-y/model-y-lightblue-shop", "reviewed": "Julio 2026",
     "title": "El mejor paquete de protección para un Model Y en el sur de Florida | Tesla Boutique Miami",
     "desc": "Lo que de verdad protege un Model Y en el sol, la sal y los escombros de autopista de Miami: nuestra combinación recomendada de PPF frontal, cerámico y polarizado cerámico para un Model Y de uso diario.",
     "h1": 'El mejor paquete de protección para un <span class="highlight">Model Y</span> en el sur de Florida',
