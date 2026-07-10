@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Custom 404 for GitHub Pages. Served at the requested (missing) URL, so ALL
-     paths here are root-absolute (/...) and there is no JS dependency. -->
+<!-- Custom 404 for GitHub Pages. Served at the requested (missing) URL, so it is
+     fully SELF-CONTAINED: all styling is inline (no external stylesheet path to
+     break), and it has no /assets image dependency. Nav links are root-absolute
+     (correct once the site is served at the domain root). noindex. -->
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <title>Page not found (404) | Tesla Boutique Miami</title>
 <meta name="description" content="This page took a wrong turn. Head back to Tesla Boutique Miami: Tesla-only PPF, ceramic coating and window tint in Doral and Miami.">
@@ -21,49 +21,82 @@
 <meta property="og:site_name" content="Tesla Boutique Miami">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
-<link rel="stylesheet" href="/assets/css/style.css?v=20260709c">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --black: #0a0a0a; --accent: #2B3990; --accent-hover: #233079;
+    --blue-soft: #6f80e0; --white: #ffffff; --gray: #9a9a9a; --gray-light: #cfd2da; --line: #232323;
+  }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--black); color: var(--white); line-height: 1.6;
+    -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; min-height: 100vh;
+    background-image: radial-gradient(70% 55% at 50% -5%, rgba(43,57,144,0.30), rgba(10,10,10,0) 70%);
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: 780px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 26px 0; }
+  .brand { display: inline-block; }
+  .brand-name { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
+  .brand-name .bq { color: var(--blue-soft); }
+  .brand-sub { display: block; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-top: 3px; }
+  main { flex: 1; display: flex; align-items: center; padding: 48px 0; }
+  .code {
+    font-size: clamp(96px, 24vw, 200px); font-weight: 800; line-height: 0.85; letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #8090e8, #2B3990); -webkit-background-clip: text; background-clip: text; color: transparent;
+    margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(28px, 6vw, 46px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 18px; }
+  .sub { color: var(--gray-light); font-size: 1.05rem; max-width: 580px; }
+  .sub-es { color: var(--gray); font-size: 0.95rem; margin-top: 6px; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin: 34px 0 6px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; padding: 15px 30px; border-radius: 6px;
+    font-weight: 600; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase;
+    transition: all 0.2s ease; border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 6px 26px rgba(43,57,144,0.45); }
+  .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+  .btn-outline { border-color: rgba(255,255,255,0.2); color: #fff; }
+  .btn-outline:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.4); }
+  .links { margin-top: 28px; color: var(--gray); font-size: 0.9rem; line-height: 2.1; }
+  .links a { color: #e6e6ea; border-bottom: 1px solid transparent; }
+  .links a:hover { border-color: var(--blue-soft); color: #fff; }
+  footer { padding: 22px 0; border-top: 1px solid var(--line); color: #6b6b6b; font-size: 0.72rem; letter-spacing: 0.03em; }
+  footer a { color: #8a8a8a; }
+  footer a:hover { color: #bbb; }
+</style>
 </head>
 <body>
-<header class="header scrolled" id="header">
-  <div class="container"><div class="header-inner">
-    <div class="logo"><a href="/" class="logo-home-link" aria-label="Tesla Boutique Miami home"></a><span class="logo-main"><span class="logo-tesla">Tesla</span> <span class="logo-boutique">Boutique</span> <span class="logo-miami">Miami</span></span><span class="logo-sub">Powered by <a href="https://unlimitedwraps.com" class="logo-uw" target="_blank" rel="noopener"><strong>UnlimitedWraps</strong></a></span><span class="logo-sub logo-xpel">XPEL Exclusive Dealer</span></div>
-    <div class="header-cta">
-      <a href="tel:7865056162" class="header-phone"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>(786) 505-6162</span></a>
-      <a href="/index.html#contact" class="btn btn-primary">Book Now</a>
-    </div>
-  </div></div>
-</header>
-<main>
-<section class="hero">
-  <div class="hero-bg"><div class="hero-bg-image is-active" style="background-image:url('/assets/img/cars/model-s/model-s-blue-1.webp');background-image:image-set(url('/assets/img/cars/model-s/model-s-blue-1.avif') type('image/avif'), url('/assets/img/cars/model-s/model-s-blue-1.webp') type('image/webp'));"></div></div>
-  <div class="container"><div class="hero-content" style="max-width:780px">
-    <span class="section-tag">Error 404</span>
-    <h1 class="hero-title">This page took a <span class="highlight">wrong turn</span></h1>
-    <p class="hero-subtitle">The page you are looking for does not exist or has moved. Let us get you back on the road, your Tesla is in good hands.</p>
-    <p class="hero-subtitle" style="opacity:.75;margin-top:-0.4rem">La página que buscas no existe o cambió de lugar. Volvamos al camino.</p>
-    <div class="hero-ctas">
-      <a href="/" class="btn btn-primary btn-lg">Back to home</a>
-      <a href="/index.html#services" class="btn btn-outline btn-lg">Explore services</a>
-    </div>
-    <p style="margin-top:2.2rem;color:var(--gray-light);font-size:0.9rem;line-height:2">Or jump to:
-      <a href="/index.html#models" style="color:var(--white)">Tesla models</a> &middot;
-      <a href="/service-area/index.html" style="color:var(--white)">Service area</a> &middot;
-      <a href="/guides/index.html" style="color:var(--white)">Guides</a> &middot;
-      <a href="/news/index.html" style="color:var(--white)">Updates</a> &middot;
-      <a href="/index.html#contact" style="color:var(--white)">Contact</a> &middot;
-      <a href="/es/" style="color:var(--white)">Español</a>
-    </p>
-  </div></div>
-</section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <p class="footer-copyright">&copy; 2026 Tesla Boutique Miami, a service by Unlimited Wraps, Inc. &middot; <a href="/legal.html" class="footer-legal-link">Legal &amp; Trademark Notice</a></p>
-    </div>
+<header><div class="wrap">
+  <a class="brand" href="/" aria-label="Tesla Boutique Miami home">
+    <span class="brand-name">Tesla <span class="bq">Boutique</span> Miami</span>
+    <span class="brand-sub">XPEL Exclusive Dealer &middot; Powered by Unlimited Wraps</span>
+  </a>
+</div></header>
+<main><div class="wrap">
+  <div class="code">404</div>
+  <h1>This page took a wrong turn</h1>
+  <p class="sub">The page you are looking for does not exist or has moved. Let us get you back on the road, your Tesla is in good hands.</p>
+  <p class="sub sub-es">La página que buscas no existe o cambió de lugar. Volvamos al camino.</p>
+  <div class="ctas">
+    <a href="/" class="btn btn-primary">Back to home</a>
+    <a href="/index.html#services" class="btn btn-outline">Explore services</a>
+    <a href="tel:7865056162" class="btn btn-outline">Call (786) 505-6162</a>
   </div>
-</footer>
+  <p class="links">Or jump to:
+    <a href="/index.html#models">Tesla models</a> &middot;
+    <a href="/service-area/index.html">Service area</a> &middot;
+    <a href="/guides/index.html">Guides</a> &middot;
+    <a href="/news/index.html">Updates</a> &middot;
+    <a href="/index.html#contact">Contact</a> &middot;
+    <a href="/es/">Español</a>
+  </p>
+</div></main>
+<footer><div class="wrap">
+  &copy; 2026 Tesla Boutique Miami, a service by Unlimited Wraps, Inc. &middot; <a href="/legal.html">Legal &amp; Trademark Notice</a>
+</div></footer>
 </body>
 </html>
