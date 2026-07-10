@@ -261,6 +261,7 @@ def header(prefix, active=""):
           <ul class="dropdown">{services_dd}</ul></li>
         <li class="has-dropdown"><a href="{prefix}service-area/index.html"{cur('area')}>Service Area</a>
           <ul class="dropdown dropdown-mega">{area_cols}</ul></li>
+        <li><a href="{prefix}guides/index.html"{cur('guides')}>Guides</a></li>
         <li><a href="{prefix}news/index.html"{cur('news')}>Updates</a></li>
         <li><a href="{prefix}index.html#contact">Contact</a></li>
       </ul>
@@ -945,6 +946,149 @@ POSTS = {
     "cta_desc": "Bring it to our Doral shop and we will safely remove the spots and help keep them from coming back."},
 }
 
+GUIDES = {
+  "does-a-leased-tesla-need-ppf": {
+    "pill": "Leasing", "crumb": "Leased Tesla and PPF", "img": "tesla-model-3-ppf-doral", "reviewed": "July 2026",
+    "title": "Does a Leased Tesla Need PPF? | Tesla Boutique Miami",
+    "desc": "Straight answer for South Florida: yes, and on a lease PPF often pays for itself, because Tesla bills lease-return chips and scratches that Miami highways cause.",
+    "h1": 'Does a leased Tesla need <span class="highlight">PPF</span>?',
+    "card_title": "Does a leased Tesla need PPF?",
+    "blurb": "Short answer: on a lease it can pay for itself at return. Here is the South Florida math.",
+    "lead": "Short answer: yes, and on a lease it often pays for itself. Tesla bills lease-end damage like rock chips, scratches and curb rash, and South Florida highways cause exactly that. Front PPF keeps the paint factory-perfect so you hand the car back with no chip charges, and genuine XPEL film removes cleanly so you take none of the value with you.",
+    "cta_title": "Leasing a Tesla in South Florida?",
+    "cta_desc": "Tell us your delivery or pickup date and we will have genuine XPEL PPF ready so it returns spotless.",
+    "sections": [
+      ("What Tesla charges for at lease return", [
+        "A Tesla lease return is inspected for excess wear, and chipped paint, scratches, curb-rashed panels and stone-pitting on the hood and bumper are the classic line items. In a market like Miami, where I-95, the Palmetto and the Dolphin Expressway throw gravel and construction debris every day, a bare front end picks those up fast. Paying at return for damage you could have prevented is the worst-value way to spend that money.",
+        "Paint protection film is the direct fix: a clear, self-healing XPEL layer over the panels that take the hits, so the paint underneath stays exactly as delivered."]),
+      ("Why leasing is arguably the strongest case for PPF", [
+        "When you own a car, PPF protects resale. When you lease, it protects you from a bill you did not budget for, and that bill can rival the cost of the film itself. Full-front coverage on the hood, fenders, mirrors and front bumper is usually the sweet spot for a lease: it guards the panels most likely to be flagged, without the cost of full-body.",
+        "And because you keep the car for a set term, the film does not even need to last a decade. It just has to keep the paint clean through the lease, which quality PPF does easily."]),
+      ("Does the film come off cleanly at the end?", [
+        "Yes. Genuine <a href=\"../services/paint-protection-film.html\">XPEL film</a> is made to be removed without lifting factory paint or clear coat, so at lease return the panels are revealed in the same condition they were installed. You get the protection during the lease and leave nothing behind. And if you decide to buy the car out at the end, even better: the film is already there protecting your now-owned Tesla."]),
+      ("Get it before the first long drive", [
+        "The ideal moment is right after delivery, before the paint sees highway miles. Many of our clients pick up a new lease at the Doral Tesla center and bring it straight to us so the film goes on factory-fresh paint. If your Tesla already has a few thousand miles, we correct the paint first, then film it."]),
+    ],
+    "faqs": [
+      ("Is PPF worth it on a 2 or 3 year Tesla lease?", "In South Florida, usually yes. A single lease-return chip or scratch charge can approach the cost of front PPF, and highway debris here makes that damage almost inevitable on a bare front end. The film prevents it and removes cleanly at return."),
+      ("Will PPF damage the paint when it is removed at lease end?", "No. Genuine XPEL film is designed to peel off without lifting factory paint or clear coat, leaving the panels as they were when installed. That is exactly why it works so well for leases."),
+      ("How much of the car should I film on a lease?", "Full-front (hood, fenders, mirrors and front bumper) is the usual lease choice: it covers the panels Tesla is most likely to flag for chips, without the cost of full-body coverage."),
+    ],
+  },
+  "florida-window-tint-laws-tesla": {
+    "pill": "Legal and tint", "crumb": "Florida tint laws", "img": "tesla-model-y-window-tinting", "reviewed": "July 2026",
+    "title": "Window Tint Laws in Florida for Tesla Owners | Tesla Boutique Miami",
+    "desc": "The legal tint limits in Florida for a Tesla: front sides 28% VLT, rears 15%, windshield and reflectivity rules, and how to get maximum heat rejection while staying legal.",
+    "h1": 'Window tint laws in Florida for <span class="highlight">Tesla</span> owners',
+    "card_title": "Window tint laws in Florida for Tesla owners",
+    "blurb": "The legal limits, plainly: front sides 28% VLT, rears 15%, plus windshield and reflectivity rules.",
+    "lead": "In Florida, a Tesla's front side windows must let in at least 28% of light (28% VLT), and the rear side and back windows at least 15%. The windshield can only take non-reflective tint along the top strip. Here is what that means for your Model 3, Y, S, X or Cybertruck, and how to get the most heat rejection while staying legal.",
+    "cta_title": "Want legal tint that actually beats the Miami heat?",
+    "cta_desc": "We install XPEL ceramic tint to Florida-legal limits: maximum heat rejection, no ticket. Call us.",
+    "sections": [
+      ("The legal limits for a passenger vehicle in Florida", [
+        "For a private passenger car in Florida, the tint darkness (VLT, the percentage of visible light the glass lets through) has to meet these minimums: <strong>front side windows, 28% VLT or more</strong>; <strong>rear side windows, 15% VLT or more</strong>; <strong>rear window, 15% VLT or more</strong>. Lower VLT means darker, so 28% is the darkest legal shade for the fronts and 15% for the rears.",
+        "There are also reflectivity limits, tint cannot be too mirror-like: front side windows no more than 25% reflective, rear side windows no more than 35% reflective. On the windshield, only a non-reflective strip along the top (above the manufacturer's AS-1 line) is allowed."]),
+      ("What that means for each Tesla", [
+        "The percentages apply to the side and rear glass, so they are the same across the Model 3, Model Y, Model S, Model X and Cybertruck. What differs is the glass area: the Model 3 and Model Y have a large fixed glass roof, and the Model S and Model X have panoramic glass, all of which lets in a lot of heat under the Florida sun. That glass roof is not a side window under the darkness rule, so it can take a heat-rejecting film to cut the greenhouse effect.",
+        "Tesla's factory glass already blocks some UV and infrared, but on its own it is not enough for a car that bakes in Miami. A quality ceramic tint adds serious heat rejection on top."]),
+      ("How to get maximum heat rejection while staying legal", [
+        "Darkness and heat rejection are not the same thing. A cheap dark dye film can be very dark and still let heat through, while a <a href=\"../services/window-tint.html\">ceramic film</a> like XPEL Prime XR Plus rejects up to 98% of infrared heat even at a legal, lighter shade. In other words, you do not need to break the 28% front rule to keep a Tesla cool, you need the right film. We install to the legal VLT and let the ceramic technology do the heat work.",
+        "That is the combination we recommend for South Florida: a legal shade that keeps the car comfortable, protects the interior from UV fading, and will not get you a ticket."]),
+      ("Medical exemption, and a word of caution", [
+        "Florida allows a medical exemption for drivers with certain light-sensitivity conditions, which permits darker tint with the proper documentation. If that applies to you, keep the paperwork in the car.",
+        "One caution: tint law is set by the state and can change, and this guide is general information, not legal advice. We install to the current Florida limits and can walk you through the exact VLT options for your Tesla. When in doubt, verify the current statute or ask us."]),
+    ],
+    "faqs": [
+      ("What is the darkest legal tint on a Tesla in Florida?", "For a passenger vehicle, the front side windows must be 28% VLT or lighter (that is the darkest legal front shade), and the rear side and back windows 15% VLT or lighter. The windshield only allows a non-reflective strip along the top."),
+      ("Can I tint the glass roof on my Model 3 or Model Y?", "Yes. The fixed glass roof is not covered by the side-window darkness limits, so it can take a heat-rejecting film to cut the sun load. It is one of the highest-impact comfort upgrades in the Florida heat."),
+      ("Does a legal tint still block the Miami heat?", "Yes, if it is a ceramic film. Heat rejection comes from the film technology, not just how dark it is. XPEL Prime XR Plus rejects up to 98% of infrared heat at a legal shade, so you stay cool and legal."),
+      ("Is this legal advice?", "No. This is general information based on Florida's tint rules; laws can change and enforcement varies. We install to the current legal limits; for anything official, verify the current statute."),
+    ],
+  },
+  "best-protection-model-y-south-florida": {
+    "pill": "Model Y", "crumb": "Best package for a Model Y", "img": "cars/model-y/model-y-blue-studio", "reviewed": "July 2026",
+    "title": "Best Protection Package for a Model Y in South Florida | Tesla Boutique Miami",
+    "desc": "What actually protects a Model Y in Miami's sun, salt and highway debris: our recommended full-front PPF, ceramic coating and ceramic tint combination for a daily-driven Model Y.",
+    "h1": 'The best protection package for a <span class="highlight">Model Y</span> in South Florida',
+    "card_title": "Best protection package for a Model Y in South Florida",
+    "blurb": "For a daily-driven Model Y here: full-front PPF, a ceramic coating and ceramic tint. Here is why.",
+    "lead": "For a Model Y that lives in South Florida, the package that makes sense is full-front PPF, a Fusion Plus ceramic coating and ceramic window tint. It covers the three things that actually age a Model Y here: highway rock chips, sun and heat, and the salt-and-grime that dulls the paint. Here is how we would spec it, and where to start if you do a bit at a time.",
+    "cta_title": "Protecting a Model Y in South Florida?",
+    "cta_desc": "Tell us how you drive it and we will spec the exact PPF, ceramic and tint package for your Model Y.",
+    "sections": [
+      ("Why the Model Y is a specific case", [
+        "The Model Y is the family-and-commuter Tesla, which in South Florida means real daily miles on I-95, the Turnpike and I-75, plus long hours parked in the sun. That combination, highway debris up front and relentless UV and heat, is exactly what wears a Model Y: chips on the hood and bumper, a hot cabin, and paint that loses its depth. The soft factory clear coat does not help. So the right package is not about buying everything, it is about matching protection to those three threats."]),
+      ("1) Full-front PPF, for the highway", [
+        "The single most valuable piece on a commuter Model Y is <a href=\"../services/paint-protection-film.html\">full-front paint protection film</a>: hood, fenders, mirrors and front bumper. That is where the Turnpike and I-95 do their damage, and self-healing XPEL film takes the chips instead of the paint. If the budget stretches, adding the rocker panels and rear-arch high-wear areas is the next step; full-body is for owners who want the whole car untouched."]),
+      ("2) Ceramic coating, for the sun and the wash cycle", [
+        "Over the paint (and over the PPF), a <a href=\"../services/ceramic-coating.html\">Fusion Plus ceramic coating</a> does two jobs in Florida: it adds UV and chemical resistance so the finish holds its gloss under the sun, and it makes the car far easier to keep clean, water, salt residue and love-bug season rinse off instead of bonding. On a family car that gets washed a lot, that is a real time-saver."]),
+      ("3) Ceramic tint, for the cabin and the kids", [
+        "A Model Y's big glass roof turns the cabin into a greenhouse fast. <a href=\"../services/window-tint.html\">XPEL Prime XR Plus ceramic tint</a>, installed to Florida-legal limits, rejects up to 98% of the infrared heat and 99% of UV, so the interior stays cooler and does not fade. For a family Model Y, it is one of the most-felt upgrades on the daily drive."]),
+      ("Where to start if you do it in stages", [
+        "If you are not doing it all at once, we usually sequence it: front PPF first (it protects paint you can never get back), then ceramic tint (immediate comfort), then the ceramic coating. New Model Y? The best time is right after delivery, before the first long drive, so the film goes on factory-fresh paint. We will spec the exact package for your Model Y and how you actually drive it."]),
+    ],
+    "faqs": [
+      ("What is the minimum I should do to protect a Model Y here?", "If you only do one thing, do full-front PPF, the hood, fenders, mirrors and bumper that take South Florida's highway rock chips. It protects paint you cannot restore later. Ceramic tint is the next most-felt upgrade for the heat."),
+      ("Do I need full-body PPF on a Model Y?", "Usually not. Full-front handles the panels that actually get hit on the Turnpike and I-95. Full-body is for owners who want every panel untouched or plan to keep the car long-term. We will tell you honestly what your driving calls for."),
+      ("Can I get PPF, ceramic and tint done together?", "Yes, and it is the most efficient way: one visit, correct sequence, with film and coating layered properly and tint done alongside. Tell us your Model Y and we will quote the combined package."),
+    ],
+  },
+}
+
+def build_guide(slug, d):
+    prefix = "../"
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Guides", prefix + "guides/index.html"), (d["crumb"], "")])
+    hero = page_hero(prefix, d["img"], d["h1"], d["lead"], "", crumbs)
+    inner = f'<span class="post-date">Last reviewed &middot; {d["reviewed"]}</span>'
+    for h2, paras in d["sections"]:
+        bi = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
+        inner += f'<h2>{h2}</h2>{bi}'
+    faqs = d.get("faqs") or []
+    if faqs:
+        inner += '<h2>Frequently asked questions</h2>'
+        for q, a in faqs:
+            inner += f'<h3>{q}</h3><p>{a}</p>'
+    prose = f'<section class="section"><div class="container"><div class="prose">{inner}</div></div></section>'
+    cta = cta_block(d["cta_title"], d["cta_desc"])
+    body = hero + prose + cta
+    art_ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": d["card_title"],
+        "description": d["desc"], "inLanguage": "en",
+        "author": {"@type": "Organization", "name": "Tesla Boutique Miami"},
+        "publisher": {"@type": "Organization", "name": "Tesla Boutique Miami", "url": DOMAIN + "/"},
+        "image": f"{DOMAIN}/assets/img/{d['img']}.webp",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{DOMAIN}/guides/{slug}.html"}}, ensure_ascii=False)
+    ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Guides", DOMAIN + "/guides/index.html"), (d["crumb"], f"{DOMAIN}/guides/{slug}.html")]), art_ld]
+    if faqs:
+        ld.append(json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}, ensure_ascii=False))
+    return doc(f"guides/{slug}.html", d["title"], d["desc"], body, active="guides", preload=d["img"], extra_ld=ld)
+
+def build_guides():
+    prefix = "../"
+    crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Guides", "")])
+    hero = page_hero(prefix, "cars/model-s/model-s-blue-1", 'Tesla Care <span class="highlight">Guides</span>',
+        "Straight, no-fluff answers to the questions Tesla owners in South Florida actually ask, from a Tesla-only XPEL shop in Doral. Evergreen reference, not news.", "", crumbs)
+    cards = ""
+    for slug, d in GUIDES.items():
+        cards += (f'<div class="project-tile reveal"><div class="project-tile-body">'
+                  f'<div class="tag-row"><span class="pill">{d["pill"]}</span></div>'
+                  f'<h3>{d["card_title"]}</h3><p>{d["blurb"]}</p>'
+                  f'<a class="card-link" href="{slug}.html">Read guide &rarr;</a></div></div>')
+    grid = (f'<section class="section"><div class="container">'
+            f'<div class="section-header"><span class="section-tag">Tesla Knowledge</span>'
+            f'<h2 class="section-title">Guides for Tesla owners in South Florida</h2>'
+            f'<p class="section-desc">The questions Tesla owners ask before they protect a car, answered by a shop that only works on Teslas.</p></div>'
+            f'<div class="project-list-grid">{cards}</div></div></section>')
+    cta = cta_block("A question we have not covered yet?", "Ask us directly. We would rather answer it than have you guess.")
+    body = hero + grid + cta
+    ld = [json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "Tesla Care Guides",
+        "url": DOMAIN + "/guides/index.html",
+        "description": "Evergreen guides on protecting and caring for a Tesla in Miami and South Florida."}, ensure_ascii=False)]
+    return doc("guides/index.html", "Tesla Care Guides for South Florida Owners | Tesla Boutique Miami",
+               "Evergreen guides for Tesla owners in Miami and South Florida: PPF, ceramic coating, window tint laws, model-specific care and more, from a Tesla-only XPEL shop in Doral.",
+               body, active="guides", preload="cars/model-s/model-s-blue-1", extra_ld=ld)
+
 def build_post(slug, d):
     prefix = "../"
     crumbs = breadcrumbs_html(prefix, [("Home", prefix + "index.html"), ("Updates", prefix + "news/index.html"), (d["crumb"], "")])
@@ -1610,6 +1754,9 @@ def main():
     pages["news/index.html"] = build_news()
     for slug, d in POSTS.items():
         pages[f"news/{slug}.html"] = build_post(slug, d)
+    pages["guides/index.html"] = build_guides()
+    for slug, d in GUIDES.items():
+        pages[f"guides/{slug}.html"] = build_guide(slug, d)
     pages["service-area/index.html"] = build_service_area_hub()
     for c in COUNTIES:
         if c["cities"]:

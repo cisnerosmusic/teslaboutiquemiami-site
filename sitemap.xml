@@ -792,4 +792,76 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/guides/index.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/guides/index.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/index.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/guides/does-a-leased-tesla-need-ppf.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/does-a-leased-tesla-need-ppf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/does-a-leased-tesla-need-ppf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/does-a-leased-tesla-need-ppf.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/guides/does-a-leased-tesla-need-ppf.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/does-a-leased-tesla-need-ppf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/does-a-leased-tesla-need-ppf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/does-a-leased-tesla-need-ppf.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/guides/florida-window-tint-laws-tesla.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/florida-window-tint-laws-tesla.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/florida-window-tint-laws-tesla.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/florida-window-tint-laws-tesla.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/guides/florida-window-tint-laws-tesla.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/florida-window-tint-laws-tesla.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/florida-window-tint-laws-tesla.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/florida-window-tint-laws-tesla.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/guides/best-protection-model-y-south-florida.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/best-protection-model-y-south-florida.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/best-protection-model-y-south-florida.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/best-protection-model-y-south-florida.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/guides/best-protection-model-y-south-florida.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/guides/best-protection-model-y-south-florida.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/guides/best-protection-model-y-south-florida.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/guides/best-protection-model-y-south-florida.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
 </urlset>

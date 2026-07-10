@@ -67,6 +67,7 @@ def header_es(esp, rootp, en_path, active=""):
         '<li class="has-dropdown"><a href="%sindex.html#models"%s>Modelos Tesla</a><ul class="dropdown">%s</ul></li>'
         '<li class="has-dropdown"><a href="%sindex.html#services"%s>Servicios</a><ul class="dropdown">%s</ul></li>'
         '<li class="has-dropdown"><a href="%sservice-area/index.html"%s>Zona de Servicio</a><ul class="dropdown dropdown-mega">%s</ul></li>'
+        '<li><a href="%sguides/index.html"%s>Guías</a></li>'
         '<li><a href="%snews/index.html"%s>Updates</a></li>'
         '<li><a href="%sindex.html#contact">Contacto</a></li></ul>'
         '<div class="lang-switch" aria-label="Idioma"><a href="%s%s">EN</a><a href="#" aria-current="true">ES</a></div></nav>'
@@ -75,7 +76,7 @@ def header_es(esp, rootp, en_path, active=""):
         '</div></div></header>') % (
         esp, LOGO_ES, svg('<path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'),
         esp, cur("models"), md, esp, cur("services"), sd,
-        esp, cur("area"), ac, esp, cur("news"), esp,
+        esp, cur("area"), ac, esp, cur("guides"), esp, cur("news"), esp,
         rootp, en_path, PHONE_TEL, svg(IC["phone"]), PHONE_DISP, esp)
 
 def footer_es(esp, rootp):
@@ -743,6 +744,145 @@ POSTS_ES = {
     cta_desc="Tráelo a nuestro taller de Doral y las quitamos con seguridad, y te ayudamos a que no vuelvan."),
 }
 
+GUIDES_ES = {
+  "does-a-leased-tesla-need-ppf": {
+    "pill": "Leasing", "crumb": "Tesla en leasing y PPF", "img": "tesla-model-3-ppf-doral", "reviewed": "Julio 2026",
+    "title": "¿Un Tesla en leasing necesita PPF? | Tesla Boutique Miami",
+    "desc": "Respuesta directa para el sur de Florida: sí, y en un leasing el PPF suele pagarse solo, porque Tesla cobra al devolver el auto las picaduras y rayones que causan las autopistas de Miami.",
+    "h1": '¿Un Tesla en leasing necesita <span class="highlight">PPF</span>?',
+    "card_title": "¿Un Tesla en leasing necesita PPF?",
+    "blurb": "Respuesta corta: en un leasing puede pagarse solo al devolverlo. Estas son las cuentas del sur de Florida.",
+    "lead": "Respuesta corta: sí, y en un leasing suele pagarse solo. Tesla cobra los daños al final del leasing como picaduras, rayones y roces de acera, y las autopistas del sur de Florida causan justo eso. El PPF frontal mantiene la pintura perfecta de fábrica para que devuelvas el auto sin cargos por picaduras, y el film XPEL original se retira limpio, así no te llevas nada del valor.",
+    "cta_title": "¿Tienes un Tesla en leasing en el sur de Florida?",
+    "cta_desc": "Dinos tu fecha de entrega o recogida y tendremos el PPF XPEL original listo para que lo devuelvas impecable.",
+    "sections": [
+      ("Qué cobra Tesla al devolver el leasing", [
+        "La devolución de un leasing Tesla se inspecciona por desgaste excesivo, y la pintura picada, los rayones, los paneles con roce de acera y el picoteo de piedras en el capó y el parachoques son los cargos clásicos. En un mercado como Miami, donde la I-95, el Palmetto y el Dolphin Expressway lanzan grava y escombros de obra a diario, un frente sin proteger los acumula rápido. Pagar al final por un daño que pudiste evitar es la peor forma de gastar ese dinero.",
+        "La protección de pintura es la solución directa: una capa XPEL transparente y autorregenerante sobre los paneles que reciben los golpes, para que la pintura debajo quede exactamente como te la entregaron."]),
+      ("Por qué el leasing es quizá el caso más fuerte para el PPF", [
+        "Cuando eres dueño del auto, el PPF protege la reventa. Cuando estás en leasing, te protege de una factura que no presupuestaste, y esa factura puede acercarse al costo del propio film. La cobertura frontal completa en capó, guardabarros, espejos y parachoques delantero suele ser el punto justo para un leasing: cuida los paneles que más probablemente marquen, sin el costo del cuerpo completo.",
+        "Y como conservas el auto por un plazo fijo, el film ni siquiera tiene que durar una década. Solo debe mantener la pintura limpia durante el leasing, algo que un PPF de calidad hace con facilidad."]),
+      ("¿El film se retira limpio al final?", [
+        "Sí. El <a href=\"../services/paint-protection-film.html\">film XPEL</a> original está hecho para retirarse sin levantar la pintura ni la capa transparente de fábrica, así que al devolver el leasing los paneles aparecen en la misma condición en que se instaló. Tienes la protección durante el leasing y no dejas nada atrás. Y si decides comprar el auto al final, mejor aún: el film ya está ahí protegiendo tu Tesla, ahora tuyo."]),
+      ("Hazlo antes del primer viaje largo", [
+        "El momento ideal es justo después de la entrega, antes de que la pintura vea kilómetros de autopista. Muchos de nuestros clientes recogen un leasing nuevo en el centro Tesla de Doral y lo traen directo para que el film vaya sobre pintura fresca de fábrica. Si tu Tesla ya tiene unos miles de kilómetros, primero corregimos la pintura y luego lo enfilmamos."]),
+    ],
+    "faqs": [
+      ("¿Vale la pena el PPF en un leasing Tesla de 2 o 3 años?", "En el sur de Florida, normalmente sí. Un solo cargo por picadura o rayón al devolver el leasing puede acercarse al costo del PPF frontal, y los escombros de autopista aquí hacen ese daño casi inevitable en un frente sin proteger. El film lo evita y se retira limpio al final."),
+      ("¿El PPF daña la pintura al retirarlo al final del leasing?", "No. El film XPEL original está diseñado para despegarse sin levantar la pintura ni la capa transparente de fábrica, dejando los paneles como estaban al instalarlo. Por eso funciona tan bien para leasing."),
+      ("¿Cuánto del auto debería enfilmar en un leasing?", "Frontal completo (capó, guardabarros, espejos y parachoques delantero) es la elección habitual en leasing: cubre los paneles que Tesla más probablemente marque por picaduras, sin el costo de la cobertura de cuerpo completo."),
+    ],
+  },
+  "florida-window-tint-laws-tesla": {
+    "pill": "Legal y polarizado", "crumb": "Leyes de polarizado en Florida", "img": "tesla-model-y-window-tinting", "reviewed": "Julio 2026",
+    "title": "Leyes de polarizado en Florida para dueños de Tesla | Tesla Boutique Miami",
+    "desc": "Los límites legales de polarizado en Florida para un Tesla: lados delanteros 28% VLT, traseros 15%, reglas del parabrisas y reflectividad, y cómo lograr el máximo rechazo de calor sin dejar de ser legal.",
+    "h1": 'Leyes de polarizado en Florida para dueños de <span class="highlight">Tesla</span>',
+    "card_title": "Leyes de polarizado en Florida para dueños de Tesla",
+    "blurb": "Los límites legales, claros: lados delanteros 28% VLT, traseros 15%, más reglas de parabrisas y reflectividad.",
+    "lead": "En Florida, las ventanillas delanteras de un Tesla deben dejar pasar al menos el 28% de la luz (28% VLT), y las laterales traseras y la luneta al menos el 15%. El parabrisas solo admite polarizado no reflectante en la franja superior. Esto es lo que significa para tu Model 3, Y, S, X o Cybertruck, y cómo obtener el máximo rechazo de calor sin dejar de ser legal.",
+    "cta_title": "¿Quieres un polarizado legal que de verdad venza el calor de Miami?",
+    "cta_desc": "Instalamos polarizado cerámico XPEL a los límites legales de Florida: máximo rechazo de calor, sin multa. Llámanos.",
+    "sections": [
+      ("Los límites legales para un vehículo de pasajeros en Florida", [
+        "Para un auto particular de pasajeros en Florida, la oscuridad del polarizado (VLT, el porcentaje de luz visible que deja pasar el vidrio) debe cumplir estos mínimos: <strong>ventanillas delanteras, 28% VLT o más</strong>; <strong>laterales traseras, 15% VLT o más</strong>; <strong>luneta, 15% VLT o más</strong>. Menos VLT es más oscuro, así que 28% es el tono legal más oscuro para las delanteras y 15% para las traseras.",
+        "También hay límites de reflectividad, el polarizado no puede ser demasiado tipo espejo: ventanillas delanteras no más de 25% reflectante, laterales traseras no más de 35%. En el parabrisas solo se permite una franja no reflectante en la parte superior (sobre la línea AS-1 del fabricante)."]),
+      ("Qué significa para cada Tesla", [
+        "Los porcentajes aplican al vidrio lateral y trasero, así que son los mismos en Model 3, Model Y, Model S, Model X y Cybertruck. Lo que cambia es el área de vidrio: el Model 3 y el Model Y tienen un gran techo de cristal fijo, y el Model S y el Model X tienen cristal panorámico, todo lo cual deja entrar mucho calor bajo el sol de Florida. Ese techo de cristal no es una ventanilla lateral bajo la regla de oscuridad, así que puede llevar un film rechaza-calor para cortar el efecto invernadero.",
+        "El cristal de fábrica de Tesla ya bloquea algo de UV e infrarrojo, pero por sí solo no basta para un auto que se hornea en Miami. Un polarizado cerámico de calidad añade un rechazo de calor serio encima."]),
+      ("Cómo obtener el máximo rechazo de calor sin dejar de ser legal", [
+        "Oscuridad y rechazo de calor no son lo mismo. Un film de tinte oscuro barato puede ser muy oscuro y aun así dejar pasar el calor, mientras que un <a href=\"../services/window-tint.html\">film cerámico</a> como XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo incluso en un tono legal más claro. Es decir, no necesitas romper la regla del 28% delantero para mantener fresco un Tesla, necesitas el film correcto. Instalamos al VLT legal y dejamos que la tecnología cerámica haga el trabajo del calor.",
+        "Esa es la combinación que recomendamos para el sur de Florida: un tono legal que mantiene el auto cómodo, protege el interior de la decoloración por UV y no te saca una multa."]),
+      ("Exención médica, y una advertencia", [
+        "Florida permite una exención médica para conductores con ciertas condiciones de sensibilidad a la luz, que autoriza polarizado más oscuro con la documentación adecuada. Si es tu caso, guarda el papeleo en el auto.",
+        "Una advertencia: la ley de polarizado la fija el estado y puede cambiar, y esta guía es información general, no asesoría legal. Instalamos a los límites vigentes de Florida y te explicamos las opciones exactas de VLT para tu Tesla. Ante la duda, verifica el estatuto vigente o pregúntanos."]),
+    ],
+    "faqs": [
+      ("¿Cuál es el polarizado legal más oscuro en un Tesla en Florida?", "Para un vehículo de pasajeros, las ventanillas delanteras deben ser 28% VLT o más claras (ese es el tono legal más oscuro al frente), y las laterales traseras y la luneta 15% VLT o más claras. El parabrisas solo permite una franja no reflectante en la parte superior."),
+      ("¿Puedo polarizar el techo de cristal de mi Model 3 o Model Y?", "Sí. El techo de cristal fijo no está cubierto por los límites de oscuridad de las ventanillas laterales, así que puede llevar un film rechaza-calor para cortar la carga solar. Es una de las mejoras de confort de mayor impacto en el calor de Florida."),
+      ("¿Un polarizado legal igual bloquea el calor de Miami?", "Sí, si es un film cerámico. El rechazo de calor viene de la tecnología del film, no solo de qué tan oscuro sea. XPEL Prime XR Plus rechaza hasta el 98% del calor infrarrojo en un tono legal, así que quedas fresco y legal."),
+      ("¿Esto es asesoría legal?", "No. Es información general basada en las reglas de polarizado de Florida; las leyes pueden cambiar y la aplicación varía. Instalamos a los límites legales vigentes; para algo oficial, verifica el estatuto vigente."),
+    ],
+  },
+  "best-protection-model-y-south-florida": {
+    "pill": "Model Y", "crumb": "Mejor paquete para un Model Y", "img": "cars/model-y/model-y-blue-studio", "reviewed": "Julio 2026",
+    "title": "El mejor paquete de protección para un Model Y en el sur de Florida | Tesla Boutique Miami",
+    "desc": "Lo que de verdad protege un Model Y en el sol, la sal y los escombros de autopista de Miami: nuestra combinación recomendada de PPF frontal, cerámico y polarizado cerámico para un Model Y de uso diario.",
+    "h1": 'El mejor paquete de protección para un <span class="highlight">Model Y</span> en el sur de Florida',
+    "card_title": "El mejor paquete de protección para un Model Y en el sur de Florida",
+    "blurb": "Para un Model Y de uso diario aquí: PPF frontal completo, un cerámico y polarizado cerámico. Aquí el porqué.",
+    "lead": "Para un Model Y que vive en el sur de Florida, el paquete que tiene sentido es PPF frontal completo, un recubrimiento cerámico Fusion Plus y polarizado cerámico. Cubre las tres cosas que de verdad envejecen un Model Y aquí: las picaduras de autopista, el sol y el calor, y la sal-y-mugre que apaga la pintura. Así lo configuraríamos, y por dónde empezar si lo haces por partes.",
+    "cta_title": "¿Proteges un Model Y en el sur de Florida?",
+    "cta_desc": "Dinos cómo lo manejas y te configuramos el paquete exacto de PPF, cerámico y polarizado para tu Model Y.",
+    "sections": [
+      ("Por qué el Model Y es un caso específico", [
+        "El Model Y es el Tesla familiar y de commuter, lo que en el sur de Florida significa kilómetros reales a diario por la I-95, la Turnpike y la I-75, más largas horas estacionado al sol. Esa combinación, escombros de autopista al frente y UV y calor implacables, es justo lo que desgasta un Model Y: picaduras en el capó y el parachoques, una cabina caliente y una pintura que pierde profundidad. La blanda capa transparente de fábrica no ayuda. Así que el paquete correcto no es comprar todo, es hacer coincidir la protección con esas tres amenazas."]),
+      ("1) PPF frontal completo, para la autopista", [
+        "La pieza más valiosa en un Model Y de commuter es el <a href=\"../services/paint-protection-film.html\">PPF frontal completo</a>: capó, guardabarros, espejos y parachoques delantero. Ahí es donde la Turnpike y la I-95 hacen su daño, y el film XPEL autorregenerante recibe las picaduras en vez de la pintura. Si el presupuesto da, sumar los estribos y las zonas de alto desgaste del arco trasero es el siguiente paso; el cuerpo completo es para quien quiere todo el auto intacto."]),
+      ("2) Recubrimiento cerámico, para el sol y el ciclo de lavado", [
+        "Sobre la pintura (y sobre el PPF), un <a href=\"../services/ceramic-coating.html\">recubrimiento cerámico Fusion Plus</a> hace dos trabajos en Florida: añade resistencia a UV y químicos para que el acabado conserve su brillo bajo el sol, y hace el auto mucho más fácil de mantener limpio, el agua, los residuos de sal y la temporada de love bugs se enjuagan en vez de adherirse. En un auto familiar que se lava seguido, eso ahorra tiempo de verdad."]),
+      ("3) Polarizado cerámico, para la cabina y los niños", [
+        "El gran techo de cristal del Model Y convierte la cabina en un invernadero rápido. El <a href=\"../services/window-tint.html\">polarizado cerámico XPEL Prime XR Plus</a>, instalado a los límites legales de Florida, rechaza hasta el 98% del calor infrarrojo y el 99% del UV, así el interior se mantiene más fresco y no se decolora. Para un Model Y familiar, es una de las mejoras que más se sienten en el trayecto diario."]),
+      ("Por dónde empezar si lo haces por etapas", [
+        "Si no lo haces todo de una vez, solemos secuenciarlo así: primero PPF frontal (protege pintura que nunca recuperas), luego polarizado cerámico (confort inmediato) y después el recubrimiento cerámico. ¿Model Y nuevo? El mejor momento es justo tras la entrega, antes del primer viaje largo, para que el film vaya sobre pintura fresca de fábrica. Configuramos el paquete exacto para tu Model Y y cómo lo manejas de verdad."]),
+    ],
+    "faqs": [
+      ("¿Qué es lo mínimo que debería hacer para proteger un Model Y aquí?", "Si haces una sola cosa, haz PPF frontal completo, el capó, guardabarros, espejos y parachoques que reciben las picaduras de autopista del sur de Florida. Protege pintura que no puedes restaurar después. El polarizado cerámico es la siguiente mejora que más se siente por el calor."),
+      ("¿Necesito PPF de cuerpo completo en un Model Y?", "Normalmente no. El frontal completo cubre los paneles que de verdad reciben golpes en la Turnpike y la I-95. El cuerpo completo es para quien quiere cada panel intacto o planea conservar el auto a largo plazo. Te decimos con honestidad qué pide tu forma de manejar."),
+      ("¿Puedo hacer PPF, cerámico y polarizado juntos?", "Sí, y es lo más eficiente: una visita, secuencia correcta, con el film y el cerámico bien estratificados y el polarizado al lado. Dinos tu Model Y y cotizamos el paquete combinado."),
+    ],
+  },
+}
+
+def build_guide_es(slug, d):
+    path = "guides/%s.html" % slug; esp, rootp = esp_root(path)
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Guías", esp+"guides/index.html"), (d["crumb"], "")])
+    hero = S.page_hero(rootp, d["img"], d["h1"], d["lead"], "", crumbs)
+    inner = '<span class="post-date">Última revisión &middot; %s</span>' % d["reviewed"]
+    for h2, paras in d["sections"]:
+        bi = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
+        inner += "<h2>%s</h2>%s" % (h2, bi)
+    faqs = d.get("faqs") or []
+    if faqs:
+        inner += '<h2>Preguntas frecuentes</h2>'
+        for q, a in faqs:
+            inner += "<h3>%s</h3><p>%s</p>" % (q, a)
+    prose = '<section class="section"><div class="container"><div class="prose">%s</div></div></section>' % inner
+    cta = cta_es(d["cta_title"], d["cta_desc"])
+    body = hero + prose + cta
+    art_ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": d["card_title"],
+        "description": d["desc"], "inLanguage": "es",
+        "author": {"@type": "Organization", "name": "Tesla Boutique Miami"},
+        "publisher": {"@type": "Organization", "name": "Tesla Boutique Miami", "url": DOMAIN+"/"},
+        "image": "%s/assets/img/%s.webp" % (DOMAIN, d["img"]),
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "%s/es/guides/%s.html" % (DOMAIN, slug)}}, ensure_ascii=False)
+    ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Guías", DOMAIN+"/es/guides/index.html"), (d["crumb"], "%s/es/guides/%s.html" % (DOMAIN, slug))]), art_ld]
+    if faqs:
+        ld.append(json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}, ensure_ascii=False))
+    return doc_es(path, d["title"], d["desc"], body, active="guides", preload=d["img"], extra_ld=ld)
+
+def build_guides_es():
+    path = "guides/index.html"; esp, rootp = esp_root(path)
+    crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Guías", "")])
+    hero = S.page_hero(rootp, "cars/model-s/model-s-blue-1", 'Guías de <span class="highlight">cuidado Tesla</span>',
+        "Respuestas directas, sin relleno, a las preguntas que los dueños de Tesla del sur de Florida realmente hacen, desde un taller solo-Tesla XPEL en Doral. Referencia atemporal, no noticias.", "", crumbs)
+    cards = ""
+    for slug, d in GUIDES_ES.items():
+        cards += ('<div class="project-tile reveal"><div class="project-tile-body"><div class="tag-row"><span class="pill">%s</span></div>'
+                  '<h3>%s</h3><p>%s</p><a class="card-link" href="%s.html">Leer guía &rarr;</a></div></div>') % (d["pill"], d["card_title"], d["blurb"], slug)
+    grid = ('<section class="section"><div class="container"><div class="section-header">'
+            '<span class="section-tag">Conocimiento Tesla</span><h2 class="section-title">Guías para dueños de Tesla en el sur de Florida</h2>'
+            '<p class="section-desc">Las preguntas que un dueño de Tesla se hace antes de proteger su auto, respondidas por un taller que solo trabaja con Teslas.</p></div>'
+            '<div class="project-list-grid">%s</div></div></section>') % cards
+    cta = cta_es("¿Una pregunta que aún no cubrimos?", "Pregúntanos directo. Preferimos responderla a que adivines.")
+    body = hero + grid + cta
+    ld = [json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "Guías de cuidado Tesla",
+        "url": DOMAIN+"/es/guides/index.html", "description": "Guías atemporales para proteger y cuidar un Tesla en Miami y el sur de Florida."}, ensure_ascii=False)]
+    return doc_es(path, "Guías de cuidado Tesla para el sur de Florida | Tesla Boutique Miami",
+                  "Guías atemporales para dueños de Tesla en Miami y el sur de Florida: PPF, cerámico, leyes de polarizado, cuidado por modelo y más, desde un taller solo-Tesla XPEL en Doral.",
+                  body, active="guides", preload="cars/model-s/model-s-blue-1", extra_ld=ld)
+
 def build_post_es(slug, d):
     path = "news/%s.html" % slug; esp, rootp = esp_root(path)
     crumbs = crumbs_es(esp, [("Inicio", esp+"index.html"), ("Updates", esp+"news/index.html"), (d["crumb"], "")])
@@ -1240,6 +1380,9 @@ def main():
     pages["news/index.html"] = build_news_es()
     for slug, d in POSTS_ES.items():
         pages["news/%s.html" % slug] = build_post_es(slug, d)
+    pages["guides/index.html"] = build_guides_es()
+    for slug, d in GUIDES_ES.items():
+        pages["guides/%s.html" % slug] = build_guide_es(slug, d)
     pages["service-area/index.html"] = build_service_area_hub_es()
     for c in COUNTIES_ES:
         if c["cities"]:
