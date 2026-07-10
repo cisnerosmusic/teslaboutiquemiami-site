@@ -14,11 +14,14 @@ assistants can read and cite the business.
 ```
 index.html                 Home (EN)
 legal.html                 Legal & trademark notice (hand-maintained, self-styled)
+404.html                   Custom 404 (hand-maintained, fully self-contained, noindex)
 es/index.html              Home (ES) (hand-maintained)
 models/                    Per-model pages (Model 3, Y, S, X, Cybertruck) + SEO combo page
 services/                  Per-service pages (PPF, Colored PPF, Ceramic, Tint, Windshield, Correction)
 news/                      Updates: index + article pages (EN)
-es/                         Spanish mirror of models/, services/, news/
+guides/                    Tesla Care Guides: evergreen index + guide pages (EN)
+service-area/              County hubs + city pages (Miami-Dade, Broward, Palm Beach, Monroe)
+es/                        Spanish mirror of models/, services/, news/, guides/, service-area/
 assets/css/style.css       Shared design system (colors, type, layout)
 assets/js/main.js          Minimal JS (header scroll, mobile nav, FAQ accordion, scroll reveal)
 assets/img/                Optimized images (.avif + .webp)
@@ -33,13 +36,23 @@ _build/                    Generators + content (not part of the served site)
   serve.ps1                Local static preview server (Windows; no Node/Python needed)
 ```
 
+At a glance: ~98 served HTML pages. EN and ES are full mirrors of `models/` (6),
+`services/` (6), `news/` (6), `guides/` (4) and `service-area/` (25), plus the home.
+
 Notes:
-- `es/index.html` and `legal.html` are hand-maintained, not generated. Every other
-  page is produced by the generators.
+- Hand-maintained (NOT generated): `index.html` is generated, but `es/index.html`,
+  `legal.html`, `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt` and `humans.txt`
+  are edited by hand. Every other page is produced by the generators.
 - News/blog articles are defined as metadata in the `POSTS` (site.py) and `POSTS_ES`
   (build_es.py) dicts; their body lives once in `_build/posts/<slug>.en.html` and
   `<slug>.es.html` and is read by both languages. Articles get a `BlogPosting` +
   `BreadcrumbList` JSON-LD and hreflang links automatically.
+- Tesla Care Guides are evergreen reference pages defined in the `GUIDES` (site.py) /
+  `GUIDES_ES` (build_es.py) dicts. Each guide gets `Article` + `FAQPage` +
+  `BreadcrumbList` JSON-LD and a "Last reviewed" date.
+- Service-area pages (county hubs + city pages) are generated from the `CITIES` data
+  in site.py, with hyper-local content and `LocalBusiness` / `BreadcrumbList` schema.
+- `legal.html` is EN only; there is no Spanish legal page yet (the ES site links to it).
 - Per-model car galleries and heroes read from `assets/img/cars/<model>/`; logos and
   shared/legacy photos stay in `assets/img/`.
 
@@ -73,6 +86,14 @@ visual checks when Node/Python are not installed.
 Plain static site, runs from the repo root with relative links, so it works both on
 GitHub Pages and standard hosting. Canonical, hreflang and Open Graph URLs point to
 the production domain `https://teslaboutiquemiami.com`.
+
+CSS cache-busting: `style.css` is loaded as `style.css?v=<CSS_VER>`. Bump the `CSS_VER`
+constant in `site.py` on every `style.css` change, then update the hardcoded version in
+the hand-maintained `es/index.html` to match, and rebuild.
+
+`404.html` uses root-absolute links and inline CSS so it renders correctly wherever the
+host serves it (it is delivered at the missing URL, which can be at any depth). Every
+other page uses relative links.
 
 ## Effects / themes
 
