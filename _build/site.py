@@ -539,8 +539,8 @@ SERVICES = {
   "paint-protection-film": {
     "name": "Paint Protection Film", "img": "tesla-model-3-ppf-doral",
     "badge": {"img": "xpel-ultimate-plus.png", "alt": "XPEL Ultimate Plus paint protection film"},
-    "section_media": [(0, {"img": "tesla-ppf-install-1", "w": 1300, "h": 975,
-        "alt": "Installer applying XPEL paint protection film to a Tesla hood with slip solution in our Doral shop"}),
+    "section_media": [(0, {"img": "tesla-ppf-install-1", "w": 900, "h": 1200,
+        "alt": "Installer applying XPEL paint protection film to a Tesla driver's door with slip solution in our Doral shop"}),
         (1, {"img": "tesla-ppf-install-2", "w": 900, "h": 1200,
         "alt": "Installer squeegeeing XPEL paint protection film around a Tesla headlight and fender in our Doral shop"})],
     "process": ("Real PPF work in our Doral shop", "Paint protection film, applied by hand", [

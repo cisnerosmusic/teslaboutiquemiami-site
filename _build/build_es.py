@@ -329,8 +329,8 @@ MODELS_ES = {
 SERVICES_ES = {
   "paint-protection-film": dict(name="Protección de Pintura", img="tesla-model-3-ppf-doral",
     badge=dict(img="xpel-ultimate-plus.png", alt="Film de protección XPEL Ultimate Plus"),
-    section_media=[(0, dict(img="tesla-ppf-install-1", w=1300, h=975,
-        alt="Instalador aplicando film de protección de pintura XPEL sobre el capó de un Tesla con solución deslizante en nuestro taller de Doral")),
+    section_media=[(0, dict(img="tesla-ppf-install-1", w=900, h=1200,
+        alt="Instalador aplicando film de protección de pintura XPEL sobre la puerta del conductor de un Tesla con solución deslizante en nuestro taller de Doral")),
         (1, dict(img="tesla-ppf-install-2", w=900, h=1200,
         alt="Instalador pasando el squeegee con film de protección de pintura XPEL alrededor del faro de un Tesla en nuestro taller de Doral"))],
     process=("Trabajo real de PPF en nuestro taller de Doral", "Protección de pintura, aplicada a mano", [
