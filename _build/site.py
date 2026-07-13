@@ -506,7 +506,7 @@ MODELS = {
   },
   "cybertruck": {
     "name": "Cybertruck", "img": "cars/cybertruck/cybertruck-1-black", "card": "tesla-cybertruck-ppf-miami",
-    "gallery": ["cars/cybertruck/cybertruck-2-black", "cars/cybertruck/cybertruck-3-white", "cars/cybertruck/cybertruck-4-white", "cars/cybertruck/cybertruck-5-white", "cars/cybertruck/cybertruck-6-white", "cars/cybertruck/cybertruck-7-metallic", "cars/cybertruck/cybertruck-8-metallic", "cars/cybertruck/cybertruck-9-metallic", "cars/cybertruck/cybertruck-10-red", "cars/cybertruck/cybertruck-11-red", "cars/cybertruck/cybertruck-12-red"],
+    "gallery": ["cars/cybertruck/cybertruck-matte-black-shop", "cars/cybertruck/cybertruck-2-black", "cars/cybertruck/cybertruck-3-white", "cars/cybertruck/cybertruck-4-white", "cars/cybertruck/cybertruck-5-white", "cars/cybertruck/cybertruck-6-white", "cars/cybertruck/cybertruck-7-metallic", "cars/cybertruck/cybertruck-8-metallic", "cars/cybertruck/cybertruck-9-metallic", "cars/cybertruck/cybertruck-10-red", "cars/cybertruck/cybertruck-11-red", "cars/cybertruck/cybertruck-12-red"],
     "lead": "Stainless steel, not paint. The Cybertruck needs a different playbook, and we have it: PPF to protect the finish and colored PPF to actually change it.",
     "intro": ["The Cybertruck is unlike any other Tesla because its body is bare stainless steel, not painted. That changes everything: there is no clear coat to chip, but the stainless scratches, smudges and shows fine marks. Paint protection film over the stainless keeps it pristine and far easier to clean, while colored PPF is the way to give a Cybertruck real color with full protection underneath.",
               "We film the Cybertruck's large flat panels with genuine XPEL, including satin and stealth options that suit its angular design."],
@@ -539,6 +539,10 @@ SERVICES = {
   "paint-protection-film": {
     "name": "Paint Protection Film", "img": "tesla-model-3-ppf-doral",
     "badge": {"img": "xpel-ultimate-plus.png", "alt": "XPEL Ultimate Plus paint protection film"},
+    "section_media": [(0, {"img": "tesla-ppf-install-1", "w": 1300, "h": 975,
+        "alt": "Installer applying XPEL paint protection film to a Tesla hood with slip solution in our Doral shop"}),
+        (1, {"img": "tesla-ppf-install-2", "w": 900, "h": 1200,
+        "alt": "Installer squeegeeing XPEL paint protection film around a Tesla headlight and fender in our Doral shop"})],
     "process": ("Real PPF work in our Doral shop", "Paint protection film, applied by hand", [
       {"img": "tesla-model-y-ppf-hood", "w": 1600, "h": 901, "cls": "pr-wide",
        "alt": "Installer squeegeeing XPEL paint protection film across a Tesla Model Y hood in Doral",

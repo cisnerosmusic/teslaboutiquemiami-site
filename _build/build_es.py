@@ -298,7 +298,7 @@ MODELS_ES = {
            "En un SUV grande y premium que conserva valor, el film de cuerpo completo es una opción popular. Mantiene cada panel sin picaduras y protege la reventa."),
           ("¿Pueden polarizar el gran vidrio del Model X?",
            "Sí, con film cerámico XPEL Prime XR Plus para cortar el calor y el UV en toda la gran área de vidrio.")]),
-  "cybertruck": dict(name="Cybertruck", img="cars/cybertruck/cybertruck-1-black", gallery=["cars/cybertruck/cybertruck-2-black","cars/cybertruck/cybertruck-3-white","cars/cybertruck/cybertruck-4-white","cars/cybertruck/cybertruck-5-white","cars/cybertruck/cybertruck-6-white","cars/cybertruck/cybertruck-7-metallic","cars/cybertruck/cybertruck-8-metallic","cars/cybertruck/cybertruck-9-metallic","cars/cybertruck/cybertruck-10-red","cars/cybertruck/cybertruck-11-red","cars/cybertruck/cybertruck-12-red"],
+  "cybertruck": dict(name="Cybertruck", img="cars/cybertruck/cybertruck-1-black", gallery=["cars/cybertruck/cybertruck-matte-black-shop","cars/cybertruck/cybertruck-2-black","cars/cybertruck/cybertruck-3-white","cars/cybertruck/cybertruck-4-white","cars/cybertruck/cybertruck-5-white","cars/cybertruck/cybertruck-6-white","cars/cybertruck/cybertruck-7-metallic","cars/cybertruck/cybertruck-8-metallic","cars/cybertruck/cybertruck-9-metallic","cars/cybertruck/cybertruck-10-red","cars/cybertruck/cybertruck-11-red","cars/cybertruck/cybertruck-12-red"],
     lead="Acero inoxidable, no pintura. El Cybertruck necesita otro manual, y lo tenemos: PPF para proteger el acabado y PPF de color para de verdad cambiarlo.",
     intro=["El Cybertruck es distinto a cualquier otro Tesla porque su carrocería es acero inoxidable puro, no pintada. Eso lo cambia todo: no hay capa transparente que se pique, pero el inoxidable se raya, se mancha y muestra marcas finas. La protección de pintura sobre el inoxidable lo mantiene impecable y mucho más fácil de limpiar, mientras que el PPF de color es la forma de darle al Cybertruck color real con protección debajo.",
            "Cubrimos con film los grandes paneles planos del Cybertruck con XPEL original, incluidas opciones satinadas y stealth que combinan con su diseño angular."],
@@ -329,6 +329,10 @@ MODELS_ES = {
 SERVICES_ES = {
   "paint-protection-film": dict(name="Protección de Pintura", img="tesla-model-3-ppf-doral",
     badge=dict(img="xpel-ultimate-plus.png", alt="Film de protección XPEL Ultimate Plus"),
+    section_media=[(0, dict(img="tesla-ppf-install-1", w=1300, h=975,
+        alt="Instalador aplicando film de protección de pintura XPEL sobre el capó de un Tesla con solución deslizante en nuestro taller de Doral")),
+        (1, dict(img="tesla-ppf-install-2", w=900, h=1200,
+        alt="Instalador pasando el squeegee con film de protección de pintura XPEL alrededor del faro de un Tesla en nuestro taller de Doral"))],
     process=("Trabajo real de PPF en nuestro taller de Doral", "Protección de pintura, aplicada a mano", [
       dict(img="tesla-model-y-ppf-hood", w=1600, h=901, cls="pr-wide",
            alt="Instalador pasando el squeegee con film de protección de pintura XPEL sobre el capó de un Tesla Model Y en Doral",
