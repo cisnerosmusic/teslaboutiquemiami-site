@@ -393,7 +393,7 @@ SERVICES_ES = {
            "No. Protege la pintura de fábrica debajo y está diseñado para retirarse limpiamente, así que puedes volver al color original."),
           ("¿Pueden cambiar el color de un Cybertruck?",
            "Sí. El PPF de color es la forma ideal de añadir color brillante, satinado o stealth al inoxidable del Cybertruck mientras lo protege.")]),
-  "vinyl-wraps": dict(name="Wrap de Vinilo", img="cars/cybertruck/cybertruck-7-metallic", xpel=False,
+  "vinyl-wraps": dict(name="Wrap de Vinilo", img="cars/cybertruck/cybertruck-wrapped-pair", xpel=False,
     h1='Tesla <span class="highlight">Wrap de Vinilo</span>',
     lead="Un cambio total de color y acabado para tu Tesla, más wraps parciales e interiores: mate, satinado, brillante, metálico, cromo y color-shift, o un diseño impreso totalmente personalizado. La forma más versátil de transformar cómo se ve tu Tesla, y totalmente reversible.",
     sections=[

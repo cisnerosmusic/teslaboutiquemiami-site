@@ -607,7 +607,7 @@ SERVICES = {
               "Yes. Colored PPF is the ideal way to add gloss, satin or stealth color to the Cybertruck's bare stainless while protecting it.")],
   },
   "vinyl-wraps": {
-    "name": "Vinyl Wraps", "img": "cars/cybertruck/cybertruck-7-metallic", "xpel": False,
+    "name": "Vinyl Wraps", "img": "cars/cybertruck/cybertruck-wrapped-pair", "xpel": False,
     "h1": 'Tesla <span class="highlight">Vinyl Wraps</span>',
     "lead": "A full color and finish change for your Tesla, plus partial and interior wraps: matte, satin, gloss, metallic, chrome and color-shift, or a fully custom printed design. The most versatile way to transform how your Tesla looks, and fully reversible.",
     "sections": [
