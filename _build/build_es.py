@@ -417,6 +417,8 @@ SERVICES_ES = {
            "Sí. Los grandes paneles planos de inoxidable del Cybertruck reciben un wrap muy bien, y es una forma popular de añadir color o un look stealth al acero desnudo. El PPF de color es la alternativa más protectora si además quieres proteger los paneles.")]),
   "ceramic-coating": dict(name="Recubrimiento Cerámico", img="tesla-model-s-ceramic-coating",
     badge=dict(img="xpel-fusion-plus.png", alt="Recubrimiento cerámico XPEL Fusion Plus"),
+    section_media=(0, dict(img="tesla-ceramic-fusion-plus", w=632, h=788,
+        alt="Mano con guante aplicando recubrimiento cerámico XPEL Fusion Plus en un aplicador de microfibra, un Tesla azul de fondo")),
     h1='Tesla <span class="highlight">Recubrimiento Cerámico</span>',
     lead="Una capa cerámica hidrofóbica XPEL Fusion Plus que profundiza el brillo, repele agua y suciedad, y hace tu Tesla mucho más fácil de mantener limpio.",
     sections=[
@@ -577,6 +579,8 @@ def build_service_es(slug, d):
         inner = "".join(p if p.lstrip().startswith("<ul") else "<p>%s</p>" % p for p in paras)
         badge = product_badge_es(rootp, d["badge"]) if (d.get("badge") and i == nsec - 1) else ""
         secs += '<section class="section"><div class="container"><div class="prose"><h2>%s</h2>%s%s</div></div></section>' % (h2, badge, inner)
+        if d.get("section_media") and d["section_media"][0] == i:
+            secs += S.blend_media(rootp, d["section_media"][1])
     opts = ""
     if d.get("options"):
         tag, title, cards = d["options"]

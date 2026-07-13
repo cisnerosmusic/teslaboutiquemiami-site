@@ -486,6 +486,14 @@ a.area-item:hover { transform: translateY(-3px); }
 @media (max-width: 560px)  { .gallery-grid > .gallery-item { flex-basis: 100%; } }
 @media (max-width: 480px)  { .areas-grid > .area-item { flex-basis: 100%; } }
 
+/* ===== Blended feature image (edges fade into the dark page; for AI/composite shots) ===== */
+.blend-section { padding-top: 4px; padding-bottom: 4px; }
+.blend-media { max-width: 500px; margin: 0 auto; }
+.blend-media img { display: block; width: 100%; height: auto;
+  -webkit-mask-image: radial-gradient(115% 115% at 48% 45%, #000 52%, transparent 100%);
+          mask-image: radial-gradient(115% 115% at 48% 45%, #000 52%, transparent 100%); }
+.blend-media figcaption { margin-top: 10px; text-align: center; color: var(--gray); font-size: 0.85rem; }
+
 /* Updates: published post meta + uniform XPEL banner wordmark */
 .post-date { font-size: 0.72rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block; }
 .xpel-banner-logo { font-size: 1.7rem; font-weight: 800; color: var(--white); letter-spacing: 0.03em; line-height: 1; }

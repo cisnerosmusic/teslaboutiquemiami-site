@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "https://teslaboutiquemiami.com"
 PHONE_TEL = "7865056162"
 PHONE_DISP = "(786) 505-6162"
-CSS_VER = "20260713b"  # bump on every style.css change to bust browser cache
+CSS_VER = "20260713c"  # bump on every style.css change to bust browser cache
 
 # ---------------------------------------------------------------- icons
 IC = {
@@ -210,6 +210,13 @@ def media_showcase(prefix, s):
     return (f'<section class="section"><div class="container"><figure class="media-showcase">'
             f'<img src="{prefix}assets/img/{s["img"]}" alt="{s["alt"]}" width="{s["w"]}" height="{s["h"]}" loading="lazy" decoding="async">'
             f'{cap}</figure></div></section>')
+
+def blend_media(prefix, m):
+    """A feature image whose edges fade into the dark page background (for AI/composite shots)."""
+    cap = f'<figcaption>{m["caption"]}</figcaption>' if m.get("caption") else ""
+    return (f'<section class="section blend-section"><div class="container">'
+            f'<figure class="blend-media">{pic(prefix, m["img"], m["alt"], m["w"], m["h"])}{cap}</figure>'
+            f'</div></section>')
 
 def process_block(prefix, tag, title, items):
     figs = ""
@@ -626,6 +633,8 @@ SERVICES = {
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
     "badge": {"img": "xpel-fusion-plus.png", "alt": "XPEL Fusion Plus ceramic coating"},
+    "section_media": (0, {"img": "tesla-ceramic-fusion-plus", "w": 632, "h": 788,
+        "alt": "Gloved hand applying XPEL Fusion Plus ceramic coating onto a microfiber applicator, a blue Tesla behind"}),
     "h1": 'Tesla <span class="highlight">Ceramic Coating</span>',
     "lead": "A hydrophobic XPEL Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
     "sections": [
@@ -768,6 +777,8 @@ def build_service(slug, d):
         body_inner = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
         badge = product_badge(prefix, d["badge"]) if (d.get("badge") and i == nsec - 1) else ""
         secs += f'<section class="section"><div class="container"><div class="prose"><h2>{h2}</h2>{badge}{body_inner}</div></div></section>'
+        if d.get("section_media") and d["section_media"][0] == i:
+            secs += blend_media(prefix, d["section_media"][1])
     opts = ""
     if d.get("options"):
         tag, title, cards = d["options"]
