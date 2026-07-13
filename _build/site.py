@@ -506,7 +506,7 @@ MODELS = {
   },
   "cybertruck": {
     "name": "Cybertruck", "img": "cars/cybertruck/cybertruck-1-black", "card": "tesla-cybertruck-ppf-miami",
-    "gallery": ["cars/cybertruck/cybertruck-ceramic-coating", "cars/cybertruck/cybertruck-2-black", "cars/cybertruck/cybertruck-3-white", "cars/cybertruck/cybertruck-4-white", "cars/cybertruck/cybertruck-5-white", "cars/cybertruck/cybertruck-6-white", "cars/cybertruck/cybertruck-7-metallic", "cars/cybertruck/cybertruck-8-metallic", "cars/cybertruck/cybertruck-9-metallic", "cars/cybertruck/cybertruck-10-red", "cars/cybertruck/cybertruck-11-red", "cars/cybertruck/cybertruck-12-red"],
+    "gallery": ["cars/cybertruck/cybertruck-2-black", "cars/cybertruck/cybertruck-3-white", "cars/cybertruck/cybertruck-4-white", "cars/cybertruck/cybertruck-5-white", "cars/cybertruck/cybertruck-6-white", "cars/cybertruck/cybertruck-7-metallic", "cars/cybertruck/cybertruck-8-metallic", "cars/cybertruck/cybertruck-9-metallic", "cars/cybertruck/cybertruck-10-red", "cars/cybertruck/cybertruck-11-red", "cars/cybertruck/cybertruck-12-red"],
     "lead": "Stainless steel, not paint. The Cybertruck needs a different playbook, and we have it: PPF to protect the finish and colored PPF to actually change it.",
     "intro": ["The Cybertruck is unlike any other Tesla because its body is bare stainless steel, not painted. That changes everything: there is no clear coat to chip, but the stainless scratches, smudges and shows fine marks. Paint protection film over the stainless keeps it pristine and far easier to clean, while colored PPF is the way to give a Cybertruck real color with full protection underneath.",
               "We film the Cybertruck's large flat panels with genuine XPEL, including satin and stealth options that suit its angular design."],
@@ -633,8 +633,8 @@ SERVICES = {
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
     "badge": {"img": "xpel-fusion-plus.png", "alt": "XPEL Fusion Plus ceramic coating"},
-    "section_media": (0, {"img": "tesla-ceramic-fusion-plus", "w": 632, "h": 788,
-        "alt": "Gloved hand applying XPEL Fusion Plus ceramic coating onto a microfiber applicator, a blue Tesla behind"}),
+    "section_media": (0, {"img": "cars/cybertruck/cybertruck-ceramic-coating", "w": 560, "h": 511,
+        "alt": "Gloved hand applying XPEL Fusion Plus ceramic coating to a Tesla Cybertruck panel in our Doral shop"}),
     "h1": 'Tesla <span class="highlight">Ceramic Coating</span>',
     "lead": "A hydrophobic XPEL Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
     "sections": [
