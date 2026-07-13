@@ -286,7 +286,7 @@ SOCIALS = (
 
 def footer(prefix):
     models_li = "".join(f'<li><a href="{prefix}models/{s}.html">{l}</a></li>' for s, l in MODELS_NAV)
-    services_li = "".join(f'<li><a href="{prefix}services/{s}.html">{l}</a></li>' for s, l in SERVICES_NAV[:5])
+    services_li = "".join(f'<li><a href="{prefix}services/{s}.html">{l}</a></li>' for s, l in SERVICES_NAV)
     return f'''<footer class="footer"><div class="container">
   <div class="footer-main">
     <div class="footer-brand">
