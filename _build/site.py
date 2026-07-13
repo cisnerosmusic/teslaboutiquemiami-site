@@ -1452,14 +1452,14 @@ def build_home():
                f'<div class="cta-contact-item">{pin_svg}<span>1835 NW 79th Ave, Doral, FL 33126</span></div>'
                f'<div class="cta-contact-item">{clock_svg}<span>Mon to Fri: 9AM to 5:30PM</span></div>'
                f'<div style="flex-basis:100%;height:0"></div>'
-               f'<a class="cta-contact-item" href="mailto:info@unlimitedwraps.com">{mail_svg}<span>info@unlimitedwraps.com</span></a>'
+               f'<a class="cta-contact-item" href="mailto:sales@teslaboutiquemiami.com">{mail_svg}<span>sales@teslaboutiquemiami.com</span></a>'
                f'</div></div></div></section>')
     body = hero + banner + models_sec + services_sec + why + areas + contact
     local_ld = json.dumps({"@context": "https://schema.org", "@type": "AutoBodyShop",
         "@id": DOMAIN + "/#business", "name": "Tesla Boutique Miami",
         "alternateName": ["Tesla Boutique Miami (Unlimited Wraps)", "XPEL Tesla Doral"],
         "description": "Tesla only paint protection film, ceramic coating and window tint in Doral and Miami, FL. XPEL exclusive dealer powered by Unlimited Wraps, with 15+ years protecting exotic and luxury vehicles and now focused exclusively on Tesla.",
-        "url": DOMAIN + "/", "telephone": "+1-786-505-6162", "image": DOMAIN + "/assets/img/cars/model-s/model-s-blue-1.webp",
+        "url": DOMAIN + "/", "telephone": "+1-786-505-6162", "email": "sales@teslaboutiquemiami.com", "image": DOMAIN + "/assets/img/cars/model-s/model-s-blue-1.webp",
         "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave", "addressLocality": "Doral",
                     "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"},
         "geo": {"@type": "GeoCoordinates", "latitude": 25.791474, "longitude": -80.323911},
