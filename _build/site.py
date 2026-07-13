@@ -633,8 +633,10 @@ SERVICES = {
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
     "badge": {"img": "xpel-fusion-plus.png", "alt": "XPEL Fusion Plus ceramic coating"},
-    "section_media": (0, {"img": "cars/cybertruck/cybertruck-ceramic-coating", "w": 560, "h": 511,
+    "section_media": [(0, {"img": "cars/cybertruck/cybertruck-ceramic-coating", "w": 560, "h": 511,
         "alt": "Gloved hand applying XPEL Fusion Plus ceramic coating to a Tesla Cybertruck panel in our Doral shop"}),
+        (1, {"img": "cars/cybertruck/cybertruck-ceramic-red", "w": 565, "h": 437,
+        "alt": "Applying XPEL Fusion Plus ceramic coating to a red Tesla Cybertruck with a microfiber applicator in our Doral shop"})],
     "h1": 'Tesla <span class="highlight">Ceramic Coating</span>',
     "lead": "A hydrophobic XPEL Fusion Plus ceramic layer that deepens gloss, repels water and dirt, and makes your Tesla dramatically easier to keep clean.",
     "sections": [
@@ -777,8 +779,9 @@ def build_service(slug, d):
         body_inner = "".join(p if p.lstrip().startswith("<ul") else f"<p>{p}</p>" for p in paras)
         badge = product_badge(prefix, d["badge"]) if (d.get("badge") and i == nsec - 1) else ""
         secs += f'<section class="section"><div class="container"><div class="prose"><h2>{h2}</h2>{badge}{body_inner}</div></div></section>'
-        if d.get("section_media") and d["section_media"][0] == i:
-            secs += blend_media(prefix, d["section_media"][1])
+        for mi, m in (d.get("section_media") or []):
+            if mi == i:
+                secs += blend_media(prefix, m)
     opts = ""
     if d.get("options"):
         tag, title, cards = d["options"]
