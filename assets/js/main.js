@@ -95,6 +95,7 @@ document.querySelectorAll('.cform').forEach(function (form) {
                     form.reset();
                     if (tsField) tsField.value = Date.now();
                     ok.hidden = false;
+                    if (window.tbmTrack) window.tbmTrack('Lead');
                 } else {
                     err.hidden = false;
                 }

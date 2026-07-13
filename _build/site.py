@@ -366,6 +366,7 @@ def doc(path, title, desc, body, active="", preload=None, extra_ld=None, depth=N
 </main>
 {footer(prefix)}
 <script src="{prefix}assets/js/main.js" defer></script>
+<script src="{prefix}assets/js/consent.js" defer></script>
 </body>
 </html>'''
 

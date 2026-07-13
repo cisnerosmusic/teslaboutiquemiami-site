@@ -128,10 +128,10 @@ def doc_es(path, title, desc, body, active="", preload=None, extra_ld=None):
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media=\'all\'">\n'
         '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>\n'
         '%s\n<link rel="stylesheet" href="%sassets/css/style.css?v=%s">\n%s</head>\n<body>\n%s\n<main>\n%s\n</main>\n%s\n'
-        '<script src="%sassets/js/main.js" defer></script>\n</body>\n</html>\n') % (
+        '<script src="%sassets/js/main.js" defer></script>\n<script src="%sassets/js/consent.js" defer></script>\n</body>\n</html>\n') % (
         fav, title, desc, canonical, en_url, canonical, en_url, title, desc, canonical,
         DOMAIN, (preload or "model-s"), preload_tag, rootp, S.CSS_VER, ld,
-        header_es(esp, rootp, path, active), body, footer_es(esp, rootp), rootp)
+        header_es(esp, rootp, path, active), body, footer_es(esp, rootp), rootp, rootp)
 
 # ---------- ES section helpers ----------
 def faq_es(items):
