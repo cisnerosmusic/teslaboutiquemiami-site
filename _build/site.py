@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "https://teslaboutiquemiami.com"
 PHONE_TEL = "7865056162"
 PHONE_DISP = "(786) 505-6162"
-CSS_VER = "20260713"  # bump on every style.css change to bust browser cache
+CSS_VER = "20260713b"  # bump on every style.css change to bust browser cache
 
 # ---------------------------------------------------------------- icons
 IC = {

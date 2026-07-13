@@ -475,9 +475,13 @@ a.area-item:hover { transform: translateY(-3px); }
 .gallery-grid > .gallery-item { flex: 0 1 calc((100% - 48px) / 4); }
 .areas-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
 .areas-grid > .area-item { flex: 0 1 calc((100% - 40px) / 3); }
+.services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.services-grid > .service-card { flex: 0 1 calc((100% - 48px) / 3); }
 @media (max-width: 1100px) { .models-grid > .model-card { flex-basis: calc((100% - 40px) / 3); } }
+@media (max-width: 1080px) { .services-grid > .service-card { flex-basis: calc((100% - 24px) / 2); } }
 @media (max-width: 900px)  { .gallery-grid > .gallery-item { flex-basis: calc((100% - 16px) / 2); } }
 @media (max-width: 760px)  { .areas-grid > .area-item { flex-basis: calc((100% - 20px) / 2); } }
+@media (max-width: 720px)  { .services-grid > .service-card { flex-basis: 100%; } }
 @media (max-width: 640px)  { .models-grid > .model-card { flex-basis: 100%; } }
 @media (max-width: 560px)  { .gallery-grid > .gallery-item { flex-basis: 100%; } }
 @media (max-width: 480px)  { .areas-grid > .area-item { flex-basis: 100%; } }
