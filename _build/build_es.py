@@ -18,6 +18,7 @@ SERVICE_CARDS = S.SERVICE_CARDS
 SERVICES_NAV_ES = [
     ("paint-protection-film", "Protección de Pintura (PPF)"),
     ("colored-ppf", "PPF de Color"),
+    ("vinyl-wraps", "Wrap de Vinilo"),
     ("ceramic-coating", "Recubrimiento Cerámico"),
     ("window-tint", "Polarizado"),
     ("windshield-protection", "Protección de Parabrisas"),
@@ -28,6 +29,8 @@ SERVICE_CARDS_ES = {
         blurb="Film XPEL autorreparable e invisible contra piedras, rayones y escombros. Cobertura frontal, track y cuerpo completo.", cta="Ver PPF"),
     "colored-ppf": dict(icon=IC["color"], title="PPF de Color",
         blurb="Cambia el color de tu Tesla y protege la pintura debajo, en acabados brillante, satinado y stealth. Totalmente reversible.", cta="Ver PPF de Color"),
+    "vinyl-wraps": dict(icon=IC["vinyl"], title="Wrap de Vinilo",
+        blurb="Cambio total de color y acabado: mate, satinado, brillante, metálico y color-shift. La forma más versátil de reestilizar tu Tesla, totalmente reversible.", cta="Ver Wrap de Vinilo"),
     "ceramic-coating": dict(icon=IC["ceramic"], title="Recubrimiento Cerámico",
         blurb="Cerámico hidrofóbico XPEL Fusion Plus que profundiza el brillo y hace tu Tesla mucho más fácil de mantener limpio.", cta="Ver Cerámico"),
     "window-tint": dict(icon=IC["tint"], title="Polarizado",
@@ -371,7 +374,7 @@ SERVICES_ES = {
     sections=[
       ("Cambio de color que además protege",
        ["El PPF de color es protección de pintura con pigmento. Obtienes un cambio de color real en brillante, satinado o stealth mate, más la misma protección autorreparable contra picaduras del PPF transparente. Como es film, tu pintura de fábrica queda intacta debajo, lo que protege la reventa y te deja volver al original cuando quieras.",
-        "Es la alternativa inteligente a un repintado o a un vinilo barato: más resistente que el vinilo, reversible a diferencia de la pintura, y protector en lugar de solo cosmético."]),
+        "Es la alternativa inteligente a un repintado o a un vinilo simple: más resistente y autorreparable, reversible a diferencia de la pintura, y protege la pintura en lugar de solo cubrirla."]),
       ("Acabados y los productos XPEL que usamos",
        ["Instalamos films XPEL de color y stealth originales en una gama de tonos tipo fábrica y personalizados. En el Cybertruck en especial, el PPF de color es la forma más limpia de añadir color al inoxidable mientras lo protege."]),
     ],
@@ -386,6 +389,32 @@ SERVICES_ES = {
            "No. Protege la pintura de fábrica debajo y está diseñado para retirarse limpiamente, así que puedes volver al color original."),
           ("¿Pueden cambiar el color de un Cybertruck?",
            "Sí. El PPF de color es la forma ideal de añadir color brillante, satinado o stealth al inoxidable del Cybertruck mientras lo protege.")]),
+  "vinyl-wraps": dict(name="Wrap de Vinilo", img="cars/cybertruck/cybertruck-7-metallic", xpel=False,
+    h1='Tesla <span class="highlight">Wrap de Vinilo</span>',
+    lead="Un cambio total de color y acabado para tu Tesla, más wraps parciales e interiores: mate, satinado, brillante, metálico, cromo y color-shift, o un diseño impreso totalmente personalizado. La forma más versátil de transformar cómo se ve tu Tesla, y totalmente reversible.",
+    sections=[
+      ("Qué es un wrap de vinilo, y qué no es",
+       ["Un wrap de vinilo es un film delgado con adhesivo que se aplica sobre las superficies de tu Tesla para cambiar su color, acabado o gráficos. Es la forma más flexible de reestilizar un auto: una enorme gama de colores, acabados y texturas, mate, satinado, brillante, metálico, cromo y color-shift, o un diseño impreso totalmente personalizado con patrones, logos o branding. Envolvemos el exterior completo, zonas parciales o superficies interiores como el tablero y los paneles de puerta, y el vinilo de calidad se retira limpio dejando el acabado original debajo.",
+        "Una distinción honesta: un wrap de vinilo es una mejora de estilo, no protección contra impactos. Es delgado y cosmético, aunque sí protege la superficie debajo de rayones menores y UV mientras está puesto. Si tu meta es frenar picaduras, para eso está el <a href=\"paint-protection-film.html\">film de protección de pintura</a>, y si quieres un cambio de color que además proteja la pintura, ese es el <a href=\"colored-ppf.html\">PPF de color</a>. Te decimos con honestidad cuál encaja con lo que buscas."]),
+      ("Wraps completos, parciales e interiores",
+       ["Hacemos cambios de color completos sobre todo el exterior, wraps parciales (capó, techo, espejos, acentos y chrome delete), y wraps interiores en superficies como el tablero, los paneles de puerta y las molduras. Como el film se puede imprimir digitalmente, también hacemos diseños totalmente personalizados, patrones o branding de empresa, no solo colores lisos. Cada wrap se corta y se mete alrededor de los espacios de panel, sensores y cámaras específicos de Tesla, y los grandes paneles planos de inoxidable del Cybertruck se prestan especialmente bien a un wrap limpio."]),
+      ("¿Wrap de vinilo o PPF de color? Cómo elegir",
+       ["Es la pregunta que más nos hacen, porque ambos cambian el color de tu Tesla y ambos son reversibles. La diferencia es para qué está hecho cada uno. El wrap de vinilo te da la mayor variedad de looks, incluidos acabados y gráficos impresos personalizados que el film simplemente no tiene, y es ideal cuando la meta es estilo, personalización o un cambio que quizá revertirás. El PPF de color es un film protector ante todo: es más grueso, autorreparable y protege contra picaduras como el PPF transparente.",
+        "La garantía también es parte de la decisión. En el sur de Florida un wrap de vinilo suele tener alrededor de dos años de garantía, mientras que el PPF de color está respaldado por mucho más tiempo. Un punto medio popular es combinarlos: un wrap de vinilo para un color distintivo en todo el auto, con PPF transparente sobre el frente de alto impacto para que el nuevo look quede protegido justo donde la vía es más dura. Dinos qué buscas y lo configuramos en una llamada o visita rápida."]),
+    ],
+    options=("Opciones populares de wrap", "Elige tu transformación", [
+      PK("Detalles", "Acentos y Chrome Delete", "Techo, espejos, interior", ["Cromados en negro", "Techo bicolor", "Acentos interiores"]),
+      PK("Más popular", "Wrap Parcial", "Capó, techo o paneles", ["Color parcial atrevido", "Franjas de acento", "Bordes precisos y metidos"], featured=True),
+      PK("Cambio total", "Wrap de Color Completo", "Transformación de todo el auto", ["Cambio de color total", "Mate, satinado, brillante o shift", "Diseños impresos personalizados"]),
+    ]),
+    faqs=[("¿Es mejor un wrap de vinilo o el PPF de color para mi Tesla?",
+           "Depende de tu meta. Un wrap de vinilo ofrece la mayor variedad de acabados y gráficos impresos personalizados y es ideal para estilo, personalización o un cambio de color que quizá revertirás. El PPF de color es más grueso, autorreparable y protege contra picaduras, con una garantía mucho más larga. Te ayudamos a elegir según lo que más te importe."),
+          ("¿Cuánto dura un wrap de vinilo y tiene garantía?",
+           "En el sur de Florida un wrap de vinilo de calidad suele tener alrededor de dos años de garantía, y con buen cuidado puede verse genial por años. Nuestro sol y calor son duros con cualquier wrap, así que la elección de acabado y el mantenimiento importan, y te explicamos qué aguanta mejor en el clima de Miami."),
+          ("¿Pueden envolver el interior o imprimir branding personalizado?",
+           "Sí. Envolvemos superficies interiores como el tablero, los paneles de puerta y las molduras, y como el vinilo se puede imprimir digitalmente hacemos diseños totalmente personalizados, patrones o branding de empresa, no solo colores lisos."),
+          ("¿Pueden envolver un Cybertruck?",
+           "Sí. Los grandes paneles planos de inoxidable del Cybertruck reciben un wrap muy bien, y es una forma popular de añadir color o un look stealth al acero desnudo. El PPF de color es la alternativa más protectora si además quieres proteger los paneles.")]),
   "ceramic-coating": dict(name="Recubrimiento Cerámico", img="tesla-model-s-ceramic-coating",
     badge=dict(img="xpel-fusion-plus.png", alt="Recubrimiento cerámico XPEL Fusion Plus"),
     h1='Tesla <span class="highlight">Recubrimiento Cerámico</span>',
@@ -464,7 +493,7 @@ SERVICES_ES = {
        ["La corrección de pintura es el pulido cuidadoso y multietapa de la capa transparente de tu Tesla para eliminar remolinos, rayones ligeros, manchas de agua y oxidación. El resultado es un acabado profundo, vidrioso y sin defectos que refleja limpio en vez de dispersar la luz.",
         "También es el primer paso esencial antes del cerámico o el PPF, porque esos fijan lo que haya debajo. Corrige primero, luego protege."]),
       ("Nuestro proceso",
-       ["Evaluamos la pintura y usamos un proceso de pulido multietapa medido para nivelar defectos sin remover más capa transparente de la necesaria. Bien hecho, transforma cómo se ve un Tesla, sobre todo en colores oscuros."]),
+       ["Todo el proceso comienza con una descontaminación química y física completa de la pintura, para pulir una superficie realmente limpia y no arrastrar nunca partículas atrapadas contra la capa transparente. A partir de ahí evaluamos la pintura y usamos un proceso de pulido multietapa medido para nivelar defectos sin remover más capa transparente de la necesaria. Bien hecho, transforma cómo se ve un Tesla, sobre todo en colores oscuros."]),
     ],
     options=None,
     faqs=[("¿Necesito corrección de pintura antes del cerámico o el PPF?",
@@ -561,14 +590,17 @@ def build_service_es(slug, d):
     showcase = media_showcase_es(rootp, d["showcase"]) if d.get("showcase") else ""
     proc = process_es(rootp, *d["process"]) if d.get("process") else ""
     body = hero + secs + showcase + proc + opts + bymodel + fq + cta
-    service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service", "name": "Tesla %s" % name,
-        "serviceType": name, "brand": {"@type": "Brand", "name": "XPEL"},
+    svc = {"@context": "https://schema.org", "@type": "Service", "name": "Tesla %s" % name,
+        "serviceType": name,
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162", "url": DOMAIN+"/es/",
                      "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave", "addressLocality": "Doral", "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"}},
         "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Doral"}],
-        "description": d["lead"]}, ensure_ascii=False)
+        "description": d["lead"]}
+    if d.get("xpel", True): svc["brand"] = {"@type": "Brand", "name": "XPEL"}
+    service_ld = json.dumps(svc, ensure_ascii=False)
     ld = [S.breadcrumb_ld("", [("Inicio", DOMAIN+"/es/"), ("Servicios", DOMAIN+"/es/#services"), (name, "%s/es/services/%s.html" % (DOMAIN, slug))]), service_ld, S.faq_ld(d["faqs"])]
-    title = "Tesla %s en Miami y Doral | XPEL | Tesla Boutique Miami" % name
+    title = ("Tesla %s en Miami y Doral | XPEL | Tesla Boutique Miami" % name if d.get("xpel", True)
+             else "Tesla %s en Miami y Doral | Tesla Boutique Miami" % name)
     return doc_es(path, title, d["lead"], body, active="services", preload=d["img"], extra_ld=ld)
 
 def build_combo_es():

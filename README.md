@@ -17,7 +17,7 @@ legal.html                 Legal & trademark notice (hand-maintained, self-style
 404.html                   Custom 404 (hand-maintained, fully self-contained, noindex)
 es/index.html              Home (ES) (hand-maintained)
 models/                    Per-model pages (Model 3, Y, S, X, Cybertruck) + SEO combo page
-services/                  Per-service pages (PPF, Colored PPF, Ceramic, Tint, Windshield, Correction)
+services/                  Per-service pages (PPF, Colored PPF, Vinyl Wraps, Ceramic, Tint, Windshield, Correction)
 news/                      Updates: index + article pages (EN)
 guides/                    Tesla Care Guides: evergreen index + guide pages (EN)
 service-area/              County hubs + city pages (Miami-Dade, Broward, Palm Beach, Monroe)

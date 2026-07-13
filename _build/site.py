@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = "https://teslaboutiquemiami.com"
 PHONE_TEL = "7865056162"
 PHONE_DISP = "(786) 505-6162"
-CSS_VER = "20260709c"  # bump on every style.css change to bust browser cache
+CSS_VER = "20260713"  # bump on every style.css change to bust browser cache
 
 # ---------------------------------------------------------------- icons
 IC = {
@@ -26,6 +26,7 @@ IC = {
     "tint": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>',
     "windshield": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>',
     "correction": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>',
+    "vinyl": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/>',
     "check": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>',
     "phone": '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>',
 }
@@ -43,6 +44,7 @@ MODELS_NAV = [
 SERVICES_NAV = [
     ("paint-protection-film", "Paint Protection Film"),
     ("colored-ppf", "Colored PPF"),
+    ("vinyl-wraps", "Vinyl Wraps"),
     ("ceramic-coating", "Ceramic Coating"),
     ("window-tint", "Window Tint"),
     ("windshield-protection", "Windshield Protection"),
@@ -366,6 +368,8 @@ SERVICE_CARDS = {
         "blurb": "Invisible self-healing XPEL film against rock chips, scratches and road debris. Full-front, track and full-body coverage.", "cta": "Explore PPF"},
     "colored-ppf": {"icon": IC["color"], "title": "Colored PPF",
         "blurb": "Change your Tesla's color and protect the paint underneath, in gloss, satin and stealth finishes. Fully reversible.", "cta": "Explore Colored PPF"},
+    "vinyl-wraps": {"icon": IC["vinyl"], "title": "Vinyl Wraps",
+        "blurb": "Full color and finish change: matte, satin, gloss, metallic and color-shift. The most versatile way to restyle your Tesla, fully reversible.", "cta": "Explore Vinyl Wraps"},
     "ceramic-coating": {"icon": IC["ceramic"], "title": "Ceramic Coating",
         "blurb": "XPEL Fusion Plus hydrophobic ceramic that deepens gloss and makes your Tesla far easier to keep clean.", "cta": "Explore Ceramic"},
     "window-tint": {"icon": IC["tint"], "title": "Window Tint",
@@ -575,7 +579,7 @@ SERVICES = {
     "sections": [
       ("Color change that also protects",
        ["Colored PPF is paint protection film with pigment. You get a real color change in gloss, satin or matte stealth, plus the same self-healing chip protection as clear PPF. Because it is film, your factory paint stays untouched underneath, which protects resale value and lets you return the car to original whenever you want.",
-        "It is the smart alternative to a respray or a cheap vinyl wrap: tougher than vinyl, reversible unlike paint, and protective rather than just cosmetic."]),
+        "It is the smart alternative to a respray or a plain vinyl wrap: tougher and self-healing, reversible unlike paint, and it protects the paint rather than just covering it."]),
       ("Finishes and the XPEL products we use",
        ["We install genuine XPEL colored and stealth films in a range of factory-style and custom shades. On the Cybertruck especially, colored PPF is the cleanest way to add color to bare stainless while protecting it."]),
     ],
@@ -590,6 +594,34 @@ SERVICES = {
               "No. It protects the factory paint underneath and is designed to be removed cleanly, so you can return the car to original color."),
              ("Can you change a Cybertruck's color?",
               "Yes. Colored PPF is the ideal way to add gloss, satin or stealth color to the Cybertruck's bare stainless while protecting it.")],
+  },
+  "vinyl-wraps": {
+    "name": "Vinyl Wraps", "img": "cars/cybertruck/cybertruck-7-metallic", "xpel": False,
+    "h1": 'Tesla <span class="highlight">Vinyl Wraps</span>',
+    "lead": "A full color and finish change for your Tesla, plus partial and interior wraps: matte, satin, gloss, metallic, chrome and color-shift, or a fully custom printed design. The most versatile way to transform how your Tesla looks, and fully reversible.",
+    "sections": [
+      ("What a vinyl wrap is, and what it is not",
+       ["A vinyl wrap is a thin, adhesive-backed film applied over your Tesla's surfaces to change their color, finish or graphics. It is the most flexible way to restyle a car: an enormous range of colors, finishes and textures, matte, satin, gloss, metallic, chrome and color-shift, or a fully custom printed design with patterns, logos or branding. We wrap the full exterior, partial areas, or interior surfaces like the dash and door panels, and quality vinyl comes off cleanly to reveal the original finish underneath.",
+        "One honest distinction: a vinyl wrap is a style upgrade, not impact protection. It is thin and cosmetic, though it does shield the surface underneath from minor scratches and UV while it is on. If your goal is to stop rock chips, that is what <a href=\"paint-protection-film.html\">paint protection film</a> is for, and if you want a color change that also protects the paint, that is <a href=\"colored-ppf.html\">colored PPF</a>. We will tell you honestly which one fits what you are after."]),
+      ("Full, partial and interior wraps",
+       ["We do full color changes over the whole exterior, partial wraps (hood, roof, mirrors, accents and chrome delete), and interior wraps on surfaces like the dashboard, door panels and trim. Because the film can be digitally printed, we can also do fully custom designs, patterns or business branding, not just solid colors. Every wrap is cut and tucked around Tesla's specific panel gaps, sensors and cameras, and the Cybertruck's large flat stainless panels are especially well suited to a clean wrap."]),
+      ("Vinyl wrap or colored PPF? How to choose",
+       ["This is the question we get most, because both change your Tesla's color and both are reversible. The difference is what each is built for. A vinyl wrap gives you the widest range of looks, including finishes and custom printed graphics that film simply does not come in, and it is ideal when the goal is style, personalization or a change you may reverse later. Colored PPF is a protective film first: it is thicker, self-healing and guards against rock chips like clear PPF.",
+        "Warranty is part of the choice too. In South Florida a vinyl wrap typically carries around a two-year warranty, while colored PPF is backed for far longer. A popular middle path is to combine them: a vinyl wrap for a distinctive full-car color, with clear PPF over the high-impact front end so the new look is protected exactly where the road is harshest. Tell us what you are after and we will spec it on a quick call or visit."]),
+    ],
+    "options": ("Popular wrap options", "Choose your transformation", [
+      PKG("Accents", "Accents &amp; Chrome Delete", "Roof, mirrors, interior trim", ["Blackout chrome trim", "Two-tone roof", "Interior accent wraps"]),
+      PKG("Most popular", "Partial Wrap", "Hood, roof or panels", ["Bold partial color", "Racing or accent stripes", "Precise, tucked edges"], featured=True),
+      PKG("Full change", "Full Color Wrap", "Whole-car transformation", ["Complete color change", "Matte, satin, gloss or shift", "Custom printed designs"]),
+    ]),
+    "faqs": [("Is a vinyl wrap or colored PPF better for my Tesla?",
+              "It depends on your goal. A vinyl wrap offers the widest range of finishes and custom printed graphics and is ideal for style, personalization or a color change you may reverse. Colored PPF is thicker, self-healing and protects against rock chips, with a much longer warranty. We help you pick based on what matters most to you."),
+             ("How long does a vinyl wrap last, and is it under warranty?",
+              "In South Florida a quality vinyl wrap typically carries around a two-year warranty, and with good care it can look great for years. Our sun and heat are hard on any wrap, so finish choice and maintenance matter, and we walk you through what holds up best in the Miami climate."),
+             ("Can you wrap the interior or print custom branding?",
+              "Yes. We wrap interior surfaces like the dashboard, door panels and trim, and because the vinyl can be digitally printed we can do fully custom designs, patterns or business branding, not just solid colors."),
+             ("Can you wrap a Cybertruck?",
+              "Yes. The Cybertruck's large flat stainless panels take a wrap beautifully, and it is a popular way to add color or a stealth look to the bare steel. Colored PPF is the more protective alternative if you also want to guard the panels.")],
   },
   "ceramic-coating": {
     "name": "Ceramic Coating", "img": "tesla-model-s-ceramic-coating",
@@ -676,7 +708,7 @@ SERVICES = {
        ["Paint correction is the careful, multi-stage polishing of your Tesla's clear coat to remove swirl marks, light scratches, water spots and oxidation. The result is a deep, glassy, defect-free finish that reflects cleanly instead of scattering light.",
         "It is also the essential first step before ceramic coating or PPF, because those lock in whatever is underneath. Correct first, then protect."]),
       ("Our process",
-       ["We assess the paint, then use a measured, multi-stage polishing process to level defects without removing more clear coat than necessary. Done right, it transforms how a Tesla looks, especially darker colors."]),
+       ["The whole process begins with a thorough chemical and physical decontamination of the paint, so we polish a genuinely clean surface and never grind trapped grit into the clear coat. From there we assess the paint, then use a measured, multi-stage polishing process to level defects without removing more clear coat than necessary. Done right, it transforms how a Tesla looks, especially darker colors."]),
     ],
     "options": None,
     "faqs": [("Do I need paint correction before ceramic or PPF?",
@@ -750,16 +782,19 @@ def build_service(slug, d):
     fq = faq_block(d["faqs"])
     cta = cta_block(f"Ready for {d['name']}?", "Tell us your Tesla and what you are after, and we will give you a clear quote and timeline.")
     body = hero + secs + showcase + proc + opts + bymodel + fq + cta
-    service_ld = json.dumps({"@context": "https://schema.org", "@type": "Service",
-        "name": f"Tesla {d['name']}", "serviceType": d["name"], "brand": {"@type": "Brand", "name": "XPEL"},
+    svc = {"@context": "https://schema.org", "@type": "Service",
+        "name": f"Tesla {d['name']}", "serviceType": d["name"],
         "provider": {"@type": "AutoBodyShop", "name": "Tesla Boutique Miami", "telephone": "+1-786-505-6162",
                      "url": DOMAIN + "/", "address": {"@type": "PostalAddress", "streetAddress": "1835 NW 79th Ave",
                      "addressLocality": "Doral", "addressRegion": "FL", "postalCode": "33126", "addressCountry": "US"}},
         "areaServed": [{"@type": "City", "name": "Miami"}, {"@type": "City", "name": "Doral"}],
-        "description": d["lead"]}, ensure_ascii=False)
+        "description": d["lead"]}
+    if d.get("xpel", True): svc["brand"] = {"@type": "Brand", "name": "XPEL"}
+    service_ld = json.dumps(svc, ensure_ascii=False)
     ld = [breadcrumb_ld(prefix, [("Home", DOMAIN + "/"), ("Services", DOMAIN + "/#services"),
                                  (d["name"], f"{DOMAIN}/services/{slug}.html")]), service_ld, faq_ld(d["faqs"])]
-    title = f'Tesla {d["name"]} in Miami &amp; Doral | XPEL | Tesla Boutique Miami'
+    title = (f'Tesla {d["name"]} in Miami &amp; Doral | XPEL | Tesla Boutique Miami' if d.get("xpel", True)
+             else f'Tesla {d["name"]} in Miami &amp; Doral | Tesla Boutique Miami')
     desc = d["lead"]
     return doc(f"services/{slug}.html", title, desc, body, active="services", preload=d["img"], extra_ld=ld)
 
@@ -1312,7 +1347,7 @@ CONTACT_FORM_EN = '''<div class="cform-wrap">
       <label class="cform-field"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
       <label class="cform-field"><span>Email</span><input type="email" name="email" autocomplete="email" inputmode="email"></label>
       <label class="cform-field"><span>Tesla model</span><select name="model"><option value="">Select your model</option><option>Model 3</option><option>Model Y</option><option>Model S</option><option>Model X</option><option>Cybertruck</option><option>Other</option></select></label>
-      <label class="cform-field cform-full"><span>Service you are interested in</span><select name="service"><option value="">Select a service</option><option>Paint Protection Film (PPF)</option><option>Colored PPF</option><option>Ceramic Coating</option><option>Window Tint</option><option>Windshield Protection</option><option>Paint Correction</option><option>Not sure yet</option></select></label>
+      <label class="cform-field cform-full"><span>Service you are interested in</span><select name="service"><option value="">Select a service</option><option>Paint Protection Film (PPF)</option><option>Colored PPF</option><option>Vinyl Wraps</option><option>Ceramic Coating</option><option>Window Tint</option><option>Windshield Protection</option><option>Paint Correction</option><option>Not sure yet</option></select></label>
       <label class="cform-field cform-full"><span>Message</span><textarea name="message" rows="4" placeholder="Color, year, what you have in mind..."></textarea></label>
     </div>
     <p class="cform-note">Provide at least a phone number or an email so we can reach you.</p>
@@ -1360,8 +1395,8 @@ def build_home():
                    f'<a class="card-link" href="services/{s}.html">{sc["cta"]} &rarr;</a></div>')
     services_sec = (f'<section class="section section-alt" id="services"><div class="container">'
                     f'<div class="section-header"><span class="section-tag">What we do</span>'
-                    f'<h2 class="section-title">Protection &amp; detailing for Tesla</h2>'
-                    f'<p class="section-desc">Six specialized services, each with its own page explaining the technology, the XPEL products we use and exactly what you get.</p></div>'
+                    f'<h2 class="section-title">Protection &amp; Detailing for Tesla</h2>'
+                    f'<p class="section-desc">Seven specialized services, each with its own page explaining the technology, the XPEL products we use and exactly what you get.</p></div>'
                     f'<div class="services-grid">{scards}</div></div></section>')
     why = ('<section class="section section-grad"><div class="container">'
            '<div class="section-header"><span class="section-tag">Why Tesla Boutique Miami</span>'

@@ -163,6 +163,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://teslaboutiquemiami.com/services/vinyl-wraps.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/services/vinyl-wraps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/services/vinyl-wraps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/services/vinyl-wraps.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://teslaboutiquemiami.com/es/services/vinyl-wraps.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/services/vinyl-wraps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://teslaboutiquemiami.com/es/services/vinyl-wraps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://teslaboutiquemiami.com/services/vinyl-wraps.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://teslaboutiquemiami.com/services/ceramic-coating.html</loc>
     <lastmod>2026-07-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://teslaboutiquemiami.com/services/ceramic-coating.html"/>
