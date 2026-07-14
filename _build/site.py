@@ -480,7 +480,7 @@ MODELS = {
   },
   "model-x": {
     "name": "Model X", "img": "cars/model-x/model-x-red-studio", "card": "cars/model-x/model-x-red-6",
-    "gallery": ["cars/model-x/model-x-red-1", "cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
+    "gallery": ["cars/model-x/model-x-gold-doors", "cars/model-x/model-x-gold-side", "cars/model-x/model-x-red-1", "cars/model-x/model-x-red-2", "cars/model-x/model-x-red-3", "cars/model-x/model-x-red-4", "cars/model-x/model-x-red-5", "cars/model-x/model-x-red-6"],
     "lead": "Big surfaces, falcon-wing doors and a panoramic windshield. The Model X has more to protect, and we cover all of it with genuine XPEL.",
     "intro": ["The Model X has large body panels and unique falcon-wing doors, which means more painted surface exposed to chips and more edges to wrap correctly. Full-body or extended-front PPF is popular here, paired with ceramic tint for the big glass area and a ceramic coating for gloss.",
               "We pattern the Model X precisely, including the door edges most installers rush, and register every install to your VIN."],
@@ -609,6 +609,10 @@ SERVICES = {
   },
   "vinyl-wraps": {
     "name": "Vinyl Wraps", "img": "cars/cybertruck/cybertruck-wrapped-pair", "xpel": False,
+    "section_media": [(0, {"img": "cars/model-x/model-x-gold-logo", "w": 900, "h": 900,
+        "alt": "Gold vinyl wrap meeting the black Tesla logo on a Model X, with a clean cut line"}),
+        (1, {"img": "cars/model-x/model-x-gold-jamb", "w": 900, "h": 900,
+        "alt": "Gold vinyl wrap carried into the door sill and jamb of a Tesla Model X with a white interior"})],
     "h1": 'Tesla <span class="highlight">Vinyl Wraps</span>',
     "lead": "A full color and finish change for your Tesla, plus partial and interior wraps: matte, satin, gloss, metallic, chrome and color-shift, or a fully custom printed design. The most versatile way to transform how your Tesla looks, and fully reversible.",
     "sections": [
