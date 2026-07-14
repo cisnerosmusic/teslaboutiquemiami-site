@@ -16,6 +16,7 @@ index.html                 Home (EN)
 legal.html                 Legal & trademark notice (hand-maintained, self-styled)
 404.html                   Custom 404 (hand-maintained, fully self-contained, noindex)
 es/index.html              Home (ES) (hand-maintained)
+es/legal.html              Legal notice (ES) (hand-maintained)
 models/                    Per-model pages (Model 3, Y, S, X, Cybertruck) + SEO combo page
 services/                  Per-service pages (PPF, Colored PPF, Vinyl Wraps, Ceramic, Tint, Windshield, Correction)
 news/                      Updates: index + article pages (EN)
@@ -24,6 +25,7 @@ service-area/              County hubs + city pages (Miami-Dade, Broward, Palm B
 es/                        Spanish mirror of models/, services/, news/, guides/, service-area/
 assets/css/style.css       Shared design system (colors, type, layout)
 assets/js/main.js          Minimal JS (header scroll, mobile nav, FAQ accordion, scroll reveal)
+assets/js/consent.js       Cookie-consent banner + Meta Pixel loader (inactive until a Pixel ID is set)
 assets/img/                Optimized images (.avif + .webp)
 assets/img/cars/<model>/   Per-model car photo sets used by hero + model galleries
 sitemap.xml robots.txt llms.txt humans.txt   Technical + AEO layer
@@ -33,16 +35,18 @@ _build/                    Generators + content (not part of the served site)
   build_es.py              Builds the ES sub-pages (imports site.py helpers)
   posts/<slug>.<lang>.html Article bodies, shared by the generator and the live pages
   optimize_images.py       Re-encode photos to AVIF + WebP
+  apps-script/Code.gs      Reference copy of the contact-form backend (Google Apps Script)
   serve.ps1                Local static preview server (Windows; no Node/Python needed)
 ```
 
-At a glance: ~98 served HTML pages. EN and ES are full mirrors of `models/` (6),
-`services/` (6), `news/` (6), `guides/` (4) and `service-area/` (25), plus the home.
+At a glance: ~111 served HTML pages, EN with a full ES mirror. Per-service pages (7),
+Tesla Care Guides (8 + index), per-model (5 + a model+service combo), news (5 + index)
+and service-area (25: county hubs + city pages), plus the home.
 
 Notes:
 - Hand-maintained (NOT generated): `index.html` is generated, but `es/index.html`,
-  `legal.html`, `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt` and `humans.txt`
-  are edited by hand. Every other page is produced by the generators.
+  `legal.html`, `es/legal.html`, `404.html`, `sitemap.xml`, `robots.txt`, `llms.txt` and
+  `humans.txt` are edited by hand. Every other page is produced by the generators.
 - News/blog articles are defined as metadata in the `POSTS` (site.py) and `POSTS_ES`
   (build_es.py) dicts; their body lives once in `_build/posts/<slug>.en.html` and
   `<slug>.es.html` and is read by both languages. Articles get a `BlogPosting` +
@@ -52,9 +56,15 @@ Notes:
   `BreadcrumbList` JSON-LD and a "Last reviewed" date.
 - Service-area pages (county hubs + city pages) are generated from the `CITIES` data
   in site.py, with hyper-local content and `LocalBusiness` / `BreadcrumbList` schema.
-- `legal.html` is EN only; there is no Spanish legal page yet (the ES site links to it).
+- `legal.html` (EN) and `es/legal.html` (ES) are hand-maintained, cross-linked via hreflang,
+  and both include a Cookies & Tracking section. Both are noindex.
 - Per-model car galleries and heroes read from `assets/img/cars/<model>/`; logos and
   shared/legacy photos stay in `assets/img/`.
+- Contact form: posts to a Google Apps Script web app (the backend lives in Google, not the
+  repo). A reference copy of that script is versioned at `_build/apps-script/Code.gs`. It
+  emails each inquiry to the sales inbox and others, with a bilingual autoresponder.
+- Tracking: `assets/js/consent.js` shows a cookie-consent banner and loads the Meta Pixel only
+  after the visitor accepts. It stays inactive until a Pixel ID is pasted into that file.
 
 ## Development
 
